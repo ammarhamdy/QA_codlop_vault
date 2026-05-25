@@ -1,18 +1,17 @@
 ---
-bug_id: BUG_AUTH_011
-title: Login fails with valid credentials
-severity: Critical
-priority: High
+bug_id:
+title:
+severity:
+priority:
 status: Open
 environment: Staging
 reported_by: Ammar
 assigned_to:
-created_at: 2026-05-24
-linked_tc: TC_AUTH_001
-linked_requirement: REQ_AUTH_001
+created_at:
+linked_tc:
+linked_requirement:
 tags:
   - bug
-  - auth
 ---
 
 # Description
