@@ -1,20 +1,13 @@
 ---
-id:  
-title:  
-module:  
-sub_module:  
-priority:  
-type:  
-status:  
-platform: Web  
-environment: Staging  
-linked_requirement:  
-linked_bug:  
+tc_id: TC-
+title:
+priority: [High, Medium, Low]
+status: [Draft, Ready]
+type: [Functional, Regression, API]
+linked_requirement:
+tags:
+  - test-case
 ---
-
-# Objective
-
-# Preconditions
 
 # Test Data
 | Field | Value |
@@ -22,11 +15,11 @@ linked_bug:
 |       |       |
 |       |       |
 
+# Preconditions
+
 # Steps
 
 # Expected Result
-
-# Postconditions
 
 # Notes
 

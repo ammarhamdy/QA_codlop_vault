@@ -1,8 +1,8 @@
 ---
-requirement_id:
-module:
-priority:
-status:
+requirement_id: REQ-
+title: 
+priority: [High, Medium, Low]
+status: [Draft, Approved]
 tags:
   - requirement
 ---
@@ -11,4 +11,3 @@ tags:
 
 # Acceptance Criteria
 
-# Linked Test Cases
