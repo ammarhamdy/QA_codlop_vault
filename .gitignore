@@ -1,9 +1,32 @@
-# Obsidian internal config
-.obsidian/
-
-# Optional: OS / editor junk
+# ==========================================
+# 1. Ignore Local Workspace & OS Garbage
+# ==========================================
 .DS_Store
 Thumbs.db
+*.log
+
+# ==========================================
+# 2. Ignore Volatile Obsidian User States
+# ==========================================
+# This file changes every time you click a note or change sidebar layouts
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# Ignores local search histories and graph view preferences
+.obsidian/graph.json
+.obsidian/appearance.json
+
+# ==========================================
+# 3. Ignore Volatile Plugin Caches/Histories
+# ==========================================
+# Prevents sync conflicts if you use different sync intervals locally
+.obsidian/plugins/obsidian-git/
+
+# If you use the native Audio Recorder or minor cache features
+.obsidian/caches/
+.obsidian/backups/
+
+# OS / editor junk
 .vscode/
 .idea/
 

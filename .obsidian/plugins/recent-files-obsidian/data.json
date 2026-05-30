@@ -1,0 +1,60 @@
+{
+  "recentFiles": [
+    {
+      "basename": "_Test-run",
+      "path": "Projects/Project-Azer/Test-Runs/_Test-run.md"
+    },
+    {
+      "basename": "_Suite",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/_Suite.md"
+    },
+    {
+      "basename": "_User-Story",
+      "path": "Projects/Project-Azer/Requirements/User-Stories/_User-Story.md"
+    },
+    {
+      "basename": "_Asset",
+      "path": "Projects/Project-Azer/Project-Assets/_Asset.md"
+    },
+    {
+      "basename": "_Bug",
+      "path": "Projects/Project-Azer/Bugs/_Bug.md"
+    },
+    {
+      "basename": "User-Story-Template",
+      "path": "Templates/User-Story-Template.md"
+    },
+    {
+      "basename": "Test-Run-Template",
+      "path": "Templates/Test-Run-Template.md"
+    },
+    {
+      "basename": "Test-Case-Template",
+      "path": "Templates/Test-Case-Template.md"
+    },
+    {
+      "basename": "Requirement-Template",
+      "path": "Templates/Requirement-Template.md"
+    },
+    {
+      "basename": "Bug-Template",
+      "path": "Templates/Bug-Template.md"
+    },
+    {
+      "basename": "Software testing life cycle",
+      "path": "Shared/Software testing life cycle.md"
+    },
+    {
+      "basename": "endpoint-healthy-check",
+      "path": "Scripts/Bash/endpoint-healthy-check.md"
+    },
+    {
+      "basename": "Main QA Dashboard",
+      "path": "Dashboards/Main QA Dashboard.md"
+    }
+  ],
+  "omittedPaths": [],
+  "omittedTags": [],
+  "updateOn": "file-open",
+  "omitBookmarks": false
+}
