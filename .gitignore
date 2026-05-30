@@ -5,28 +5,40 @@
 Thumbs.db
 *.log
 
-# ==========================================
-# 2. Ignore Volatile Obsidian User States
-# ==========================================
-# This file changes every time you click a note or change sidebar layouts
+
+# ====================================================================
+# 2. OBSIDIAN USER STATES & CACHES (Causes constant conflicts)
+# ====================================================================
+# Tracks what notes you personally have open and your sidebar widths
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
+
+# Tracks graph view preferences, search history, and UI theme selections
+.obsidian/graph.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/caches/
+.obsidian/backups/
 
 # Ignores local search histories and graph view preferences
 .obsidian/graph.json
 .obsidian/appearance.json
 
-# ==========================================
-# 3. Ignore Volatile Plugin Caches/Histories
-# ==========================================
-# Prevents sync conflicts if you use different sync intervals locally
-.obsidian/plugins/obsidian-git/
+
+# ====================================================================
+# 3. COMMUNITY PLUGINS CODE (Maximum Sync Safety)
+# ====================================================================
+# Completely ignores the source code and localized states of all plugins.
+# NOTE: Ensure you DO NOT ignore 'community-plugins.json' at the root 
+# of .obsidian, as it tells your colleague's vault which plugins to run.
+.obsidian/plugins/
 
 # If you use the native Audio Recorder or minor cache features
 .obsidian/caches/
 .obsidian/backups/
 
-# OS / editor junk
+
+# editor junk
 .vscode/
 .idea/
 
