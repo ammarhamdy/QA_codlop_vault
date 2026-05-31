@@ -4,41 +4,19 @@
 .DS_Store
 Thumbs.db
 *.log
+*.tmp
 
 
 # ====================================================================
-# 2. OBSIDIAN USER STATES & CACHES (Causes constant conflicts)
+# 2. EDITOR JUNK (IDE specific configs)
 # ====================================================================
-# Tracks what notes you personally have open and your sidebar widths
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-
-# Tracks graph view preferences, search history, and UI theme selections
-.obsidian/graph.json
-.obsidian/appearance.json
-.obsidian/hotkeys.json
-.obsidian/caches/
-.obsidian/backups/
-
-# Ignores local search histories and graph view preferences
-.obsidian/graph.json
-.obsidian/appearance.json
-
-
-# ====================================================================
-# 3. COMMUNITY PLUGINS CODE (Maximum Sync Safety)
-# ====================================================================
-# Completely ignores the source code and localized states of all plugins.
-# NOTE: Ensure you DO NOT ignore 'community-plugins.json' at the root 
-# of .obsidian, as it tells your colleague's vault which plugins to run.
-.obsidian/plugins/
-
-# If you use the native Audio Recorder or minor cache features
-.obsidian/caches/
-.obsidian/backups/
-
-
-# editor junk
 .vscode/
 .idea/
 
+
+# ====================================================================
+# 3. TOTAL OBSIDIAN CONFIGURATION ISOLATION
+# ====================================================================
+# This ignores your themes, plugins, dropdown properties, and layouts.
+# You and your colleague can now have completely different setups.
+.obsidian/

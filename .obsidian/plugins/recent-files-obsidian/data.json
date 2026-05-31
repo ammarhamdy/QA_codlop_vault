@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "User-Story-Template",
+      "path": "Templates/User-Story-Template.md"
+    },
+    {
       "basename": "_Test-run",
       "path": "Projects/Project-Azer/Test-Runs/_Test-run.md"
     },
@@ -19,10 +23,6 @@
     {
       "basename": "_Bug",
       "path": "Projects/Project-Azer/Bugs/_Bug.md"
-    },
-    {
-      "basename": "User-Story-Template",
-      "path": "Templates/User-Story-Template.md"
     },
     {
       "basename": "Test-Run-Template",
