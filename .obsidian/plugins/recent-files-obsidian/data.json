@@ -1,30 +1,6 @@
 {
   "recentFiles": [
     {
-      "basename": "User-Story-Template",
-      "path": "Templates/User-Story-Template.md"
-    },
-    {
-      "basename": "_Test-run",
-      "path": "Projects/Project-Azer/Test-Runs/_Test-run.md"
-    },
-    {
-      "basename": "_Suite",
-      "path": "Projects/Project-Azer/Test-Cases/Authentication/_Suite.md"
-    },
-    {
-      "basename": "_User-Story",
-      "path": "Projects/Project-Azer/Requirements/User-Stories/_User-Story.md"
-    },
-    {
-      "basename": "_Asset",
-      "path": "Projects/Project-Azer/Project-Assets/_Asset.md"
-    },
-    {
-      "basename": "_Bug",
-      "path": "Projects/Project-Azer/Bugs/_Bug.md"
-    },
-    {
       "basename": "Test-Run-Template",
       "path": "Templates/Test-Run-Template.md"
     },
@@ -39,6 +15,70 @@
     {
       "basename": "Bug-Template",
       "path": "Templates/Bug-Template.md"
+    },
+    {
+      "basename": "TC-001-SignUp-Email-Phone",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-001-SignUp-Email-Phone.md"
+    },
+    {
+      "basename": "TC-009-OTP-Verification-Failure",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-009-OTP-Verification-Failure.md"
+    },
+    {
+      "basename": "TC-008-Logout-Session-Management",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-008-Logout-Session-Management.md"
+    },
+    {
+      "basename": "TC-007-Failed-Login-Attempts",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-007-Failed-Login-Attempts.md"
+    },
+    {
+      "basename": "TC-006-Data-Validation-Email-Phone",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-006-Data-Validation-Email-Phone.md"
+    },
+    {
+      "basename": "TC-005-Password-Confirmation-Validation",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-005-Password-Confirmation-Validation.md"
+    },
+    {
+      "basename": "TC-004-Login-Google-Account",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-004-Login-Google-Account.md"
+    },
+    {
+      "basename": "TC-003-Login-Phone-OTP",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-003-Login-Phone-OTP.md"
+    },
+    {
+      "basename": "TC-002-Login-Email-Password",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/TC-002-Login-Email-Password.md"
+    },
+    {
+      "basename": "_Suite",
+      "path": "Projects/Project-Azer/Test-Cases/Authentication/_Suite.md"
+    },
+    {
+      "basename": "US-001-Authentication-System",
+      "path": "Projects/Project-Azer/Requirements/User-Stories/US-001-Authentication-System.md"
+    },
+    {
+      "basename": "git_cheat_sheet",
+      "path": "Shared/git_cheat_sheet.md"
+    },
+    {
+      "basename": "User-Story-Template",
+      "path": "Templates/User-Story-Template.md"
+    },
+    {
+      "basename": "_Test-run",
+      "path": "Projects/Project-Azer/Test-Runs/_Test-run.md"
+    },
+    {
+      "basename": "_Asset",
+      "path": "Projects/Project-Azer/Project-Assets/_Asset.md"
+    },
+    {
+      "basename": "_Bug",
+      "path": "Projects/Project-Azer/Bugs/_Bug.md"
     },
     {
       "basename": "Software testing life cycle",
