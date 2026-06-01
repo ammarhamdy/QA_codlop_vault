@@ -33,7 +33,7 @@ To make assets instantly recognizable via fuzzy search (`Ctrl/Cmd + O`), use the
 
 ---
 
-## 📝 3. Detailed File Naming Breakdowns
+## 3. Detailed File Naming Breakdowns
 
 ### A. User Stories (`01-Requirements/User-Stories/`)
 * **Pattern:** `US-[PROJECT]-[ID]-[Short-Description].md`
@@ -58,7 +58,7 @@ Keep names descriptive but concise. Detailed variations belong inside the file p
 
 ---
 
-## 🏷️ 4. Metadata Tags & Properties Standard
+## 4. Metadata Tags & Properties Standard
 
 When applying tags inside Obsidian properties, use lowercase only. This keeps Dataview queries predictable.
 
@@ -75,7 +75,7 @@ When applying tags inside Obsidian properties, use lowercase only. This keeps Da
 
 ---
 
-## 🛠️ Enforcement Check during Code & Peer Reviews
+## Enforcement Check during Code & Peer Reviews
 
 When reviewing a colleague's pull request on the Main branch, verify:
 1. Is the file placed in the correct directory isolation boundary?
