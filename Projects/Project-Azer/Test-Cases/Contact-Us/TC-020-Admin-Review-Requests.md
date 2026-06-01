@@ -13,10 +13,10 @@ tags:
 ---
 
 # Test Data
-| Field           | Value                  |
-| --------------- | ---------------------- |
-| Administrator Credentials | admin@example.com / adminpass |
-| Submitted Request | (Refer to TC-014 or TC-015 for example data) |
+| Field                     | Value                                        |
+| ------------------------- | -------------------------------------------- |
+| Administrator Credentials | admin@example.com / adminpass                |
+| Submitted Request         | (Refer to TC-014 or TC-015 for example data) |
 
 # Preconditions
 - At least one client request has been successfully submitted (e.g., by running TC-014).
