@@ -51,3 +51,259 @@ tags:
     - **Given** I have requested an OTP for phone login
     - **When** I enter an expired or incorrect OTP
     - **Then** the system should display an error message and allow me to retry or request a new OTP.
+
+# 1. Sign Up with Email & Phone
+```plantuml
+@startuml
+title Sign Up with Email & Phone
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+database DB as "Database"
+
+Client -> UI : Enter Email, Phone,\nPassword, Confirm Password
+UI -> UI : Validate Form
+
+alt Valid Data
+    UI -> Auth : Register User
+    Auth -> DB : Check Existing User
+    DB --> Auth : Not Found
+
+    Auth -> DB : Create Account
+    DB --> Auth : Account Created
+
+    Auth --> UI : Registration Success
+    UI --> Client : Redirect to Login/Verification
+else Invalid Data
+    UI --> Client : Show Validation Errors
+end
+
+@enduml
+```
+
+# 2. Login with Email & Password
+```plantuml
+@startuml
+title Login with Email & Password
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+database DB as "Database"
+
+Client -> UI : Enter Email & Password
+UI -> Auth : Authenticate
+
+Auth -> DB : Find User by Email
+DB --> Auth : User Record
+
+alt Valid Password
+    Auth --> UI : Generate Session/JWT
+    UI --> Client : Login Success
+else Invalid Credentials
+    Auth --> UI : Authentication Failed
+    UI --> Client : "Invalid Credentials"
+end
+
+@enduml
+```
+
+# 3. Login with Phone & OTP
+```plantuml
+@startuml
+title Login with Phone & OTP
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+entity OTP as "OTP Service"
+database DB as "Database"
+
+Client -> UI : Enter Phone Number
+UI -> Auth : Request OTP
+
+Auth -> DB : Verify Phone Exists
+DB --> Auth : User Found
+
+Auth -> OTP : Generate OTP
+OTP --> Client : Send OTP SMS
+
+Client -> UI : Enter OTP
+UI -> Auth : Verify OTP
+
+Auth -> OTP : Validate OTP
+
+alt OTP Valid
+    Auth --> UI : Create Session
+    UI --> Client : Login Success
+else OTP Invalid
+    Auth --> UI : OTP Error
+    UI --> Client : Retry / Request New OTP
+end
+
+@enduml
+```
+
+# 4. Login with Google OAuth
+```plantuml
+@startuml
+title Login with Google OAuth
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+participant Google as "Google OAuth"
+database DB as "Database"
+
+Client -> UI : Click "Sign in with Google"
+UI -> Google : OAuth Request
+
+Google --> Client : Google Login Screen
+Client -> Google : Approve Access
+
+Google --> UI : OAuth Token
+UI -> Auth : Validate Token
+
+Auth -> Google : Verify Token
+Google --> Auth : Token Valid
+
+Auth -> DB : Find/Create User
+DB --> Auth : User Record
+
+Auth --> UI : Create Session
+UI --> Client : Login Success
+
+@enduml
+```
+
+
+# 5. Password Confirmation Validation
+```plantuml
+@startuml
+title Password Confirmation Validation
+
+actor Client
+boundary UI as "Web App"
+
+Client -> UI : Enter Password
+Client -> UI : Enter Confirm Password
+
+alt Passwords Match
+    UI --> Client : Allow Submission
+else Passwords Differ
+    UI --> Client : Show Validation Error
+end
+
+@enduml
+```
+
+# 6. Email & Phone Validation
+```plantuml
+@startuml
+title Email & Phone Validation
+
+actor Client
+boundary UI as "Web App"
+
+Client -> UI : Enter Email & Phone
+
+UI -> UI : Validate Email Format
+UI -> UI : Validate Phone Format
+
+alt Valid Data
+    UI --> Client : Accept Input
+else Invalid Data
+    UI --> Client : Display Validation Errors
+end
+
+@enduml
+```
+
+# 7. Failed Login Attempt
+```plantuml
+@startuml
+title Failed Login Attempt
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+database DB as "Database"
+
+Client -> UI : Submit Credentials
+UI -> Auth : Authenticate
+
+Auth -> DB : Lookup User
+DB --> Auth : User / Not Found
+
+alt Invalid Credentials
+    Auth --> UI : Authentication Failed
+    UI --> Client : "Invalid Credentials"
+else Valid Credentials
+    Auth --> UI : Login Success
+end
+
+@enduml
+```
+
+# 8. Logout & Session Management
+```plantuml
+@startuml
+title Logout & Session Management
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+
+Client -> UI : Click Logout
+UI -> Auth : Logout Request
+
+Auth -> Auth : Invalidate Session/JWT
+Auth --> UI : Logout Success
+
+UI --> Client : Redirect to Login Page
+
+Client -> UI : Access Protected Resource
+
+alt Session Expired
+    UI --> Client : Redirect to Login
+else Session Active
+    UI --> Client : Allow Access
+end
+
+@enduml
+```
+
+# 9. OTP Verification Failure
+```plantuml
+@startuml
+title OTP Verification Failure
+
+actor Client
+boundary UI as "Web App"
+control Auth as "Auth Service"
+entity OTP as "OTP Service"
+
+Client -> UI : Submit OTP
+UI -> Auth : Verify OTP
+
+Auth -> OTP : Validate OTP
+
+alt OTP Expired
+    OTP --> Auth : Expired
+    Auth --> UI : OTP Expired Error
+    UI --> Client : Request New OTP
+
+else OTP Incorrect
+    OTP --> Auth : Invalid OTP
+    Auth --> UI : Invalid OTP Error
+    UI --> Client : Retry OTP
+
+else OTP Valid
+    OTP --> Auth : Valid
+    Auth --> UI : Login Success
+end
+
+@enduml
+```
+
