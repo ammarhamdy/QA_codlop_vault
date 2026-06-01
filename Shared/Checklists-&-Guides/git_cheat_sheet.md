@@ -1,3 +1,7 @@
+
+> [!WARNING] Team Git Rule
+> Always run `git status` before pushing to ensure you aren't tracking local workspace clutter. Our master configuration rules are safely defined in your local `[[.gitignore]]` file!
+
 # Git Cheat Sheet
 
 A comprehensive guide to common Git commands and workflows.
