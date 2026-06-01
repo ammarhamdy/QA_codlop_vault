@@ -16,7 +16,7 @@ tags:
 | Field         | Invalid Value |
 | ------------- | ------------- |
 | Email Address | invalid-email |
-| Email Address | test@.com    |
+| Email Address | test@.com     |
 | Email Address | @example.com  |
 
 # Preconditions

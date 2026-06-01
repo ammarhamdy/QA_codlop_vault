@@ -14,10 +14,10 @@ tags:
 ---
 
 # Test Data
-| Field                   | Value                   |
-| ----------------------- | ----------------------- |
+| Field                     | Value                         |
+| ------------------------- | ----------------------------- |
 | Administrator Credentials | admin@example.com / adminpass |
-| Client Email Address    | client@example.com      |
+| Client Email Address      | client@example.com            |
 
 # Preconditions
 - An administrator is logged into the admin panel and is viewing a client request.
