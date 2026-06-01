@@ -1,4 +1,3 @@
-```sh
 #!/usr/bin/env bash
 
 GREEN="\e[32m"
@@ -179,6 +178,3 @@ done < "$INPUT_FILE"
 
 # ---- close JSON ----
 [[ "$FORMAT" == "json" ]] && echo "]"
-
-
-```
