@@ -2,6 +2,10 @@
 > [!WARNING] Team Git Rule
 > Always run `git status` before pushing to ensure you aren't tracking local workspace clutter. Our master configuration rules are safely defined in your local `[[.gitignore]]` file!
 
+
+> [!WARNING] Experiencing a Merge Conflict? > Do not force push! Refer directly to the [[Git-Conflict-Resolution-Guide]] inside this directory to safely resolve formatting conflicts without losing team test progress.
+
+
 # Git Cheat Sheet
 
 A comprehensive guide to common Git commands and workflows.
@@ -84,5 +88,114 @@ git stash apply             # Apply the latest stash without removing it
 ```
 
 
-> [!WARNING] Experiencing a Merge Conflict? > Do not force push! Refer directly to the [[Git-Conflict-Resolution-Guide]] inside this directory to safely resolve formatting conflicts without losing team test progress.
+## Updating from Remote
+Download remote updates without modifying your local branch.
+```sh
+git fetch origin   # Download latest changes from remote
+git fetch --all    # Download updates from all remotes
+```
+
+## Inspection & Comparison
+Examine differences between local and remote branches before merging.
+```sh
+git diff HEAD origin/main    # Compare current commit with remote main
+git diff main origin/main    # Compare local main with remote main
+git log main..origin/main    # Show commits on remote not in local
+git log origin/main..main    # Show commits on local not in remote
+```
+
+## Visual Comparison
+Open a visual diff tool instead of terminal output.
+```sh
+git difftool main origin/main     # Visual comparison between branches
+git difftool HEAD origin/main     # Visual comparison with current commit
+```
+
+## Updating Local Branch
+Bring remote changes into your current branch.
+```sh
+git merge origin/main             # Merge remote main into current branch
+git rebase origin/main            # Reapply your commits on top of remote main
+git pull                          # Fetch + merge
+git pull --rebase                 # Fetch + rebase
+```
+
+## Conflict Resolution
+Handle merge or rebase conflicts.
+```sh
+git status                        # Show conflicted files
+git add <file>                    # Mark conflict as resolved
+git commit                        # Complete merge after resolving conflicts
+git rebase --continue             # Continue rebase after resolving conflicts
+git mergetool                     # Open configured merge tool
+```
+
+## Canceling Operations
+Abort an in-progress merge or rebase.
+```sh
+git merge --abort                 # Cancel current merge
+git rebase --abort                # Cancel current rebase
+```
+
+## Discard Local Changes
+Throw away local modifications and restore a clean state.
+```sh
+git restore <file>                # Discard changes in a file
+git restore .                     # Discard all unstaged changes
+git reset --hard HEAD             # Discard all local changes
+```
+
+## Sync Local Branch with Remote
+Make your branch exactly match the remote branch.
+```sh
+git fetch origin
+git reset --hard origin/main      # Reset branch to remote state
+```
+
+## Remove Untracked Files
+Delete files and folders Git is not tracking.
+```sh
+git clean -fd                     # Remove untracked files and directories
+git clean -fdn                    # Preview what would be removed
+```
+
+## Full Clean Reset
+Completely synchronize your repository with the remote.
+```sh
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+```
+
+## Temporary Backup
+Save your work before risky operations.
+```sh
+git stash                         # Save uncommitted changes
+git stash list                    # Show stashes
+git stash pop                     # Restore latest stash
+```
+
+## Safety Backup Branch
+Create a backup before resetting or rebasing.
+```sh
+git branch backup-before-reset    # Create backup branch
+git switch backup-before-reset    # Switch to backup branch
+```
+
+## Common Safe Workflow
+Inspect remote changes before updating.
+```sh
+git fetch origin
+git diff main origin/main
+git log main..origin/main
+git merge origin/main
+```
+
+## Common "Give Me Latest Code" Workflow
+Ignore local work and get the latest repository state.
+```sh
+git fetch origin
+git reset --hard origin/main
+git clean -fd
+```
 
