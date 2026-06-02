@@ -18,7 +18,7 @@ tags:
 **I want to** review and manage submitted interest requests  
 **So that** I can track potential leads and respond to interested clients efficiently.
 ## Acceptance Criteria
--  Scenario 1: Successful Interest Submission
+- [ ]  Scenario 1: Successful Interest Submission
     **Given** I am a client on the 'Register Your Interest' page  
     **When** I fill in all required fields with valid data (Name, Email Address, Phone Number, Message Content, and Request Type)  
     **Then** the system should successfully validate and store my request, display a confirmation message (e.g., "Your interest has been submitted successfully"), and make it available for administrative review.
