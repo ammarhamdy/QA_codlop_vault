@@ -23,7 +23,7 @@ tags:
 # Preconditions
  User is on 'Partnership Request ' page.
 # Steps
-1. Navigate to the 'Register Your Interest' page.
+1. Navigate to the 'Partnership Request' page.
 2. Fill in valid data for other fields.
 3. Enter  one char only in Entity, Responsible name & job title field.
 4. Click the "Send" button.

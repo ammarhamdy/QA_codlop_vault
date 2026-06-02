@@ -1,13 +1,13 @@
 ---
-tc_id: TC-013
-title: Verify viewing Partnership request details
+tc_id: TC-014
+title: Verify viewing Service request details
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -19,11 +19,11 @@ tags:
 |       |       |
 
 # Preconditions
--At least one “Partnership Request” has been submitted by clients
+-At least one “Service  Request” has been submitted by clients
 -An administrator account is available and logged into the admin panel.
 # Steps
 1. Log in to the administrator panel with valid credentials.
-2. Navigate to the 'Partnership Requests' .
+2. Navigate to the 'Service Requests' .
 3. Click on view icon for a request
 # Expected Result
 The request details page should open and display all request information correctly.
