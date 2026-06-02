@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement:
 tags:
   - test-case
 ---
@@ -23,7 +23,7 @@ tags:
 - An administrator is logged into the admin panel and is viewing a client request.
 - A client request with a valid email address or phone is available
 # Steps
-1-Log in to the administrator panel and navigate to a specific partnership request.
+1-Log in to the administrator panel and navigate to a specific Service request.
 2- Open the request details.
 3-Click the displayed email address & phone number
 # Expected Result

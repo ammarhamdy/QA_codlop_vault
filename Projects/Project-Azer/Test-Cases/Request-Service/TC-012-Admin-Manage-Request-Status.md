@@ -1,5 +1,5 @@
 ---
-tc_id: TC-014
+tc_id: TC-012
 title: Verify that the admin can manage request status
 priority:
   - High
@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -22,7 +22,7 @@ tags:
 # Preconditions
 An administrator is logged into the admin panel and is viewing partnership request
 # Steps
-1. Log in to the administrator panel and navigate to partnership request.
+1. Log in to the administrator panel and navigate to Service request.
 2. Verify the initial status of the request (e.g., 'New').
 3. Locate the option to change the request status.
 4. Verify that status can be changed .

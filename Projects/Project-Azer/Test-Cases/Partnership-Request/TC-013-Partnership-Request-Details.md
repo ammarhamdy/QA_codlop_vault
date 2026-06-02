@@ -19,7 +19,7 @@ tags:
 |       |       |
 
 # Preconditions
--At least one “Interest Request” has been submitted by clients
+-At least one “Partnership Request” has been submitted by clients
 -An administrator account is available and logged into the admin panel.
 # Steps
 1. Log in to the administrator panel with valid credentials.

@@ -1,5 +1,5 @@
 ---
-tc_id: TC-010
+tc_id: TC-009
 title: Verify prevention of duplicate form submission
 priority:
   - High
@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -19,9 +19,9 @@ tags:
 |       |       |
 
 # Preconditions
-User is on 'Partnership Request' page.
+User is on 'Service Request' page.
 # Steps
-1. Navigate to Partnership Request page.
+1. Navigate to Service Request page.
 2. Fill all fields with valid data.
 3. Click the **Submit** button multiple times quickly (double click / rapid clicks).
 4. Observe system behavior.

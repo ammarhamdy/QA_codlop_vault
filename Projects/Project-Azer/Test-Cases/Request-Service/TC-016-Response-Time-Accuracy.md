@@ -1,15 +1,12 @@
 ---
 tc_id: TC-016
-title: Verify accuracy of response time information above partnership form
-priority: Medium
+title: Verify accuracy of response time information above Service Request form
+priority:
+  - Medium
 status:
   - Draft
-  - Ready
-type:
-  - Functional
-  - Regression
-  - API
-linked_requirement: US-004
+type: Functional
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -21,7 +18,7 @@ tags:
 |       |       |
 
 # Preconditions
-A partnership request has been submitted successfully.
+Service request has been submitted successfully.
 # Steps
 1. Submit a new request.
 2. Record the submission time.

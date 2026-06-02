@@ -1,5 +1,5 @@
 ---
-tc_id: TC-005
+tc_id: TC-004
 title: Verify phone number validation (numeric only, country code & length limits)
 priority:
   - High
@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -21,10 +21,10 @@ tags:
 | Phone Number | 51234567891 |
 
 # Preconditions
-- User is on the website 'Partnership Request' page.
+- User is on the website 'Service Request' page.
 # Steps
-1. Navigate to the 'Partnership Request' page.
-2. Fill in valid data for Entity &Responsible Name, Email Address, Entity&  partnership Type.
+1. Navigate to the 'Service Request' page.
+2. Fill in valid data for Name, Email Address, ....
 3. Enter an invalid phone number format (e.g., 012297431) according to code in the Phone Number field.
 4. Click the "send " button.
 5. Repeat with other invalid phone number formats (e.g., `abcdefghijk`, `+1 (234)`).

@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement: US-004
+linked_requirement: US-005
 tags:
   - test-case
 ---
@@ -20,10 +20,10 @@ tags:
 | Email Address | @gmail.com |
 
 # Preconditions
-User is on  Partnership Request page.
+User is on  Service Request page.
 # Steps
-1. Navigate to the 'Partnership Request' page.
-2. Fill in valid data for Entity Name, Phone Number, Responsible Name, ....... 
+1. Navigate to the 'Service Request' page.
+2. Fill in valid data for  Name, Phone Number, Email, ....... 
 3. Enter an invalid email format (e.g., `invalid-email`) in the Email Address field.
 4. Click the "Send" button.
 5. Repeat with other invalid email formats (e.g., fatma@.com`, `@gmail.com`).
@@ -31,7 +31,7 @@ User is on  Partnership Request page.
 # Expected Result
 - The system should display a clear email format validation error message (e.g., "Please enter a valid email address").
 - The form submission should be prevented.
-- The user should remain on the 'partnership Request' page.
+- The user should remain on the 'Service Request' page.
 # Notes
 
 # Attachments
