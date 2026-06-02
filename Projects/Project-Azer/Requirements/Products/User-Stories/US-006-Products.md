@@ -12,103 +12,171 @@ tags:
 ## Story Description
 
 **As a** Client  
-**I want to** browse products by category and filter products using the available product sections (Books, Activities, Courses, Services, and Procedural Guides)  
-**So that** I can easily find the products I am interested in and add them to my favorites or shopping cart.
+**I want to** browse products, view details, add products to favorites and cart, and submit product requests  
+**So that** I can discover products and request the ones I am interested in.
 
 **As an** Administrator  
-**I want to** manage product categories and product listings  
-**So that** clients can browse products efficiently and view accurate product counts within each category.
+**I want to** manage products and product requests  
+**So that** I can maintain product availability and process customer requests efficiently.
 
 ## Acceptance Criteria
 
--  **Scenario 1: View All Products by Default**
+-  **Scenario 1: Browse All Products**
     
     - **Given** I am on the Products page
         
     - **When** the page loads
         
-    - **Then** the "All" category should be selected by default
+    - **Then** the "All" category should be selected by default and all visible products should be displayed.
         
-    - **And** all available products should be displayed
-        
-    - **And** the total number of products should be shown next to the "All" category.
-        
--  **Scenario 2: Display Product Counts for Categories**
+-  **Scenario 2: Filter Products by Category**
     
     - **Given** I am on the Products page
         
-    - **When** product categories are displayed
+    - **When** I select a category (Books, Activities, Courses, Services, etc.)
         
-    - **Then** each category (Books, Activities, Courses, Services, Procedural Guides) should display the number of products available within that category.
+    - **Then** only products belonging to the selected category should be displayed.
         
--  **Scenario 3: Filter Products by Books Category**
+-  **Scenario 3: View Product Counts**
     
     - **Given** I am on the Products page
         
-    - **When** I select the "Books" category
+    - **When** categories are displayed
         
-    - **Then** only products belonging to the Books category should be displayed.
+    - **Then** each category should display its corresponding product count and the "All" category should display the total number of products.
         
--  **Scenario 4: Filter Products by Activities Category**
+-  **Scenario 4: View All Products in a Category**
     
-    - **Given** I am on the Products page
+    - **Given** a category contains products
         
-    - **When** I select the "Activities" category
+    - **When** I click "View All"
         
-    - **Then** only products belonging to the Activities category should be displayed.
+    - **Then** I should be redirected to a page displaying all products within that category.
         
--  **Scenario 5: Filter Products by Courses Category**
+-  **Scenario 5: View Product Details**
     
-    - **Given** I am on the Products page
+    - **Given** products are displayed
         
-    - **When** I select the "Courses" category
+    - **When** I select a product
         
-    - **Then** only products belonging to the Courses category should be displayed.
+    - **Then** the product details page should open and display the complete product information.
         
--  **Scenario 6: Filter Products by Services Category**
+-  **Scenario 6: Add Product to Favorites**
     
-    - **Given** I am on the Products page
+    - **Given** I am viewing a product
         
-    - **When** I select the "Services" category
+    - **When** I click the favorite icon
         
-    - **Then** only products belonging to the Services category should be displayed.
+    - **Then** the product should be added to my favorites list.
         
--  **Scenario 7: Filter Products by Procedural Guides Category**
+-  **Scenario 7: Remove Product from Favorites**
     
-    - **Given** I am on the Products page
+    - **Given** a product exists in my favorites list
         
-    - **When** I select the "Procedural Guides" category
+    - **When** I remove it from favorites
         
-    - **Then** only products belonging to the Procedural Guides category should be displayed.
+    - **Then** the product should no longer appear in my favorites list.
         
--  **Scenario 8: Add Product to Favorites**
+-  **Scenario 8: View Favorite Products**
     
-    - **Given** I am viewing a product on the Products page
+    - **Given** products have been added to favorites
         
-    - **When** I click the "Add to Favorites" icon
+    - **When** I open my favorites list
         
-    - **Then** the product should be added to my favorites list successfully.
+    - **Then** all favorite products should be displayed.
         
--  **Scenario 9: Add Product to Shopping Cart**
+-  **Scenario 9: Add Product to Cart**
     
-    - **Given** I am viewing a product on the Products page
+    - **Given** I am viewing a product
         
-    - **When** I click the "Add to Cart" button
+    - **When** I click "Add to Cart"
         
-    - **Then** the product should be added to my shopping cart successfully.
+    - **Then** the product should be added to my cart successfully.
         
--  **Scenario 10: Empty Category Handling**
+-  **Scenario 10: Remove Product from Cart**
     
-    - **Given** a product category contains no products
+    - **Given** a product exists in my cart
         
-    - **When** I select that category
+    - **When** I remove the product
         
-    - **Then** the system should display a "No products available" message.
+    - **Then** the product should be removed from the cart successfully.
         
--  **Scenario 11: Administrator Manages Products**
+-  **Scenario 11: Submit Cart Request**
     
-    - **Given** I am an administrator logged into the admin panel
+    - **Given** products exist in my cart
         
-    - **When** I manage products and categories
+    - **When** I submit the cart request
         
-    - **Then** the product listings and category counts should be updated accordingly on the Products page.
+    - **Then** the request should be created and sent to the administrator successfully.
+        
+-  **Scenario 12: Add Product**
+    
+    - **Given** I am an administrator
+        
+    - **When** I enter valid product information and save
+        
+    - **Then** a new product should be created successfully.
+        
+-  **Scenario 13: Edit Product**
+    
+    - **Given** a product already exists
+        
+    - **When** I modify the product information and save
+        
+    - **Then** the product details should be updated successfully.
+        
+-  **Scenario 14: Delete Product**
+    
+    - **Given** a product already exists
+        
+    - **When** I delete the product
+        
+    - **Then** the product should no longer be available to clients.
+        
+-  **Scenario 15: Show/Hide Product**
+    
+    - **Given** a product already exists
+        
+    - **When** I change its visibility status
+        
+    - **Then** the product should be displayed or hidden accordingly.
+        
+-  **Scenario 16: View Product Requests**
+    
+    - **Given** clients have submitted requests
+        
+    - **When** I access the requests page
+        
+    - **Then** all product requests should be displayed.
+        
+-  **Scenario 17: View Product Request Details**
+    
+    - **Given** product requests exist
+        
+    - **When** I select a request
+        
+    - **Then** all request details should be displayed.
+        
+-  **Scenario 18: Search Product Requests**
+    
+    - **Given** product requests exist
+        
+    - **When** I search using a valid keyword
+        
+    - **Then** matching requests should be displayed.
+        
+-  **Scenario 19: Filter Product Requests**
+    
+    - **Given** product requests exist
+        
+    - **When** I apply a filter
+        
+    - **Then** only matching requests should be displayed.
+        
+-  **Scenario 20: Update Product Request Status**
+    
+    - **Given** a product request exists
+        
+    - **When** I change its status
+        
+    - **Then** the updated status should be saved and displayed successfully.
