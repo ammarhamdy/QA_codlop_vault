@@ -1,6 +1,6 @@
 ---
 tc_id: TC-011
-title:
+title: Verify Search Functionality
 priority:
   - High
 status:
