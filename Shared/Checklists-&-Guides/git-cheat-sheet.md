@@ -82,3 +82,7 @@ git stash list              # List all stashes
 git stash pop               # Apply the latest stash and remove it from list
 git stash apply             # Apply the latest stash without removing it
 ```
+
+
+> [!WARNING] Experiencing a Merge Conflict? > Do not force push! Refer directly to the [[Git-Conflict-Resolution-Guide]] inside this directory to safely resolve formatting conflicts without losing team test progress.
+
