@@ -1,4 +1,14 @@
 
+# Git Advanced Scenarios & Conflict Resolution Guide
+
+This guide details exactly how to handle common collaborative Git scenarios and resolve conflicts within our shared Obsidian Test Case Management System (TCMS).
+
+> [!IMPORTANT] Obsidian Git Golden Rules
+> 1. **Always Pull Before You Work:** Run `git pull` at the start of your shift to fetch your colleague's updates.
+> 2. **Commit Atomically:** Commit logically grouped files (e.g., an entire Test Suite or a completed group of User Stories) rather than 50 unrelated changes.
+> 3. **Close Notes While Merging:** If resolving a conflict in an active note, close the pane in Obsidian or reload it after fixing to prevent Obsidian's autosave from overwriting your fix.
+
+
 > [!WARNING] Before you do anything — don't force push
 > Force pushing rewrites shared history and can permanently delete your teammates' commits. Use the workflows below instead — they're safe and reversible.
 
