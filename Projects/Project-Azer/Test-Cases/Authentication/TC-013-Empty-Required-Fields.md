@@ -10,6 +10,7 @@ tags:
   - authentication
   - validation
   - edge-case
+run_result: pass
 ---
 
 # Test Data

@@ -28,8 +28,9 @@ views:
       - status
       - run_result
     columnSize:
-      note.priority: 147
+      note.priority: 118
       note.run_result: 160
+
 ```
 
 

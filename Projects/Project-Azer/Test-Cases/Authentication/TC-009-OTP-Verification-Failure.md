@@ -10,6 +10,7 @@ tags:
   - authentication
   - otp
   - negative
+run_result: fail
 ---
 
 # Test Data

@@ -10,6 +10,7 @@ tags:
   - authentication
   - login
   - otp
+run_result: pass
 ---
 
 # Test Data

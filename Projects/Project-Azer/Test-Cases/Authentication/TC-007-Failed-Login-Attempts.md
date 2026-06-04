@@ -10,15 +10,16 @@ tags:
   - authentication
   - security
   - negative
+run_result: fail
 ---
 
 # Test Data
-| Field   | Value                  |
-| ------- | ---------------------- |
-| Email   | registered.user@example.com |
-| Password | IncorrectP@ss1         |
-| Phone   | +19876543210           |
-| OTP     | 000000                 |
+| Field    | Value                       |
+| -------- | --------------------------- |
+| Email    | registered.user@example.com |
+| Password | IncorrectP@ss1              |
+| Phone    | +19876543210                |
+| OTP      | 000000                      |
 
 # Preconditions
 - User is on the website's login page.

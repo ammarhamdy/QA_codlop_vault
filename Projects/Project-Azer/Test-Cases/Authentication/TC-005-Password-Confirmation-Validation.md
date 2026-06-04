@@ -9,6 +9,7 @@ tags:
   - test-case
   - authentication
   - validation
+run_result: pass
 ---
 
 # Test Data

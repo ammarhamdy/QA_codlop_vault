@@ -10,6 +10,7 @@ tags:
   - authentication
   - oauth
   - google
+run_result: pass
 ---
 
 # Test Data

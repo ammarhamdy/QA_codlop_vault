@@ -10,6 +10,7 @@ tags:
   - authentication
   - security
   - session
+run_result: pass
 ---
 
 # Test Data

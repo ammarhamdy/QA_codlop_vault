@@ -9,6 +9,7 @@ tags:
   - test-case
   - authentication
   - login
+run_result: pass
 ---
 
 # Test Data

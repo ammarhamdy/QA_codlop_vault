@@ -9,7 +9,7 @@ tags:
   - test-case
   - authentication
   - signup
-run_result:
+run_result: pass
 ---
 
 # Test Data

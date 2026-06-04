@@ -9,13 +9,14 @@ tags:
   - test-case
   - authentication
   - validation
+run_result: pass
 ---
 
 # Test Data
-| Field         | Invalid Value       |
-| ------------- | ------------------- |
-| Email Address | invalid-email       |
-| Phone Number  | 123                 |
+| Field         | Invalid Value |
+| ------------- | ------------- |
+| Email Address | invalid-email |
+| Phone Number  | 123           |
 
 # Preconditions
 - User is on the website's registration or login page.

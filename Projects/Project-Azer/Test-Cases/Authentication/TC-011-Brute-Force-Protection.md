@@ -10,6 +10,7 @@ tags:
   - authentication
   - security
   - brute-force
+run_result: fail
 ---
 
 # Test Data
