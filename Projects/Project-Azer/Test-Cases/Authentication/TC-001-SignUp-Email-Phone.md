@@ -9,6 +9,7 @@ tags:
   - test-case
   - authentication
   - signup
+run_result:
 ---
 
 # Test Data

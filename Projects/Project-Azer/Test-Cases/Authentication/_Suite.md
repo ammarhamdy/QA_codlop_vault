@@ -4,6 +4,7 @@ priority:
   - High
 tags:
   - test-suite
+run_result:
 ---
 
 ## 🎯 Scope & Requirements

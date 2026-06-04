@@ -11,6 +11,7 @@ tags:
 ---
 
 # Scope
+[Which feature / sprint / release this run covers.]
 
 # Executed Cases
 

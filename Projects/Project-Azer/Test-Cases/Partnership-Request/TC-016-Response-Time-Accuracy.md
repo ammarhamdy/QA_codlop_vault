@@ -4,7 +4,6 @@ title: Verify accuracy of response time information above partnership form
 priority: Medium
 status:
   - Draft
-  - Ready
 type:
   - Functional
   - Regression
