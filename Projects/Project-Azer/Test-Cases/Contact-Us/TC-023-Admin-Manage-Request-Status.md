@@ -2,7 +2,7 @@
 tc_id: TC-023
 title: Verify Administrator Can Manage Request Status
 priority: High
-status: Draft
+status: Ready
 type: Functional
 linked_requirement: US-002
 tags:
@@ -10,14 +10,15 @@ tags:
   - admin
   - contact-us
   - status-management
+run_result: Fail
 ---
 
 # Test Data
-| Field                   | Value                   |
-| ----------------------- | ----------------------- |
-| Administrator Credentials | admin@example.com / adminpass |
-| Initial Request Status  | New                     |
-| Target Statuses         | In Progress, Resolved, Archived |
+| Field                     | Value                           |
+| ------------------------- | ------------------------------- |
+| Administrator Credentials | admin@example.com / adminpass   |
+| Initial Request Status    | New                             |
+| Target Statuses           | In Progress, Resolved, Archived |
 
 # Preconditions
 - An administrator is logged into the admin panel and is viewing a client request (e.g., one submitted via TC-014).

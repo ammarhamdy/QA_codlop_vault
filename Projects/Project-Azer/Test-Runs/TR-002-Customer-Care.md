@@ -27,15 +27,19 @@ views:
         - file.inFolder("Projects/Project-Azer/Test-Cases/Partnership-Request")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Register Your Interest")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Request-Service")
-
     order:
       - file.name
       - priority
       - status
       - run_result
+    sort:
+      - property: run_result
+        direction: DESC
     columnSize:
+      file.name: 318
       note.priority: 147
       note.run_result: 160
+
 ```
 
 

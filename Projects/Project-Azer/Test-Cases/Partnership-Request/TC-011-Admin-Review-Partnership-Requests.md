@@ -4,12 +4,13 @@ title: Verify Admin View All Partnership Requests
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

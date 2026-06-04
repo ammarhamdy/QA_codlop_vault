@@ -2,7 +2,7 @@
 tc_id: TC-022
 title: Verify Administrator Can Contact Client via Phone
 priority: High
-status: Draft
+status: Ready
 type: Functional
 linked_requirement: US-002
 tags:
@@ -11,6 +11,7 @@ tags:
   - contact-us
   - communication
   - phone
+run_result: Fail
 ---
 
 # Test Data

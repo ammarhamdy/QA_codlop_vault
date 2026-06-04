@@ -4,12 +4,13 @@ title: Verify Entity Name, Responsible Person Name, and Job Title Length Validat
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-004
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

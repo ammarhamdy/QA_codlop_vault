@@ -2,7 +2,7 @@
 tc_id: TC-020
 title: Verify Administrator Can Review Submitted Requests
 priority: High
-status: Draft
+status: Ready
 type: Functional
 linked_requirement: US-002
 tags:
@@ -10,6 +10,7 @@ tags:
   - admin
   - contact-us
   - review
+run_result: Pass
 ---
 
 # Test Data

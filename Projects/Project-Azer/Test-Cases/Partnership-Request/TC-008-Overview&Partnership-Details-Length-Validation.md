@@ -4,12 +4,13 @@ title: Verify length validation for Entity Overview and Partnership Details fiel
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-004
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

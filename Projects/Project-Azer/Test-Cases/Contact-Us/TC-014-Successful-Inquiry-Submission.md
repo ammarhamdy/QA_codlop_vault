@@ -2,7 +2,7 @@
 tc_id: TC-014
 title: Verify Successful Inquiry Submission via Contact Us Form
 priority: High
-status: Draft
+status: Ready
 type: Functional
 linked_requirement: US-002
 tags:
@@ -10,6 +10,7 @@ tags:
   - contact-us
   - submission
   - inquiry
+run_result: Pass
 ---
 
 # Test Data

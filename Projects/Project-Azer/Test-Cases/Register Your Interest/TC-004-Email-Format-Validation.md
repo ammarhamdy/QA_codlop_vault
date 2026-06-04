@@ -4,12 +4,13 @@ title: Verify Email Address Format Validation on Register Your Interst
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

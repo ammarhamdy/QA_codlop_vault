@@ -4,12 +4,13 @@ title: Verify SQL  protection for Request Details
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Security
 linked_requirement: US-005
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

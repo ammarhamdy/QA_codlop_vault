@@ -2,7 +2,7 @@
 tc_id: TC-026
 title: Verify Denial of Service (DoS) Protection on Contact Us Form
 priority: High
-status: Draft
+status: Ready
 type: Security
 linked_requirement: US-002
 tags:
@@ -13,13 +13,13 @@ tags:
 ---
 
 # Test Data
-| Field           | Value                   |
-| --------------- | ----------------------- |
-| Name            | DoS Test                |
-| Email Address   | dos.test@example.com    |
-| Phone Number    | +10000000000            |
-| Message Content | Automated DoS message.  |
-| Request Type    | Inquiry                 |
+| Field               | Value                                |
+| ------------------- | ------------------------------------ |
+| Name                | DoS Test                             |
+| Email Address       | dos.test@example.com                 |
+| Phone Number        | +10000000000                         |
+| Message Content     | Automated DoS message.               |
+| Request Type        | Inquiry                              |
 | Concurrent Requests | High volume of simultaneous requests |
 
 # Preconditions

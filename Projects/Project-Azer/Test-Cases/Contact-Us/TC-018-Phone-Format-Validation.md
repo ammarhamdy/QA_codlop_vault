@@ -2,7 +2,7 @@
 tc_id: TC-018
 title: Verify Phone Number Format Validation on Contact Us Form
 priority: High
-status: Draft
+status: Ready
 type: Functional
 linked_requirement: US-002
 tags:
@@ -10,6 +10,7 @@ tags:
   - contact-us
   - validation
   - negative
+run_result: Pass
 ---
 
 # Test Data
