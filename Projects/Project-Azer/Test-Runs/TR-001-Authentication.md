@@ -28,6 +28,7 @@ views:
       - status
       - run_result
     columnSize:
+      file.name: 379
       note.priority: 118
       note.run_result: 160
 
