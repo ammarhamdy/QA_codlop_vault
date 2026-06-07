@@ -1,0 +1,24 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Admin-Product-Management")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Admin-Product-Requests(CART)")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Client-Favorites")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Client-Product-Browsing")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Client-Cart")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Client-Product-Details")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - priority
+      - status
+      - run_result
+    sort:
+      - property: file.folder
+        direction: DESC

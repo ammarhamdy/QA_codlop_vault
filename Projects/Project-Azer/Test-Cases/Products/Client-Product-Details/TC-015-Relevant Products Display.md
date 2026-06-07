@@ -4,11 +4,12 @@ title: Verify "You May Also Like" section displays relevant products from the sa
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Positive
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

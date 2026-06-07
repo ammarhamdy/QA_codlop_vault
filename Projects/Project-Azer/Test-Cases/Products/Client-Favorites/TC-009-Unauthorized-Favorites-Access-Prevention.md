@@ -4,11 +4,12 @@ title: Verify unauthorized user cannot access favorites
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Security
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

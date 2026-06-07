@@ -4,13 +4,13 @@ title: Verify that the admin can manage request status
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005
 tags:
   - test-case
-run_result:
+run_result: Fail
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify that cart data persists after page refresh
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

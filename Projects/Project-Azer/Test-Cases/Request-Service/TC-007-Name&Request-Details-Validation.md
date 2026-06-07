@@ -4,12 +4,13 @@ title: Verify numeric and special character validation for Name & Request Detail
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

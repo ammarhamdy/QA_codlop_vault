@@ -4,11 +4,12 @@ title: Verify Share functionality on mobile devices
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Positive
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

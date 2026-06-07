@@ -3,12 +3,13 @@ tc_id: TC-004
 title: Verify favorite product persists after page refresh
 priority: Medium
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

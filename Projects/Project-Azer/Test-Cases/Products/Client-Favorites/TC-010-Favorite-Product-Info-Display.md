@@ -3,11 +3,12 @@ tc_id: TC-010
 title: Verify favorite products display correct information
 priority: Medium
 status:
-  - Draft
+  - Ready
 type: UI
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

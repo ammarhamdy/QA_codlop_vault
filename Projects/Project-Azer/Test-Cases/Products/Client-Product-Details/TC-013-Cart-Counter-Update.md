@@ -4,11 +4,12 @@ title: Verify cart counter update after adding  Or deleting product
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Validation
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

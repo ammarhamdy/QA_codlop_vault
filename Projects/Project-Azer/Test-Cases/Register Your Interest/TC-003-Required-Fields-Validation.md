@@ -4,12 +4,13 @@ title: Verify Required Fields Validation on Register Your Interest  Form
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

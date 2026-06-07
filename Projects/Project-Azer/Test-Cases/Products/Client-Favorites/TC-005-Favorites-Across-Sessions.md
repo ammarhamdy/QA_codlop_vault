@@ -4,12 +4,13 @@ title: Verify favorite product persists after logout and login
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

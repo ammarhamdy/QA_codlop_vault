@@ -4,11 +4,12 @@ title: Verify SQL Injection protection for Entity Overview & Partnership Details
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Security
 linked_requirement: US-004
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

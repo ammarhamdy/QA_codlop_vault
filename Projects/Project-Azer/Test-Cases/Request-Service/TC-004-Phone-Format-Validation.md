@@ -4,12 +4,13 @@ title: Verify phone number validation (numeric only, country code & length limit
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

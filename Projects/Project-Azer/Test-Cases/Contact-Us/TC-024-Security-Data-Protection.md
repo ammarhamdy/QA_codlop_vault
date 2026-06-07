@@ -2,7 +2,7 @@
 tc_id: TC-024
 title: Verify Security and Data Protection for Client Requests
 priority: High
-status: Draft
+status: Ready
 type: Security
 linked_requirement: US-002
 tags:
@@ -10,6 +10,7 @@ tags:
   - contact-us
   - security
   - data-protection
+run_result: pass
 ---
 
 # Test Data

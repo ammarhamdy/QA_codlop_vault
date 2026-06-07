@@ -4,11 +4,12 @@ title: Verify generated share link accuracy
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Validation
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

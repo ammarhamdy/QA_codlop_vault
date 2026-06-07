@@ -4,12 +4,13 @@ title: Verify Switching Back to the All Products Filter
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -4,11 +4,12 @@ title: Verify Product Card Information Display
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: UI
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

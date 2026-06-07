@@ -4,11 +4,12 @@ title: Verify browser back navigation from product details page
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Navigation
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

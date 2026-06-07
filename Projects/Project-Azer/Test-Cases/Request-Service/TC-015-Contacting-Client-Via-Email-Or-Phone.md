@@ -4,12 +4,13 @@ title: Verify client contact via email or phone
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement:
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

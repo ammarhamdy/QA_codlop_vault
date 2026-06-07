@@ -34,7 +34,7 @@ views:
       - run_result
     sort:
       - property: run_result
-        direction: DESC
+        direction: ASC
     columnSize:
       file.name: 318
       note.priority: 147

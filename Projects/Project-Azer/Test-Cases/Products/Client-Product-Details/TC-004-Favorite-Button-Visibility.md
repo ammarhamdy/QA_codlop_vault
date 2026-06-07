@@ -4,11 +4,12 @@ title: Verify Favorite button visibility
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: UI
 linked_requirement: US-006
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

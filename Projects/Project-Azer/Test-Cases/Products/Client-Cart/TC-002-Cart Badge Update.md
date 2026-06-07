@@ -4,12 +4,13 @@ title: Verify that cart badge updates after adding  or deleting a product
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

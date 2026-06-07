@@ -4,12 +4,13 @@ title: Verify numeric and special character validation for Entity, Responsible P
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-004
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

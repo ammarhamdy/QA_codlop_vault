@@ -4,11 +4,12 @@ title: Verify adding same product multiple times
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
