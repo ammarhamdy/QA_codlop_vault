@@ -1,15 +1,16 @@
 ---
-tc_id: TC-011
-title: Verify search returns no results for invalid keyword
+tc_id: TC-022
+title: Verify inactive related data is not available in selection lists
 priority:
   - High
 status:
   - Ready
-type: Negative
+type:
+  - Functional
 linked_requirement: US-006
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data
@@ -21,10 +22,11 @@ run_result: Pass
 # Preconditions
 An administrator is logged into the admin panel 
 # Steps
-1. Navigate to Products
-2. search with invalid data 
+1. Deactivate an entity (e.g., service type).  
+2. Go to Services & click on add new service.  
+3. Open the dropdown for service type.
 # Expected Result
-No results message is displayed.
+The inactive or disabled entity should not appear in any related selection lists or dropdowns.
 # Notes
 
 # Attachments

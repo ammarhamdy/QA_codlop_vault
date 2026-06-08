@@ -4,11 +4,12 @@ title: Verify system prevents adding a duplicate product
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Negative
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

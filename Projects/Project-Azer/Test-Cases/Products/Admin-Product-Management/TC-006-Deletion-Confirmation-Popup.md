@@ -4,11 +4,12 @@ title: Verify deletion confirmation popup appears
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Positive
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

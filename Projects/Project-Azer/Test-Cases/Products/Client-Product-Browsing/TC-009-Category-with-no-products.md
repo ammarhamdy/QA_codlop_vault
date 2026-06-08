@@ -4,11 +4,12 @@ title: Verify category with no products
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Negative
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

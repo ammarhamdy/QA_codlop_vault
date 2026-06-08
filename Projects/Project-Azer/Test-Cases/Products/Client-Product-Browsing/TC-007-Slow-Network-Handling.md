@@ -3,12 +3,13 @@ tc_id: TC-007
 title: Verify behavior under slow network conditions
 priority: Medium
 status:
-  - Draft
+  - Ready
 type:
   - Performance
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

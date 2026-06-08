@@ -4,11 +4,12 @@ title: Verify pagination works correctly in products list
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Positive
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

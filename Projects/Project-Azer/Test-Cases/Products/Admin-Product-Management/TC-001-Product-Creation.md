@@ -4,12 +4,13 @@ title: Verify admin can add a new product with valid data
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
@@ -17,6 +18,7 @@ tags:
 | ------------------------- | ---------- |
 | Administrator Credentials | Email/Pass |
 |                           |            |
+
 
 # Preconditions
 An administrator is logged into the admin panel and is viewing products

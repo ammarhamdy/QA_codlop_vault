@@ -1,15 +1,16 @@
 ---
-tc_id: TC-011
-title: Verify search returns no results for invalid keyword
+tc_id: TC-018
+title: Verify added product is displayed correctly
 priority:
   - High
 status:
   - Ready
-type: Negative
+type:
+  - Functional
 linked_requirement: US-006
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data
@@ -21,10 +22,11 @@ run_result: Pass
 # Preconditions
 An administrator is logged into the admin panel 
 # Steps
-1. Navigate to Products
-2. search with invalid data 
+1-Navigate To Products (Books)
+2-Click Add book
+3-Observe added book
 # Expected Result
-No results message is displayed.
+The product is added successfully and appears in the products list and on the website with all information displayed correctly, including the image, title, and product details.
 # Notes
 
 # Attachments

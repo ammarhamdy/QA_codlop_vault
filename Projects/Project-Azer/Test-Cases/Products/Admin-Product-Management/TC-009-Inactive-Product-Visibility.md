@@ -4,11 +4,12 @@ title: Verify inactive products are hidden from client side
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Positive
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

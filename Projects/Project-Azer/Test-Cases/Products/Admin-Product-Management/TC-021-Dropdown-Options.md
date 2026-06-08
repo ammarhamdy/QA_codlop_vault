@@ -1,15 +1,16 @@
 ---
-tc_id: TC-004
-title: Verify admin can cancel product editing
+tc_id: TC-021
+title: Verify dropdown contains all options
 priority:
-  - Medium
+  - High
 status:
   - Ready
-type: Functional
+type:
+  - Functional
 linked_requirement: US-006
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data
@@ -19,13 +20,12 @@ run_result: Pass
 |                           |            |
 
 # Preconditions
-An administrator is logged into the admin panel and is viewing products
+An administrator is logged into the admin panel 
 # Steps
-1. Navigate to Products 
-2. click on edit icon for specific product
-3. Edit product &Click Cancel.
+1-Navigate to Products
+2-Open Courses & click on dropdown
 # Expected Result
-Changes are discarded and product remains unchanged.
+Dropdown should display all predefined options completely without missing any values.
 # Notes
 
 # Attachments

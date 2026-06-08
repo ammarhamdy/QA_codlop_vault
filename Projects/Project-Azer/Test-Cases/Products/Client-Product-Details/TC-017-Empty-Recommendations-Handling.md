@@ -4,11 +4,12 @@ title: Verify recommendation section when no related products exist
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type: Negative
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

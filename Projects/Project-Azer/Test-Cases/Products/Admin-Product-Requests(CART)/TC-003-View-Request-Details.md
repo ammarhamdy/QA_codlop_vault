@@ -4,12 +4,13 @@ title: Verify admin can view request details successfully
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Positive
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
