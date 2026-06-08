@@ -1,0 +1,42 @@
+[
+  {
+    "question": "How do I create a new account?",
+    "answer": "<p>To create a new account, click the <strong>Register</strong> button and fill in the required information.</p>"
+  },
+  {
+    "question": "How can I reset my password?",
+    "answer": "<p>If you forgot your password, click <em>Forgot Password</em> on the login page and follow the instructions sent to your email.</p>"
+  },
+  {
+    "question": "What payment methods are supported?",
+    "answer": "<p>We currently support:</p><ul><li>Visa</li><li>Mastercard</li><li>Apple Pay</li><li>Bank Transfer</li></ul>"
+  },
+  {
+    "question": "How long does delivery take?",
+    "answer": "<p>Most orders are delivered within <strong>3-5 business days</strong>.</p>"
+  },
+  {
+    "question": "Can I cancel my order?",
+    "answer": "<p>Yes. Orders can be canceled before shipment from the orders section of your dashboard.</p>"
+  },
+  {
+    "question": "Do you offer refunds?",
+    "answer": "<p>Refund requests are reviewed within 5 business days after submission.</p>"
+  },
+  {
+    "question": "How do I contact support?",
+    "answer": "<p>You can contact support through the contact form or by emailing <a href=\"mailto:support@example.com\">support@example.com</a>.</p>"
+  },
+  {
+    "question": "Is my data secure?",
+    "answer": "<p>We use industry-standard encryption and security practices to protect your data.</p>"
+  },
+  {
+    "question": "Can I update my profile information?",
+    "answer": "<p>Yes, visit the profile settings page to update your personal information.</p>"
+  },
+  {
+    "question": "Do you have a mobile application?",
+    "answer": "<p>Our mobile application is available for both Android and iOS devices.</p>"
+  }
+]
