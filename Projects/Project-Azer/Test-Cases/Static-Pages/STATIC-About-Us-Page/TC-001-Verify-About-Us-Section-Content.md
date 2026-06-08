@@ -2,13 +2,15 @@
 tc_id: TC-ABOUT-001
 title: Verify About Us Section Content on About Us Page
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
 linked_requirement: US-ABOUT-001
 tags:
   - test-case
   - about-us-page
   - about-us-section
+run_result: pass
 ---
 
 # Test Data

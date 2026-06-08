@@ -2,13 +2,15 @@
 tc_id: TC-CONTACT-002
 title: Verify Social Media Links Visibility and Functionality on Contact Us Page
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
 linked_requirement: US-CONTACT-002
 tags:
   - test-case
   - contact-us-page
   - social-media
+run_result: pass
 ---
 
 # Test Data

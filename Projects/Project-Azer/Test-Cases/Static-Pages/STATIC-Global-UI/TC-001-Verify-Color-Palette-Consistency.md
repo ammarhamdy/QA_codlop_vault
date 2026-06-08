@@ -2,12 +2,14 @@
 tc_id: TC-GUI-006
 title: Verify Color Palette Consistency Across Website
 priority: Medium
-status: Draft
+status:
+  - Ready
 type: Functional
 tags:
   - test-case
   - global-ui
   - color-palette
+run_result: pass
 ---
 
 # Test Data

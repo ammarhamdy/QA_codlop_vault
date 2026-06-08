@@ -2,13 +2,15 @@
 tc_id: TC-CONTACT-003
 title: Verify FAQ Section Content on Contact Us Page
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
 linked_requirement: US-CONTACT-003
 tags:
   - test-case
   - contact-us-page
   - faq
+run_result: pass
 ---
 
 # Test Data

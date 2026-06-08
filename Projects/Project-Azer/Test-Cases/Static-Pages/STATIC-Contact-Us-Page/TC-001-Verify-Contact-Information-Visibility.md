@@ -2,13 +2,15 @@
 tc_id: TC-CONTACT-001
 title: Verify Contact Information Visibility on Contact Us Page
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
 linked_requirement: US-CONTACT-001
 tags:
   - test-case
   - contact-us-page
   - contact-info
+run_result: pass
 ---
 
 # Test Data
