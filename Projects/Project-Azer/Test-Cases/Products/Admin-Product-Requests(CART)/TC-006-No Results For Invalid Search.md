@@ -4,11 +4,12 @@ title: Verify search returns no results for invalid keyword
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Negative
 linked_requirement: US-006
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

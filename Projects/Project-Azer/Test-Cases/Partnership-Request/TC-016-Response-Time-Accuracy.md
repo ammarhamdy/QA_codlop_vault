@@ -11,6 +11,7 @@ type:
 linked_requirement: US-004
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

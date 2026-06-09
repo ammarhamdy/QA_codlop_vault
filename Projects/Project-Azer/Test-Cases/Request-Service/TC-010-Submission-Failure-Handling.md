@@ -4,7 +4,7 @@ title: Verify System Behavior on Submission Failure
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005

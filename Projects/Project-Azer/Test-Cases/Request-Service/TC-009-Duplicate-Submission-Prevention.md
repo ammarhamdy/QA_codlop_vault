@@ -4,12 +4,13 @@ title: Verify prevention of duplicate form submission
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
