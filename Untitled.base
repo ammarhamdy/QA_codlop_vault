@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/Administrators-Management")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/Users-Management")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/General-Settings-Management")
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - priority
+      - status
+      - run_result
