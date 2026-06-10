@@ -2,16 +2,17 @@
 tc_id: TC-035
 title: Verify protection against brute-force attacks on password reset token input
 priority: High
-status: Draft
+status:
+  - Ready
 type: Security
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - security
   - brute-force
-run_result: Draft
+run_result:
 ---
 
 # Test Data

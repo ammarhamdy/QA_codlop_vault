@@ -2,15 +2,16 @@
 tc_id: TC-029
 title: Verify initiation of password reset with a valid email
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - functional
-run_result: Draft
+run_result:
 ---
 
 # Test Data

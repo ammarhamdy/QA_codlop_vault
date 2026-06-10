@@ -2,15 +2,16 @@
 tc_id: TC-030
 title: Verify password reset initiation fails for invalid or unregistered email
 priority: High
-status: Draft
+status:
+  - Ready
 type: Negative
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - negative
-run_result: Draft
+run_result: pass
 ---
 
 # Test Data

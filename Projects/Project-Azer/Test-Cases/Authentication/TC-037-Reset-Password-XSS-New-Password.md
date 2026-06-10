@@ -2,16 +2,17 @@
 tc_id: TC-037
 title: Verify XSS protection in the new password field during reset
 priority: High
-status: Draft
+status:
+  - Ready
 type: Security
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - security
   - xss
-run_result: Draft
+run_result:
 ---
 
 # Test Data

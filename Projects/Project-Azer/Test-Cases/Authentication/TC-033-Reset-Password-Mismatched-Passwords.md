@@ -2,16 +2,17 @@
 tc_id: TC-033
 title: Verify password reset fails if new password and confirmation do not match
 priority: High
-status: Draft
+status:
+  - Ready
 type: Negative
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - validation
   - negative
-run_result: Draft
+run_result:
 ---
 
 # Test Data

@@ -2,16 +2,17 @@
 tc_id: TC-034
 title: Verify new password meets complexity requirements during reset
 priority: High
-status: Draft
+status:
+  - Ready
 type: Functional
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - validation
   - security
-run_result: Draft
+run_result:
 ---
 
 # Test Data

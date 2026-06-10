@@ -11,6 +11,7 @@ linked_requirement:
 tags:
   - test-case
   - authentication
+run_result: pass
 ---
 
 # Test Data

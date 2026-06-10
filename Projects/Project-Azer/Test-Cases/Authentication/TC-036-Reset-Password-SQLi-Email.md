@@ -2,16 +2,17 @@
 tc_id: TC-036
 title: Verify SQL injection protection in the password reset email field
 priority: High
-status: Draft
+status:
+  - Ready
 type: Security
-linked_requirement: US-001 # Assuming this is related to authentication system
+linked_requirement: US-001
 tags:
   - test-case
   - authentication
   - reset-password
   - security
   - sqli
-run_result: Draft
+run_result:
 ---
 
 # Test Data
