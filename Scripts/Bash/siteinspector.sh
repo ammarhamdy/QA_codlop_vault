@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
+
 # =====================================================
-#  Website Audit Script
-#  Crawl + Status Check + Report Generation
-#  Usage: ./audit.sh https://example.com
+#  siteinspector — Minimal Website Audit
+#  Usage: ./siteinspector.sh https://example.com
 # =====================================================
 
-# ── Terminal Colors ──────────────────────────────────
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
@@ -14,248 +13,200 @@ BOLD='\033[1m'
 DIM='\033[2m'
 RESET='\033[0m'
 
-# ── Logging Helpers ──────────────────────────────────
 info()    { echo -e "${CYAN}[*]${RESET} $*"; }
 success() { echo -e "${GREEN}[+]${RESET} $*"; }
 warn()    { echo -e "${YELLOW}[!]${RESET} $*"; }
 error()   { echo -e "${RED}[✗]${RESET} $*" >&2; }
-step()    { echo -e "\n${BOLD}${CYAN}━━ $* ${RESET}"; }
 
-# ── Dependency Check ─────────────────────────────────
-# Ensure required tools are installed before running
+# ── Deps ─────────────────────────────────────────────
 check_deps() {
     local missing=()
-    for cmd in gospider httpx jq; do
-        if ! command -v "$cmd" &>/dev/null; then
-            missing+=("$cmd")
-        fi
+    for cmd in katana httpx jq curl openssl dig; do
+        command -v "$cmd" &>/dev/null || missing+=("$cmd")
     done
-
-    if [ ${#missing[@]} -ne 0 ]; then
-        error "Missing required tools: ${missing[*]}"
-        echo -e "  ${DIM}Install them and re-run the script.${RESET}"
-        exit 1
-    fi
+    [ ${#missing[@]} -ne 0 ] && error "Missing: ${missing[*]}" && exit 1
 }
 
-# ── Argument Validation ──────────────────────────────
-TARGET="$1"
-if [ -z "$TARGET" ]; then
-    echo -e "${BOLD}Usage:${RESET} $0 https://example.com"
-    exit 1
-fi
+# ── Args ─────────────────────────────────────────────
+TARGET="${1%/}"
+[ -z "$TARGET" ] && echo -e "${BOLD}Usage:${RESET} $0 https://example.com" && exit 1
 
-# Strip trailing slash for consistency
-TARGET="${TARGET%/}"
+HOSTNAME=$(echo "$TARGET" | sed 's~https\?://~~' | cut -d'/' -f1)
+REPORT="report.json"
+URLS_FILE="urls.txt"
 
-# ── Setup ────────────────────────────────────────────
 check_deps
 
-REPORT_DIR="report"
-mkdir -p "$REPORT_DIR"
-
-# Record overall start time to measure total duration
-AUDIT_START=$(date +%s)
+START=$(date +%s)
 
 echo
-echo -e "${BOLD}${CYAN}╔══════════════════════════════════════╗${RESET}"
-echo -e "${BOLD}${CYAN}║        Website Audit Script          ║${RESET}"
-echo -e "${BOLD}${CYAN}╚══════════════════════════════════════╝${RESET}"
-echo -e "  ${DIM}Target : ${RESET}${BOLD}$TARGET${RESET}"
-echo -e "  ${DIM}Report : ${RESET}${BOLD}$REPORT_DIR/${RESET}"
-echo -e "  ${DIM}Time   : ${RESET}$(date '+%Y-%m-%d %H:%M:%S')"
+echo -e "${BOLD}${CYAN}╔══════════════════════════════════╗${RESET}"
+echo -e "${BOLD}${CYAN}║       siteinspector  v2.0        ║${RESET}"
+echo -e "${BOLD}${CYAN}╚══════════════════════════════════╝${RESET}"
+echo -e "  ${DIM}Target :${RESET} ${BOLD}$TARGET${RESET}"
+echo -e "  ${DIM}Time   :${RESET} $(date '+%Y-%m-%d %H:%M:%S')"
 echo
 
 # ─────────────────────────────────────────────────────
-# STEP 1 — Crawl
-# gospider options:
-#   -s  : seed URL
-#   -d  : crawl depth
-#   -c  : concurrent requests
-#   --robots     : honor robots.txt links
-#   --sitemap    : parse sitemap.xml
-#   --js         : extract URLs from JS files
-#   --other-source : use wayback/commoncrawl as extra sources
+# RECON — DNS + SSL
+# Grab IPs and certificate expiry before crawling
 # ─────────────────────────────────────────────────────
-step "Step 1/4 — Crawling"
-info "Starting gospider on $TARGET  (depth=3, concurrency=20)..."
+info "DNS & SSL recon..."
 
-T0=$(date +%s)
-gospider \
-    -s "$TARGET" \
-    -d 3 \
-    -c 20 \
-    --robots \
-    --sitemap \
-    --js \
-    --other-source \
-    2>/dev/null \
-    | grep -Eo '(https?)://[^ >"]+' \
-    | sort -u \
-    > "$REPORT_DIR/urls.txt"
+DNS_IPS=$(dig +short A "$HOSTNAME" 2>/dev/null | tr '\n' ',' | sed 's/,$//')
 
-T1=$(date +%s)
-TOTAL_URLS=$(wc -l < "$REPORT_DIR/urls.txt")
-
-if [ "$TOTAL_URLS" -eq 0 ]; then
-    warn "No URLs found. Check that gospider can reach the target."
-else
-    success "Found ${BOLD}$TOTAL_URLS${RESET} unique URLs  ${DIM}($(( T1 - T0 ))s)${RESET}"
-fi
+SSL_EXPIRY=$(echo | timeout 5 openssl s_client \
+    -connect "$HOSTNAME:443" \
+    -servername "$HOSTNAME" 2>/dev/null \
+    | openssl x509 -noout -enddate 2>/dev/null \
+    | cut -d= -f2)
 
 # ─────────────────────────────────────────────────────
-# STEP 2 — HTTP Probing
-# httpx flags:
-#   -json            : output structured JSON per URL
-#   -title           : extract page <title>
-#   -tech-detect     : fingerprint technologies (Wappalyzer)
-#   -status-code     : include HTTP status
-#   -content-length  : include response size
-#   -follow-redirects: follow 3xx chains
-#   -web-server      : capture Server header
-#   -cdn             : detect CDN provider
-#   -ip              : resolve & include IP address
-#   -silent          : suppress progress output
+# SECURITY HEADERS — score only, no full dump
+# Only care if critical headers are missing
 # ─────────────────────────────────────────────────────
-step "Step 2/4 — HTTP Probing"
-info "Running httpx against $TOTAL_URLS URLs..."
+info "Checking security headers..."
 
-T0=$(date +%s)
-cat "$REPORT_DIR/urls.txt" | httpx \
-    -json \
+RAW_HEADERS=$(curl -sI --max-time 10 "$TARGET" 2>/dev/null)
+
+MISSING_HEADERS=()
+for h in "Strict-Transport-Security" "Content-Security-Policy" \
+          "X-Frame-Options" "X-Content-Type-Options"; do
+    echo "$RAW_HEADERS" | grep -qi "^$h:" || MISSING_HEADERS+=("$h")
+done
+
+# ─────────────────────────────────────────────────────
+# CRAWL — katana
+# Scoped to same domain, JS-aware, with hard time limit
+# ─────────────────────────────────────────────────────
+info "Crawling $TARGET..."
+
+URLS=$(katana \
+    -u "$TARGET" \
+    -jc \
+    -kf all \
+    -fs fqdn \
+    -d 2 \
+    -c 10 \
+    -timeout 10 \
+    -crawl-duration 3m \
+    -silent 2>/dev/null \
+    | sort -u)
+
+TOTAL_URLS=$(echo "$URLS" | grep -c .)
+success "Discovered $TOTAL_URLS URLs"
+echo "$URLS" > "$URLS_FILE"
+
+# ─────────────────────────────────────────────────────
+# PROBE — httpx
+# One JSON line per URL with only what matters:
+# status, title, server, tech stack
+# ─────────────────────────────────────────────────────
+info "Probing $TOTAL_URLS URLs..."
+
+HTTPX_OUT=$(echo "$URLS" | httpx \
+    -status-code \
     -title \
     -tech-detect \
-    -status-code \
-    -content-length \
-    -follow-redirects \
     -web-server \
-    -cdn \
-    -ip \
+    -follow-redirects \
     -silent \
-    > "$REPORT_DIR/httpx.json"
+    -json 2>/dev/null)
 
-T1=$(date +%s)
-PROBED=$(wc -l < "$REPORT_DIR/httpx.json")
-success "Probed ${BOLD}$PROBED${RESET} URLs  ${DIM}($(( T1 - T0 ))s)${RESET}"
+success "Probing done"
 
 # ─────────────────────────────────────────────────────
-# STEP 3 — Build Summary JSON
-# Aggregates: generated timestamp, total count,
-# status code distribution, and technology breakdown.
+# REPORT — single JSON file
+# Structure:
+#   meta    → target, timestamp, duration
+#   recon   → IPs, SSL expiry, missing security headers
+#   stats   → status code breakdown
+#   stack   → web server + top technologies
+#   broken  → 4xx/5xx URLs with status + title only
 # ─────────────────────────────────────────────────────
-step "Step 3/4 — Building Reports"
-info "Generating summary..."
+info "Building report..."
 
-jq -s '
-{
-  generated_at: (now | todate),
-  target: $target,
-  total_urls: length,
+DURATION=$(( $(date +%s) - START ))
 
-  status_codes: (
-    group_by(.status_code)
-    | map({
-        status: (.[0].status_code | tostring),
-        count:  length
-      })
-    | sort_by(.status)
-  ),
+echo "$HTTPX_OUT" | jq -s \
+    --arg target   "$TARGET" \
+    --arg host     "$HOSTNAME" \
+    --arg dns      "$DNS_IPS" \
+    --arg ssl      "${SSL_EXPIRY:-unavailable}" \
+    --arg missing  "$(IFS=,; echo "${MISSING_HEADERS[*]}")" \
+    --arg duration "${DURATION}s" \
+'{
+  meta: {
+    target:       $target,
+    hostname:     $host,
+    generated_at: (now | todate),
+    duration:     $duration
+  },
 
-  technologies: (
-    map(.tech[]?)
-    | group_by(.)
-    | map({
-        technology: .[0],
-        count:      length
-      })
-    | sort_by(-.count)
-  ),
+  recon: {
+    dns_ips:         ($dns | split(",") | map(select(. != ""))),
+    ssl_expiry:      $ssl,
+    missing_headers: ($missing | split(",") | map(select(. != "")))
+  },
 
-  web_servers: (
-    [.[].webserver? | select(. != null and . != "")]
-    | group_by(.)
-    | map({ server: .[0], count: length })
-    | sort_by(-.count)
-  ),
+  stats: {
+    total_urls: length,
+    by_status: (
+      group_by(.status_code)
+      | map({ (.[0].status_code | tostring): length })
+      | add
+    )
+  },
 
-  cdn_providers: (
-    [.[].cdn? | select(. != null and . != "")]
-    | group_by(.)
-    | map({ cdn: .[0], count: length })
-    | sort_by(-.count)
-  )
-}
-' --arg target "$TARGET" "$REPORT_DIR/httpx.json" > "$REPORT_DIR/summary.json"
+  stack: {
+    web_server: ([ .[].webserver? | select(. != null and . != "") ] | first // "unknown"),
+    technologies: (
+      [ .[].tech[]? ]
+      | group_by(.)
+      | map({ tech: .[0], count: length })
+      | sort_by(-.count)
+      | .[:10]
+    )
+  },
 
-# ─────────────────────────────────────────────────────
-# Broken Links — HTTP 4xx & 5xx responses
-# ─────────────────────────────────────────────────────
-info "Extracting broken/errored URLs..."
-jq 'select(.status_code >= 400)' \
-    "$REPORT_DIR/httpx.json" \
-    > "$REPORT_DIR/broken-links.json"
-
-BROKEN=$(wc -l < "$REPORT_DIR/broken-links.json")
-
-# ─────────────────────────────────────────────────────
-# Technologies — sorted by frequency
-# ─────────────────────────────────────────────────────
-info "Extracting technology fingerprints..."
-jq -s '
-[ .[].tech[]? ]
-| group_by(.)
-| map({ technology: .[0], count: length })
-| sort_by(-.count)
-' "$REPORT_DIR/httpx.json" \
-    > "$REPORT_DIR/technologies.json"
-
-success "Reports written to ${BOLD}$REPORT_DIR/${RESET}"
+  broken: [
+    .[] | select(.status_code >= 400) | {
+      url:    .url,
+      status: .status_code,
+      title:  (.title // "")
+    }
+  ]
+}' > "$REPORT"
 
 # ─────────────────────────────────────────────────────
-# STEP 4 — Terminal Summary
-# Pull key stats out of summary.json for display
+# SUMMARY — terminal output
 # ─────────────────────────────────────────────────────
-step "Step 4/4 — Audit Summary"
+BROKEN_COUNT=$(jq '.broken | length'                          "$REPORT")
+TOTAL=$(jq '.stats.total_urls'                                "$REPORT")
+SERVER=$(jq -r '.stack.web_server'                            "$REPORT")
+TECHS=$(jq -r '[.stack.technologies[:5][].tech] | join(", ")' "$REPORT")
+MISSING=$(jq -r '.recon.missing_headers | join(", ")'         "$REPORT")
 
-AUDIT_END=$(date +%s)
-DURATION=$(( AUDIT_END - AUDIT_START ))
-
-# Read aggregated stats
-STATUS_2XX=$(jq '[.status_codes[] | select(.status | startswith("2")) | .count] | add // 0' "$REPORT_DIR/summary.json")
-STATUS_3XX=$(jq '[.status_codes[] | select(.status | startswith("3")) | .count] | add // 0' "$REPORT_DIR/summary.json")
-STATUS_4XX=$(jq '[.status_codes[] | select(.status | startswith("4")) | .count] | add // 0' "$REPORT_DIR/summary.json")
-STATUS_5XX=$(jq '[.status_codes[] | select(.status | startswith("5")) | .count] | add // 0' "$REPORT_DIR/summary.json")
-TOP_TECHS=$(jq -r '[.technologies[:5][].technology] | join(", ")' "$REPORT_DIR/summary.json")
-TOP_SERVER=$(jq -r '.web_servers[0].server // "N/A"' "$REPORT_DIR/summary.json")
-TOP_CDN=$(jq -r '.cdn_providers[0].cdn // "None detected"' "$REPORT_DIR/summary.json")
-
-echo -e "${BOLD}${GREEN}╔══════════════════════════════════════╗${RESET}"
-echo -e "${BOLD}${GREEN}║           Audit Complete ✓           ║${RESET}"
-echo -e "${BOLD}${GREEN}╚══════════════════════════════════════╝${RESET}"
 echo
-echo -e "  ${BOLD}Target  :${RESET} $TARGET"
-echo -e "  ${BOLD}Duration:${RESET} ${DURATION}s"
+echo -e "${BOLD}${GREEN}╔══════════════════════════════════╗${RESET}"
+echo -e "${BOLD}${GREEN}║       Audit Complete  ✓          ║${RESET}"
+echo -e "${BOLD}${GREEN}╚══════════════════════════════════╝${RESET}"
 echo
-echo -e "  ${BOLD}${CYAN}── URL Stats ─────────────────────────${RESET}"
-echo -e "  Total URLs crawled : ${BOLD}$TOTAL_URLS${RESET}"
-echo -e "  Probed             : ${BOLD}$PROBED${RESET}"
+echo -e "  ${BOLD}${CYAN}── Recon ──────────────────────────${RESET}"
+echo -e "  IPs        : ${BOLD}$DNS_IPS${RESET}"
+echo -e "  SSL Expiry : ${BOLD}${SSL_EXPIRY:-N/A}${RESET}"
+[ ${#MISSING_HEADERS[@]} -gt 0 ] \
+    && warn "Missing headers : ${BOLD}$MISSING${RESET}" \
+    || success "All critical security headers present"
 echo
-echo -e "  ${BOLD}${CYAN}── Status Code Breakdown ─────────────${RESET}"
-echo -e "  ${GREEN}2xx (Success)  :${RESET} $STATUS_2XX"
-echo -e "  ${YELLOW}3xx (Redirect) :${RESET} $STATUS_3XX"
-echo -e "  ${RED}4xx (Client Err):${RESET} $STATUS_4XX"
-echo -e "  ${RED}5xx (Server Err):${RESET} $STATUS_5XX"
-[ "$BROKEN" -gt 0 ] && warn "Broken/errored URLs: ${BOLD}$BROKEN${RESET}"
+echo -e "  ${BOLD}${CYAN}── Results ────────────────────────${RESET}"
+echo -e "  URLs probed : ${BOLD}$TOTAL${RESET}"
+echo -e "  Web server  : ${BOLD}$SERVER${RESET}"
+echo -e "  Tech stack  : ${BOLD}${TECHS:-N/A}${RESET}"
+[ "$BROKEN_COUNT" -gt 0 ] \
+    && warn "Broken links: ${BOLD}$BROKEN_COUNT${RESET}  ${DIM}(see .broken in $REPORT)${RESET}" \
+    || success "No broken links found"
 echo
-echo -e "  ${BOLD}${CYAN}── Stack Fingerprint ─────────────────${RESET}"
-echo -e "  Web Server  : ${BOLD}$TOP_SERVER${RESET}"
-echo -e "  CDN         : ${BOLD}$TOP_CDN${RESET}"
-echo -e "  Top Techs   : ${BOLD}${TOP_TECHS:-N/A}${RESET}"
-echo
-echo -e "  ${BOLD}${CYAN}── Output Files ──────────────────────${RESET}"
-printf "  %-22s %s\n" "URLs list:"         "$REPORT_DIR/urls.txt"
-printf "  %-22s %s\n" "HTTP results:"      "$REPORT_DIR/httpx.json"
-printf "  %-22s %s\n" "Summary:"           "$REPORT_DIR/summary.json"
-printf "  %-22s %s\n" "Broken links:"      "$REPORT_DIR/broken-links.json"
-printf "  %-22s %s\n" "Technologies:"      "$REPORT_DIR/technologies.json"
+echo -e "  ${DIM}Report → ${RESET}${BOLD}$REPORT${RESET}  ${DIM}(${DURATION}s)${RESET}"
+echo -e "  ${DIM}Urls   → ${RESET}${BOLD}$URLS_FILE${RESET}"
 echo
