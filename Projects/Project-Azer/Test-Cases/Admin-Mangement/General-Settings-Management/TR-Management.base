@@ -6,6 +6,7 @@ views:
         - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/Administrators-Management")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/Users-Management")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/General-Settings-Management")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Admin-Mangement/Activity-Logs")
     groupBy:
       property: file.folder
       direction: ASC

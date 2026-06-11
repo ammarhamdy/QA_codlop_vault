@@ -1,5 +1,5 @@
 ---
-run_id: TR-005
+run_id: TR-007
 executor: Fatma
 environment:
 build:
@@ -13,10 +13,9 @@ tags:
 
 # Scope
 [Which feature / sprint / release this run covers.]
-![[TR-Management.base]]
-
 
 # Executed Cases
+![[TR-Dash-Home.base]]
 
 # Summary
 

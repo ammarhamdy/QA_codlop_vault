@@ -1,0 +1,11 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Dashboard-Home")
+    order:
+      - file.name
+      - priority
+      - status
+      - run_result
