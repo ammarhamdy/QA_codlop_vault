@@ -1,0 +1,18 @@
+curl 'https://malkat-dashboard.codlop.sa/api/auth/profile?name=Ammar+&phone_code=966&phone=500000999&email=ammarhamdy010%40gmail.com' \
+  -X PUT \
+  -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:151.0) Gecko/20100101 Firefox/151.0' \
+  -H 'Accept: application/json' \
+  -H 'Accept-Language: ar' \
+  -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+  -H 'Content-Type: application/x-www-form-urlencoded' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'Origin: https://malkat.codlop.sa' \
+  -H 'Alt-Used: malkat-dashboard.codlop.sa' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://malkat.codlop.sa/' \
+  -H 'Cookie: malkat-session=eyJpdiI6InpGTFZSSFlrWExBM2J1UkFVM3daa3c9PSIsInZhbHVlIjoidnZoaXR6ak5JamthdE11RERJOHdjeFZrc0ZwcHViZXF1Tk15UGlteFJOZTVDSFdyRlRuUHkvdVBYSXZXZGJoOHVuNXRGK3E1ZjdHWGZyT0pzUk44ZC9oOFUxaTFGbHZDeTA4VnJvWEl3d0oxaDdlU05MUGNpL00vUjRuQW12SDEiLCJtYWMiOiJhMDRjYTE3NWQ4MDgzN2UxY2U0Y2VmNDRlNGZmYTliOGQ1MmE1ZWZmZGI0MWY0NTcyM2I1OTE1YzdiYWEzZDlmIiwidGFnIjoiIn0%3D' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-site' \
+  -H 'Content-Length: 0' \
+  -H 'TE: trailers'
