@@ -11,7 +11,7 @@ tags:
   - authentication
   - reset-password
   - functional
-run_result:
+run_result: Pass
 ---
 
 # Test Data

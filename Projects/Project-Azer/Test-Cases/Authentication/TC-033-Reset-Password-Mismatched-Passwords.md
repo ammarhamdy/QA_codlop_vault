@@ -12,7 +12,7 @@ tags:
   - reset-password
   - validation
   - negative
-run_result:
+run_result: Pass
 ---
 
 # Test Data

@@ -12,7 +12,7 @@ tags:
   - reset-password
   - validation
   - security
-run_result:
+run_result: fail
 ---
 
 # Test Data
