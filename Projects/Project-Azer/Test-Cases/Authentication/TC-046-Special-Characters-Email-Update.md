@@ -12,6 +12,7 @@ tags:
   - email-update
   - validation
   - special-characters
+run_result: pass
 ---
 
 # Test Data

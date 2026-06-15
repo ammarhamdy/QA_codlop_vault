@@ -10,6 +10,7 @@ tags:
   - authentication
   - profile-management
   - edge-case
+run_result: pass
 ---
 
 # Test Data

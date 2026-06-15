@@ -12,13 +12,14 @@ tags:
   - email-update
   - validation
   - unicode
+run_result: pass
 ---
 
 # Test Data
-| Field          | Value                      |
-| -------------- | -------------------------- |
-| Current Email  | user@example.com           |
-| Unicode Email  | 用户@example.com           |
+| Field         | Value            |
+| ------------- | ---------------- |
+| Current Email | user@example.com |
+| Unicode Email | 用户@example.com   |
 
 # Preconditions
 - User is logged in and on their profile page.

@@ -12,6 +12,7 @@ tags:
   - email-update
   - validation
   - boundary
+run_result: pass
 ---
 
 # Test Data

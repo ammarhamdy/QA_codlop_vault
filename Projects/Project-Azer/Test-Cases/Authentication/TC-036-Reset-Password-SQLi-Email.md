@@ -12,7 +12,7 @@ tags:
   - reset-password
   - security
   - sqli
-run_result:
+run_result: pass
 ---
 
 # Test Data

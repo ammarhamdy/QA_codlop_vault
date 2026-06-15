@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+
+# Check argument
+if [[ -z "$1" ]]; then
+  echo "Usage: $0 <name>"
+  exit 1
+fi
+
+name="$1"
+
+# Generate random hex color (6 digits)
+hex=$(openssl rand -hex 3)
+
+# Create image
+convert -size 250x250 canvas:"#${hex}" "${name}.png"
+
+echo "Generated ${name}.png with color #${hex}"

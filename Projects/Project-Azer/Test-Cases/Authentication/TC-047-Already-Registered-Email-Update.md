@@ -12,6 +12,7 @@ tags:
   - email-update
   - validation
   - duplicate
+run_result: pass
 ---
 
 # Test Data

@@ -11,6 +11,7 @@ tags:
   - profile-management
   - email-update
   - validation
+run_result: pass
 ---
 
 # Test Data

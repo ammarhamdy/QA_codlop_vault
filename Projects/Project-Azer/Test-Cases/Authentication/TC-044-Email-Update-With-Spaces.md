@@ -12,6 +12,7 @@ tags:
   - email-update
   - validation
   - spaces
+run_result: pass
 ---
 
 # Test Data

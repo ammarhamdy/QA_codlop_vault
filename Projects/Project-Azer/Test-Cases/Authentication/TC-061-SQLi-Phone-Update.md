@@ -12,6 +12,7 @@ tags:
   - phone-update
   - security
   - sqli
+run_result: pass
 ---
 
 # Test Data

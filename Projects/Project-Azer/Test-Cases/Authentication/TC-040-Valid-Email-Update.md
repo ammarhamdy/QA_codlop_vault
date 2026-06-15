@@ -10,6 +10,7 @@ tags:
   - authentication
   - profile-management
   - email-update
+run_result: pass
 ---
 
 # Test Data

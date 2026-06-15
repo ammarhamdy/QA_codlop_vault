@@ -12,6 +12,7 @@ tags:
   - name-update
   - unicode
   - arabic
+run_result: pass
 ---
 
 # Test Data

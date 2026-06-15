@@ -12,6 +12,7 @@ tags:
   - name-update
   - security
   - xss
+run_result: pass
 ---
 
 # Test Data
