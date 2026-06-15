@@ -1,6 +1,26 @@
 #!/usr/bin/env bash
 
+# Strict mode:
+# -E : ERR trap inherited by functions/subshells
+# -e : Exit on any command failure
+# -u : Error on undefined variables
+# -o pipefail : Pipeline fails if any command fails
 set -Eeuo pipefail
+
+############################################################
+
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[1;33m'
+CYAN='\033[0;36m'
+BOLD='\033[1m'
+DIM='\033[2m'
+RESET='\033[0m'
+
+info()    { echo -e "${CYAN}[*]${RESET} $*"; }
+success() { echo -e "${GREEN}[+]${RESET} $*"; }
+warn()    { echo -e "${YELLOW}[!]${RESET} $*"; }
+error()   { echo -e "${RED}[✗]${RESET} $*" >&2; }
 
 ############################################################
 # Recon & Surface Mapping
@@ -16,17 +36,16 @@ set -Eeuo pipefail
 ############################################################
 
 [[ $# -eq 1 ]] || {
-    echo "Usage: $0 <domain>"
+    error "Usage: $0 <domain>"
     exit 1
 }
 
 DOMAIN="$1"
-
-TIMESTAMP="$(date +%Y%m%d_%H%M%S)"
-OUTDIR="recon_${DOMAIN}_${TIMESTAMP}"
-
+TARGET_DOMAIN="${DOMAIN#*://}"
+TARGET_DOMAIN="${TARGET_DOMAIN%%/*}"
+TIMESTAMP="$(date +%Y-%m-%d-%H%M%S)"
+OUTDIR="recon_${TARGET_DOMAIN}_${TIMESTAMP}"
 mkdir -p "$OUTDIR"
-
 SUBS="$OUTDIR/subs.txt"
 LIVE="$OUTDIR/live.txt"
 URLS="$OUTDIR/urls.txt"
@@ -39,7 +58,7 @@ BROKEN="$OUTDIR/broken.json"
 
 for tool in subfinder httpx katana jq; do
     command -v "$tool" >/dev/null 2>&1 || {
-        echo "[!] Missing dependency: $tool"
+        error "Missing dependency: $tool"
         exit 1
     }
 done
@@ -49,19 +68,24 @@ done
 ############################################################
 
 echo
-echo "===================================================="
-echo " Target   : $DOMAIN"
-echo " Started  : $(date)"
-echo " Output   : $OUTDIR"
-echo "===================================================="
+echo -e "${BOLD}====================================================${RESET}"
+echo -e " ${BOLD}Target${RESET}   : ${CYAN}$DOMAIN${RESET}"
+echo -e " ${BOLD}Started${RESET}  : ${DIM}$(date)${RESET}"
+echo -e " ${BOLD}Output${RESET}   : ${DIM}$OUTDIR${RESET}"
+echo -e "${BOLD}====================================================${RESET}"
 
 ############################################################
 # Subdomain Enumeration
 ############################################################
 
 echo
-echo "[+] Enumerating subdomains..."
+info "Enumerating subdomains..."
 
+# Subdomain Enumeration
+# -d        : Target domain to enumerate
+# -silent   : Suppress banners and extra output
+# >         : Save discovered subdomains to file
+# || true   : Prevent script termination if subfinder exits non-zero
 subfinder \
     -d "$DOMAIN" \
     -silent \
@@ -74,8 +98,8 @@ COUNT=$(wc -l < "$SUBS")
 ############################################################
 
 if [[ "$COUNT" -eq 0 ]]; then
-    echo "[!] Subfinder returned 0 results"
-    echo "[*] Falling back to root domain"
+    warn "Subfinder returned 0 results"
+    info "Falling back to root domain"
 
     {
         echo "$DOMAIN"
@@ -83,15 +107,20 @@ if [[ "$COUNT" -eq 0 ]]; then
     } > "$SUBS"
 fi
 
-echo "[+] Found $(wc -l < "$SUBS") hosts"
+success "Found $(wc -l < "$SUBS") hosts"
 
 ############################################################
 # Live Host Detection
 ############################################################
 
 echo
-echo "[+] Probing hosts..."
+info "Probing hosts..."
 
+# Probe live hosts
+# -l        : Input file
+# -silent   : Hide banners
+# -threads  : Concurrent workers
+# -rl       : Requests per second
 httpx \
     -l "$SUBS" \
     -silent \
@@ -99,17 +128,28 @@ httpx \
     -rl 200 \
     > "$LIVE"
 
-echo "[+] Live Hosts: $(wc -l < "$LIVE")"
+success "Live Hosts: $(wc -l < "$LIVE")"
 
 ############################################################
 # Crawling
 ############################################################
 
 echo
-echo "[+] Crawling..."
+info "Crawling..."
 
+# Crawl discovered hosts
+# -list     : Input URL list
+# -d 1      : Crawl depth 1
+# -jc       : Parse JavaScript files
+# -kf all   : Parse robots.txt and sitemap.xml
+# -ct 5m    : Max crawl duration
+# -iqp      : Ignore query parameter values
+# -c 20     : Concurrent workers
+# -rl 50    : Requests/sec
+# -silent   : Quiet output
 katana \
     -list "$LIVE" \
+    -fs rdn \
     -d 1 \
     -jc \
     -kf all \
@@ -121,16 +161,31 @@ katana \
     > "$URLS"
 
 sort -u "$URLS" -o "$URLS"
-
-echo "[+] URLs Found: $(wc -l < "$URLS")"
+success "URLs Found: $(wc -l < "$URLS")"
 
 ############################################################
 # HTTP Fingerprinting
 ############################################################
 
 echo
-echo "[+] Fingerprinting..."
+info "Fingerprinting..."
 
+# HTTP Fingerprinting
+# -l         : Input URL list
+# -title     : Extract page title
+# -sc        : Show HTTP status code
+# -cl        : Show Content-Length header
+# -td        : Detect web technologies
+# -server    : Show Server header
+# -ip        : Resolve and display IP address
+# -cdn       : Detect CDN/WAF provider
+# -asn       : Show ASN information
+# -rt        : Show response time
+# -location  : Show redirect location
+# -fr        : Follow redirects
+# -json      : Output JSON format
+# -silent    : Suppress banners/progress
+# -o         : Save results to file
 httpx \
     -l "$URLS" \
     -title \
@@ -139,7 +194,6 @@ httpx \
     -td \
     -server \
     -ip \
-    -cdn \
     -asn \
     -rt \
     -location \
@@ -153,15 +207,24 @@ httpx \
 ############################################################
 
 echo
-echo "[+] Running Nuclei..."
+info "Running Nuclei..."
 
 NUCLEI="$OUTDIR/nuclei.json"
 
+# Scan live hosts using Nuclei templates
+# -l              : Input targets file
+# -as             : Auto-select templates based on detected technologies
+# -severity       : Only run Medium/High/Critical templates
+# -exclude-tags   : Skip dangerous/noisy templates ex: (-exclude-tags dos,fuzz,bruteforce)
+# -rate-limit 50  : Max 50 requests/sec
+# -bulk-size 25   : Process 25 hosts per template batch
+# -c 25           : Run 25 templates concurrently
+# -jsonl          : Output JSON Lines format
+# -o              : Save results to file
 nuclei \
     -l "$LIVE" \
     -as \
     -severity critical,high,medium \
-    -exclude-tags dos,fuzz,bruteforce \
     -rate-limit 50 \
     -bulk-size 25 \
     -c 25 \
@@ -180,14 +243,14 @@ MEDIUM=$(jq -r '
 select(.info.severity=="medium")
 ' "$NUCLEI" | wc -l)
 
-echo "[+] Nuclei Scan Finished"
+success "Nuclei Scan Finished"
 
 ############################################################
 # Broken URLs
 ############################################################
 
 echo
-echo "[+] Extracting non-200 responses..."
+info "Extracting non-200 responses..."
 
 jq -c '
 select(
@@ -206,25 +269,25 @@ URL_COUNT=$(wc -l < "$URLS")
 BROKEN_COUNT=$(wc -l < "$BROKEN")
 
 echo
-echo "===================================================="
-echo " Recon Complete"
-echo "===================================================="
-echo " Target        : $DOMAIN"
-echo " Live Hosts    : $LIVE_COUNT"
-echo " URLs Found    : $URL_COUNT"
-echo " Broken URLs   : $BROKEN_COUNT"
+echo -e "${BOLD}====================================================${RESET}"
+echo -e " ${BOLD}${GREEN}Recon Complete${RESET}"
+echo -e "${BOLD}====================================================${RESET}"
+echo -e " ${BOLD}Target${RESET}        : ${CYAN}$DOMAIN${RESET}"
+echo -e " ${BOLD}Live Hosts${RESET}    : ${GREEN}$LIVE_COUNT${RESET}"
+echo -e " ${BOLD}URLs Found${RESET}    : ${GREEN}$URL_COUNT${RESET}"
+echo -e " ${BOLD}Broken URLs${RESET}   : ${YELLOW}$BROKEN_COUNT${RESET}"
 echo
-echo " Files"
-echo " -----"
-echo " $SUBS"
-echo " $LIVE"
-echo " $URLS"
-echo " $REPORT"
-echo " $BROKEN"
-echo "===================================================="
+echo -e " ${BOLD}Files${RESET}"
+echo -e " ${DIM}-----${RESET}"
+echo -e " ${DIM}$SUBS${RESET}"
+echo -e " ${DIM}$LIVE${RESET}"
+echo -e " ${DIM}$URLS${RESET}"
+echo -e " ${DIM}$REPORT${RESET}"
+echo -e " ${DIM}$BROKEN${RESET}"
+echo -e "${BOLD}====================================================${RESET}"
 echo
-echo " Vulnerabilities"
-echo " ----------------"
-echo " Critical : $CRITICAL"
-echo " High     : $HIGH"
-echo " Medium   : $MEDIUM"
+echo -e " ${BOLD}Vulnerabilities${RESET}"
+echo -e " ${DIM}----------------${RESET}"
+echo -e " ${RED}${BOLD}Critical${RESET} : ${RED}$CRITICAL${RESET}"
+echo -e " ${YELLOW}${BOLD}High${RESET}     : ${YELLOW}$HIGH${RESET}"
+echo -e " ${CYAN}${BOLD}Medium${RESET}   : ${CYAN}$MEDIUM${RESET}"
