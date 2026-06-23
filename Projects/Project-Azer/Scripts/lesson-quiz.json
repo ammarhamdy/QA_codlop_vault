@@ -1,0 +1,137 @@
+{
+    "success": true,
+    "message": "تم استرجاع الاختبار بنجاح",
+    "data": {
+        "id": 1,
+        "title": "اختبار: الفصل الثالث",
+        "passing_percentage": 50,
+        "questions_count": 4,
+        "questions": [
+            {
+                "id": 13,
+                "question": "ما أول أركان الإيمان؟",
+                "image": null,
+                "answers": [
+                    {
+                        "id": 49,
+                        "answer": "أ) الإيمان بالملائكة",
+                        "is_correct": false,
+                        "image": "https://malkat-dashboard.codlop.sa/storage/quizzes/answers/4CrdtSL2Zgvma7bu3eBiX8X8sXoZHUobiGcTUihd.png"
+                    },
+                    {
+                        "id": 50,
+                        "answer": "ب) الإيمان بالله",
+                        "is_correct": true,
+                        "image": "https://malkat-dashboard.codlop.sa/storage/quizzes/answers/maYK0nBghNCNI3NlTajfjznCMvNVPYe0HXlmaIlj.png"
+                    },
+                    {
+                        "id": 51,
+                        "answer": "ج) الإيمان بالرسل",
+                        "is_correct": false,
+                        "image": "https://malkat-dashboard.codlop.sa/storage/quizzes/answers/f3dnz9ZJwwQLHe1Idg14wXFDZ6PPCpuP7tmn8wE1.png"
+                    },
+                    {
+                        "id": 52,
+                        "answer": "د) الإيمان باليوم الآخر",
+                        "is_correct": false,
+                        "image": "https://malkat-dashboard.codlop.sa/storage/quizzes/answers/DE9wlZfAAFUsN67dk4aWAxpPJs8RK0MS0G4QWSEv.png"
+                    }
+                ]
+            },
+            {
+                "id": 14,
+                "question": "كم عدد أركان الإيمان؟",
+                "image": null,
+                "answers": [
+                    {
+                        "id": 53,
+                        "answer": "أ) أربعة",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 54,
+                        "answer": "ب) خمسة",
+                        "is_correct": true,
+                        "image": null
+                    },
+                    {
+                        "id": 55,
+                        "answer": "ج) ستة",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 56,
+                        "answer": "د) سبعة",
+                        "is_correct": false,
+                        "image": null
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "question": "ما المقصود بالشرك؟",
+                "image": null,
+                "answers": [
+                    {
+                        "id": 57,
+                        "answer": "أ) إخلاص العبادة لله وحده",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 58,
+                        "answer": "ب) صرف شيء من العبادة لغير الله",
+                        "is_correct": true,
+                        "image": null
+                    },
+                    {
+                        "id": 59,
+                        "answer": "ج) الإحسان إلى الناس",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 60,
+                        "answer": "د) أداء الصلاة في وقتها",
+                        "is_correct": false,
+                        "image": null
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "question": "أي مما يلي يُعد من أركان الإيمان؟",
+                "image": null,
+                "answers": [
+                    {
+                        "id": 61,
+                        "answer": "أ) الإيمان بأنه ملك من الملائكة",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 62,
+                        "answer": "ب) اتباع النبي ﷺ وتصديقه فيما أخبر",
+                        "is_correct": true,
+                        "image": null
+                    },
+                    {
+                        "id": 63,
+                        "answer": "ج) قراءة القرآن فقط",
+                        "is_correct": false,
+                        "image": null
+                    },
+                    {
+                        "id": 64,
+                        "answer": "د) أداء الصلاة فقط",
+                        "is_correct": false,
+                        "image": null
+                    }
+                ]
+            }
+        ]
+    },
+    "timestamp": "2026-06-23T15:40:08.175Z"
+}
