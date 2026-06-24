@@ -31,7 +31,7 @@ tags:
 # Expected Result
 - System should either:
   a) Provide a dependency warning that child elements will be deleted.
-  b) Cascade the deletion to all associated Units, Reading Sections, and Exams.
+  b) Cascade شىء منظم the deletion to all associated Units, Reading Sections, and Exams.
 - Program PROG-001 is removed from the system.
 
 # Notes
