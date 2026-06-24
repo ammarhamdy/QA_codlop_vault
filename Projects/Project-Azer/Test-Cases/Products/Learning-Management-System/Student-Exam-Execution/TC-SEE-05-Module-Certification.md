@@ -12,15 +12,15 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| User Role | Student |
-| Module ID | MOD-001 |
-| Total Units in Module | 3 (UNIT-001, UNIT-002, UNIT-003) |
-| Current Unit | UNIT-003 (Final Unit) |
-| Quizzes in UNIT-003 | 2 MCQs |
-| Correct Answers Submitted | 2 |
-| Score Percentage | 100% (Passed) |
+| Field                     | Value                            |
+| ------------------------- | -------------------------------- |
+| User Role                 | Student                          |
+| Module ID                 | MOD-001                          |
+| Total Units in Module     | 3 (UNIT-001, UNIT-002, UNIT-003) |
+| Current Unit              | UNIT-003 (Final Unit)            |
+| Quizzes in UNIT-003       | 2 MCQs                           |
+| Correct Answers Submitted | 2                                |
+| Score Percentage          | 100% (Passed)                    |
 
 # Preconditions
 - Student has already completed and passed UNIT-001 and UNIT-002 within MOD-001.

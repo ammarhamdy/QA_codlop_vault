@@ -1,6 +1,8 @@
 ---
 tc_id: TC-SEE-02
-title: Progression Gating Prevents Access to Next Unit Without Quizzes
+title: |-
+  
+  Progression Gating Prevents Access to Next Unit Without Quizzes
 priority: High
 status: Ready
 type: Functional

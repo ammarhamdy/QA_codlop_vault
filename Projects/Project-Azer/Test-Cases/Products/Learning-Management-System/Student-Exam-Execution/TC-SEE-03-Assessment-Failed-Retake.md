@@ -12,13 +12,13 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| User Role | Student |
-| Unit ID | UNIT-001 |
-| Total Quizzes | 4 |
-| Correct Answers Submitted | 1 |
-| Score Percentage | 25% (Failed) |
+| Field                     | Value        |
+| ------------------------- | ------------ |
+| User Role                 | Student      |
+| Unit ID                   | UNIT-001     |
+| Total Quizzes             | 4            |
+| Correct Answers Submitted | 1            |
+| Score Percentage          | 25% (Failed) |
 
 # Preconditions
 - Student is on the single-page quiz interface of UNIT-001.
