@@ -25,7 +25,7 @@ tags:
 # Steps
 1. Navigate to the management page of SEC-001.
 2. Add text content "This is the introduction to Java".
-3. Upload and attach a video file "intro.mp4".
+3. Upload and attach a video file "`intro.mp4`".
 4. Save the changes.
 
 # Expected Result

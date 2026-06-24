@@ -9,6 +9,7 @@ tags:
   - test-case
   - curriculum-management
   - admin
+run_result: fail
 ---
 
 # Test Data
