@@ -25,7 +25,8 @@ views:
         - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Curriculum-Management")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Progression-Gating")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Purchase-Access-Control")
-        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Student-Exam-Execution")      
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Student-Exam-Execution")
+        - file.inFolder("Projects/Project-Azer/Test-Cases/Products/Learning-Management-System/Lesson-Management")
     groupBy:
       property: file.folder
       direction: ASC
@@ -35,10 +36,9 @@ views:
       - status
       - run_result
     columnSize:
-      file.name: 420
+      file.name: 818
       note.priority: 120
       note.run_result: 100
-    
 
 ```
 
