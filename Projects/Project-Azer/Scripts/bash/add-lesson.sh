@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+curl 'https://malkat-dashboard.codlop.sa/dashboard/courses/contents/6/lessons' \
+  -X POST \
+  -H 'Accept: application/json' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'Origin: https://malkat-dashboard.codlop.sa' \
+  -H 'Referer: https://malkat-dashboard.codlop.sa/dashboard/courses/contents/6/lessons/create' \
+  -H 'Cookie: XSRF-TOKEN=...; malkat-session=...; remember_admin_...=...' \
+  -F '_token=3q9px2liSJbNis9AQZaBjU6zEVazzn9NRXBQdkeS' \
+  -F 'title=3.2 الفصل الثاني' \
+  -F 'lesson_type=file' \
+  -F 'subtitle= تكملة اركان الصلاة' \
+  -F 'file=@blank.pdf;type=application/pdf' \
+  -F 'description=' \
+  -F 'quiz_title=تابع اركان الصلاة ' \
+  -F 'passing_percentage=70' \
+  -F 'questions[0][id]=' \
+  -F 'questions[0][question]=أي من الآتي يُعد ركنًا من أركان الصلاة؟' \
+  -F 'questions[0][answers][0][id]=' \
+  -F 'questions[0][answers][0][answer]=أ) دعاء الاستفتاح' \
+  -F 'questions[0][answers][0][is_correct]=0' \
+  -F 'questions[0][answers][1][id]=' \
+  -F 'questions[0][answers][1][answer]=ب) السواك قبل الصلاة' \
+  -F 'questions[0][answers][1][is_correct]=0' \
+  -F 'questions[0][answers][2][id]=' \
+  -F 'questions[0][answers][2][answer]=ج) الركوع' \
+  -F 'questions[0][answers][2][is_correct]=1' \
+  -F 'questions[0][answers][3][id]=' \
+  -F 'questions[0][answers][3][answer]=د) رفع اليدين عند الركوع' \
+  -F 'questions[0][answers][3][is_correct]=0' \
+  -F 'questions[1][id]=' \
+  -F 'questions[1][question]=ما الركن الذي يجب قراءته في كل ركعة؟' \
+  -F 'questions[1][answers][0][id]=' \
+  -F 'questions[1][answers][0][answer]=أ) التشهد الأول' \
+  -F 'questions[1][answers][0][is_correct]=0' \
+  -F 'questions[1][answers][1][id]=' \
+  -F 'questions[1][answers][1][answer]=ب) سورة الفاتحة' \
+  -F 'questions[1][answers][1][is_correct]=1' \
+  -F 'questions[1][answers][2][id]=' \
+  -F 'questions[1][answers][2][answer]=ج) دعاء القنوت' \
+  -F 'questions[1][answers][2][is_correct]=0' \
+  -F 'questions[1][answers][3][id]=' \
+  -F 'questions[1][answers][3][answer]=د) الأذكار بعد الصلاة' \
+  -F 'questions[1][answers][3][is_correct]=0'
