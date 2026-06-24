@@ -8,9 +8,10 @@
 | **REQ-002** | Admin Content and Curriculum Orchestration | TC-CM-01, TC-CM-02, TC-CM-03, TC-CM-04, TC-CM-05, TC-CM-06, TC-CM-07 | 100% |
 | **REQ-003** | Sequential Progression Gating via Exam Completion | TC-PG-01, TC-PG-02, TC-PG-03, TC-PG-04, TC-PG-05 | 100% |
 | **REQ-004** | Automated Name-Based Certificate Issuance | TC-CERT-01, TC-CERT-02, TC-CERT-03, TC-CERT-04, TC-CERT-05 | 100% |
+| **REQ-005** | Student Exam and Learning Unit Quiz Lifecycle | TC-SEE-01, TC-SEE-02, TC-SEE-03, TC-SEE-04, TC-SEE-05 | 100% |
 
 ## Summary
-- **Covered Requirements:** REQ-001, REQ-002, REQ-003, REQ-004
+- **Covered Requirements:** REQ-001, REQ-002, REQ-003, REQ-004, REQ-005
 - **Missing/Ambiguous Requirements:** See Requirements Gaps Report.
 - **Assumptions Made:**
     - "Successful purchase" is defined by the order status being "Purchased" or "Ordered".
