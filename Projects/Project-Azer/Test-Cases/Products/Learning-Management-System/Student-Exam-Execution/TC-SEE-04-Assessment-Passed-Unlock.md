@@ -9,6 +9,7 @@ tags:
   - test-case
   - progression-unlock
   - threshold-validation
+run_result: Pass
 ---
 
 # Test Data

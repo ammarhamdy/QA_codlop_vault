@@ -4,12 +4,13 @@ title: Assessment Result Display Accuracy After Retake
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: REQ-005
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

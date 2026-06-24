@@ -10,6 +10,7 @@ linked_requirement: REQ-005
 tags:
   - test-case
   - progression-gating
+run_result: Pass
 ---
 
 # Test Data

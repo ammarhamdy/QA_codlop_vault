@@ -9,6 +9,7 @@ tags:
   - test-case
   - quiz-execution
   - mcq
+run_result: Pass
 ---
 
 # Test Data

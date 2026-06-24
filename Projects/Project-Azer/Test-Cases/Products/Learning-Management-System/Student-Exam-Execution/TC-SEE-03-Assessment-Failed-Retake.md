@@ -9,6 +9,7 @@ tags:
   - test-case
   - failure-handling
   - retry-mechanism
+run_result: Pass
 ---
 
 # Test Data

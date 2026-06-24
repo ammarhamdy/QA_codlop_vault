@@ -4,12 +4,13 @@ title: Verify Quiz Result Persistence After User Logout and Login
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: REQ-005
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
