@@ -8,6 +8,7 @@ linked_requirement: REQ-001
 tags:
   - test-case
   - purchase-access
+run_result: Pass
 ---
 
 # Test Data

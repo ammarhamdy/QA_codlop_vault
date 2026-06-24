@@ -9,6 +9,7 @@ tags:
   - test-case
   - purchase-access
   - negative
+run_result: Pass
 ---
 
 # Test Data

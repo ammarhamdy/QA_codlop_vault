@@ -9,6 +9,7 @@ tags:
   - test-case
   - progression-gating
   - negative
+run_result: Pass
 ---
 
 # Test Data
