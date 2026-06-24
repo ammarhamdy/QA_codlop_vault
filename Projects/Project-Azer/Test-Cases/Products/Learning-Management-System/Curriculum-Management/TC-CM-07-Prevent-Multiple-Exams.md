@@ -10,6 +10,7 @@ tags:
   - curriculum-management
   - admin
   - negative
+run_result: pass
 ---
 
 # Test Data
