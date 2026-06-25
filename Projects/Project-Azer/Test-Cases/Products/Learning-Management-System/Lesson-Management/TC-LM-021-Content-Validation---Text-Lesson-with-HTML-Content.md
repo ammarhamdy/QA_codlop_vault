@@ -8,6 +8,7 @@ linked_requirement: REQ-002
 tags:
   - test-case
   - content-validation
+run_result: pass
 ---
 
 # Test Data

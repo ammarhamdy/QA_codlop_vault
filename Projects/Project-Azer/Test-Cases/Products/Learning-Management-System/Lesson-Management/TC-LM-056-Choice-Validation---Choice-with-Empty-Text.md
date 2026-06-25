@@ -9,14 +9,15 @@ tags:
   - test-case
   - choice-validation
   - negative
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field      | Value             |
+| ---------- | ----------------- |
 | Quiz Title | Salat pillar quiz |
-| Choice 1 | أ) دعاء الاستفتاح |
-| Choice 2 | Empty ("") |
+| Choice 1   | أ) دعاء الاستفتاح |
+| Choice 2   | Empty ("")        |
 
 # Preconditions
 - Admin on creation page.

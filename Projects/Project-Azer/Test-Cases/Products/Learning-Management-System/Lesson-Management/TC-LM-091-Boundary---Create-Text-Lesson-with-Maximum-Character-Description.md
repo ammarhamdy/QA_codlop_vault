@@ -8,11 +8,12 @@ linked_requirement: REQ-002
 tags:
   - test-case
   - boundary
+run_result: fail
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field       | Value                                 |
+| ----------- | ------------------------------------- |
 | Description | A string of exactly 65,535 characters |
 
 # Preconditions

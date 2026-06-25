@@ -9,16 +9,17 @@ tags:
   - test-case
   - content-validation
   - negative
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Lesson Title | No Content Lesson |
-| Lesson Type | text |
-| Description/Text Content | Empty ("") |
-| Question Title | Quiz |
-| Success Rate | 70 |
+| Field                    | Value             |
+| ------------------------ | ----------------- |
+| Lesson Title             | No Content Lesson |
+| Lesson Type              | text              |
+| Description/Text Content | Empty ("")        |
+| Question Title           | Quiz              |
+| Success Rate             | 70                |
 
 # Preconditions
 - Admin on creation page.

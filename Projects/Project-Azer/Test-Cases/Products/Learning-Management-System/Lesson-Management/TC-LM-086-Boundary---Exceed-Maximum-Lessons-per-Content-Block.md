@@ -8,6 +8,7 @@ linked_requirement: REQ-002
 tags:
   - test-case
   - boundary
+run_result: fail
 ---
 
 # Test Data

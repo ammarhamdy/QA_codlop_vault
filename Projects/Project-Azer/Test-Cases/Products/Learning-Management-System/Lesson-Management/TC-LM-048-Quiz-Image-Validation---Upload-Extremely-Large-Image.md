@@ -9,6 +9,7 @@ tags:
   - test-case
   - quiz-image
   - boundary
+run_result: pass
 ---
 
 # Test Data

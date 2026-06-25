@@ -9,16 +9,17 @@ tags:
   - test-case
   - question-set
   - negative
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Lesson Title | Creed 1 |
-| File | creed.pdf |
+| Field                       | Value      |
+| --------------------------- | ---------- |
+| Lesson Title                | Creed 1    |
+| File                        | creed.pdf  |
 | Quiz Title (Question Title) | Empty ("") |
-| Success Rate | 70 |
-| Quizzes | 1 Quiz |
+| Success Rate                | 70         |
+| Quizzes                     | 1 Quiz     |
 
 # Preconditions
 - Admin on creation page.

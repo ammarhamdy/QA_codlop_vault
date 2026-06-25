@@ -9,6 +9,7 @@ tags:
   - test-case
   - lesson-validation
   - negative
+run_result: fail
 ---
 
 # Test Data

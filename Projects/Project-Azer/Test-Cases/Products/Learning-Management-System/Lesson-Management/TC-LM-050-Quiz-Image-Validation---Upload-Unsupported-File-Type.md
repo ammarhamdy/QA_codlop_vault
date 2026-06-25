@@ -9,6 +9,7 @@ tags:
   - test-case
   - quiz-image
   - negative
+run_result: pass
 ---
 
 # Test Data

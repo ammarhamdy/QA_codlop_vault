@@ -9,15 +9,16 @@ tags:
   - test-case
   - question-set
   - negative
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Lesson Title | Salat 1 |
-| File | salat.pdf |
-| Quiz Title | Salat Quiz |
-| Success Rate | "seventy" |
+| Field        | Value      |
+| ------------ | ---------- |
+| Lesson Title | Salat 1    |
+| File         | salat.pdf  |
+| Quiz Title   | Salat Quiz |
+| Success Rate | "seventy"  |
 
 # Preconditions
 - Admin on creation page.

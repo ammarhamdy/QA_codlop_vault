@@ -9,6 +9,7 @@ tags:
   - test-case
   - choice-validation
   - negative
+run_result: pass
 ---
 
 # Test Data

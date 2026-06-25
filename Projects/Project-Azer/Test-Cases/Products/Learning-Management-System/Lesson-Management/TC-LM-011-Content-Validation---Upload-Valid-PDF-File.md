@@ -9,6 +9,7 @@ tags:
   - test-case
   - content-validation
   - pdf-upload
+run_result: pass
 ---
 
 # Test Data

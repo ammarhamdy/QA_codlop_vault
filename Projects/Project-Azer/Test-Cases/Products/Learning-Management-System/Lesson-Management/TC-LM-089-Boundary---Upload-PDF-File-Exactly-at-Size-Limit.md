@@ -9,6 +9,7 @@ tags:
   - test-case
   - boundary
   - pdf-upload
+run_result: pass
 ---
 
 # Test Data

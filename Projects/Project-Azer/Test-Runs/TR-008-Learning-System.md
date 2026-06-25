@@ -32,7 +32,7 @@ views:
       - status
       - run_result
     columnSize:
-      file.name: 818
+      file.name: 800
       note.priority: 120
       note.run_result: 100
 

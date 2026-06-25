@@ -9,6 +9,7 @@ tags:
   - test-case
   - content-validation
   - negative
+run_result: pass
 ---
 
 # Test Data

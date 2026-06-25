@@ -8,15 +8,16 @@ linked_requirement: REQ-002
 tags:
   - test-case
   - lesson-validation
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Lesson Title | "Lesson 3: Fasting 📖🌙✨" |
-| Lesson Content | Valid PDF file upload |
-| Question Title | Quiz 📘 |
-| Success Rate | 70 |
+| Field          | Value                     |
+| -------------- | ------------------------- |
+| Lesson Title   | "Lesson 3: Fasting 📖🌙✨" |
+| Lesson Content | Valid PDF file upload     |
+| Question Title | Quiz 📘                   |
+| Success Rate   | 70                        |
 
 # Preconditions
 - User is logged in as an Admin.

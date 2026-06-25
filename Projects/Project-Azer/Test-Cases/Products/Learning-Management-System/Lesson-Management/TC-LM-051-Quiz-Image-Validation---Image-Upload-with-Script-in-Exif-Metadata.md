@@ -9,13 +9,14 @@ tags:
   - test-case
   - quiz-image
   - security
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Quiz[0] Title | Security check |
-| Quiz Image | xss_exif.jpg (contains <script>alert(1)</script> in its EXIF user-comment field) |
+| Field         | Value                                                                            |
+| ------------- | -------------------------------------------------------------------------------- |
+| Quiz[0] Title | Security check                                                                   |
+| Quiz Image    | xss_exif.jpg (contains <script>alert(1)</script> in its EXIF user-comment field) |
 
 # Preconditions
 - Admin attempts to upload an image with injection in the metadata.

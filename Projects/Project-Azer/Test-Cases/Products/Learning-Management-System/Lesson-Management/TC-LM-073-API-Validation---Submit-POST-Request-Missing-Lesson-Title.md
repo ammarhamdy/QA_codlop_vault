@@ -9,6 +9,7 @@ tags:
   - test-case
   - api-validation
   - negative
+run_result: pass
 ---
 
 # Test Data

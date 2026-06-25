@@ -9,6 +9,7 @@ tags:
   - test-case
   - choice-validation
   - boundary
+run_result: pass
 ---
 
 # Test Data
