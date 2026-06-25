@@ -8,6 +8,7 @@ linked_requirement: REQ-004
 tags:
   - test-case
   - certification
+run_result: Fail
 ---
 
 # Test Data
