@@ -8,6 +8,7 @@ linked_requirement: REQ-002
 tags:
   - test-case
   - data-integrity
+run_result: pass
 ---
 
 # Test Data
