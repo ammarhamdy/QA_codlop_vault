@@ -1,0 +1,31 @@
+---
+tc_id: TC-Register-008
+title: Verify registration when all required fields are left empty
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-001-Bahrqan-Authentication
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value   |
+| ----- | ------- |
+| name  | (empty) |
+| phone | (empty) |
+| email | (empty) |
+
+# Preconditions
+User is on the Sign Up screen
+# Steps
+1. Leave all required fields empty.  
+2. Click **Register**
+# Expected Result
+-Validation messages are displayed for all required fields and registration is not completed.
+# Notes
+
+# Attachments
