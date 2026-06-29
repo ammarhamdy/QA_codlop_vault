@@ -1,17 +1,17 @@
 ---
 type: project-meta
-project: bharqan
+project: leen-world
 ---
 
 # Project Info: 
 
 ## Global Assets & Dashboards
-- **Website URL:** [zid-store](https://bharqan.com/)
-- **Dashboard URL:** [bharqan.codlop.sa](https://bharqan.codlop.sa/dashboard/home)
+- **Website URL:** [zid-store](https://leenworld.com)
+- **Dashboard URL:** [codlop-dashboard](https://leenworld.codlop.sa/dashboard/login)
 - **App Store (iOS):** 
 - **Play Store (Android):** 
 - **TestFlight (Beta):** 
-- **Jira Board:** [link](https://ammarhamdy010-1770708878228.atlassian.net/jira/software/projects/BHAR/boards/531)
+- **Jira Board:** 
 - **Grafana Dashboard:** 
 - **Swagger API Docs:** 
 - **Figma:** 
@@ -24,4 +24,4 @@ project: bharqan
 ## More Info
 
 ---
-*Last Updated: 2026-06-29 09:25*
+*Last Updated: 2026-06-29 12:16*

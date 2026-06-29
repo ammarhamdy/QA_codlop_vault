@@ -1,13 +1,16 @@
 ---
 requirement_id: REQ-
-title: 
-priority: [High, Medium, Low]
-status: [Draft, Approved]
+title: ""
+priority: High / Medium / Low
+status: Draft / Approved
+epic_link: ""
 tags:
   - requirement
 ---
 
-# Description
+## Description
+[Describe the core functionality or goal of this requirement.]
 
-# Acceptance Criteria
-
+## Acceptance Criteria
+- [ ] 
+- [ ] 
