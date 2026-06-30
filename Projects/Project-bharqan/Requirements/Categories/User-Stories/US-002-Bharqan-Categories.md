@@ -10,7 +10,6 @@ tags:
 ---
 
 ## Story Description
-### Story Description
 
 **As a Customer**  
 **I want to** browse product categories, view category details, filter and sort products, and access product details  

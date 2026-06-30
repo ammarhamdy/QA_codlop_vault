@@ -1,0 +1,30 @@
+---
+tc_id: TC-PD-001
+title: Verify Product Details Page Loads Successfully
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-003-Bharqan-Product-Details
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-User is on the Category Details page.
+# Steps
+1. Open Category Details.  
+2. Tap any product.
+# Expected Result
+-Product Details page opens successfully.
+# Notes
+
+# Attachments

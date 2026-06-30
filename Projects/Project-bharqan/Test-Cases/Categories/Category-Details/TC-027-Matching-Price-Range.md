@@ -1,0 +1,30 @@
+---
+tc_id: TC-CAT-D-027
+title: Verify entering the same value in Min and Max price
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-002-Bharqan-Categories
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-Products exist at that exact price
+# Steps
+1. Enter the same value in both fields. 
+2. Show Results.
+# Expected Result
+Only products priced exactly  are displayed.
+# Notes
+
+# Attachments
