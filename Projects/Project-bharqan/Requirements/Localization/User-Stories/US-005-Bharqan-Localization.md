@@ -9,8 +9,6 @@ tags:
   - requirement
 ---
 
-## Story Description
-تمام طب انا عندي التطبيق بيدعم اللغتين عربي وانجليزي عايزه يوزر استوري للوكاليزيششن بالطريقه دي 
 
 ## Story Description
 

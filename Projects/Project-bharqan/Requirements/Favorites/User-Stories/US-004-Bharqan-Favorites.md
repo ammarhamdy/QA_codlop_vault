@@ -10,7 +10,6 @@ tags:
 ---
 
 ## Story Description
-## Story Description
 
 **As a Customer**  
 **I want to** add products to my Favorites, remove them, view product details from my Favorites list, and browse products when my Favorites list is empty  
