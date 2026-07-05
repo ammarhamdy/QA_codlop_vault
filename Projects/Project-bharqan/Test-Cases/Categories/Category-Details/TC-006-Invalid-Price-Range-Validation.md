@@ -3,11 +3,8 @@ tc_id: TC-CAT-D-006
 title: Verify minimum price greater than maximum price
 priority:
   - High
-  - Medium
-  - Low
 status:
   - Draft
-  - Ready
 type:
   - Functional
   - Regression

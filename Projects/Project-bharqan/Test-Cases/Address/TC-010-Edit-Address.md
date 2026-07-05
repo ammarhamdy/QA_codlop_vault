@@ -1,0 +1,36 @@
+---
+tc_id: TC-Address-010
+title:
+priority:
+  - High
+  - Medium
+  - Low
+status:
+  - Draft
+  - Ready
+type:
+  - Functional
+  - Regression
+  - API
+linked_requirement:
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-At least one address exists.
+# Steps
+1. Open an existing address.  
+2. Edit the fields.  
+3. Tap **Save**.
+# Expected Result
+-The address is updated successfully.
+# Notes
+
+# Attachments

@@ -1,0 +1,30 @@
+---
+tc_id: TC-Admin-014
+title: Verify Canceling admin Deletion
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-012-Bharqan-Admin-Management
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-Admin exists.
+# Steps
+1. Click **Delete**.  
+2. Cancel the confirmation dialog
+# Expected Result
+-The deletion process is canceled, and the supervisor remains displayed in the list with no changes to the data, and the deletion is not completed.
+# Notes
+
+# Attachments
