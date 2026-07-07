@@ -3,11 +3,8 @@ tc_id: TC-Pro-007
 title:
 priority:
   - High
-  - Medium
-  - Low
 status:
   - Draft
-  - Ready
 type:
   - Functional
   - Regression
