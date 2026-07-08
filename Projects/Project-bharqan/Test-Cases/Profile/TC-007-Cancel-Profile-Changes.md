@@ -1,15 +1,13 @@
 ---
 tc_id: TC-Pro-007
-title:
+title: Verify Canceling Profile Changes
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-  - Regression
-  - API
-linked_requirement:
+linked_requirement: US-009-Bharqan-Profile
 tags:
   - test-case
 ---
