@@ -19,12 +19,12 @@ tags:
 |       |                 |
 
 # Preconditions
-User is on the Login screen.
+-User is on the Login screen.
 # Steps
 1. Enter FATMA@GMAIL.COM in email field.
 2. click send OTP
 # Expected Result
-The system accepts the email address regardless of letter case.
+-The system accepts the email address regardless of letter case.
 # Notes
 
 # Attachments

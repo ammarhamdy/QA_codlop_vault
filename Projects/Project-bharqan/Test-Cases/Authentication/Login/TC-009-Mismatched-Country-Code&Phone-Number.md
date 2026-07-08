@@ -25,7 +25,7 @@ User is on the Login screen with the country code selector available.
 2. Enter a valid phone number belonging to another country (Saudi Arabia number).  
 3. click send OTP.
 # Expected Result
-The system displays the message: "Invalid phone number for the selected country code."
+-The system displays the message: "Invalid phone number for the selected country code."
 # Notes
 
 # Attachments

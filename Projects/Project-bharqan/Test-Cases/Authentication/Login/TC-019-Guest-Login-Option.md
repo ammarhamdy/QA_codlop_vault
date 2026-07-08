@@ -19,7 +19,7 @@ tags:
 |       |       |
 
 # Preconditions
-User is on the Login screen
+-User is on the Login screen
 # Steps
 1. Open the Login screen.  
 2. Click  Guest Login.

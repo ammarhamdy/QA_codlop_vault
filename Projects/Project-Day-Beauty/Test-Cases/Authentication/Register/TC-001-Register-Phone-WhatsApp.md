@@ -1,0 +1,31 @@
+---
+tc_id: TC-Register-001
+title: Verify successful registration using WhatsApp OTP
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-001-Beauty-Authentication
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value            |
+| ----- | ---------------- |
+| name  | fatma            |
+| phone | 01273534769      |
+| email | fatma@gmail.com, |
+
+# Preconditions
+-User is on the Register screen
+# Steps
+1. Enter valid registration data.
+2. click send OTP
+# Expected Result
+Registration request is submitted and OTP is sent via WhatsApp.
+# Notes
+
+# Attachments

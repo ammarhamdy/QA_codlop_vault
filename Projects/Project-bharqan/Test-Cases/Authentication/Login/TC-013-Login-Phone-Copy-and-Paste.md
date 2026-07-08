@@ -25,7 +25,7 @@ tags:
 2. Paste it into the phone number field.  
 3. Click Send OTP**.
 # Expected Result
-The pasted phone number is accepted and processed correctly.
+-The pasted phone number is accepted and processed correctly.
 # Notes
 
 # Attachments

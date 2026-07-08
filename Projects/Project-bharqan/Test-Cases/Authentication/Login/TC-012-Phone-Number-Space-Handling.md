@@ -25,7 +25,7 @@ tags:
 2. Verify the result.  
 3. Enter a valid phone number with **trailing spaces** and click Send OTP.
 # Expected Result
-The system trims the leading and trailing spaces automatically
+-The system trims the leading and trailing spaces automatically
 # Notes
 
 # Attachments

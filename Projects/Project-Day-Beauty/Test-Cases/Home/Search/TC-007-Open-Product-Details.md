@@ -1,0 +1,30 @@
+---
+tc_id: TC-Search-007
+title: Verify Opening Product Details from Search Results
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-002-Beauty-Home
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-Search results are displayed.
+# Steps
+1. Perform a search.  
+2. Tap any product
+# Expected Result
+-The Product Details screen for the selected product is opened successfully.
+# Notes
+
+# Attachments

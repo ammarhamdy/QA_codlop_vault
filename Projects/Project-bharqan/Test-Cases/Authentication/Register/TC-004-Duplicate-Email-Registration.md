@@ -20,7 +20,7 @@ tags:
 | email | fatma@gmail.com, |
 
 # Preconditions
-user has registered account
+-user has registered account
 # Steps
 1. Enter a registered email address.  
 2. Enter a new phone number.  

@@ -24,7 +24,7 @@ tags:
 1. Enter invalid email format
 2. Click on Send OTP
 # Expected Result
-A validation message indicating that the email format is invalid
+-A validation message indicating that the email format is invalid
 # Notes
 
 # Attachments

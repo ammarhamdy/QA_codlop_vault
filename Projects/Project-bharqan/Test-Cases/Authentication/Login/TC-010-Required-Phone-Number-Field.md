@@ -24,7 +24,7 @@ tags:
 1. Leave the phone number field empty.  
 2. Click **Continue/Send OTP**.
 # Expected Result
-A validation message is displayed indicating that the phone number is required.
+-A validation message is displayed indicating that the phone number is required.
 # Notes
 
 # Attachments

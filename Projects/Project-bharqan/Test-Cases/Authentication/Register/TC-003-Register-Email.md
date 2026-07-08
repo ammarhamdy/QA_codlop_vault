@@ -26,7 +26,7 @@ tags:
 2. Select Email as the OTP delivery method.  
 3. Click Register.
 # Expected Result
-Registration request is submitted and OTP is sent via email.
+-Registration request is submitted and OTP is sent via email.
 # Notes
 
 # Attachments

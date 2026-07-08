@@ -19,7 +19,7 @@ tags:
 |       |       |
 
 # Preconditions
-User is logged in
+-User is logged in
 # Steps
 1. Click delete account
 # Expected Result

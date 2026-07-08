@@ -19,7 +19,7 @@ tags:
 |       |       |
 
 # Preconditions
-User is logged in
+-User is logged in
 # Steps
 1. Open the Profile screen.  
 2. Click **Logout**.  

@@ -24,7 +24,7 @@ tags:
 1. Request an OTP.  
 2. Enter an incorrect OTP.  
 # Expected Result
-Login is rejected, and the message is displayed "Invalid OTP. Please try again." 
+-Login is rejected, and the message is displayed "Invalid OTP. Please try again." 
 # Notes
 
 # Attachments

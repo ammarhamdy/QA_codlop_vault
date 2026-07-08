@@ -9,14 +9,6 @@ tags:
   - requirement
 ---
 
-## Story Description
-## Story Description
-
-**As a** Client  
-**I want to** register, log in using OTP, log out, and delete my account  
-**So that** I can securely access and manage my account.
-
-## Acceptance Criteria
 
 # Story Description
 

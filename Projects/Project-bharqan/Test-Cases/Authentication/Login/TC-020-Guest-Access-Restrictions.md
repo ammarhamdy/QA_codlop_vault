@@ -19,7 +19,7 @@ tags:
 |       |       |
 
 # Preconditions
-User login  as a guest
+-User login  as a guest
 # Steps
 1. continue as a guest 
 2. Navigate to a feature that requires authentication (e.g., Favorites, Cart, Orders).
