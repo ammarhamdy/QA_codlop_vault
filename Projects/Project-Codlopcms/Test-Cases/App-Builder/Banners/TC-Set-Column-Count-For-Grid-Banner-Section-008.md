@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-008
+tc_id: TC-DYN-BAN-SEC-008
 title: "Verify Banner Section Columns Setting Configuration"
 priority: High
 status: Draft

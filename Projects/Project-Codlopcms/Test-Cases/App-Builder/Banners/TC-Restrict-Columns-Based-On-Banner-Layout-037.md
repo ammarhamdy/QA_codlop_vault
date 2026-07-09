@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-037
+tc_id: TC-DYN-BAN-SEC-037
 title: "Verify Admin Panel Column Restrictions Based on Layout"
 priority: Medium
 status: Draft

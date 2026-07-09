@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-043
+tc_id: TC-DYN-BAN-SEC-043
 title: Verify Mobile App Columns Setting Affects Rendering (Grid Layout)
 priority: High
 status:

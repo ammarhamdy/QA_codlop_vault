@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-013
+tc_id: TC-DYN-BAN-SEC-013
 title: Verify Maximum Number of Banner Items Restriction
 priority: Medium
 status:

@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-029
+tc_id: TC-DYN-BAN-SEC-029
 title: "Verify JSON Optional Field - title (Empty String)"
 priority: Medium
 status: Draft

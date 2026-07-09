@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-010
+tc_id: TC-DYN-BAN-SEC-010
 title: Verify Editing an Existing Banner Item Image
 priority: High
 status:

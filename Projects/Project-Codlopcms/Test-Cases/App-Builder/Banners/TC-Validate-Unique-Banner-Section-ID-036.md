@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-036
+tc_id: TC-DYN-BAN-SEC-036
 title: "Verify Admin Panel Unique ID Validation (System Generated)"
 priority: High
 status: Draft

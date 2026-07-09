@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-031
+tc_id: TC-DYN-BAN-SEC-031
 title: "Verify Admin Panel Layout Validation (Predefined List)"
 priority: High
 status: Draft

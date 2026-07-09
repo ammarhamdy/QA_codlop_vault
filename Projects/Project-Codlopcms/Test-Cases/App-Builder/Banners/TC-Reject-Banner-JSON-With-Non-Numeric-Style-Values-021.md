@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-021
+tc_id: TC-DYN-BAN-SEC-021
 title: "Verify JSON Required Field - style.radius, padding, itemRadius (Numeric)"
 priority: High
 status: Draft

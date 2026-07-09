@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-032
+tc_id: TC-DYN-BAN-SEC-032
 title: "Verify Admin Panel Background Color Validation (Hex Code)"
 priority: High
 status: Draft

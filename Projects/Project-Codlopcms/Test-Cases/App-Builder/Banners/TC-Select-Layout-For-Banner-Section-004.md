@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-004
+tc_id: TC-DYN-BAN-SEC-004
 title: "Verify Banner Section Layout Selection"
 priority: High
 status: Draft

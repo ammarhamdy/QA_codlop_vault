@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-044
+tc_id: TC-DYN-BAN-SEC-044
 title: "Verify Mobile App Renders Banner Items in Correct Order"
 priority: High
 status: Draft

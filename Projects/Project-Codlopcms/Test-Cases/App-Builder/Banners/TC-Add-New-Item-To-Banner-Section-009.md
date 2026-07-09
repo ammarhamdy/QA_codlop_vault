@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-009
+tc_id: TC-DYN-BAN-SEC-009
 title: Verify Adding a New Banner Item
 priority: High
 status:

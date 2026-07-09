@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-034
+tc_id: TC-DYN-BAN-SEC-034
 title: "Verify Admin Panel Columns Validation (Positive Integer)"
 priority: High
 status: Draft

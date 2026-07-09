@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-048
+tc_id: TC-DYN-BAN-SEC-048
 title: Verify Mobile App Unsupported-Layout Behavior
 priority: High
 status:

@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-030
+tc_id: TC-DYN-BAN-SEC-030
 title: "Verify Admin Panel Title Max Length Validation"
 priority: High
 status: Draft

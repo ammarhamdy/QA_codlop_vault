@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-051
+tc_id: TC-DYN-BAN-SEC-051
 title: Verify Mobile App Graceful Handling of Incomplete JSON
 priority: Critical
 status:

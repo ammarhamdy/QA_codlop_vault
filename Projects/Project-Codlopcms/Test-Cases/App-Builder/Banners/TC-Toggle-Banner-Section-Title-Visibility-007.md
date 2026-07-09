@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-007
+tc_id: TC-DYN-BAN-SEC-007
 title: "Verify Banner Section showTitle Setting Configuration"
 priority: High
 status: Draft

@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-003
+tc_id: TC-DYN-BAN-SEC-003
 title: "Verify Banner Section Title Update"
 priority: High
 status: Draft

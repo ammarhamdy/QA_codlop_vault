@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-024
+tc_id: TC-DYN-BAN-SEC-024
 title: "Verify JSON Required Field - settings.columns (Positive Integer)"
 priority: High
 status: Draft

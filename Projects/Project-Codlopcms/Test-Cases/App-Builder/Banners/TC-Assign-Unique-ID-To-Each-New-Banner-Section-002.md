@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-002
+tc_id: TC-DYN-BAN-SEC-002
 title: Verify Unique ID Assignment for New Banner Section
 priority: High
 status:

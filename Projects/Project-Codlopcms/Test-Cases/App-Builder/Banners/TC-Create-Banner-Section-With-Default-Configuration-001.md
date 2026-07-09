@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-001
+tc_id: TC-DYN-BAN-SEC-001
 title: "Verify Banner Section Creation and Default Configuration"
 priority: High
 status: Draft

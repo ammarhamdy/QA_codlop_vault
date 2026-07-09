@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-040
+tc_id: TC-DYN-BAN-SEC-040
 title: Verify Mobile App Applies Style.Background Color
 priority: High
 status:

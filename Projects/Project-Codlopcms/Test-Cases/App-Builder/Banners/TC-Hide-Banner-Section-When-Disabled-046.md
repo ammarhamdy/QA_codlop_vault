@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-046
+tc_id: TC-DYN-BAN-SEC-046
 title: "Verify Mobile App Disabled-Section Behavior (enabled: false)"
 priority: High
 status:

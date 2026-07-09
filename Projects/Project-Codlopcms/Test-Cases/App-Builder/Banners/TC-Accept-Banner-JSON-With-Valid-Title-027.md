@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-027
+tc_id: TC-DYN-BAN-SEC-027
 title: Verify JSON Optional Field - title (Valid String)
 priority: Medium
 status:

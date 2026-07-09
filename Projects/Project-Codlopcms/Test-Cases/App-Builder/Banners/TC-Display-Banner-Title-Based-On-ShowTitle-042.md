@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-042
+tc_id: TC-DYN-BAN-SEC-042
 title: Verify Mobile App showTitle Setting Affects Rendering
 priority: High
 status:

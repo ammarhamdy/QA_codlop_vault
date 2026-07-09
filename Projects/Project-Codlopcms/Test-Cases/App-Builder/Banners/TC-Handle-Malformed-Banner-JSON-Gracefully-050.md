@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-050
+tc_id: TC-DYN-BAN-SEC-050
 title: Verify Mobile App Graceful Handling of Malformed JSON
 priority: Critical
 status:

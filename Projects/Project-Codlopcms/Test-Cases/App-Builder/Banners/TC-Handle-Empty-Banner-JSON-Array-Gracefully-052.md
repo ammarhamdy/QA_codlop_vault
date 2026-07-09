@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-052
+tc_id: TC-DYN-BAN-SEC-052
 title: Verify Mobile App Graceful Handling of Empty JSON Array (No Banner Sections)
 priority: High
 status:

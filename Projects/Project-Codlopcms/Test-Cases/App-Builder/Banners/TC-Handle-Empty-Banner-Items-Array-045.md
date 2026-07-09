@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-045
+tc_id: TC-DYN-BAN-SEC-045
 title: Verify Mobile App Empty-State Behavior (Empty data-object)
 priority: High
 status:

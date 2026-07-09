@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-006
+tc_id: TC-DYN-BAN-SEC-006
 title: Verify Banner Section Radius, Padding, Item Radius Style Configuration
 priority: Medium
 status:

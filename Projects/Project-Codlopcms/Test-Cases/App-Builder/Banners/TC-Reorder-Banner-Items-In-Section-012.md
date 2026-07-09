@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-012
+tc_id: TC-DYN-BAN-SEC-012
 title: "Verify Reordering Banner Items Within a Section"
 priority: Medium
 status: Draft

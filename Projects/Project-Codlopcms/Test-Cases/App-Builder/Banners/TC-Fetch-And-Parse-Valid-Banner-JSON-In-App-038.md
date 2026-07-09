@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-038
+tc_id: TC-DYN-BAN-SEC-038
 title: Verify Mobile App Fetches and Parses Valid Banner JSON
 priority: High
 status:

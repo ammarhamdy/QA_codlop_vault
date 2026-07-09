@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-015
+tc_id: TC-DYN-BAN-SEC-015
 title: "Verify JSON Required Field - section_key"
 priority: High
 status: Draft

@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-026
+tc_id: TC-DYN-BAN-SEC-026
 title: "Verify JSON Required Field - settings.data-object[i].image (URL String)"
 priority: High
 status: Draft

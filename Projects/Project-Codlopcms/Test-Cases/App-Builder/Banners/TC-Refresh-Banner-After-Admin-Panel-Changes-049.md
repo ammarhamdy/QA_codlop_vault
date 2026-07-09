@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-049
+tc_id: TC-DYN-BAN-SEC-049
 title: Verify Mobile App Refresh Reflects Admin Panel Changes
 priority: High
 status:

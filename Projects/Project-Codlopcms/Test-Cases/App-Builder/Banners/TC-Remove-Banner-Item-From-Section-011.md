@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-011
+tc_id: TC-DYN-BAN-SEC-011
 title: "Verify Removing a Banner Item"
 priority: High
 status: Draft

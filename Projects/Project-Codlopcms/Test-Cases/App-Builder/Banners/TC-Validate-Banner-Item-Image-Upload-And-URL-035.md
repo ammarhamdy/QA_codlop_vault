@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-035
+tc_id: TC-DYN-BAN-SEC-035
 title: "Verify Admin Panel Image Upload/URL Validation"
 priority: High
 status: Draft

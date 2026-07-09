@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-047
+tc_id: TC-DYN-BAN-SEC-047
 title: Verify Mobile App Missing-Image Behavior
 priority: High
 status:

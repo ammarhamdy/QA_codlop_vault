@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-041
+tc_id: TC-DYN-BAN-SEC-041
 title: Verify Mobile App Applies Style.Radius, Padding, ItemRadius
 priority: High
 status:

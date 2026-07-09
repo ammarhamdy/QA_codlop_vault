@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-005
+tc_id: TC-DYN-BAN-SEC-005
 title: "Verify Banner Section Background Style Configuration"
 priority: High
 status: Draft

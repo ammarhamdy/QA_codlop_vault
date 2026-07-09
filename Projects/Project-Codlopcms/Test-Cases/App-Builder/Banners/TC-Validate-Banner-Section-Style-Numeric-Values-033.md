@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-033
+tc_id: TC-DYN-BAN-SEC-033
 title: "Verify Admin Panel Radius, Padding, ItemRadius Validation (Non-Negative Integers)"
 priority: High
 status: Draft

@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-020
+tc_id: TC-DYN-BAN-SEC-020
 title: "Verify JSON Required Field - style.background (Hex Code)"
 priority: High
 status: Draft

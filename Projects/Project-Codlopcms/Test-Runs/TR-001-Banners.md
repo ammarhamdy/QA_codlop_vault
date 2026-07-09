@@ -28,15 +28,15 @@ views:
       property: file.folder
       direction: ASC
     order:
-      - test_case_id
+      - tc_id
       - file.name
       - priority
       - status
       - run_result
     columns:
-      - property: test_case_id
+      - property: tc_id
     columnSize:
-      note.test_case_id: 100
+      note.tc_id: 100
       file.name: 500
       note.priority: 120
       note.run_result: 100

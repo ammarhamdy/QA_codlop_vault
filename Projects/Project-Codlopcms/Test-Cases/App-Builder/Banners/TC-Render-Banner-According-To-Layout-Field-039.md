@@ -1,5 +1,5 @@
 ---
-test_case_id: TC-DYN-BAN-SEC-039
+tc_id: TC-DYN-BAN-SEC-039
 title: "Verify Mobile App Renders Banner Based on Layout Field"
 priority: High
 status: Draft
