@@ -4,7 +4,7 @@ title: Verify minimum price greater than maximum price
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
   - Regression
@@ -12,6 +12,7 @@ type:
 linked_requirement: US-002-Bharqan-Categories
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

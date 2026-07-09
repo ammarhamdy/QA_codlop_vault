@@ -4,12 +4,13 @@ title: Verify selecting a sort option
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Bharqan-Categories
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

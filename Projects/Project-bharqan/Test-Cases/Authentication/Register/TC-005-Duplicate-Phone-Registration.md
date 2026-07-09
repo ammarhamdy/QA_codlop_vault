@@ -3,14 +3,14 @@ tc_id: TC-Register-005
 title: Verify registration using an already registered phone with a new email
 priority:
   - High
-  - Low
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-001-Bahrqan-Authentication
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

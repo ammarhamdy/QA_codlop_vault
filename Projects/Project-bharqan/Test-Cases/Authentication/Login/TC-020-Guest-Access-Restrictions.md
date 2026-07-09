@@ -4,12 +4,13 @@ title: Verify guest user has limited access to protected features
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Security
 linked_requirement: US-001-Bahrqan-Authentication
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

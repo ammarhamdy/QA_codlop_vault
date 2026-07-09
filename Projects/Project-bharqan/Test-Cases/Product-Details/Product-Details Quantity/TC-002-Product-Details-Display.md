@@ -4,12 +4,13 @@ title: Verify Product Details Info  Display
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003-Bharqan-Product-Details
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

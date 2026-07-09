@@ -1,0 +1,30 @@
+---
+tc_id: TC-Onboarding-009
+title: Verify canceling Onboarding Screen deletion
+priority:
+  - High
+status:
+  - Draft
+type:
+  - Functional
+linked_requirement: US-012-Bharqan-Dashboard
+tags:
+  - test-case
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-Onboarding screen Exists.
+# Steps
+1. Click Delete.
+2. Click Cancel.
+# Expected Result
+-The settings screen remains unchanged in the list.
+# Notes
+
+# Attachments

@@ -3,14 +3,14 @@ tc_id: TC-PD-Rate-003
 title: Verify Boundary Values for Product Rating (Minimum & Maximum)
 priority:
   - High
-  - Low
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003-Bharqan-Product-Details
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

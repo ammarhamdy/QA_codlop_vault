@@ -4,12 +4,13 @@ title: Verify Favorite Persistence After Logout and Login
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003-Bharqan-Product-Details
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

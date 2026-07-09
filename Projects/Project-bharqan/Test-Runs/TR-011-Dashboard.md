@@ -1,10 +1,12 @@
 ---
-run_id: TR-008
+run_id: TR-013
 executor: Fatma
 environment: QA
 build: v1
 status:
+  - started
   - in-progress
+  - completed
 start_date:
 end_date:
 tags:
@@ -15,24 +17,23 @@ tags:
 [Which feature / sprint / release this run covers.]
 
 # Executed Cases
-
 ```base
 views:
   - type: table
     name: Table
     filters:
       and:
-        - file.inFolder("Projects/Project-bharqan/Test-Cases/Admin Management")
+        - file.inFolder("Projects/Project-bharqan/Test-Cases/Dashboard")
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - priority
       - status
       - run_result
-    columnSize:
-      file.name: 339
 
 ```
-
 # Summary
 
 | Metric  | Count |

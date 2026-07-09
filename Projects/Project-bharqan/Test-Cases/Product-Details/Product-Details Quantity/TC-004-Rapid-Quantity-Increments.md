@@ -3,10 +3,7 @@ tc_id: TC-PD-004
 title: Verify Multiple and Rapid Quantity Increments
 priority:
   - High
-  - Medium
-  - Low
 status:
-  - Draft
   - Ready
 type:
   - Functional
@@ -15,6 +12,7 @@ type:
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify registration using an already registered email address with a new 
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-001-Bahrqan-Authentication
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
