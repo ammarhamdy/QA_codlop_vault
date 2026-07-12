@@ -4,12 +4,13 @@ title: Verify Opening the Search Screen
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Bharqan-Search
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

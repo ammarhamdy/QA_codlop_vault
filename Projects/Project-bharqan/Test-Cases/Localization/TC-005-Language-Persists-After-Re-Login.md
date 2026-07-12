@@ -4,12 +4,13 @@ title: Verify selected language persists after logout and login
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005-Bharqan-Localization
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

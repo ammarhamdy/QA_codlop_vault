@@ -4,12 +4,13 @@ title: Verify selected language persists after closing and reopening the applica
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005-Bharqan-Localization
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

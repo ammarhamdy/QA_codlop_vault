@@ -4,12 +4,13 @@ title: Verify Updated Profile Information After Refresh
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Bharqan-Profile
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
@@ -19,7 +20,7 @@ tags:
 |       |       |
 
 # Preconditions
--Profile infon has been updated successfully.
+-Profile info has been updated successfully.
 # Steps
 1. Refresh or reopen Profile.
 # Expected Result

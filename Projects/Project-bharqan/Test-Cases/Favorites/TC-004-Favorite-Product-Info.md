@@ -4,12 +4,13 @@ title: Verify favorite product Info are displayed correctly
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-004-Bharqan-Favorites
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

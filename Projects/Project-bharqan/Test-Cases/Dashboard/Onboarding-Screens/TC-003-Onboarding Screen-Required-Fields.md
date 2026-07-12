@@ -4,12 +4,13 @@ title: Verify required fields validation when adding a Settings Screen
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-012-Bharqan-Dashboard
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

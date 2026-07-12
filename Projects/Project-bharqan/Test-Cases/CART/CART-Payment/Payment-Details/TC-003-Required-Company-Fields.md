@@ -3,10 +3,7 @@ tc_id: TC-CART-PayDet-003
 title: Verify required company fields
 priority:
   - High
-  - Medium
-  - Low
 status:
-  - Draft
   - Ready
 type:
   - Functional

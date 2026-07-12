@@ -4,9 +4,7 @@ executor: Fatma
 environment: QA
 build:
 status:
-  - started
   - in-progress
-  - completed
 start_date:
 end_date:
 tags:

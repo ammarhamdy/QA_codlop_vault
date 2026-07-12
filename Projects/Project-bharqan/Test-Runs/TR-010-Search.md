@@ -28,6 +28,10 @@ views:
       - priority
       - status
       - run_result
+    sort:
+      - property: run_result
+        direction: ASC
+
 ```
 
 # Summary

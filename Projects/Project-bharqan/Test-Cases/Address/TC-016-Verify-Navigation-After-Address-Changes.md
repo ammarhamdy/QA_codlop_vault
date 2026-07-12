@@ -1,6 +1,6 @@
 ---
-tc_id: TC-Address-001
-title: Verify Viewing Saved Addresses
+tc_id: TC-Address-016
+title: Verify navigation to Addresses screen after add or edit an address
 priority:
   - High
 status:
@@ -10,7 +10,7 @@ type:
 linked_requirement: US-010-Bharqan-Addresses
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data
@@ -22,9 +22,11 @@ run_result: Pass
 # Preconditions
 -User is logged in.
 # Steps
-1. Navigate to **Addresses**.
+1. Open Addresses screen.
+2. Add a new address or edit an existing address.
+3. Click Save button.
 # Expected Result
--All saved addresses are displayed successfully.
+-User should be redirected to the Addresses screen.
 # Notes
 
 # Attachments

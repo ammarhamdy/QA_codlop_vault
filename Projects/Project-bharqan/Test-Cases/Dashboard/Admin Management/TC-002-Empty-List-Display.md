@@ -4,13 +4,14 @@ title: Verify Viewing Empty Supervisors List
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
   - API
 linked_requirement: US-012-Bharqan-Admin-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

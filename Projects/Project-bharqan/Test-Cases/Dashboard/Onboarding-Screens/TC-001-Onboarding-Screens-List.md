@@ -4,12 +4,13 @@ title: Verify viewing Settings Screens list
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-012-Bharqan-Dashboard
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify all UI elements are localized in the selected language
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005-Bharqan-Localization
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify adding the same product multiple times
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Bahrqan-CART
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

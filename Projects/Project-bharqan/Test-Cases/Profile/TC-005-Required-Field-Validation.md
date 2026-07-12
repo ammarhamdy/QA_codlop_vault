@@ -4,12 +4,13 @@ title: Verify Required Field Validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Bharqan-Profile
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

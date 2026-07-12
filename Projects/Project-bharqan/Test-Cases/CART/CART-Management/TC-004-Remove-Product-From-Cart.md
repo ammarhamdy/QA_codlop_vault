@@ -4,12 +4,13 @@ title: Verify removing a product from the cart
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Bahrqan-CART
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify National Address Input Validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-010-Bharqan-Addresses
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

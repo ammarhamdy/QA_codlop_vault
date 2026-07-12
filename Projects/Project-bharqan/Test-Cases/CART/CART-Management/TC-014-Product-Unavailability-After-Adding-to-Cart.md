@@ -4,7 +4,6 @@ title: Verify unavailable product in the cart
 priority:
   - High
 status:
-  - Draft
 type:
   - Functional
 linked_requirement: US-006-Bahrqan-CART

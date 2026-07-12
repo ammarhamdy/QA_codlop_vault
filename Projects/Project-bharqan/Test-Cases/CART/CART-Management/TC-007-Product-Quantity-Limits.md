@@ -4,12 +4,13 @@ title: Verify minimum and maximum allowed product quantity
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Bahrqan-CART
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

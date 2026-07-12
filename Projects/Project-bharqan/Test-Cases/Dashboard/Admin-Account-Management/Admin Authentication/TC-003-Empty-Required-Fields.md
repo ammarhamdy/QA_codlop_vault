@@ -4,12 +4,13 @@ title: Verify Login with Empty Required Fields
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-013-Bharqan-Admin-Account-Management
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

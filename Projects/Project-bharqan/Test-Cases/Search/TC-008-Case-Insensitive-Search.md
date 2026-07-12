@@ -4,12 +4,13 @@ title: Verify Search is Case-Insensitive
 priority:
   - Medium
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Bharqan-Search
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
