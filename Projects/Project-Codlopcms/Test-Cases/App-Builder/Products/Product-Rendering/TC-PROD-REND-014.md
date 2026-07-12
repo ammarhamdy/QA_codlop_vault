@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-014
 title: Verify Mobile App Skips Rendering Section When No Products Found for Category
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-043
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - empty-category
   - mobile
+run_result: pass
 ---
 
 # Test Data

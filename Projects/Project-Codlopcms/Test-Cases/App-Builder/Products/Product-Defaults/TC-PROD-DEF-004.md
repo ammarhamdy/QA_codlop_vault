@@ -2,23 +2,25 @@
 tc_id: TC-PROD-DEF-004
 title: Verify Boolean Settings Default to False When Missing (Except showTitle)
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-040
 tags:
   - test-case
   - defaults
   - boolean-toggles
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| settings.showPrice | (missing) |
-| settings.highlight | (missing) |
+| Field                       | Value     |
+| --------------------------- | --------- |
+| settings.showPrice          | (missing) |
+| settings.highlight          | (missing) |
 | style.transparentBackground | (missing) |
-| style.hideBorder | (missing) |
-| style.hideItemBorder | (missing) |
+| style.hideBorder            | (missing) |
+| style.hideItemBorder        | (missing) |
 
 # Preconditions
 - A Product Section JSON is generated with all boolean toggles omitted.

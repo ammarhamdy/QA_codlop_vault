@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-001
 title: Verify Malformed JSON Causes Section Exclusion Without Affecting Other Sections
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-041
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - malformed-json
   - mobile
+run_result: pass
 ---
 
 # Test Data

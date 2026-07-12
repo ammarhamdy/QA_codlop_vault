@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-012
 title: Verify Duplicate Product IDs in data-strings Are Handled on Mobile
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-030, PROD-REQ-035
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - duplicates
   - mobile
+run_result: pass
 ---
 
 # Test Data

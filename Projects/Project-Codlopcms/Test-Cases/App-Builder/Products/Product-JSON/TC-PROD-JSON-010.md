@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-010
 title: Verify JSON Excludes parentCategoryId When Source Is selected_products
 priority: Medium
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-027
 tags:
@@ -10,6 +11,7 @@ tags:
   - json
   - parentCategoryId
   - consistency
+run_result: pass
 ---
 
 # Test Data

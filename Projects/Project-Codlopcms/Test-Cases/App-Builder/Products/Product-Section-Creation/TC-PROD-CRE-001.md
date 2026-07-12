@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-001
 title: Verify Admin Can Create a New Product Section on Home Screen
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-001
 tags:
   - test-case
   - creation
   - positive
+run_result: pass
 ---
 
 # Test Data

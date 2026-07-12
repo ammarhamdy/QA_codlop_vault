@@ -28,7 +28,6 @@ views:
       property: file.folder
       direction: ASC
     order:
-      - tc_id
       - file.name
       - priority
       - status

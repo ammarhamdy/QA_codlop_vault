@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-002
 title: Verify Mobile App Fetches Product Section JSON on Home Screen Refresh
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-033, PROD-REQ-038
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - refresh
   - mobile
+run_result: Pass
 ---
 
 # Test Data

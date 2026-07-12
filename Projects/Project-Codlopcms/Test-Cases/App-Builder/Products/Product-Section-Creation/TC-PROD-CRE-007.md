@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-007
 title: Verify Section ID Remains Consistent Across Save Cycles
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Regression
 linked_requirement: PROD-REQ-002
 tags:
   - test-case
   - identifier
   - persistence
+run_result: pass
 ---
 
 # Test Data

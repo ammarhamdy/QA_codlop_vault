@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CARD-006
 title: Verify Unsupported productCardStyle Causes Section Exclusion on Mobile
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-045
 tags:
@@ -10,6 +11,7 @@ tags:
   - card-style
   - error-handling
   - mobile
+run_result: pass
 ---
 
 # Test Data

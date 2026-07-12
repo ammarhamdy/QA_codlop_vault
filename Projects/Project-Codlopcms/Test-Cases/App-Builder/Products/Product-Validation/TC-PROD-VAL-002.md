@@ -2,13 +2,15 @@
 tc_id: TC-PROD-VAL-002
 title: Verify Validation Error Messages Are Clear and Identify the Specific Field
 priority: High
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-032
 tags:
   - test-case
   - validation
   - error-messages
+run_result: pass
 ---
 
 # Test Data

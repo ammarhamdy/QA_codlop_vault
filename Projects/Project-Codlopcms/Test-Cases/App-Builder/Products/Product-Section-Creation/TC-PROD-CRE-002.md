@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-002
 title: Verify Unique Section Identifier Is Automatically Generated on Creation
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-002
 tags:
   - test-case
   - creation
   - identifier
+run_result: pass
 ---
 
 # Test Data

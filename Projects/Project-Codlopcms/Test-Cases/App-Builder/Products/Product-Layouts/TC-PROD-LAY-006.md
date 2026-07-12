@@ -2,7 +2,8 @@
 tc_id: TC-PROD-LAY-006
 title: Verify Unsupported section_key Values Cause Section Exclusion on Mobile
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-044
 tags:
@@ -10,6 +11,7 @@ tags:
   - layout
   - error-handling
   - mobile
+run_result: pass
 ---
 
 # Test Data

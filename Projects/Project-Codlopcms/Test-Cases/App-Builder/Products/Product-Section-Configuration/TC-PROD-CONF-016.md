@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-016
 title: Verify Unsupported Shadow Values Cannot Be Saved
 priority: Low
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-014
 tags:
@@ -11,6 +12,7 @@ tags:
   - shadow
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

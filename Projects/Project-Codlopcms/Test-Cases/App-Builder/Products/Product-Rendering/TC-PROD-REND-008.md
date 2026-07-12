@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-008
 title: Verify Mobile App Renders Products in Exact Order from data-strings
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-037
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - product-order
   - mobile
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-PROD-ERR-006
 title: Verify Products That Fail to Resolve Are Handled Gracefully
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-035
 tags:

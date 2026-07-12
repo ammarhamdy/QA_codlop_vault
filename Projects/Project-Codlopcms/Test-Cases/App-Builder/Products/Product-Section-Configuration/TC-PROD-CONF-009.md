@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-009
 title: Verify Admin Can Toggle Transparent Background
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-015
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - style
   - background
+run_result: pass
 ---
 
 # Test Data

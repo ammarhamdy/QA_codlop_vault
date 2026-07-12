@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-005
 title: Verify Section Is Not Visible to Mobile App Until Enabled and Published
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-001
 tags:
   - test-case
   - creation
   - visibility
+run_result: pass
 ---
 
 # Test Data

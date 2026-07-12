@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-012
 title: Verify Failed Validation Results in Section Being Skipped, Not Crash
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-034
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - validation
   - error-handling
+run_result: pass
 ---
 
 # Test Data

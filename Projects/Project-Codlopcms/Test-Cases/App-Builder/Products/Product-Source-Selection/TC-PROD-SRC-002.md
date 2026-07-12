@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-002
 title: Verify productSource Selection Determines Visible Configuration Fields
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-025, PROD-REQ-026
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - configuration
   - dynamic-fields
+run_result: pass
 ---
 
 # Test Data

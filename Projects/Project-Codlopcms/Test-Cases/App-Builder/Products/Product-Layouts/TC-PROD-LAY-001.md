@@ -2,7 +2,7 @@
 tc_id: TC-PROD-LAY-001
 title: Verify Admin Can Select Layout from Supported Values (grid_one, grid_two, grid_three, horizontal)
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-008
 tags:

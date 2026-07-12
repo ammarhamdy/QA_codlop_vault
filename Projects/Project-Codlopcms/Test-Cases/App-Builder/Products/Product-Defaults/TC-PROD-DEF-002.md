@@ -2,7 +2,8 @@
 tc_id: TC-PROD-DEF-002
 title: Verify Missing Optional Settings Fields Use Documented Defaults
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-040
 tags:
@@ -10,6 +11,7 @@ tags:
   - defaults
   - settings
   - optional-fields
+run_result: pass
 ---
 
 # Test Data

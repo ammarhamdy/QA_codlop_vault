@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-020
 title: Verify Spacing Fields Reject Negative Values
 priority: Low
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-018
 tags:
@@ -11,6 +12,7 @@ tags:
   - spacing
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

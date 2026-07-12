@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-003
 title: Verify Invalid Hex Color in style Falls Back to Default
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-042
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - invalid-color
   - fallback
+run_result: pass
 ---
 
 # Test Data

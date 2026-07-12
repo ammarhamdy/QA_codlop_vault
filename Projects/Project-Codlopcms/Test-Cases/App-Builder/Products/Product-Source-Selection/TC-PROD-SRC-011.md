@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-011
 title: Verify Selected Product Order Is Rendered Correctly on Mobile
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-029, PROD-REQ-037
 tags:
@@ -11,6 +12,7 @@ tags:
   - product-order
   - rendering
   - mobile
+run_result: pass
 ---
 
 # Test Data

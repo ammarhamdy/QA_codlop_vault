@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-008
 title: Verify Selected Product Order Is Preserved in data-strings
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-029
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - product-order
   - reorder
+run_result: pass
 ---
 
 # Test Data

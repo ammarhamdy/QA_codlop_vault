@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-001
 title: Verify Admin Can Configure Section Title with Free Text
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-004
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - title
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CONF-015
 title: Verify Admin Can Configure Title Gap and Section Spacing
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-018
 tags:
   - test-case
   - configuration
   - spacing
+run_result: pass
 ---
 
 # Test Data

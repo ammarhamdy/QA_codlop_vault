@@ -2,7 +2,8 @@
 tc_id: TC-PROD-LAY-005
 title: Verify Admin Panel Prevents Saving Mismatched layout and section_key Values
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-009
 tags:
@@ -11,6 +12,7 @@ tags:
   - consistency
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

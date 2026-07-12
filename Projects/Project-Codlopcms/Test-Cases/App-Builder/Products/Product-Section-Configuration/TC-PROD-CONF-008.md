@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-008
 title: Verify Admin Can Toggle Price Display (showPrice)
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-023
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - price
   - visibility
+run_result: fail
 ---
 
 # Test Data

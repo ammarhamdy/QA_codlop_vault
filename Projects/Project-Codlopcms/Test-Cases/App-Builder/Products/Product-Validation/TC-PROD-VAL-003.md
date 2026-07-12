@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-003
 title: Verify Save (Draft) Is Allowed Even with Missing Required Fields
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-032
 tags:
@@ -10,6 +11,7 @@ tags:
   - validation
   - draft
   - save
+run_result: pass
 ---
 
 # Test Data

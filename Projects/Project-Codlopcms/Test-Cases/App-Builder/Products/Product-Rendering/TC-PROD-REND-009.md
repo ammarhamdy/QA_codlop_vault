@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-009
 title: Verify Configuration Changes Reflect on Home Screen After Refresh
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-038
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - refresh
   - configuration-changes
+run_result: Pass
 ---
 
 # Test Data

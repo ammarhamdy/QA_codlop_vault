@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-005
 title: Verify Admin Can Toggle Section Enabled/Disabled
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-005
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - enable
   - disable
+run_result: pass
 ---
 
 # Test Data

@@ -2,13 +2,15 @@
 tc_id: TC-PROD-JSON-007
 title: Verify JSON Is Regenerated When Section Configuration Changes
 priority: High
-status: Ready
+status:
+  - completed
 type: Regression
 linked_requirement: PROD-REQ-031, PROD-REQ-038
 tags:
   - test-case
   - json
   - regeneration
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-001
 title: Verify All Required Fields Are Validated Before Publish
 priority: High
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-032
 tags:
@@ -10,6 +11,7 @@ tags:
   - validation
   - required-fields
   - publish
+run_result: pass
 ---
 
 # Test Data
@@ -36,5 +38,6 @@ tags:
 - The section remains in its current state.
 
 # Notes
+All Fields have default values, and not editable by typing but only from selection.  
 
 # Attachments

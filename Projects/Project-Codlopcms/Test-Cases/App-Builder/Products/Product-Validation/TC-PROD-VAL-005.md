@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-005
 title: Verify String Fields Reject Non-String Types
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-034
 tags:
@@ -10,6 +11,7 @@ tags:
   - validation
   - data-types
   - string
+run_result: pass
 ---
 
 # Test Data

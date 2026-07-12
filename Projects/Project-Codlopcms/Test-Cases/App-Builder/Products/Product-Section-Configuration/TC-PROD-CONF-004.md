@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-004
 title: Verify Empty Title with showTitle True Is Rejected
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-004
 tags:
@@ -11,13 +12,14 @@ tags:
   - title
   - validation
   - negative
+run_result: fail
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field         | Value   |
+| ------------- | ------- |
 | Section Title | (empty) |
-| showTitle | true |
+| showTitle     | true    |
 
 # Preconditions
 - Admin is logged into the Admin Panel.

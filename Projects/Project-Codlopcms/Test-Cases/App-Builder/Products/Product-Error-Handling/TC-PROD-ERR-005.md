@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-005
 title: Verify Empty Product List Hides Section Entirely
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-043
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - empty-list
   - mobile
+run_result: pass
 ---
 
 # Test Data

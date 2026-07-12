@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CARD-004
 title: Verify productCardStyle Consistency Between Top-Level and settings
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-011
 tags:
   - test-case
   - card-style
   - consistency
+run_result: pass
 ---
 
 # Test Data

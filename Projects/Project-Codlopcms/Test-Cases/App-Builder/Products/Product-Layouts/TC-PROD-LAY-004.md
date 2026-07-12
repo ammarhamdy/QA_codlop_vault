@@ -2,7 +2,8 @@
 tc_id: TC-PROD-LAY-004
 title: Verify Layout and section_key Are Consistent on Save
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-009
 tags:

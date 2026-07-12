@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-011
 title: Verify Malformed JSON in One Section Does Not Affect Other Sections' JSON
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-041
 tags:

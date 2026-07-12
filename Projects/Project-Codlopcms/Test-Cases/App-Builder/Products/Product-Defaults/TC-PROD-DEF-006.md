@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-006
 title: Verify Missing Shadow Style Defaults to Supported Value
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039
 tags:
   - test-case
   - defaults
   - shadow
+run_result: pass
 ---
 
 # Test Data

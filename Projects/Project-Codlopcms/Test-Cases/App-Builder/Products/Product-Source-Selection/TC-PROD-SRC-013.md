@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-013
 title: Verify Selected Products Persisted as Array of Strings in data-strings
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-028
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - product-selection
   - json
+run_result: pass
 ---
 
 # Test Data

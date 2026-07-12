@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-009
 title: Verify Duplicate Product IDs in data-strings Are Prevented at Save Time
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-030
 tags:
@@ -12,6 +13,7 @@ tags:
   - duplicates
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

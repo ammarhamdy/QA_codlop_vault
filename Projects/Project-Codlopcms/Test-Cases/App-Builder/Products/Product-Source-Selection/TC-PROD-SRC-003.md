@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-003
 title: Verify Admin Can Select Parent Category for Category-Based Source
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-026
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - category
   - positive
+run_result: pass
 ---
 
 # Test Data

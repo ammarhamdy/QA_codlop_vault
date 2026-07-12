@@ -2,7 +2,7 @@
 tc_id: TC-PROD-CARD-007
 title: Verify Each Product Card Style Renders Correctly on Mobile
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-010, PROD-REQ-036
 tags:

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-007
 title: Verify Unsupported section_key Excludes Section From Rendering
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-044
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - unsupported-section-key
   - mobile
+run_result: pass
 ---
 
 # Test Data

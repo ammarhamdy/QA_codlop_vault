@@ -2,7 +2,7 @@
 tc_id: TC-PROD-LAY-007
 title: Verify Each Layout Renders Correctly on Mobile
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-008, PROD-REQ-036
 tags:

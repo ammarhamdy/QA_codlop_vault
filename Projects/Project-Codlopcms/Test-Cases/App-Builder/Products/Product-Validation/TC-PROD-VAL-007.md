@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-007
 title: Verify Validation Rejects Unsupported Enum Values
 priority: High
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-032, PROD-REQ-008, PROD-REQ-010
 tags:
@@ -10,6 +11,7 @@ tags:
   - validation
   - enum
   - negative
+run_result: pass
 ---
 
 # Test Data

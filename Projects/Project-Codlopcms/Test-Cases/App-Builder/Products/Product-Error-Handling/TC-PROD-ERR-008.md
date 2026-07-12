@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-008
 title: Verify Unsupported productCardStyle Excludes Section From Rendering
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-045
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - unsupported-card-style
   - mobile
+run_result: pass
 ---
 
 # Test Data

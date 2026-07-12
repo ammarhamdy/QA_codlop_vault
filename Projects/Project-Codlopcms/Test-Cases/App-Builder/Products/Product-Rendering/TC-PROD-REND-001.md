@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-001
 title: Verify Mobile App Fetches Product Section JSON on Home Screen Load
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-033
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - mobile
   - fetch
+run_result: pass
 ---
 
 # Test Data

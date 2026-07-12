@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-013
 title: Verify Mobile App Skips Rendering Section with Zero Resolved Products
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-043
 tags:
@@ -10,13 +11,14 @@ tags:
   - rendering
   - empty-list
   - mobile
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field          | Value             |
+| -------------- | ----------------- |
 | Product Source | selected_products |
-| data-strings | [] |
+| data-strings   | `[]`              |
 
 # Preconditions
 - A Product Section is configured with an empty product list (`data-strings: []`).

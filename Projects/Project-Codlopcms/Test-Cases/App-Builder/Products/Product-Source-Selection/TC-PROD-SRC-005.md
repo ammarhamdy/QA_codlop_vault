@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-005
 title: Verify Consistency Validation Between productSource and parentCategoryId
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-027
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - consistency
   - validation
+run_result: pass
 ---
 
 # Test Data

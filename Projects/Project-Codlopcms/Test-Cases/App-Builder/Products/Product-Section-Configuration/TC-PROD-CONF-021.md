@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-021
 title: Verify Unsupported Highlight Modes Cannot Be Saved
 priority: Low
-status: Ready
+status:
+  - closed
 type: Validation
 linked_requirement: PROD-REQ-024
 tags:

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-007
 title: Verify Admin Can Toggle Section Title Visibility (showTitle)
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-019
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - title
   - visibility
+run_result: pass
 ---
 
 # Test Data

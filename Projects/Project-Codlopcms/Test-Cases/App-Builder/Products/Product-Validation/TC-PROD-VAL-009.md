@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-009
 title: Verify Validation Prevents Publishing with Missing Category for Category-Based Source
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-027, PROD-REQ-032
 tags:
@@ -10,6 +11,7 @@ tags:
   - validation
   - consistency
   - negative
+run_result: pass
 ---
 
 # Test Data

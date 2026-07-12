@@ -2,7 +2,7 @@
 tc_id: TC-PROD-JSON-005
 title: Verify Generated JSON Contains parentCategoryId for Category-Based Source
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-026
 tags:

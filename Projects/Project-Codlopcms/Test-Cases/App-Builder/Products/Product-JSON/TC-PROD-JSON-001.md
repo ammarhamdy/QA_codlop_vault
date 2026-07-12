@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-001
 title: Verify Generated JSON Contains All Required Top-Level Fields
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031
 tags:
@@ -10,6 +11,7 @@ tags:
   - json
   - generation
   - positive
+run_result: pass
 ---
 
 # Test Data

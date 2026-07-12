@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-002
 title: Verify Generated JSON Includes style Object with All Configured Properties
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-012, PROD-REQ-013, PROD-REQ-014, PROD-REQ-015, PROD-REQ-016, PROD-REQ-017, PROD-REQ-018
 tags:
@@ -10,6 +11,7 @@ tags:
   - json
   - style
   - generation
+run_result: pass
 ---
 
 # Test Data

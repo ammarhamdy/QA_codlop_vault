@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CARD-001
 title: Verify Admin Can Select Product Card Style from Supported Values
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-010
 tags:

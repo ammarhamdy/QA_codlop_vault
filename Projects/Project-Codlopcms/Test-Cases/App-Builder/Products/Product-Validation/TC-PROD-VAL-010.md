@@ -2,7 +2,8 @@
 tc_id: TC-PROD-VAL-010
 title: Verify Mobile App Data Type Validation Catches Invalid Boolean Toggles
 priority: Medium
-status: Ready
+status:
+  - closed
 type: Validation
 linked_requirement: PROD-REQ-034, PROD-REQ-042
 tags:
@@ -13,10 +14,10 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| enabled | "false" (string) |
-| showTitle | null |
+| Field     | Value            |
+| --------- | ---------------- |
+| enabled   | "false" (string) |
+| showTitle | null             |
 
 # Preconditions
 - A Product Section JSON is crafted with non-boolean values for boolean toggles.

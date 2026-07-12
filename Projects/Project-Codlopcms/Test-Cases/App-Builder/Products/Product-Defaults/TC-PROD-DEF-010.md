@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-010
 title: Verify Missing Background Color Defaults to Renderer Default
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039
 tags:
   - test-case
   - defaults
   - background
+run_result: pass
 ---
 
 # Test Data

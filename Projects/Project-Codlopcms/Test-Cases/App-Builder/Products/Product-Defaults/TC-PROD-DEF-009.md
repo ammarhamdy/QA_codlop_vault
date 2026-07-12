@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-009
 title: Verify Missing Title Color and Text Color Default to Renderer Defaults
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039
 tags:
   - test-case
   - defaults
   - colors
+run_result: pass
 ---
 
 # Test Data

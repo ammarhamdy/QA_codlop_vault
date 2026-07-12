@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CONF-010
 title: Verify Admin Can Toggle Section Border Visibility (hideBorder)
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-016
 tags:
   - test-case
   - configuration
   - border
+run_result: pass
 ---
 
 # Test Data

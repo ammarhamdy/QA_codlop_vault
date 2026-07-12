@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-022
 title: Verify Price Is Rendered Only When showPrice Is True and Product Has Price Data
 priority: Medium
-status: Ready
+status:
+  - closed
 type: Functional
 linked_requirement: PROD-REQ-023
 tags:

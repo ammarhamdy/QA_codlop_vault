@@ -2,7 +2,7 @@
 tc_id: TC-PROD-LAY-002
 title: Verify Admin Can Select All Four Supported Layouts
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-008
 tags:

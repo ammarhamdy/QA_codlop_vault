@@ -2,13 +2,15 @@
 tc_id: TC-PROD-ERR-004
 title: Verify Non-Boolean Value for Boolean Toggle Falls Back to Default
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-042
 tags:
   - test-case
   - error-handling
   - boolean-fallback
+run_result: pass
 ---
 
 # Test Data

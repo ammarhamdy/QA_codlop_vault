@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CRE-003
 title: Verify Section ID Is Immutable After Creation
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-002
 tags:
@@ -10,6 +11,7 @@ tags:
   - creation
   - identifier
   - immutability
+run_result: pass
 ---
 
 # Test Data

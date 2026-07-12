@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-010
 title: Verify Each Entry in data-strings Is a Non-Empty String
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-030
 tags:
@@ -11,6 +12,7 @@ tags:
   - product-ids
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

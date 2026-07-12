@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-012
 title: Verify Admin Can Configure Highlight Mode
 priority: Low
-status: Ready
+status:
+  - closed
 type: Functional
 linked_requirement: PROD-REQ-024
 tags:

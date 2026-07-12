@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-013
 title: Verify Admin Can Configure Corner Radius and Padding
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-013
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - style
   - geometry
+run_result: pass
 ---
 
 # Test Data

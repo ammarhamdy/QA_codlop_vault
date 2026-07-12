@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-006
 title: Verify Multiple Product Sections Can Be Created on the Same Home Screen
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-001, PROD-REQ-002
 tags:
   - test-case
   - creation
   - multiple-sections
+run_result: pass
 ---
 
 # Test Data

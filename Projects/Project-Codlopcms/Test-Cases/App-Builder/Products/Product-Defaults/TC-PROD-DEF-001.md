@@ -2,7 +2,8 @@
 tc_id: TC-PROD-DEF-001
 title: Verify Missing Optional Style Fields Use Renderer Defaults
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039
 tags:
@@ -10,6 +11,7 @@ tags:
   - defaults
   - style
   - optional-fields
+run_result: pass
 ---
 
 # Test Data

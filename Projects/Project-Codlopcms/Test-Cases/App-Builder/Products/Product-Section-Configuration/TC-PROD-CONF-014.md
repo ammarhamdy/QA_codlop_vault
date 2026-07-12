@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-014
 title: Verify Admin Can Configure Shadow Style
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-014
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - style
   - shadow
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-PROD-LAY-008
 title: Verify Unsupported layout Value Causes Section Exclusion on Mobile
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: PROD-REQ-044
 tags:

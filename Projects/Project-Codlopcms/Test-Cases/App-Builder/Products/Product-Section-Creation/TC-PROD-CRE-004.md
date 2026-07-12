@@ -2,13 +2,15 @@
 tc_id: TC-PROD-CRE-004
 title: Verify Section Type Is Automatically Set to "product" and Is Not Editable
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-003
 tags:
   - test-case
   - creation
   - type
+run_result: pass
 ---
 
 # Test Data

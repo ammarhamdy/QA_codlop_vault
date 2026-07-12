@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CARD-005
 title: Verify Mobile App Does Not Render Conflicting Card Styles
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-011
 tags:
@@ -10,6 +11,7 @@ tags:
   - card-style
   - inconsistency
   - error-handling
+run_result: pass
 ---
 
 # Test Data

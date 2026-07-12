@@ -2,7 +2,8 @@
 tc_id: TC-PROD-LAY-003
 title: Verify Layout Selection Is Required to Save/Publish the Section
 priority: High
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-008, PROD-REQ-032
 tags:
@@ -11,6 +12,7 @@ tags:
   - validation
   - required
   - negative
+run_result: fail
 ---
 
 # Test Data

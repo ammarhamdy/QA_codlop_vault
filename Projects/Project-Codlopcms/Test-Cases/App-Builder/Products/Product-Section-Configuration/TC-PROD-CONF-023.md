@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-023
 title: Verify Corner Radius and Padding Enforce Sane Maximum Values
 priority: Low
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-013
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - validation
   - boundary
+run_result: pass
 ---
 
 # Test Data

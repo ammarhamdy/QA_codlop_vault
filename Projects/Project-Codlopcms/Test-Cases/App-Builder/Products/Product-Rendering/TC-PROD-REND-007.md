@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-007
 title: Verify Mobile App Applies All Settings Fields
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-036
 tags:
@@ -10,14 +11,14 @@ tags:
   - rendering
   - settings
   - mobile
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| showTitle | true |
-| showPrice | true |
-| highlight | none |
+| Field     | Value |
+| --------- | ----- |
+| showTitle | true  |
+
 
 # Preconditions
 - A Product Section is configured with specific settings values.

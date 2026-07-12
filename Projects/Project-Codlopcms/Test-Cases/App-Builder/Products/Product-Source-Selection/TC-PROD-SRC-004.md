@@ -2,14 +2,16 @@
 tc_id: TC-PROD-SRC-004
 title: Verify parentCategoryId Accepts Null Value
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-026
 tags:
   - test-case
   - source
   - category
-  - null
+  - 
+run_result: pass
 ---
 
 # Test Data

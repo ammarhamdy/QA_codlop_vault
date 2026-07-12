@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-003
 title: Verify showTitle Defaults to True When Missing from settings
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-040
 tags:
   - test-case
   - defaults
   - showTitle
+run_result: pass
 ---
 
 # Test Data

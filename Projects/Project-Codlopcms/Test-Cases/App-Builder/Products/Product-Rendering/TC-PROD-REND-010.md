@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-010
 title: Verify Disabled Section Is Excluded From Rendering With No Placeholder
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-006
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - disabled
   - mobile
+run_result: pass
 ---
 
 # Test Data

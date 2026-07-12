@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-017
 title: Verify Invalid Hex Color Values Are Rejected at Input
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-012
 tags:
@@ -11,6 +12,7 @@ tags:
   - colors
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

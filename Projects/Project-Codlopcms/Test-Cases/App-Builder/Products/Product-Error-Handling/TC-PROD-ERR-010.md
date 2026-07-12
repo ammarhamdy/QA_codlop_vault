@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-010
 title: Verify Missing style or settings Object Does Not Crash the App
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039, PROD-REQ-040, PROD-REQ-041
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - missing-object
   - fallback
+run_result: pass
 ---
 
 # Test Data

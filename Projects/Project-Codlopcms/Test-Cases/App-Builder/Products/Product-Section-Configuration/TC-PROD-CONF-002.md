@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-002
 title: Verify Section Title Supports UTF-8 and RTL Text (e.g., Arabic)
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-004
 tags:
@@ -11,6 +12,7 @@ tags:
   - title
   - rtl
   - utf8
+run_result: pass
 ---
 
 # Test Data

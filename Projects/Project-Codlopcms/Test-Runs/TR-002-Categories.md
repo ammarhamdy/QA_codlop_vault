@@ -8,7 +8,7 @@ status:
   - in-progress
   - completed
 start_date: 2026-07-07T12:24:00
-end_date:
+end_date: 2026-07-12T16:47:00
 tags:
   - test-run
 ---
@@ -28,17 +28,15 @@ views:
       property: file.folder
       direction: ASC
     order:
-      - tc_id
+      - title
       - file.name
-      - priority
       - status
       - run_result
     columns:
       - property: tc_id
     columnSize:
-      note.tc_id: 100
-      file.name: 353
-      note.priority: 120
+      note.title: 485
+      file.name: 202
       note.status: 114
       note.run_result: 100
 

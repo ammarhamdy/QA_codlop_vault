@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-007
 title: Verify Missing Radius and Padding Default to Renderer Defaults
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-039
 tags:
   - test-case
   - defaults
   - geometry
+run_result: pass
 ---
 
 # Test Data

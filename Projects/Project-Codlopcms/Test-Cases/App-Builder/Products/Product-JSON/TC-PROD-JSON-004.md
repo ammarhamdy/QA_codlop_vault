@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-004
 title: Verify Generated JSON Contains data-strings for Selected Products Source
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-028
 tags:
@@ -10,6 +11,7 @@ tags:
   - json
   - data-strings
   - generation
+run_result: pass
 ---
 
 # Test Data

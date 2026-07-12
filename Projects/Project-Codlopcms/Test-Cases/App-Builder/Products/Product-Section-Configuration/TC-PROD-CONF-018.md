@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-018
 title: Verify Admin Can Configure Section Background and Text Colors with Valid Hex Values
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-012
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - colors
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-007
 title: Verify Admin Can Browse, Search, Add, and Remove Selected Products
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-028
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - product-selection
   - positive
+run_result: pass
 ---
 
 # Test Data

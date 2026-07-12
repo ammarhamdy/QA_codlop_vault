@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-002
 title: Verify Invalid Style or Settings Values Fall Back to Defaults
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-042
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - invalid-values
   - fallback
+run_result: pass
 ---
 
 # Test Data

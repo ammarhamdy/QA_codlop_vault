@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-011
 title: Verify Mobile App Handles Fetch Failures Gracefully
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-033
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - error-handling
   - network
+run_result: pass
 ---
 
 # Test Data

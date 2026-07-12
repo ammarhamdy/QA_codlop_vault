@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-006
 title: Verify parentCategoryId Must Be Null When productSource Is selected_products
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Validation
 linked_requirement: PROD-REQ-027
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - consistency
   - validation
+run_result: pass
 ---
 
 # Test Data

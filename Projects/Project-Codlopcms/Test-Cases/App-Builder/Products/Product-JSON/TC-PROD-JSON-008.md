@@ -2,13 +2,15 @@
 tc_id: TC-PROD-JSON-008
 title: Verify Generated JSON Has Correct Data Types for All Fields
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031
 tags:
   - test-case
   - json
   - data-types
+run_result: pass
 ---
 
 # Test Data

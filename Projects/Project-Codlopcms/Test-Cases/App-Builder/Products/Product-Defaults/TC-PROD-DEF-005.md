@@ -2,13 +2,15 @@
 tc_id: TC-PROD-DEF-005
 title: Verify Missing Highlight Mode Defaults to "none"
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-040
 tags:
   - test-case
   - defaults
   - highlight
+run_result: pass
 ---
 
 # Test Data

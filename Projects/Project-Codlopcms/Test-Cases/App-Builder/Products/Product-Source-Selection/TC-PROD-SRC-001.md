@@ -2,7 +2,8 @@
 tc_id: TC-PROD-SRC-001
 title: Verify Admin Can Select Product Source from Supported Values
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-025
 tags:
@@ -10,6 +11,7 @@ tags:
   - source
   - selection
   - positive
+run_result: pass
 ---
 
 # Test Data

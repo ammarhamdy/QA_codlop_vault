@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-006
 title: Verify Mobile App Applies All Style Fields to Visual Elements
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-036
 tags:
@@ -10,6 +11,7 @@ tags:
   - rendering
   - style
   - mobile
+run_result: pass
 ---
 
 # Test Data

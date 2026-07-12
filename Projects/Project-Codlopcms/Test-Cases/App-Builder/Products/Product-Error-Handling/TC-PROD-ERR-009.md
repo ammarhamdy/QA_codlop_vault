@@ -2,7 +2,8 @@
 tc_id: TC-PROD-ERR-009
 title: Verify Product IDs That Are Not Valid UUIDs Are Handled Gracefully
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-030, PROD-REQ-035
 tags:
@@ -10,6 +11,7 @@ tags:
   - error-handling
   - invalid-product-ids
   - mobile
+run_result: pass
 ---
 
 # Test Data

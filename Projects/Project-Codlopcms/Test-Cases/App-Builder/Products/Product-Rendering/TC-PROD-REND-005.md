@@ -2,7 +2,8 @@
 tc_id: TC-PROD-REND-005
 title: Verify Mobile App Resolves Product Data for Category-Based Source
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-035
 tags:
@@ -11,6 +12,7 @@ tags:
   - product-resolution
   - category
   - mobile
+run_result: pass
 ---
 
 # Test Data

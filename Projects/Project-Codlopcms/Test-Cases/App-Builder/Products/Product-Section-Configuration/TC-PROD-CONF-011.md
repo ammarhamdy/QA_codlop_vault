@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-011
 title: Verify Admin Can Toggle Item Border Visibility (hideItemBorder)
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-017
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - border
   - card
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-CONF-006
 title: Verify Disabled Section Retains All Configuration When Re-Enabled
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: PROD-REQ-007
 tags:
@@ -10,6 +11,7 @@ tags:
   - configuration
   - disable
   - persistence
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-006
 title: Verify Generated JSON Validates Against Documented Schema Before Publication
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-032
 tags:
@@ -10,6 +11,7 @@ tags:
   - json
   - validation
   - schema
+run_result: pass
 ---
 
 # Test Data

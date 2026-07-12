@@ -2,7 +2,8 @@
 tc_id: TC-PROD-JSON-003
 title: Verify Generated JSON Includes settings Object with All Configured Properties
 priority: High
-status: Ready
+status:
+  - completed
 type: API
 linked_requirement: PROD-REQ-031, PROD-REQ-019, PROD-REQ-023, PROD-REQ-024
 tags:
@@ -10,14 +11,13 @@ tags:
   - json
   - settings
   - generation
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| showTitle | true |
-| showPrice | true |
-| highlight | none |
+| Field            | Value    |
+| ---------------- | -------- |
+| showTitle        | true     |
 | productCardStyle | type_two |
 
 # Preconditions
