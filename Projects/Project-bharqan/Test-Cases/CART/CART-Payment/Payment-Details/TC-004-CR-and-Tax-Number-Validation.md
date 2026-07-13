@@ -4,12 +4,13 @@ title: Verify Commercial Registration and Tax Number Accept Numeric Input Only
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-007-Bharqan-CART-Payment
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify registration using deleted account credentials
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Security
 linked_requirement: US-001-Bahrqan-Authentication
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -12,6 +12,7 @@ type:
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

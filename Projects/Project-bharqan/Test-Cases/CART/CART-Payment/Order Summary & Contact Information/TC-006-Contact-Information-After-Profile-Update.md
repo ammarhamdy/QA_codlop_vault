@@ -4,12 +4,13 @@ title: Verify contact information after profile update
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-007-Bharqan-CART-Payment
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

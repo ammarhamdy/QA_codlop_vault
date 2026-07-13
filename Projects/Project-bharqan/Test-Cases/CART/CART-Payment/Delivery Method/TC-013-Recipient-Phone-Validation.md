@@ -4,12 +4,13 @@ title: Verify that the recipient's phone number cannot be the same as the accoun
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-007-Bharqan-CART-Payment
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
