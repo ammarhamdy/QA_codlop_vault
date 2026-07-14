@@ -1,0 +1,32 @@
+---
+tc_id: TC-CART-Pay-003
+title:
+priority:
+  - High
+status:
+  - Ready
+type:
+  - Functional
+  - Regression
+  - API
+linked_requirement: US-008-Beauty-CART-Payment
+tags:
+  - test-case
+run_result:
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-User on payment page.
+# Steps
+1. Tap on order summary
+# Expected Result
+-The order summary displays each product's image, name, quantity, unit price, subtotal, and total amount correctly.
+# Notes
+
+# Attachments

@@ -10,7 +10,7 @@ type:
 linked_requirement: US-003-Beauty-Categories
 tags:
   - test-case
-run_result: Fail
+run_result: Pass
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify adding a product to the cart from the Home screen
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Beauty-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

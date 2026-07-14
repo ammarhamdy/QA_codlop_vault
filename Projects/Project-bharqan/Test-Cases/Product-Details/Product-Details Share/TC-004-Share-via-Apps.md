@@ -10,7 +10,7 @@ type:
 linked_requirement: US-003-Bharqan-Product-Details
 tags:
   - test-case
-run_result: Pass
+run_result:
 ---
 
 # Test Data

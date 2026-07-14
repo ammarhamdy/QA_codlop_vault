@@ -5,8 +5,6 @@ environment: QA
 build: v1
 status:
   - started
-  - in-progress
-  - completed
 start_date:
 end_date:
 tags:

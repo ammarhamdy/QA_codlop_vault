@@ -4,13 +4,14 @@ title: Verify banner slider auto-scrolls correctly
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
   - API
 linked_requirement: US-002-Beauty-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

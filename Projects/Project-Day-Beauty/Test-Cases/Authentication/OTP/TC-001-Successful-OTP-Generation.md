@@ -4,12 +4,13 @@ title: Verify OTP is generated successfully
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-001-Beauty-Authentication
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

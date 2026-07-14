@@ -4,12 +4,13 @@ title: Verify user can open Product Details from Search Suggestions
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Beauty-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

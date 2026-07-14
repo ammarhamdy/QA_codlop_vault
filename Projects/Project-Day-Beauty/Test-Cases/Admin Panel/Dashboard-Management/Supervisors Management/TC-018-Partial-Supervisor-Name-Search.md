@@ -1,0 +1,30 @@
+---
+tc_id: TC-Admin-018
+title: Verify Search with a Partial Supervisor Name
+priority:
+  - High
+status:
+  - Ready
+type:
+  - Functional
+linked_requirement: US-013-Beauty-Dashboard-Management
+tags:
+  - test-case
+run_result:
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-Admin is logged in.
+# Steps
+1. Enter part of a supervisor's name.
+# Expected Result
+-Matching supervisors are displayed.
+# Notes
+
+# Attachments

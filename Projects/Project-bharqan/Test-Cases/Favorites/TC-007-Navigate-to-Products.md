@@ -10,6 +10,7 @@ type:
 linked_requirement: US-004-Bharqan-Favorites
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

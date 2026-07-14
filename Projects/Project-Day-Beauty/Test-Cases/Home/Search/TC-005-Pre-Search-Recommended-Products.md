@@ -4,12 +4,13 @@ title: Verify recommended products are displayed before performing a search
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Beauty-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
