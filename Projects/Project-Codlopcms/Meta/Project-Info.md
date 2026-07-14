@@ -22,6 +22,10 @@ project: codlopcms
 - **Prod Env:** 
 
 ## More Info
+```
+500000005
+Phone code: 0000
+```
 
 ---
 *Last Updated: 2026-07-06 14:27*
