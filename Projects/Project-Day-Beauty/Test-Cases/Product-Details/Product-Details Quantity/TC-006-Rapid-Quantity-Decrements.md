@@ -12,7 +12,7 @@ type:
 linked_requirement: US-004-Beauty-Product-Details
 tags:
   - test-case
-run_result:
+run_result: Pass
 ---
 
 # Test Data

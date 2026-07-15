@@ -4,12 +4,13 @@ title: Verify recommended products are displayed on the Product Details page
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-004-Beauty-Product-Details
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

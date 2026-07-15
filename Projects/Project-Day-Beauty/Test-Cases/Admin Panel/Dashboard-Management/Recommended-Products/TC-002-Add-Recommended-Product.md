@@ -10,6 +10,7 @@ type:
 linked_requirement: US-013-Beauty-Dashboard-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

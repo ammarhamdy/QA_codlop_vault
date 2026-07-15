@@ -10,7 +10,7 @@ type:
 linked_requirement: US-012-Beauty-Admin-Account-Management
 tags:
   - test-case
-run_result:
+run_result: Pass
 ---
 
 # Test Data

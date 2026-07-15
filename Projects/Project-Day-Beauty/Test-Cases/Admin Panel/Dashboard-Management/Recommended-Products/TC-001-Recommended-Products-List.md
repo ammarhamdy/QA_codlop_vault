@@ -4,12 +4,13 @@ title: Verify viewing the recommended products list
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-013-Beauty-Dashboard-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

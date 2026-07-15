@@ -3,7 +3,6 @@ tc_id: TC-PD-Rate-002
 title: Verify Rating Without Login
 priority:
   - High
-  - Low
 status:
   - Ready
 type:
@@ -11,7 +10,7 @@ type:
 linked_requirement: US-004-Beauty-Product-Details
 tags:
   - test-case
-run_result:
+run_result: Pass
 ---
 
 # Test Data

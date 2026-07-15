@@ -9,7 +9,7 @@ type:
   - Functional
 linked_requirement: US-013-Beauty-Dashboard-Management
 tags:
-run_result:
+run_result: Pass
 ---
 
 # Test Data

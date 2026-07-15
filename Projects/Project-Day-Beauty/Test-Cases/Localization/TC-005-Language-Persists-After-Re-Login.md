@@ -10,7 +10,7 @@ type:
 linked_requirement: US-005-Beauty-Localization
 tags:
   - test-case
-run_result:
+run_result: Pass
 ---
 
 # Test Data
