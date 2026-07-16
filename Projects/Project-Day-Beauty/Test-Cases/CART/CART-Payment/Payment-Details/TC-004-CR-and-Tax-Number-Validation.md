@@ -10,7 +10,7 @@ type:
 linked_requirement: US-008-Beauty-CART-Payment
 tags:
   - test-case
-run_result:
+run_result: Fail
 ---
 
 # Test Data

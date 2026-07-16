@@ -1,10 +1,10 @@
 ---
-tc_id: TC-CART-M-012
-title: Verify cart persists after logout and login
+tc_id: TC-CART-017
+title: Verify Recommended Products are displayed when the cart is empty
 priority:
   - High
 status:
-  - Ready
+  - Draft
 type:
   - Functional
 linked_requirement: US-007-Beauty-CART
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--User is logged in
+-The cart is empty.
 # Steps
-1. Logout and login again.
+1. Navigate to the Cart page.
 # Expected Result
--Cart contents remain unchanged.
+-The empty cart screen displays the Recommended Products section with the recommended products listed correctly.
 # Notes
 
 # Attachments

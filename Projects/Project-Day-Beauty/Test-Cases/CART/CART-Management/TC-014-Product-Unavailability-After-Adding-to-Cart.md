@@ -4,6 +4,7 @@ title: Verify unavailable product in the cart
 priority:
   - High
 status:
+  - Ready
 type:
   - Functional
 linked_requirement: US-007-Beauty-CART

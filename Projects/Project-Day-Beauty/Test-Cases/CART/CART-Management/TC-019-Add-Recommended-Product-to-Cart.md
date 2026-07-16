@@ -1,10 +1,10 @@
 ---
-tc_id: TC-CART-M-012
-title: Verify cart persists after logout and login
+tc_id: TC-CART-019
+title: Verify adding a recommended product to the cart
 priority:
   - High
 status:
-  - Ready
+  - Draft
 type:
   - Functional
 linked_requirement: US-007-Beauty-CART
@@ -20,11 +20,12 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--User is logged in
+-The cart is empty.
 # Steps
-1. Logout and login again.
+1. Navigate to cart.
+2. Tap the **Cart** icon on any recommended product.
 # Expected Result
--Cart contents remain unchanged.
+-The selected recommended product is added to the cart successfully.
 # Notes
 
 # Attachments

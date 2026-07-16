@@ -33,6 +33,8 @@ views:
       - priority
       - status
       - run_result
+    columnSize:
+      file.name: 354
 
 ```
 

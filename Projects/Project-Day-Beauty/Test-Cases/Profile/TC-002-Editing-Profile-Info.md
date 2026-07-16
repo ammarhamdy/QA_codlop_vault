@@ -10,7 +10,7 @@ type:
 linked_requirement: US-011-Beauty-Profile
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data

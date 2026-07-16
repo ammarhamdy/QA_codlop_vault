@@ -10,7 +10,7 @@ type:
 linked_requirement: US-010-Beauty-Addresses
 tags:
   - test-case
-run_result:
+run_result: Pass
 ---
 
 # Test Data
