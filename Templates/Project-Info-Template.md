@@ -10,10 +10,6 @@ project: ""
 - **Dashboard URL:**
 - **App Store (iOS):** 
 - **Play Store (Android):** 
-- **TestFlight (Beta):** 
-- **Jira Board:** 
-- **Grafana Dashboard:** 
-- **Swagger API Docs:** 
 - **Figma:** 
 
 ## Environments Matrix
