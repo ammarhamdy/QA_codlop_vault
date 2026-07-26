@@ -27,6 +27,9 @@ views:
         - file.inFolder("Projects/Project-Azer/Test-Cases/Partnership-Request")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Register Your Interest")
         - file.inFolder("Projects/Project-Azer/Test-Cases/Request-Service")
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - priority
