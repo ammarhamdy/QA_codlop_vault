@@ -7,7 +7,7 @@ project: aqarcrm
 
 ## Global Assets & Dashboards
 - **Website URL:** [demo-site](https://test-demo.aqarcrm.app/)
-- **Dashboard URL:** [demo-cms](https://test-demo.aqarcrm.app)
+- **Dashboard URL:** [demo-cms](https://test-demo.aqarcrm.app/login)
 - **App Store (iOS):** 
 - **Play Store (Android):** 
 - **TestFlight (Beta):** 
