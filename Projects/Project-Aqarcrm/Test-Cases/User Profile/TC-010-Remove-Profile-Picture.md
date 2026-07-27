@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-019
-title: " Verify Clear Search Results"
+tc_id: TC-Profile-010
+title: Verify removing profile picture
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-linked_requirement:
+linked_requirement: US-005-User-Profile
 tags:
   - test-case
 ---
@@ -19,12 +19,11 @@ tags:
 |       |       |
 
 # Preconditions
--Search results are displayed.
+-User has an uploaded profile picture.
 # Steps
-1. Search with valid data.
-2. Clear the search field
+Click **Remove Image** then save the changes.
 # Expected Result
--All messages are displayed again.
+-The profile picture is removed successfully.
 # Notes
 
 # Attachments

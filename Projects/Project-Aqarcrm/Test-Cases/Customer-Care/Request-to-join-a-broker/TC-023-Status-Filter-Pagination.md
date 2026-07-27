@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-019
-title: " Verify Clear Search Results"
+tc_id: TC-Broker-Req-023
+title: Verify pagination with status filters
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-linked_requirement:
+linked_requirement: US-004-Broker-Join-Request
 tags:
   - test-case
 ---
@@ -19,12 +19,11 @@ tags:
 |       |       |
 
 # Preconditions
--Search results are displayed.
+
 # Steps
-1. Search with valid data.
-2. Clear the search field
+1. Apply a filter & navigate between pages.
 # Expected Result
--All messages are displayed again.
+-Pagination works correctly for the filtered requests.
 # Notes
 
 # Attachments

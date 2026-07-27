@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-014
-title: Verify Administrator Can Review Contact US messages
+tc_id: TC-Property-Request
+title: Verify Administrator Can Review Property Requests
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-003-Request-Your-Property
 tags:
   - test-case
 ---
@@ -19,16 +19,15 @@ tags:
 |       |       |
 
 # Preconditions
--Contact messages exist
+-Property Requests exist
 # Steps
 1. Log in to the administrator panel with valid credentials.
-2. Navigate to the 'Contact Us Requests'.
+2. Navigate to the 'Property Requests'.
 3. Verify that the previously submitted client request(s) are listed.
-4. For each request, verify the displayed information: Client Name, Email Address,  Message ,....
+4. For each request, verify the displayed information: Client Name, Phone, Category ,....
 # Expected Result
-- The administrator should see a comprehensive list of all submitted Contact Messages.
+- The administrator should see a comprehensive list of all submitted Property Requests.
 - Each Message should display accurate and complete details as submitted by the client.
-
 # Notes
 
 # Attachments

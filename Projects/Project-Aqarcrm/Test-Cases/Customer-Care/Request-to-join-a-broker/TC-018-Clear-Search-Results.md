@@ -1,5 +1,5 @@
 ---
-tc_id: TC-Contact-US-019
+tc_id: TC-Broker-Req-018
 title: " Verify Clear Search Results"
 priority:
   - High
@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement:
+linked_requirement: US-004-Broker-Join-Request
 tags:
   - test-case
 ---

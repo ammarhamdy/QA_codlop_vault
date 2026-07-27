@@ -1,12 +1,17 @@
 ---
-tc_id: TC-Contact-US-019
-title: " Verify Clear Search Results"
+tc_id: TC-Property-Req-013
+title:
 priority:
   - High
+  - Medium
+  - Low
 status:
   - Draft
+  - Ready
 type:
   - Functional
+  - Regression
+  - API
 linked_requirement:
 tags:
   - test-case
@@ -19,12 +24,11 @@ tags:
 |       |       |
 
 # Preconditions
--Search results are displayed.
+-User is on the Request Your Property page.
 # Steps
-1. Search with valid data.
-2. Clear the search field
+1. Select a Region then select a City then a Neighborhood.
 # Expected Result
--All messages are displayed again.
+-Each dropdown displays the corresponding available values.
 # Notes
 
 # Attachments

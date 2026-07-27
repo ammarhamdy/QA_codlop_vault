@@ -21,7 +21,7 @@ tags:
 # Preconditions
 -Contact messages exist with both Read and Unread statuses.
 # Steps
-1. Navigate to the 'Contact Us Requests' or similar section.
+1. Navigate to the 'Contact Us Requests'.
 2. Review the **Total**, **Read**, and **Unread** message counters
 # Expected Result
 -The Total, Read, and Unread counters are displayed correctly and match the actual number of contact messages in each category.

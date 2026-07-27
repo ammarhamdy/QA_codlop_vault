@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-019
-title: " Verify Clear Search Results"
+tc_id: TC-Profile-012
+title: Changes Persist After Refresh
 priority:
   - High
 status:
   - Draft
 type:
   - Functional
-linked_requirement:
+linked_requirement: US-005-User-Profile
 tags:
   - test-case
 ---
@@ -19,12 +19,11 @@ tags:
 |       |       |
 
 # Preconditions
--Search results are displayed.
+-User successfully updated the profile.
 # Steps
-1. Search with valid data.
-2. Clear the search field
+1. Refresh the page.
 # Expected Result
--All messages are displayed again.
+-The updated profile information remains displayed correctly.
 # Notes
 
 # Attachments

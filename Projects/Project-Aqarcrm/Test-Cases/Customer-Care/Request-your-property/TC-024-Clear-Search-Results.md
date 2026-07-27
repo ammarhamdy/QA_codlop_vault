@@ -1,5 +1,5 @@
 ---
-tc_id: TC-Contact-US-019
+tc_id: TC-Property-Req-024
 title: " Verify Clear Search Results"
 priority:
   - High
@@ -7,7 +7,7 @@ status:
   - Draft
 type:
   - Functional
-linked_requirement:
+linked_requirement: US-003-Request-Your-Property
 tags:
   - test-case
 ---
@@ -24,7 +24,7 @@ tags:
 1. Search with valid data.
 2. Clear the search field
 # Expected Result
--All messages are displayed again.
+-All Requests are displayed again.
 # Notes
 
 # Attachments
