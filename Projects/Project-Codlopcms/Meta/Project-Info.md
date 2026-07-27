@@ -7,13 +7,11 @@ project: codlopcms
 
 ## Global Assets & Dashboards
 - **Website URL:**
-- **Dashboard URL:** [`codlop-dashboard`](https://codlop.codlopcms.com/auth/login)
+- **Dashboard URL:** 
+	- [`codlopcms`](https://codlopcms.com/apps-control/login?token=32iOSfkKrIj723nNroBSdZAQfGv6iq60DtQarPJL)
+	- [`codlop-dashboard`](https://codlop.codlopcms.com/auth/login)
 - **App Store (iOS):** 
 - **Play Store (Android):** 
-- **TestFlight (Beta):** 
-- **Jira Board:** 
-- **Grafana Dashboard:** 
-- **Swagger API Docs:** 
 - **Figma:** 
 
 ## Environments Matrix
