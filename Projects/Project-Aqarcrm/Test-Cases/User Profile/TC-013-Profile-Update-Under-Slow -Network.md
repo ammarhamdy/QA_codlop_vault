@@ -4,7 +4,7 @@ title: Verify profile update under slow network
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005-User-Profile

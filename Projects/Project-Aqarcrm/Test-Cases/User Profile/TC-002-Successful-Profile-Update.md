@@ -4,12 +4,13 @@ title: Verify successful profile update
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: Verify successful profile update
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

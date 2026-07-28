@@ -4,12 +4,13 @@ title: Verify unsupported image format
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-005-User-Profile
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
