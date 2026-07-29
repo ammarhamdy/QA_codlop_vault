@@ -9,13 +9,9 @@ The Real Estate Management System is a platform that enables real estate owners 
 ## 2. Stakeholders
 
 The system consists of the following stakeholder groups:
-
 1. CMS Administrators
-    
 2. Visitors
-    
     - Real Estate Owner
-        
     - Customer
         
 
