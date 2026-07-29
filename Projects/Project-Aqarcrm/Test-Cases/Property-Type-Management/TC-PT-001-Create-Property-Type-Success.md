@@ -9,6 +9,7 @@ tags:
   - test-case
   - create
   - positive
+run_result: pass
 ---
 
 # Test Data
