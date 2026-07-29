@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-007
-title: Verify changing the selected subject
+tc_id: TC-client-019
+title: Verify deleted customer can register again
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-007-Clients-Management
 tags:
   - test-case
 run_result: Pass
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--US-002-Contact-US
+-Client has been deleted.
 # Steps
-1. Select  subject then change it.
+1. Register using same phone number.
 # Expected Result
--The newly selected subject is displayed.
+-New account is created successfully.
 # Notes
 
 # Attachments

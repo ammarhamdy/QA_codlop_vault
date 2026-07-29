@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-007
-title: Verify changing the selected subject
+tc_id: TC-client-001
+title: Verify Customers page is displayed successfully
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-007-Clients-Management
 tags:
   - test-case
 run_result: Pass
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--US-002-Contact-US
+-Admin logged in with valid credentials.
 # Steps
-1. Select  subject then change it.
+1. Navigate to **Customers** page.
 # Expected Result
--The newly selected subject is displayed.
+-Customers page is displayed successfully.
 # Notes
 
 # Attachments

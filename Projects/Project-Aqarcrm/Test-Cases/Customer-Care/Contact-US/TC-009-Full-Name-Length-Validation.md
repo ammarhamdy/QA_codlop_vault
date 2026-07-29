@@ -4,12 +4,13 @@ title: Verify full name field length validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Contact-USUS-002-Contact-US
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

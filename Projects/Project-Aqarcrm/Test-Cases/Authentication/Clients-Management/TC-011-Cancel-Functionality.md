@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-007
-title: Verify changing the selected subject
+tc_id: TC-client-011
+title: Verify Cancel button in Add Customer
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-007-Clients-Management
 tags:
   - test-case
 run_result: Pass
@@ -20,11 +20,12 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--US-002-Contact-US
+-Add Client form is openز
 # Steps
-1. Select  subject then change it.
+1. Fill phone num& name.
+2. Click Cancel.
 # Expected Result
--The newly selected subject is displayed.
+-Form closes without saving.
 # Notes
 
 # Attachments

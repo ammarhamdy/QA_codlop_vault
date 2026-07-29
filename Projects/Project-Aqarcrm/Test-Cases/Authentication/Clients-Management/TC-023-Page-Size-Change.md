@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Contact-US-007
-title: Verify changing the selected subject
+tc_id: TC-client-023
+title: Verify changing page size
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-007-Clients-Management
 tags:
   - test-case
 run_result: Pass
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--US-002-Contact-US
+-More than 5 clients exist
 # Steps
-1. Select  subject then change it.
+1. Change page size from dropdown.
 # Expected Result
--The newly selected subject is displayed.
+-Selected number of rows is displayed correctly.
 # Notes
 
 # Attachments

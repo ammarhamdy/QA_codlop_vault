@@ -1,16 +1,16 @@
 ---
-tc_id: TC-Contact-US-007
-title: Verify changing the selected subject
+tc_id: TC-client-016
+title: Verify deleting client
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-002-Contact-US
+linked_requirement: US-007-Clients-Management
 tags:
   - test-case
-run_result: Pass
+run_result: Fail
 ---
 
 # Test Data
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--US-002-Contact-US
+-Client exists.
 # Steps
-1. Select  subject then change it.
+1. Click Delete and confirm.
 # Expected Result
--The newly selected subject is displayed.
+-Client is deleted successfully.
 # Notes
 
 # Attachments

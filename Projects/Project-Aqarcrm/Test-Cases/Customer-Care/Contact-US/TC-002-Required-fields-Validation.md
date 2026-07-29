@@ -3,10 +3,7 @@ tc_id: TC-Contact-US-002
 title: Verify required fieldS validation
 priority:
   - High
-  - Medium
-  - Low
 status:
-  - Draft
   - Ready
 type:
   - Functional
@@ -15,6 +12,7 @@ type:
 linked_requirement:
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
