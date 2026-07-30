@@ -3,10 +3,7 @@ tc_id: TC-Property-Req-025
 title: Verify pagination with status filters
 priority:
   - High
-  - Medium
-  - Low
 status:
-  - Draft
   - Ready
 type:
   - Functional

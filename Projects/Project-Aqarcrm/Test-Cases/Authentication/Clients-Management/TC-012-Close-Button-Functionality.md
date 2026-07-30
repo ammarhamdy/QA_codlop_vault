@@ -24,7 +24,7 @@ run_result: Pass
 # Steps
 1. Click Close icon.
 # Expected Result
--Dialog closes without saving.
+-Form closes without saving.
 # Notes
 
 # Attachments

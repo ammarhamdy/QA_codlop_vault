@@ -1,6 +1,6 @@
 ---
 tc_id: TC-client-021
-title: Verify statistics update after activating/deactivating customer
+title: Verify statistics update after activating/deactivating client
 priority:
   - High
 status:

@@ -1,6 +1,6 @@
 ---
 tc_id: TC-client-011
-title: Verify Cancel button in Add Customer
+title: Verify Cancel button in Add Client
 priority:
   - High
 status:
@@ -20,7 +20,7 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--Add Client form is openز
+-Add Client form is open.
 # Steps
 1. Fill phone num& name.
 2. Click Cancel.

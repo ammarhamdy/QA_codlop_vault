@@ -4,12 +4,13 @@ title: Verify area range selection using slider
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-003-Request-Your-Property
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

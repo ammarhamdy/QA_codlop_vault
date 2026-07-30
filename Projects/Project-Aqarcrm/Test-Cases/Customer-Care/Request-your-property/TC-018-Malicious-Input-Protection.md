@@ -4,11 +4,12 @@ title: Verify protection against malicious input
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Security
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

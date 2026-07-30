@@ -4,12 +4,13 @@ title: Verify availability of direct communication options with the client
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-002-Contact-US
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
