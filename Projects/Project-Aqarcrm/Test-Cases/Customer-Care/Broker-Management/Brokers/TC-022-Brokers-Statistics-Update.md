@@ -4,12 +4,13 @@ title: Verify Broker statistics are updated after adding or deleting a Broker
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-008-Brokers-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

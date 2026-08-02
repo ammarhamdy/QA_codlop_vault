@@ -1,6 +1,6 @@
 ---
 tc_id: TC-Broker-006
-title:
+title: Verify adding Broker with valid data
 priority:
   - High
 status:
