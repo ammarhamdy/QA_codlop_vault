@@ -1,0 +1,30 @@
+---
+tc_id: TC-U-Prop-011
+title: Verify selecting property information from dropdown lists
+priority:
+  - High
+status:
+  - Ready
+type:
+  - Functional
+linked_requirement: US-009-Properties
+tags:
+  - test-case
+run_result: Pass
+---
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+|       |       |
+|       |       |
+
+# Preconditions
+-User is logged in as a Broker & Add Property form is open.
+# Steps
+1. Select the **Property Type**, **Property Category**, **Property Purpose**, **Country**, **City**, and **District** from their respective dropdown lists.
+# Expected Result
+-All selected values are displayed correctly, accepted by the system, and saved successfully.
+# Notes
+
+# Attachments

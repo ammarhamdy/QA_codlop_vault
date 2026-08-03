@@ -1,17 +1,16 @@
 ---
-tc_id: TC-A-Prop-042
+tc_id: TC-A-Prop-039
 title: Verify uploading optional property deed document with PDF format validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
-  - Regression
-  - API
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
@@ -21,7 +20,7 @@ tags:
 |       |       |
 
 # Preconditions
--Admin on add broker form on Images &Attachments step.
+-User is logged in as a Broker on add property form on Images &Attachments step.
 # Steps
 1. Upload a valid PDF property deed.
 2. Verify it is uploaded successfully.
