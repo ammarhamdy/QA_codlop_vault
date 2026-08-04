@@ -3,14 +3,14 @@ tc_id: TC-U-Brow-064
 title: Verify switching between filter options
 priority:
   - High
-  - Low
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -4,11 +4,13 @@ title: Verify adding a property to Favorites without logging in
 priority:
   - High
 status:
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

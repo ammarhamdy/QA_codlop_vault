@@ -4,12 +4,13 @@ title: Verify pagination after applying filters
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

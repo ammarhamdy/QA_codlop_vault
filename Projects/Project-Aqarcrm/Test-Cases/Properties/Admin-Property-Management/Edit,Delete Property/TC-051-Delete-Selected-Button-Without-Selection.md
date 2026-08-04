@@ -4,12 +4,13 @@ title: Verify Delete Selected button behavior without selecting properties
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

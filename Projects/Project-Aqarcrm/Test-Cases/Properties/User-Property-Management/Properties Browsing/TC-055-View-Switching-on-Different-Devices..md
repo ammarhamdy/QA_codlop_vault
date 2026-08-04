@@ -4,11 +4,12 @@ title: Verify view switching on different devices
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type: Compatibility
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result:
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify map updates when location details are changed
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

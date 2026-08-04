@@ -4,12 +4,13 @@ title: Verify location is displayed correctly on map after selecting location da
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

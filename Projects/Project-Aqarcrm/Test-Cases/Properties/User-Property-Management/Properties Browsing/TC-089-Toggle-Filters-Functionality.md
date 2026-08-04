@@ -4,12 +4,13 @@ title: Verify filtering properties using Offers, Featured, and On Bid toggles
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

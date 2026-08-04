@@ -4,12 +4,13 @@ title: Verify filtering when the minimum and maximum area are equal
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-009-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

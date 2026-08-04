@@ -4,7 +4,7 @@ title: Verify uploading optional property deed document with PDF format validati
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
   - Regression
@@ -12,6 +12,7 @@ type:
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
