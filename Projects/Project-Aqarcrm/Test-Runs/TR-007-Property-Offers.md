@@ -1,9 +1,12 @@
 ---
-run_id: TR-
-executor:
-environment:
-build:
-status: [started, in-progress, completed]
+run_id: TR-007
+executor: Fatma
+environment: QA
+build: v1
+status:
+  - started
+  - in-progress
+  - completed
 start_date:
 end_date:
 tags:
@@ -11,33 +14,30 @@ tags:
 ---
 
 # Scope
-Property Type Management
+[Which feature / sprint / release this run covers.]
 
 # Executed Cases
-
 ```base
 views:
   - type: table
     name: Table
     filters:
       and:
-        - file.inFolder("Projects/Project-Aqarcrm/Test-Cases/Property-Type-Management")
+        - file.inFolder("Projects/Project-Aqarcrm/Test-Cases/Property-Offers")
+    groupBy:
+      property: file.folder
+      direction: ASC
     order:
       - file.name
       - priority
       - status
       - run_result
-    columnSize:
-      file.name: 431
-      note.priority: 118
-      note.run_result: 160
 
 ```
-
 # Summary
 
 ```dataviewjs
-const folderPath = "Projects/Project-Aqarcrm/Test-Cases/Property-Type-Management";
+const folderPath = "";
 
 // 1. Fetch all test case notes in that folder
 const testCases = dv.pages(`"${folderPath}"`)
@@ -66,5 +66,5 @@ dv.paragraph(`
 - 🗠 **Total Cases:** ${total} (${passRate}% Pass Rate)
 `);
 ```
-# Notes
 
+# Notes
