@@ -10,6 +10,7 @@ type:
 linked_requirement: US-010-Property-Offers
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
