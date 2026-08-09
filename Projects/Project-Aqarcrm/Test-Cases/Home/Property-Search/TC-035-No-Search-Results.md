@@ -4,12 +4,13 @@ title: Verify the search displays an empty state when no properties match the se
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

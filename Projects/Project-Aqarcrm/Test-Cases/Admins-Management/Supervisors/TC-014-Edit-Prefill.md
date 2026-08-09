@@ -4,12 +4,13 @@ title: Verify supervisor information is pre-filled when opening the Edit Supervi
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-013-Admins-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

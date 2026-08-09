@@ -4,13 +4,14 @@ title: Verify assigning one or more roles to a supervisor
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
   - API
 linked_requirement: US-013-Admins-Management
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

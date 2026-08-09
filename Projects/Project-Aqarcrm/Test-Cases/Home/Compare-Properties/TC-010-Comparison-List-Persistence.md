@@ -4,12 +4,13 @@ title: Verify comparison list is retained after page refresh or navigation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-012-Compare-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

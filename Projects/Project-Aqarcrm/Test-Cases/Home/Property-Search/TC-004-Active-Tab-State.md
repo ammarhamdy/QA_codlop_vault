@@ -4,12 +4,13 @@ title: Verify the selected property purpose tab remains active until another tab
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Home
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

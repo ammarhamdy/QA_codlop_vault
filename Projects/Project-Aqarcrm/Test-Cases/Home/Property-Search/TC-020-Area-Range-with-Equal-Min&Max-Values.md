@@ -4,12 +4,13 @@ title: Verify Area Range with Equal Min and Max Values
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Home
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

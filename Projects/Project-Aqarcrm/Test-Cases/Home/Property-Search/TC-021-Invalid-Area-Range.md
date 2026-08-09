@@ -4,12 +4,13 @@ title: Verify Area Range When Minimum Value Exceeds Maximum Value
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-006-Home
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

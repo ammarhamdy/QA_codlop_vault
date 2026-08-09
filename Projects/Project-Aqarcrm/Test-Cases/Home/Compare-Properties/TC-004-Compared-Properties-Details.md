@@ -4,12 +4,13 @@ title: Verify compared properties and their details are displayed correctly
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-012-Compare-Properties
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

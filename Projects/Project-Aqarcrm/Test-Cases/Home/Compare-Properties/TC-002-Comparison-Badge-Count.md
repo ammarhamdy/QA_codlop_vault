@@ -4,12 +4,13 @@ title: Verify comparison badge count updates after adding a property
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-012-Compare-Properties
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
