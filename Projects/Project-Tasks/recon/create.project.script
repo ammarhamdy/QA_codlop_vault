@@ -1,0 +1,19 @@
+curl 'https://tasks.codlop.sa/dashboard/projects' \
+  -X POST \
+  -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:153.0) Gecko/20100101 Firefox/153.0' \
+  -H 'Accept: */*' \
+  -H 'Accept-Language: en-US,en;q=0.9' \
+  -H 'Accept-Encoding: gzip, deflate, br, zstd' \
+  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+  -H 'X-CSRF-TOKEN: 6Aitv9818nklnYg53XLkhrfCvIDY9oC6kZFha8NB' \
+  -H 'X-Requested-With: XMLHttpRequest' \
+  -H 'Origin: https://tasks.codlop.sa' \
+  -H 'Connection: keep-alive' \
+  -H 'Referer: https://tasks.codlop.sa/dashboard/projects' \
+  -H 'Cookie: XSRF-TOKEN=eyJpdiI6ImRJUGxIWWdKYXJ5ZEJ2WTk4SlZuQWc9PSIsInZhbHVlIjoiVlJ4RmJLbHR4N2owdHZjcERXckFxRVNwNkZYUHZtQTcrNFVwekx3aDRVb2hxT0hrcUd1UjZLeHV6WG9LWDl6SjhwU0F6R0dPREdIRVZmT3NvL3c1OHZPaC9yRmJCTFhzVGdXTEV6N01aNHY5TWsxV3pjTndqTDdjd1haajA2RisiLCJtYWMiOiJlNTNkNDNjNTVlOTQ3NTBkODM2MmM1MjJhOTJmZDQyZDc3MjhjNjVjMGJmOTZmMWIyNjBkNWNhMDRiYjgwMDJlIiwidGFnIjoiIn0%3D; laravel_session=eyJpdiI6ImFVYWVkV0dPNHZCYzRvZElsVXZPM1E9PSIsInZhbHVlIjoiTHVnL2NCWE9HazZ4MC84RGx4ckdhQkdNTjI4MVdNYTMvWkxzTDRoeExsZWVGckJSQ1pDc2kwUHEweitXVlZQUXZtZjN6RW9mLzF2N1VJRDU5TytNNmxIWXFWc0szbVZxWGR4dVpPdVJWdzU5Nm5TZnZIUGNqendnV3RQY2FGNXQiLCJtYWMiOiIwZjIxODQ0NjBiZjA4MTQzZTcwZDM3YjhhZDJhZWViMmU1NmEwYTllNWZmNzkxYjQ0MzY0YWE1YTYzMGI4M2U0IiwidGFnIjoiIn0%3D; _ga_3HEBC236KG=GS2.1.s1784014363$o4$g1$t1784015986$j60$l0$h0; _ga=GA1.2.585246687.1783331872; _clck=1yow11t%5E2%5Eg7q%5E0%5E2378; _fbp=fb.1.1783331875269.164658055688606449; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6IldqUGQwUnJFZld4M1hkWkxla1JHMUE9PSIsInZhbHVlIjoiSjg4WW8vdWEyeDQ1a1NJTW9xdkRrNHVoVWg0eUM2S3BDc0duUU9pMUpRK1RMQUwrcTUvWWtLTExUcVlHMG9NWlRQaW5xNjNITzRsRkdwejJDKzlJbnZYQzVMQklXb0huYmFVc2lZOStYeXd1SWx4ZkZTRm1XS0RVdjg3Q1gzcGZVODFITXFsOWNUZW9IWkx3TnBKRFVyQ1YrQW1acTR6SUlpdlRGL1JET2hQS3ltUVZxVVVHMHlkS2FUNlo4SFJnaW5TQjZmRFVOUFZidndSMHppK2tnYTFwb0l5eklidmN3VE9hSWZYbndaTT0iLCJtYWMiOiJlMWQ2NTgxNWQzNTNkMTRmYmRjN2Q0OGYzOGIxNWMwZmI4NTVmMzAyYTNlOWQxYjI3ZWE3MGYwNGEwMjI4YjEyIiwidGFnIjoiIn0%3D; XSRF-TOKEN=eyJpdiI6IkxzMmlnMlNyb3pjMHhTUWxrM080aFE9PSIsInZhbHVlIjoiZXZ3SlRDd1VzWGdsNHpPdlk5N2tkQzVhMDJCd3ZRMGRWU2d1eTlYeCs1TENTTXZVU0xHMnBNNGxIRDd3QzkvcjFqUnBaUHU5WW1qdzNodkJWaGgvVk10SnpJYlZMbUR6Q0t3OCsvbWM4Z2pyRisyanU1SDdybWtnelBKWnhLaHYiLCJtYWMiOiIyNjRjOTMyN2U2YzQ1NWU1MTg1YjNjMzYwYmRhZjk3Y2UxM2MxMTQwODQ0NjMxYmU0NWQwNzA4NjQ4MmM1NjdiIiwidGFnIjoiIn0%3D; tasks-pro-session=eyJpdiI6IjliYzNvRlJ1QTRCbWZCWkpTNkxsc1E9PSIsInZhbHVlIjoiajVOWDhhQUFPL0xBYVJTbXBiMFovU3hXaU0zM21IdVFnSENhYVBBTk42M3hzeW9HSGk1NU9MZnhxSmZMSEI5bXVUYjF6VXgrSXRRcGc1TE80enJGbFpJRVUwRkh2N3ZTTXc4Qm5ISXN0b0c1UEp4SEswYTYvZzJxMmxpTmdnbDIiLCJtYWMiOiI0ZWM5YWJjOWY5MzE0MGNiYzU3MWE3NjFhYmQyOTZiMDFkZTNlZDJmNDU4ZWYzYWY4ZmViNWEzY2MyMmUwNzhmIiwidGFnIjoiIn0%3D' \
+  -H 'Sec-Fetch-Dest: empty' \
+  -H 'Sec-Fetch-Mode: cors' \
+  -H 'Sec-Fetch-Site: same-origin' \
+  -H 'Priority: u=0' \
+  -H 'TE: trailers' \
+  --data-raw '_token=6Aitv9818nklnYg53XLkhrfCvIDY9oC6kZFha8NB&slug=&code=&name=%D8%B5%D9%8A%D8%A7%D9%86%D8%AA%D9%8A&color=%234f6ef7&workspace_id=6&status=active&description=&start_date=&due_date='
