@@ -18,10 +18,11 @@ tags:
 # Summary
 
 ```dataviewjs
-const folderPath = "";
+const folderPaths = [""];
 
 // 1. Fetch all test case notes in that folder
-const testCases = dv.pages(`"${folderPath}"`)
+const testCases = folderPaths
+  .flatMap(folderPath => dv.pages(`"${folderPath}"`))
   .filter(p => p.tc_id || (p.tags && p.tags.includes("test-case")));
 
 // 2. Count based on run_result
