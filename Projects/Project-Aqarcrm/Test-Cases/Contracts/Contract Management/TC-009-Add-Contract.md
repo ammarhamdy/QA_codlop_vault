@@ -1,16 +1,15 @@
 ---
-tc_id: TC-U-Prop-002
-title: Verify adding Property with valid data
+tc_id: TC-Contract-009
+title: Verify adding Contract with valid data
 priority:
   - High
 status:
-  - Ready
+  - Draft
 type:
   - Functional
-linked_requirement: US-009-Properties
+linked_requirement: US-014-Contracts
 tags:
   - test-case
-run_result: Pass
 ---
 
 # Test Data
@@ -20,13 +19,13 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--User is logged in as a Broker.
+-Admin is logged in& on add new contract page.
 # Steps
-1. Click **Add Property.  
+1. Click **Add contract.  
 2. Enter valid data.  
 3. Click **Save**.
 # Expected Result
--Property is added successfully and appears in my advertisements.
+-Contract is added successfully and appears in contract list.
 # Notes
 
 # Attachments

@@ -1,13 +1,13 @@
 ---
-tc_id: TC-L-Pro-010
-title: Verify favorite button behavior for guest users
+tc_id: TC-FIt-001
+title: Verify that Financial Items are displayed
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-006-Home
+linked_requirement: US-014-Contracts
 tags:
   - test-case
 run_result: Pass
@@ -20,11 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--User is not logged in.
+-Admin is logged in.
 # Steps
-1. Click Add to favorite.
+1. Navigate to **Financial Items**.
 # Expected Result
--Property is not added to favorites, and the user is prompted to log in.
+-The Financial Items list should be displayed with all existing items and their details.
 # Notes
 
 # Attachments
