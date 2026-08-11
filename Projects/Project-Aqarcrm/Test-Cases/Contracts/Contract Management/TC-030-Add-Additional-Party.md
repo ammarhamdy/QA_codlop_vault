@@ -4,12 +4,13 @@ title: Verify adding an additional party
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-014-Contracts
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

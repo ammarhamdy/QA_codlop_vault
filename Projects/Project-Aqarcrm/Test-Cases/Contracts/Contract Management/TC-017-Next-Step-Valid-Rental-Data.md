@@ -4,12 +4,13 @@ title: Verify proceeding to the next step with valid Rental Contract data
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-014-Contracts
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

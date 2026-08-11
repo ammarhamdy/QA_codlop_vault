@@ -4,12 +4,13 @@ title: Verify Rental End Date validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-014-Contracts
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
