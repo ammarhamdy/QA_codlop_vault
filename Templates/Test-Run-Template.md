@@ -18,12 +18,22 @@ tags:
 # Summary
 
 ```dataviewjs
+// Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
 const folderPaths = [""];
 
-// 1. Fetch all test case notes in that folder
+// 1. Fetch all notes in the specified folders
 const testCases = folderPaths
-  .flatMap(folderPath => dv.pages(`"${folderPath}"`))
-  .filter(p => p.tc_id || (p.tags && p.tags.includes("test-case")));
+  .flatMap(folderPath => dv.pages(`"${folderPath}"`).values)
+  .filter(p => {
+    if (!p) return false;
+    const hasTcId = Boolean(p.tc_id);
+    
+    // Check tags safely regardless of array or string representation
+    const rawTags = Array.isArray(p.tags) ? p.tags : (p.tags ? [p.tags] : []);
+    const hasTag = rawTags.some(t => String(t).replace("#", "").toLowerCase() === "test-case");
+    
+    return hasTcId || hasTag;
+  });
 
 // 2. Count based on run_result
 const passed = testCases.filter(p => {

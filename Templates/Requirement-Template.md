@@ -12,5 +12,4 @@ tags:
 [Describe the core functionality or goal of this requirement.]
 
 ## Acceptance Criteria
-- [ ] 
-- [ ] 
+

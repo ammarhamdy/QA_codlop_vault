@@ -8,6 +8,7 @@ project: codlopcms
 ## Global Assets & Dashboards
 - **Website URL:**
 - **Dashboard URL:** 
+	- [`codlopcms-v2`](https://codlopcms.com/system/login?token=60DtQarPJL32iOSfkKrIj723nNroBSdZAQfGv6iq)
 	- [`codlopcms`](https://codlopcms.com/apps-control/login?token=32iOSfkKrIj723nNroBSdZAQfGv6iq60DtQarPJL)
 	- [`codlop-dashboard`](https://codlop.codlopcms.com/auth/login)
 - **App Store (iOS):** 
@@ -20,6 +21,11 @@ project: codlopcms
 - **Prod Env:** 
 
 ## More Info
+Dashboard
+```
+admin@codlop.com
+```
+Mobil
 ```
 500000005
 Phone code: 0000
