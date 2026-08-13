@@ -1,18 +1,18 @@
 ---
-run_id: TR-Customer-Car
+run_id: TR-Admins-Management
 executor: ammar
 environment: Prod
 build:
 status:
   - completed
-start_date: 2026-08-11T14:12:00
-end_date:
+start_date: 2026-08-12T09:20:00
+end_date: 2026-08-12T16:08:00
 tags:
-  - test-case
+  - test-run
 ---
 
 # Scope
-Customer-car [ landing-page, dashboard, API ]
+[Which feature / sprint / release this run covers.]
 
 # Executed Cases
 
@@ -22,10 +22,11 @@ views:
     name: Table
     filters:
       or:
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Customer-Care/Contact-Us/Submit-Contact-Us-Request")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/Delete-Contact-Request")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/Search-Contact-Requests")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/View-Contact-Requests")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Activate-Admin")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Add-Admin")        
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Deactivate-Admin")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Delete-Admin")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Edit-Admin")
     groupBy:
       property: file.folder
       direction: ASC
@@ -44,11 +45,18 @@ views:
 
 ```
 
+
 # Summary
 
 ```dataviewjs
 // Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
-const folderPaths = [ "Projects/Project-Seyanty/Test-Cases/Customer-Care/Contact-Us/Submit-Contact-Us-Request", "Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/Delete-Contact-Request", "Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/Search-Contact-Requests", "Projects/Project-Seyanty/Test-Cases/Customer-Care/Dashboard-Contact-Us/View-Contact-Requests" ];
+const folderPaths = [
+	"Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Activate-Admin",
+	"Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Add-Admin",
+	"Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Deactivate-Admin",
+	"Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Delete-Admin",
+	"Projects/Project-Seyanty/Test-Cases/Dashboard/Admins-Management/Edit-Admin"
+];
 
 // 1. Fetch all notes in the specified folders
 const testCases = folderPaths
@@ -63,6 +71,7 @@ const testCases = folderPaths
     
     return hasTcId || hasTag;
   });
+
 // 2. Count based on run_result
 const passed = testCases.filter(p => {
   const res = String(p.run_result || "").toLowerCase();
@@ -80,10 +89,10 @@ const passRate = total > 0 ? Math.round((passed / total) * 100) : 0;
 
 // 3. Render the summary
 dv.paragraph(`
-✔ Passed: ${passed}
-× Failed: ${failed}
-⏲ Untested / Pending: ${remaining}
-🗠 Total Cases: ${total} (${passRate}% Pass Rate)
+- ✔ **Passed:** ${passed}
+- × **Failed:** ${failed}
+- ⏲ **Untested / Pending:** ${remaining}
+- 🗠 **Total Cases:** ${total} (${passRate}% Pass Rate)
 `);
 ```
 

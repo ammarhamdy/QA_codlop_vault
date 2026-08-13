@@ -10,6 +10,7 @@ type:
 linked_requirement: REQ-DASH-EMP-002
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

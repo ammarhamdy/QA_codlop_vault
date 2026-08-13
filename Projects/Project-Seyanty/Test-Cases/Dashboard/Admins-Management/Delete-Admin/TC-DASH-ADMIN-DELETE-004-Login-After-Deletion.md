@@ -10,6 +10,7 @@ type:
 linked_requirement: REQ-DASH-ADMIN-005
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

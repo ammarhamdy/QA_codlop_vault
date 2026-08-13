@@ -10,7 +10,7 @@ project: seyanty
 - **Dashboard URL:** https://seyanty.info/dashboard/login
 - **App Store (iOS):** 
 - **Play Store (Android):**  https://play.google.com/store/apps/details?id=com.codlop.maintenance&hl=en
-- **Figma:** 
+- **Figma:** [link](https://www.figma.com/design/48RytDPpi25cFIZzo4Z4Q3/%D8%B5%D9%8A%D8%A7%D9%86%D8%AA%D9%8A?node-id=6818-8285&p=f&t=xUxtZCREhYpV2Kjy-0)
 
 ## Environments Matrix
 - **Dev Env:** 

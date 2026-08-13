@@ -10,18 +10,19 @@ type:
 linked_requirement: REQ-DASH-EMP-001
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field         | Value                 |
-| ------------- | --------------------- |
-| Name          | John Doe              |
-| Phone         | +15550123             |
-| Email         | john.doe@example.com  |
-| Password      | StrongPassword123     |
-| Job Title     | Software Engineer     |
-| Overview      | Experienced engineer  |
-| Profile Photo | valid-profile.png     |
+| Field         | Value                |
+| ------------- | -------------------- |
+| Name          | John Doe             |
+| Phone         | +15550123            |
+| Email         | john.doe@example.com |
+| Password      | StrongPassword123    |
+| Job Title     | Software Engineer    |
+| Overview      | Experienced engineer |
+| Profile Photo | valid-profile.png    |
 
 # Preconditions
 - User is an authorized dashboard user.

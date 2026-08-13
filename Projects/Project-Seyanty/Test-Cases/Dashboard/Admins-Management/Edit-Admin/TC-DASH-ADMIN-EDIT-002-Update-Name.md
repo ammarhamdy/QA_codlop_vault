@@ -10,14 +10,15 @@ type:
 linked_requirement: REQ-DASH-ADMIN-002
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field        | Value                 |
-| ------------ | --------------------- |
-| Name         | New Admin Name        |
-| Phone        | +201012345678         |
-| Email        | admin@example.com     |
+| Field | Value             |
+| ----- | ----------------- |
+| Name  | New Admin Name    |
+| Phone | +201012345678     |
+| Email | admin@example.com |
 
 # Preconditions
 - User is an authorized dashboard administrator.
