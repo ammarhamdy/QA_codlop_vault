@@ -4,7 +4,7 @@ title: Verify only one target audience can be selected
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Notifications

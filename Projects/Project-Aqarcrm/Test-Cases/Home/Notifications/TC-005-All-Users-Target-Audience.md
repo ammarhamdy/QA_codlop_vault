@@ -4,12 +4,13 @@ title: Verify selecting "All Users" as target audience
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Notifications
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

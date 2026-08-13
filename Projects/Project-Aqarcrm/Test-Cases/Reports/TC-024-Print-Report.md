@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Not-003
-title: Verify notification image is optional
+tc_id: TC-Report-024
+title: Verify Print Report button
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-011-Notifications
+linked_requirement: US-015-Reports
 tags:
   - test-case
 run_result: Pass
@@ -20,12 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--Admin is on Add Notification page.
+-Properties/users/ property and broker requests Report is opened.
 # Steps
-1. Fill Title, Message &Select Target Audience.
-2. click send.
+1. Click **Print Report**.
 # Expected Result
--Notification is sent successfully.
+-The print dialog/page opens successfully.
 # Notes
 
 # Attachments

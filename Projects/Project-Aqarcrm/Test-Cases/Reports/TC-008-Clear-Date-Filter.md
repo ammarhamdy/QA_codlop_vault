@@ -1,13 +1,13 @@
 ---
-tc_id: TC-Not-003
-title: Verify notification image is optional
+tc_id: TC-Report-008
+title: Clear date filter
 priority:
   - High
 status:
   - Ready
 type:
   - Functional
-linked_requirement: US-011-Notifications
+linked_requirement: US-015-Reports
 tags:
   - test-case
 run_result: Pass
@@ -20,12 +20,11 @@ run_result: Pass
 |       |       |
 
 # Preconditions
--Admin is on Add Notification page.
+-A date filter is applied.
 # Steps
-1. Fill Title, Message &Select Target Audience.
-2. click send.
+1. Clear the selected date.
 # Expected Result
--Notification is sent successfully.
+-The report is updated and the date filter is removed.
 # Notes
 
 # Attachments

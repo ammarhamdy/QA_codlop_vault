@@ -4,7 +4,7 @@ title: Verify selecting "Specific User" as target audience
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Notifications
