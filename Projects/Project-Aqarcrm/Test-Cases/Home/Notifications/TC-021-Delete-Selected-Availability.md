@@ -4,12 +4,13 @@ title: Verify "Delete Selected" is unavailable when no notification is selected
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Notifications
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

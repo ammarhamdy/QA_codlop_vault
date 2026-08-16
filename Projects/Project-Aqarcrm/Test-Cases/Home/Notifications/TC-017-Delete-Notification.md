@@ -4,12 +4,13 @@ title: Verify deleting a notification using the Delete action
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-011-Notifications
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
