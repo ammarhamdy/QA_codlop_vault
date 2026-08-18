@@ -4,12 +4,13 @@ title: Verify Property Facade Name Required Validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement:
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

@@ -4,12 +4,13 @@ title: Verify Only Active Facades Are Available During Property Creation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-017-Property-Settings1
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

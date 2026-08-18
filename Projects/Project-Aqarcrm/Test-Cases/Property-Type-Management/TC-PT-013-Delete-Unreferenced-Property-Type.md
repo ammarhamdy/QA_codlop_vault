@@ -9,6 +9,7 @@ tags:
   - test-case
   - delete
   - positive
+run_result: Pass
 ---
 
 # Test Data

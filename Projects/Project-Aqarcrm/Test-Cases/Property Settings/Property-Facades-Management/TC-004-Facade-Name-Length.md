@@ -4,12 +4,13 @@ title: Verify Property Facade Name Length Validation
 priority:
   - High
 status:
-  - Draft
+  - Ready
 type:
   - Functional
 linked_requirement: US-017-Property-Settings1
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

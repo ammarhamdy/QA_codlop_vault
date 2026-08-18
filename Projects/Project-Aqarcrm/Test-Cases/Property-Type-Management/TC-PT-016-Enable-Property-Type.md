@@ -9,6 +9,7 @@ tags:
   - test-case
   - enable-disable
   - positive
+run_result: Pass
 ---
 
 # Test Data

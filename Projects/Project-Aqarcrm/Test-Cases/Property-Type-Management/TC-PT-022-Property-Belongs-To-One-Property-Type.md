@@ -9,6 +9,7 @@ tags:
   - test-case
   - business-rule
   - integration
+run_result: Pass
 ---
 
 # Test Data

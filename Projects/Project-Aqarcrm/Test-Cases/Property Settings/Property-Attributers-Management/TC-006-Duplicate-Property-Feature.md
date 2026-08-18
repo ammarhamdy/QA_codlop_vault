@@ -4,11 +4,13 @@ title: Add Duplicate Property Attribute
 priority:
   - High
 status:
+  - Ready
 type:
   - Functional
 linked_requirement: US-017-Property-Settings1
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data

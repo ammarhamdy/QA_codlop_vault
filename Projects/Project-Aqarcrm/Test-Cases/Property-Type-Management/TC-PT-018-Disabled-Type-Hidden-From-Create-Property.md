@@ -10,6 +10,7 @@ tags:
   - business-rule
   - integration
   - regression
+run_result: Pass
 ---
 
 # Test Data

@@ -10,6 +10,7 @@ tags:
   - create
   - boundary
   - positive
+run_result: Pass
 ---
 
 # Test Data

@@ -9,6 +9,7 @@ tags:
   - test-case
   - permissions
   - negative
+run_result: Pass
 ---
 
 # Test Data
