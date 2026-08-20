@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-087
 title: Identify an FAQ Item with a Missing Question as Invalid
 priority: High
-status: Draft
+status:
+  - completed
 type: API
 linked_requirement: FAQ-REQ-038
 tags:
@@ -12,6 +13,7 @@ tags:
   - question
   - api
   - negative
+run_result: pass
 ---
 
 # Test Data

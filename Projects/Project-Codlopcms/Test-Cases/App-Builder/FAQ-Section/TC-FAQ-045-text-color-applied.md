@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-045
 title: Verify Text Color Is Applied When Custom Text Color Option Is Enabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-020
 tags:
@@ -12,6 +13,7 @@ tags:
   - textColor
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

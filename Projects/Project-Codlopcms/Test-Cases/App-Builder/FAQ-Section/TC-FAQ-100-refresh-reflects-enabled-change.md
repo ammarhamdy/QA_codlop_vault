@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-100
 title: Verify FAQ Enabled State Change Is Reflected After Configuration Refresh
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:
@@ -11,6 +12,7 @@ tags:
   - refresh
   - enabled
   - regression
+run_result: pass
 ---
 
 # Test Data

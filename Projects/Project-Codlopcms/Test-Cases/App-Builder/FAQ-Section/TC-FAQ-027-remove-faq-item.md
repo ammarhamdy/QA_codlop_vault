@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-027
 title: Remove an FAQ Item from the FAQ Section
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-014
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - remove
   - negative
+run_result: pass
 ---
 
 # Test Data

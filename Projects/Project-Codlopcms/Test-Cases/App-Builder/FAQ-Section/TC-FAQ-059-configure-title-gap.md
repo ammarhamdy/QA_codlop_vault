@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-059
 title: Configure the FAQ Title Gap
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-025
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - titleGap
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-108
 title: Verify Refresh Uses Latest Configuration Without Creating Duplicate FAQ Items
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:
@@ -11,6 +12,7 @@ tags:
   - refresh
   - duplicates
   - regression
+run_result: pass
 ---
 
 # Test Data

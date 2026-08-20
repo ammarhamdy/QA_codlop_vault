@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-033
 title: Verify FAQ Items Are Rendered as Accordion Items
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-016
 tags:
@@ -12,6 +13,7 @@ tags:
   - rendering
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-012
 title: Verify Changing showTitle Does Not Modify the Configured Title Value
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-007
 tags:
@@ -12,6 +13,7 @@ tags:
   - visibility
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

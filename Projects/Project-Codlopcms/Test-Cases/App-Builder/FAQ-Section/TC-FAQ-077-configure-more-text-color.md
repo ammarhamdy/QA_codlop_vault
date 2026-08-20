@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-077
 title: Configure the FAQ More/Action Text Color
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-034
 tags:
@@ -11,6 +12,7 @@ tags:
   - settings
   - showMoreTextColor
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-015
 title: Verify Disabled FAQ Section Is Not Rendered on the Home Screen
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-009
 tags:
@@ -11,6 +12,7 @@ tags:
   - disabled
   - rendering
   - regression
+run_result: pass
 ---
 
 # Test Data

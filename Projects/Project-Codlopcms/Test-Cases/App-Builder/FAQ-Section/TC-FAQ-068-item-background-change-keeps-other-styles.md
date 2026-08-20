@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-068
 title: Verify Changing FAQ Item Background Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Functional
 linked_requirement: FAQ-REQ-027
 tags:

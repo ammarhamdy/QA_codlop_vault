@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-006
 title: Verify FAQ Section Layout Is Fixed to "accordion"
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-004
 tags:
@@ -11,6 +12,7 @@ tags:
   - layout
   - json
   - positive
+run_result: pass
 ---
 
 # Test Data

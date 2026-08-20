@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-072
 title: Hide the FAQ Section Border When showBorder Is Disabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-031
 tags:
@@ -12,6 +13,7 @@ tags:
   - showBorder
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

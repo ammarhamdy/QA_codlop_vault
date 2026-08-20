@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-019
 title: Verify FAQ Section Title Display Depends on showTitle Setting
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-007
 tags:
@@ -11,6 +12,7 @@ tags:
   - title
   - showTitle
   - positive
+run_result: pass
 ---
 
 # Test Data

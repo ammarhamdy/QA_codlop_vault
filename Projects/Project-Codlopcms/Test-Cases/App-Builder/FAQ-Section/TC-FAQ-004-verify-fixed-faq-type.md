@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-004
 title: Verify Section Type Is Fixed to "faq" in the JSON Configuration
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-003
 tags:
@@ -11,6 +12,7 @@ tags:
   - type
   - json
   - positive
+run_result: pass
 ---
 
 # Test Data

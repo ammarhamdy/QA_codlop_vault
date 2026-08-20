@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-034
 title: Verify Question and Answer Association and Content Integrity in Accordion
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-016
 tags:
@@ -12,6 +13,7 @@ tags:
   - association
   - content-integrity
   - regression
+run_result: pass
 ---
 
 # Test Data

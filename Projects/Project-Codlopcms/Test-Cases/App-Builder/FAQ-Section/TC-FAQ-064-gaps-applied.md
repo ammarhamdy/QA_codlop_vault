@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-064
 title: Verify Top and Bottom Gaps Are Applied Around the FAQ Section
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-026
 tags:
@@ -13,6 +14,7 @@ tags:
   - gapBottom
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

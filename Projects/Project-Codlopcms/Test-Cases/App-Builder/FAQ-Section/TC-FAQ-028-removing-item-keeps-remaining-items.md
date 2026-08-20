@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-028
 title: Verify Removing an FAQ Item Does Not Modify Remaining Items
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-014
 tags:
@@ -11,6 +12,7 @@ tags:
   - remove
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

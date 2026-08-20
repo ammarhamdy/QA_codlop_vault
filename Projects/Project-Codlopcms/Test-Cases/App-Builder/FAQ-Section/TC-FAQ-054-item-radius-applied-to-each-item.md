@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-054
 title: Verify FAQ Item Radius Is Applied to Each Item by the Mobile App
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Regression
 linked_requirement: FAQ-REQ-023
 tags:

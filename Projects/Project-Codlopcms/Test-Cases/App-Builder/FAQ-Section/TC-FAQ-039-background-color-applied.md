@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-039
 title: Verify Section Background Color Is Applied by the Mobile App
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-018
 tags:
@@ -12,6 +13,7 @@ tags:
   - background
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-037
 title: Verify Expand and Collapse Are Independent per FAQ Item
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-017
 tags:
@@ -13,6 +14,7 @@ tags:
   - independence
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

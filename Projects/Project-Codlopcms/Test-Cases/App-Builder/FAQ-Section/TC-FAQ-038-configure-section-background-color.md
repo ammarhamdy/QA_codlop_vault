@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-038
 title: Configure the FAQ Section Background Color
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-018
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - background
   - positive
+run_result: pass
 ---
 
 # Test Data

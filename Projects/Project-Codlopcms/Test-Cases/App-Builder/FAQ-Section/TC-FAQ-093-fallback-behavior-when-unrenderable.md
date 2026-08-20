@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-093
 title: Verify Fallback Behavior When the FAQ Configuration Cannot Be Rendered
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-039
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - fallback
   - regression
+run_result: pass
 ---
 
 # Test Data

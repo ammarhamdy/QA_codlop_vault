@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-065
 title: Verify Changing One Gap Does Not Modify the Other Gap or Other Styles
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-026
 tags:
@@ -13,6 +14,7 @@ tags:
   - gapBottom
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

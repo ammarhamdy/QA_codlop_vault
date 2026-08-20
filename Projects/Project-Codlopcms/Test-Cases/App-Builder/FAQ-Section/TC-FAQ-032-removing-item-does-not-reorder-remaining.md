@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-032
 title: Verify Removing an FAQ Item Does Not Reorder Remaining Items
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-015
 tags:
@@ -12,6 +13,7 @@ tags:
   - remove
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

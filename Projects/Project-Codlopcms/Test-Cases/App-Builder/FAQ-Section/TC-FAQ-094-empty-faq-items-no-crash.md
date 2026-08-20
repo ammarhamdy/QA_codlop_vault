@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-094
 title: Verify Empty FAQ Items Do Not Cause a Crash
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-040
 tags:
@@ -11,6 +12,7 @@ tags:
   - empty
   - crash-safety
   - regression
+run_result: pass
 ---
 
 # Test Data

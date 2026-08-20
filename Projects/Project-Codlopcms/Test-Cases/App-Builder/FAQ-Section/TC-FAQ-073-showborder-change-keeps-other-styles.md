@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-073
 title: Verify Changing showBorder Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-031
 tags:
@@ -12,6 +13,7 @@ tags:
   - showBorder
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

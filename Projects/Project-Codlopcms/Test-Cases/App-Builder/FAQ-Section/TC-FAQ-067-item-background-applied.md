@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-067
 title: Verify FAQ Item Background Is Applied When Item Background Display Is Enabled
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Regression
 linked_requirement: FAQ-REQ-027
 tags:

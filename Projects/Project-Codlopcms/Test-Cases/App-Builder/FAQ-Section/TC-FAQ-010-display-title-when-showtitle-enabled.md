@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-010
 title: Display FAQ Section Title When showTitle Is Enabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-007
 tags:
@@ -11,6 +12,7 @@ tags:
   - title
   - visibility
   - positive
+run_result: pass
 ---
 
 # Test Data

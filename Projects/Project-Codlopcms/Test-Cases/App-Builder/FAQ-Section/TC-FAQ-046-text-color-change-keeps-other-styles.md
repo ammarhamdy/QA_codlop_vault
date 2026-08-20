@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-046
 title: Verify Changing Text Color Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-020
 tags:
@@ -12,6 +13,7 @@ tags:
   - textColor
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

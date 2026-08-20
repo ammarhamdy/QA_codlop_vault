@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-066
 title: Configure the FAQ Item Background Color
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Functional
 linked_requirement: FAQ-REQ-027
 tags:

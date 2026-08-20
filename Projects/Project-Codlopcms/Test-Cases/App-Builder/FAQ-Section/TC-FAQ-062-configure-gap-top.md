@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-062
 title: Configure the FAQ Section Top Gap
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-026
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - gapTop
   - positive
+run_result: pass
 ---
 
 # Test Data

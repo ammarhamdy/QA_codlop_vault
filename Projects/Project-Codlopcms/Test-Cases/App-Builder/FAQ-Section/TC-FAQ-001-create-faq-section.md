@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-001
 title: Create an FAQ Section in the App Builder
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - creation
   - positive
+run_result: pass
 ---
 
 # Test Data

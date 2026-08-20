@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-058
 title: Verify Changing Shadow Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Functional
 linked_requirement: FAQ-REQ-024
 tags:

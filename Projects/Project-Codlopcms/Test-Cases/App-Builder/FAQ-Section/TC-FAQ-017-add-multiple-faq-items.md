@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-017
 title: Add Multiple FAQ Items to the FAQ Section
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-010
 tags:
@@ -11,6 +12,7 @@ tags:
   - items
   - data-object
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-056
 title: Configure the FAQ Section Shadow
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Functional
 linked_requirement: FAQ-REQ-024
 tags:

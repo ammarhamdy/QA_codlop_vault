@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-021
 title: Verify Configured Question Is Displayed in the Mobile App
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-011
 tags:
@@ -11,6 +12,7 @@ tags:
   - question
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

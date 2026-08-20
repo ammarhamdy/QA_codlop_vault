@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-105
 title: Verify FAQ Styling Changes Are Reflected After Configuration Refresh
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:
@@ -11,6 +12,7 @@ tags:
   - refresh
   - styling
   - regression
+run_result: pass
 ---
 
 # Test Data

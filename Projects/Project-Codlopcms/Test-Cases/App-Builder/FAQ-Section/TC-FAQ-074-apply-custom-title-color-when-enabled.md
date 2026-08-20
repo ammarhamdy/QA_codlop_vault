@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-074
 title: Apply Custom Title Color When useCustomTitleColor Is Enabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-032
 tags:
@@ -12,6 +13,7 @@ tags:
   - useCustomTitleColor
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-096
 title: Verify Empty FAQ Section Title Follows showTitle Behavior
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-040
 tags:
@@ -11,6 +12,7 @@ tags:
   - empty
   - showTitle
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-030
 title: Verify Mobile App Renders FAQ Items in Configured Order
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-015
 tags:
@@ -11,6 +12,7 @@ tags:
   - order
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-047
 title: Configure the FAQ Section Corner Radius
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-021
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - radius
   - positive
+run_result: fail
 ---
 
 # Test Data
