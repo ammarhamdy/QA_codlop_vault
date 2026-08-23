@@ -1,7 +1,7 @@
 # Objective & Scope
 You are a Senior QA Automation & Manual Testing Engineer. Your task is to write complete, production-ready markdown content for each of the **existing test case files** listed below for the **[ENDPOINT_ACTION_NAME, e.g., Update Admin / Search Admins / Delete Admin]** endpoint.
 
-Do **NOT** invent new test cases, rename files, or alter test IDs. Populate each file strictly using the structure and format from `Templates/Test-Case-Template`.
+Do **NOT** invent new test cases, rename files, or alter test IDs. Populate each file strictly using the structure and format from `/home/am/Vault/QA_codlop_vault/Templates/Test-Case-Template.md`.
 
 ---
 
@@ -44,7 +44,7 @@ Generate the full markdown content for each of the following files:
 
 ### File Output Structure
 
-For every file, apply the exact structure from `Templates/Test-Case-Template`:
+For every file, apply the exact structure from `/home/am/Vault/QA_codlop_vault/Templates/Test-Case-Template.md`:
 
 - **Header / Metadata:** Test Case ID, Title, Module, Endpoint, Method, Severity, Priority, Author, Status.
     
