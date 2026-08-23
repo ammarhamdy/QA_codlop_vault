@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-097
 title: Verify Rendering a Valid FAQ Section Does Not Cause a Crash
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-041
 tags:
@@ -11,6 +12,7 @@ tags:
   - crash-safety
   - regression
   - positive
+run_result: pass
 ---
 
 # Test Data

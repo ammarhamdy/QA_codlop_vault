@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-005
 title: Prevent Administrator from Changing the FAQ Section Type
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-003
 tags:
@@ -11,6 +12,7 @@ tags:
   - type
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

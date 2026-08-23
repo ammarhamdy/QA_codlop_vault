@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-002
 title: Assign a Unique Identifier to an FAQ Section
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-002
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - identifier
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-007
 title: Prevent Assignment of an Unsupported FAQ Section Layout
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-004
 tags:
@@ -11,6 +12,7 @@ tags:
   - layout
   - validation
   - negative
+run_result: pass
 ---
 
 # Test Data

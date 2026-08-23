@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-025
 title: Edit the Answer of an Existing FAQ Item Without Modifying the Question
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-013
 tags:
@@ -12,6 +13,7 @@ tags:
   - answer
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

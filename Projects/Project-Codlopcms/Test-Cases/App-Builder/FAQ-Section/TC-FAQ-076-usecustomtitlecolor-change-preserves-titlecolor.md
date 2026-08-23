@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-076
 title: Verify Changing useCustomTitleColor Does Not Remove the Configured titleColor Value
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-032
 tags:
@@ -13,6 +14,7 @@ tags:
   - titleColor
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

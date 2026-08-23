@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-040
 title: Verify Changing Background Color Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-018
 tags:
@@ -12,6 +13,7 @@ tags:
   - background
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

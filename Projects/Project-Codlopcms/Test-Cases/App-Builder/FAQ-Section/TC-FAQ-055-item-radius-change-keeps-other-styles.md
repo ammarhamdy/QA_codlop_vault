@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-055
 title: Verify Changing FAQ Item Radius Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Functional
 linked_requirement: FAQ-REQ-023
 tags:

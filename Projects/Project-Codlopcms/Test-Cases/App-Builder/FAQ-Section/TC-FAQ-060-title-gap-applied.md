@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-060
 title: Verify Title Gap Is Applied Between Title and FAQ Content
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-025
 tags:
@@ -12,6 +13,7 @@ tags:
   - titleGap
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

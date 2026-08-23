@@ -86,3 +86,6 @@ dv.paragraph(`
 ```
 
 # Notes
+
+---
+*Last Updated: {{date}} {{time}}*

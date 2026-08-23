@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-092
 title: Verify Missing Optional FAQ Configuration Uses Default Behavior
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-039
 tags:
@@ -11,6 +12,7 @@ tags:
   - optional
   - defaults
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-053
 title: Configure the FAQ Item Corner Radius
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-023
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - itemRadius
   - positive
+run_result: fail
 ---
 
 # Test Data

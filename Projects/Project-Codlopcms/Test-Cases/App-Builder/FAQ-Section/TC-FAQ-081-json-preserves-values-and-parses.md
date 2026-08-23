@@ -2,7 +2,7 @@
 tc_id: TC-FAQ-081
 title: Verify Generated FAQ JSON Preserves Configured Values and Is Parseable
 priority: High
-status: Draft
+status:
 type: API
 linked_requirement: FAQ-REQ-036
 tags:

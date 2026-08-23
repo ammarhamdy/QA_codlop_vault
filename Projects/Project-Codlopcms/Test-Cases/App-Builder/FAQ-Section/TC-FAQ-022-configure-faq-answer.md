@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-022
 title: Configure the Answer of an FAQ Item
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-012
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - answer
   - positive
+run_result: pass
 ---
 
 # Test Data

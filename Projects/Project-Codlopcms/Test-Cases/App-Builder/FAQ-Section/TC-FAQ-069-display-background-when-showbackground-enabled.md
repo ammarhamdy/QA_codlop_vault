@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-069
 title: Display the FAQ Section Background When showBackground Is Enabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-030
 tags:
@@ -12,6 +13,7 @@ tags:
   - showBackground
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

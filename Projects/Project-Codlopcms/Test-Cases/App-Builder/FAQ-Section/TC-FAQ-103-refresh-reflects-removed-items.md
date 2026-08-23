@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-103
 title: Verify Removed FAQ Items Are No Longer Displayed After Configuration Refresh
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:
@@ -11,6 +12,7 @@ tags:
   - refresh
   - remove-item
   - regression
+run_result: pass
 ---
 
 # Test Data

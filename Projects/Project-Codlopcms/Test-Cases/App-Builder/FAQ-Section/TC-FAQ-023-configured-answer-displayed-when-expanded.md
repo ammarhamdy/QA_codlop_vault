@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-023
 title: Verify Configured Answer Is Displayed When FAQ Item Is Expanded
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-012
 tags:
@@ -11,6 +12,7 @@ tags:
   - answer
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

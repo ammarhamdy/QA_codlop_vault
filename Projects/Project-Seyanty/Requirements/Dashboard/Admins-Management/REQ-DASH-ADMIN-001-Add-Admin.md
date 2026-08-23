@@ -77,12 +77,6 @@ The newly created administrator shall be able to access the dashboard only when 
 **THEN** the system shall reject the request  
 **AND** inform the user that the email cannot be used for another administrator account.
 
-### AC-06 — Administrator Phone
-
-**GIVEN** the administrator enters a phone number  
-**WHEN** the form is submitted  
-**THEN** the system shall validate the phone number according to the configured business rules.
-
 ### AC-07 — Password
 
 **GIVEN** the administrator enters a password  

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-051
 title: Verify Section Padding Is Applied by the Mobile App
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-022
 tags:
@@ -12,6 +13,7 @@ tags:
   - padding
   - mobile
   - regression
+run_result: fail
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-026
 title: Verify Updated Question and Answer Are Reflected in JSON and Mobile App
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-013
 tags:
@@ -12,6 +13,7 @@ tags:
   - json
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

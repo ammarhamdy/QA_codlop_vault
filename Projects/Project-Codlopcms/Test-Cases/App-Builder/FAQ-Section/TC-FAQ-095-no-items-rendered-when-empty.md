@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-095
 title: Verify No FAQ Item Is Rendered When data-object Is Empty
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-040
 tags:
@@ -11,6 +12,7 @@ tags:
   - empty
   - rendering
   - regression
+run_result: pass
 ---
 
 # Test Data

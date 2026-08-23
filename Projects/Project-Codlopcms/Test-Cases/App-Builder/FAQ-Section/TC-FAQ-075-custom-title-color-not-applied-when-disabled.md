@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-075
 title: Verify Custom Title Color Is Not Applied When useCustomTitleColor Is Disabled
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-032
 tags:
@@ -12,6 +13,7 @@ tags:
   - useCustomTitleColor
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

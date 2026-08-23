@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-085
 title: Safely Handle an Unsupported FAQ section_key Value
 priority: High
-status: Draft
+status:
+  - completed
 type: API
 linked_requirement: FAQ-REQ-037
 tags:
@@ -12,6 +13,7 @@ tags:
   - section_key
   - api
   - negative
+run_result: pass
 ---
 
 # Test Data

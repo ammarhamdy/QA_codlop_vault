@@ -1,0 +1,41 @@
+---
+tc_id: TC-API-DASH-AUTH-PROFILE-011
+title: Profile Data Accuracy
+priority:
+  - High
+status:
+  - completed
+type:
+  - API
+linked_requirement: REQ-API-DASH-AUTH-PROFILE
+tags:
+  - test-case
+run_result: pass
+---
+
+# Test Data
+| Field         | Value                    |
+| ------------- | ------------------------ |
+| URL           | /api/dashboard/profile  |
+| Method        | GET                      |
+| Authorization | Bearer {valid_token}     |
+
+# Preconditions
+- An active admin session token is available.
+- The admin's stored profile data is known.
+
+# Steps
+1. Send a GET request to `https://seyanty.info/api/dashboard/profile`.
+2. Set header `Accept: application/json`.
+3. Set header `Authorization: Bearer {valid_token}`.
+4. Submit the request.
+5. Compare the returned profile data with the stored admin record.
+
+# Expected Result
+- The returned `name`, `email`, `photo`, and `status` match the stored admin record.
+- `id` matches the authenticated admin's id.
+
+# Notes
+- Verifies the profile reflects the actual database values.
+
+# Attachments

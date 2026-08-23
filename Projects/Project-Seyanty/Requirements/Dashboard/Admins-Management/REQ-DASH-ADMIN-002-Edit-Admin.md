@@ -40,12 +40,6 @@ The system shall validate all updated information before saving the changes.
 **WHEN** the changes are submitted with valid data  
 **THEN** the system shall save the updated name.
 
-### AC-03 — Update Phone Number
-
-**GIVEN** the administrator edits the target administrator's phone number  
-**WHEN** the changes are submitted  
-**THEN** the system shall validate and save the updated phone number when valid.
-
 ### AC-04 — Update Email
 
 **GIVEN** the administrator edits the target administrator's email  

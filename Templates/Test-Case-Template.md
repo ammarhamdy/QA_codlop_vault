@@ -24,3 +24,6 @@ tags:
 # Notes
 
 # Attachments
+
+---
+*Last Updated: {{date}} {{time}}*

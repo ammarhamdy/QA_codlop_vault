@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-041
 title: Configure the FAQ Section Title Color
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-019
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - titleColor
   - positive
+run_result: pass
 ---
 
 # Test Data

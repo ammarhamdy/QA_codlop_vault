@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-091
 title: Verify Invalid FAQ Configuration Does Not Prevent Other Sections from Rendering
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-039
 tags:
@@ -12,6 +13,7 @@ tags:
   - isolation
   - regression
   - negative
+run_result: pass
 ---
 
 # Test Data

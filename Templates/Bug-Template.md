@@ -20,3 +20,7 @@ tags:
 # Expected Result
 
 # Note
+
+
+---
+*Last Updated: {{date}} {{time}}*

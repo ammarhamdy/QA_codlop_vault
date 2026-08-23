@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-049
 title: Verify Changing Section Radius Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-021
 tags:
@@ -12,6 +13,7 @@ tags:
   - radius
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

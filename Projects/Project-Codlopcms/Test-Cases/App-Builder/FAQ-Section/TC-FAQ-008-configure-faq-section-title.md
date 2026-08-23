@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-008
 title: Configure the FAQ Section Title
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-006
 tags:
@@ -11,6 +12,7 @@ tags:
   - title
   - configuration
   - positive
+run_result: pass
 ---
 
 # Test Data

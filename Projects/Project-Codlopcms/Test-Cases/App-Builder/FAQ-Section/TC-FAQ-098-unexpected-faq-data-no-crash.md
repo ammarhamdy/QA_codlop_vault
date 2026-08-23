@@ -2,7 +2,7 @@
 tc_id: TC-FAQ-098
 title: Verify Unexpected FAQ Data Does Not Crash the Application
 priority: High
-status: Draft
+status:
 type: Regression
 linked_requirement: FAQ-REQ-041
 tags:

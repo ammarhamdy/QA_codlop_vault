@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-035
 title: Expand an FAQ Item to Display Its Answer
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-017
 tags:
@@ -12,6 +13,7 @@ tags:
   - accordion
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-042
 title: Verify Title Color Is Applied to the FAQ Section Title
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-019
 tags:
@@ -12,6 +13,7 @@ tags:
   - titleColor
   - mobile
   - regression
+run_result: pass
 ---
 
 # Test Data

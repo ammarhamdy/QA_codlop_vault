@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-104
 title: Verify FAQ Item Order Changes Are Reflected After Configuration Refresh
 priority: High
-status: Draft
+status:
+  - closed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:

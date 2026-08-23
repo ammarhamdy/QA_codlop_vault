@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-031
 title: Verify Adding an FAQ Item Does Not Reorder Existing Items
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-015
 tags:
@@ -12,6 +13,7 @@ tags:
   - add
   - data-integrity
   - positive
+run_result: pass
 ---
 
 # Test Data

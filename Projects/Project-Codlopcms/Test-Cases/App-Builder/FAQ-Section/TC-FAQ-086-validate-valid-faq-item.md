@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-086
 title: Verify a Valid FAQ Item with Question and Answer Passes Validation
 priority: High
-status: Draft
+status:
+  - completed
 type: API
 linked_requirement: FAQ-REQ-038
 tags:
@@ -12,6 +13,7 @@ tags:
   - data-object
   - api
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-013
 title: Enable the FAQ Section
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-008
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - enabled
   - positive
+run_result: pass
 ---
 
 # Test Data

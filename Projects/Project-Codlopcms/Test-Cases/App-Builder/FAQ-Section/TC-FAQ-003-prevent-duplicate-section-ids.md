@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-003
 title: Prevent Two FAQ Sections from Sharing the Same Identifier
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-002
 tags:
@@ -11,6 +12,7 @@ tags:
   - identifier
   - uniqueness
   - negative
+run_result: pass
 ---
 
 # Test Data

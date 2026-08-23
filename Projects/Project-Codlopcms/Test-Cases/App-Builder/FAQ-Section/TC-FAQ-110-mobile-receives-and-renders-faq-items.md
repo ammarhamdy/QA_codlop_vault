@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-110
 title: Verify Mobile App Receives and Renders Configured FAQ Items
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-010
 tags:
@@ -12,6 +13,7 @@ tags:
   - mobile
   - rendering
   - regression
+run_result: pass
 ---
 
 # Test Data

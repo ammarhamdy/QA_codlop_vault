@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-090
 title: Safely Handle an Invalid FAQ Configuration Without Crashing
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-039
 tags:
@@ -12,6 +13,7 @@ tags:
   - crash-safety
   - regression
   - negative
+run_result: pass
 ---
 
 # Test Data

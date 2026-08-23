@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-061
 title: Verify Changing Title Gap Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-025
 tags:
@@ -12,6 +13,7 @@ tags:
   - titleGap
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

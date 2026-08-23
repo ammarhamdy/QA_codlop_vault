@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-089
 title: Verify Invalid FAQ Item Does Not Crash and Valid Items Remain Renderable
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-038
 tags:
@@ -12,6 +13,7 @@ tags:
   - crash-safety
   - regression
   - negative
+run_result: pass
 ---
 
 # Test Data

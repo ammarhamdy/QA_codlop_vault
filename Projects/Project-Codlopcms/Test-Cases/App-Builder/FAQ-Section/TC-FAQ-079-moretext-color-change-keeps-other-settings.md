@@ -2,7 +2,7 @@
 tc_id: TC-FAQ-079
 title: Verify Changing showMoreTextColor Does Not Modify Other Settings or Styles
 priority: Medium
-status: Draft
+status:
 type: Functional
 linked_requirement: FAQ-REQ-034
 tags:

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-101
 title: Verify FAQ Question and Answer Changes Are Reflected After Refresh
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-042
 tags:
@@ -12,6 +13,7 @@ tags:
   - question
   - answer
   - regression
+run_result: pass
 ---
 
 # Test Data

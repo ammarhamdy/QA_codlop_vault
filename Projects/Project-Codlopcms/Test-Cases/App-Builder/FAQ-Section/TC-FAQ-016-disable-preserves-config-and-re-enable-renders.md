@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-016
 title: Verify Disabling Preserves Configuration and Re-enabling Restores Rendering
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-009
 tags:
@@ -12,6 +13,7 @@ tags:
   - re-enable
   - data-integrity
   - regression
+run_result: pass
 ---
 
 # Test Data

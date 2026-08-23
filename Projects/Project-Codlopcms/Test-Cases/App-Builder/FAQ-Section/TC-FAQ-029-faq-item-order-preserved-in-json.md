@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-029
 title: Verify FAQ Item Order Is Preserved in the JSON Configuration
 priority: Medium
-status: Draft
+status:
+  - completed
 type: API
 linked_requirement: FAQ-REQ-015
 tags:
@@ -12,6 +13,7 @@ tags:
   - json
   - api
   - positive
+run_result: pass
 ---
 
 # Test Data

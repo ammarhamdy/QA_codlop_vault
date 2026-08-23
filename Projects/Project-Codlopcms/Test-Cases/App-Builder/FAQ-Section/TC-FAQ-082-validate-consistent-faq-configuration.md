@@ -2,7 +2,7 @@
 tc_id: TC-FAQ-082
 title: Validate a Consistent FAQ Section Configuration
 priority: High
-status: Draft
+status:
 type: API
 linked_requirement: FAQ-REQ-037
 tags:

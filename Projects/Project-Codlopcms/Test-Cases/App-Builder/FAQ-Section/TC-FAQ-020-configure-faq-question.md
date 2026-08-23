@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-020
 title: Configure the Question of an FAQ Item
 priority: High
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-011
 tags:
@@ -10,6 +11,7 @@ tags:
   - faq
   - question
   - positive
+run_result: pass
 ---
 
 # Test Data

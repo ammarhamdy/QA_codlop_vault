@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-043
 title: Verify Changing Title Color Does Not Modify Other Style Properties
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-019
 tags:
@@ -12,6 +13,7 @@ tags:
   - titleColor
   - isolation
   - positive
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-109
 title: Verify FAQ Section Is Provided to the Mobile App for Rendering
 priority: High
-status: Draft
+status:
+  - completed
 type: Regression
 linked_requirement: FAQ-REQ-001
 tags:
@@ -12,6 +13,7 @@ tags:
   - rendering
   - regression
   - positive
+run_result: pass
 ---
 
 # Test Data

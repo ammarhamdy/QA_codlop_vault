@@ -2,7 +2,7 @@
 tc_id: TC-FAQ-078
 title: Verify More/Action Text Color Is Applied by the Mobile App
 priority: Medium
-status: Draft
+status:
 type: Regression
 linked_requirement: FAQ-REQ-034
 tags:

@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-050
 title: Configure the FAQ Section Padding
 priority: Medium
-status: Draft
+status:
+  - completed
 type: Functional
 linked_requirement: FAQ-REQ-022
 tags:
@@ -11,6 +12,7 @@ tags:
   - style
   - padding
   - positive
+run_result: fail
 ---
 
 # Test Data

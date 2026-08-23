@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-018
 title: Verify FAQ Items Appear in JSON Under settings.data-object
 priority: High
-status: Draft
+status:
+  - completed
 type: API
 linked_requirement: FAQ-REQ-010
 tags:
@@ -12,6 +13,7 @@ tags:
   - json
   - api
   - positive
+run_result: pass
 ---
 
 # Test Data

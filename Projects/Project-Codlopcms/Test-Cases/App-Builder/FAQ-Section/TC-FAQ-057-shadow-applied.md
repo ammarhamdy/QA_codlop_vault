@@ -2,7 +2,8 @@
 tc_id: TC-FAQ-057
 title: Verify Section Shadow Is Applied by the Mobile App
 priority: Medium
-status: Draft
+status:
+  - closed
 type: Regression
 linked_requirement: FAQ-REQ-024
 tags:
