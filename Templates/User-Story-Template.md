@@ -15,3 +15,5 @@ tags:
 ## Acceptance Criteria
 - [ ] **Scenario 1:** Given [context] -> When [action] -> Then [outcome]
 
+---
+*Last Updated: {{date}} {{time}}*

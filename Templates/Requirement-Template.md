@@ -13,3 +13,5 @@ tags:
 
 ## Acceptance Criteria
 
+---
+*Last Updated: {{date}} {{time}}*
