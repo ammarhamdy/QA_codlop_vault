@@ -54,7 +54,7 @@ tags:
 - Token must have appropriate role/permissions for dashboard employee management
 
 # Attachments/Script
-```bash
+```shell
 curl --location --request DELETE 'https://seyanty.info/api/dashboard/employees/123' \
 --header 'User-Agent: Apidog/1.0.0 (https://apidog.com)' \
 --header 'Authorization: Bearer <valid-token>' \
