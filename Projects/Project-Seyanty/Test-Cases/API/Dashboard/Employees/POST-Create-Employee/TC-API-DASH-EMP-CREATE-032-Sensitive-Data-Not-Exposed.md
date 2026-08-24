@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-032
 title: Sensitive Data Not Exposed
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-026
 tags:
@@ -13,6 +14,7 @@ tags:
   - create
   - security
   - data-protection
+run_result: pass
 ---
 
 # Test Data
