@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-014
 title: Unauthorized User Access
 priority: High
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-014
 tags:

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-002
 title: Missing Employee Identifier
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-002
 tags:
@@ -11,6 +12,7 @@ tags:
   - missing-id
   - validation
   - api
+run_result: Pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-006
 title: Delete Active Employee
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-006
 tags:
@@ -10,6 +11,7 @@ tags:
   - delete-employee
   - active-employee
   - api
+run_result: Pass
 ---
 
 # Test Data

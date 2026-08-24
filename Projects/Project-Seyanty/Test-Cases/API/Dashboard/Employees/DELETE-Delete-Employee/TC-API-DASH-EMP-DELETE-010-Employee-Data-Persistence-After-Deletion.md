@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-010
 title: Employee Data Persistence After Deletion
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-010
 tags:
@@ -11,6 +12,7 @@ tags:
   - data-persistence
   - related-data
   - api
+run_result: Pass
 ---
 
 # Test Data

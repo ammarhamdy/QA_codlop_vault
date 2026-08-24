@@ -9,6 +9,7 @@ priority: High
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-EMP-017
 tags:
   - api
@@ -17,6 +18,7 @@ tags:
   - validation
   - password
   - negative
+run_result: Fail
 ---
 
 # Test Data

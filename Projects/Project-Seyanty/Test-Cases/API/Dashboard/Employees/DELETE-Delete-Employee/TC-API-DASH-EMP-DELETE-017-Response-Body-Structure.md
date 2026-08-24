@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-017
 title: Response Body Structure
 priority: High
 status:
+  - Ready
 type: API
 linked_requirement: REQ-DASH-EMP-017
 tags:
@@ -11,6 +12,7 @@ tags:
   - response-structure
   - schema-validation
   - api
+run_result: Pass
 ---
 
 # Test Data

@@ -9,6 +9,7 @@ priority: High
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-API-005
 tags:
   - api
@@ -17,6 +18,7 @@ tags:
   - response-validation
   - schema
   - contract
+run_result: Pass
 ---
 
 # Test Data

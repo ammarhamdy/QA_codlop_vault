@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-021
 title: Sensitive Data Not Exposed
 priority: High
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-021
 tags:
@@ -12,6 +13,7 @@ tags:
   - data-leakage
   - security
   - api
+run_result: Pass
 ---
 
 # Test Data

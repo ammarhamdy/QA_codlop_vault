@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-007
 title: Delete Inactive Employee
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-007
 tags:
@@ -10,6 +11,7 @@ tags:
   - delete-employee
   - inactive-employee
   - api
+run_result: Pass
 ---
 
 # Test Data

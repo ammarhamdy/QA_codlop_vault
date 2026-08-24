@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-015
 title: Invalid HTTP Method
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-015
 tags:
@@ -11,6 +12,7 @@ tags:
   - http-method
   - validation
   - api
+run_result: Pass
 ---
 
 # Test Data

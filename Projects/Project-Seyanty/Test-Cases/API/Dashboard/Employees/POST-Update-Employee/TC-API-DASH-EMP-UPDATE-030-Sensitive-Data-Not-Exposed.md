@@ -9,6 +9,7 @@ priority: High
 type: Security
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-SEC-005
 tags:
   - api
@@ -17,6 +18,7 @@ tags:
   - security
   - data-exposure
   - privacy
+run_result: Pass
 ---
 
 # Test Data

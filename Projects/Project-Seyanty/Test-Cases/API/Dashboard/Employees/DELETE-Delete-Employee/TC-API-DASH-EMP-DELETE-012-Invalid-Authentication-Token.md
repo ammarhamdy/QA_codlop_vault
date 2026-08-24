@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-012
 title: Invalid Authentication Token
 priority: High
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-012
 tags:
@@ -12,6 +13,7 @@ tags:
   - invalid-token
   - security
   - api
+run_result: Pass
 ---
 
 # Test Data

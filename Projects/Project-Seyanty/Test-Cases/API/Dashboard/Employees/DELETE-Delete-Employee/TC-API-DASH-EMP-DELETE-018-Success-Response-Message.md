@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-018
 title: Success Response Message
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-018
 tags:
@@ -11,6 +12,7 @@ tags:
   - response-message
   - localization
   - api
+run_result: Pass
 ---
 
 # Test Data

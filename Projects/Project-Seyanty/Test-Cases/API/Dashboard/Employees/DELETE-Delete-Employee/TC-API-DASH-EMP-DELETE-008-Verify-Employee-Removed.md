@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-008
 title: Verify Employee Removed
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-008
 tags:
@@ -11,6 +12,7 @@ tags:
   - verification
   - database
   - api
+run_result: Pass
 ---
 
 # Test Data

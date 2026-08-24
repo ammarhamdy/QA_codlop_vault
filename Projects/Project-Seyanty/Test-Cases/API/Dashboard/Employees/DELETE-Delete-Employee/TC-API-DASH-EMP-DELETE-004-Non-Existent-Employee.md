@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-004
 title: Non-Existent Employee
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-004
 tags:
@@ -10,6 +11,7 @@ tags:
   - delete-employee
   - not-found
   - api
+run_result: Pass
 ---
 
 # Test Data

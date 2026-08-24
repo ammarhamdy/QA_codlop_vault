@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-019
 title: Delete Employee With Related Orders
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-019
 tags:
@@ -11,6 +12,7 @@ tags:
   - related-orders
   - business-rules
   - api
+run_result: Pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-020
 title: Delete Employee With No Related Orders
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-020
 tags:
@@ -11,6 +12,7 @@ tags:
   - no-related-orders
   - clean-deletion
   - api
+run_result: Pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-011
 title: Missing Authentication
 priority: High
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-011
 tags:
@@ -12,6 +13,7 @@ tags:
   - missing-auth
   - security
   - api
+run_result: Pass
 ---
 
 # Test Data

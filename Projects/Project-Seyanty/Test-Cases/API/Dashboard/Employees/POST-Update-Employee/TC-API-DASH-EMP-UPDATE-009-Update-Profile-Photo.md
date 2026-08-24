@@ -9,6 +9,7 @@ priority: High
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-EMP-009
 tags:
   - api
@@ -17,6 +18,7 @@ tags:
   - photo
   - file-upload
   - positive
+run_result: Pass
 ---
 
 # Test Data

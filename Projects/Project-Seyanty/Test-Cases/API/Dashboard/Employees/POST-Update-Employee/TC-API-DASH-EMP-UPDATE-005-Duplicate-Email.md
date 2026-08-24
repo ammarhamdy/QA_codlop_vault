@@ -9,6 +9,7 @@ priority: High
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-EMP-005
 tags:
   - api
@@ -17,6 +18,7 @@ tags:
   - email
   - validation
   - negative
+run_result: Pass
 ---
 
 # Test Data

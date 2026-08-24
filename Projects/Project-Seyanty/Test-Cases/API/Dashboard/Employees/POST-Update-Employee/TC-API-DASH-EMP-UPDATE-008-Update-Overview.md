@@ -9,6 +9,7 @@ priority: Medium
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-EMP-008
 tags:
   - api
@@ -16,6 +17,7 @@ tags:
   - update
   - overview
   - positive
+run_result: Pass
 ---
 
 # Test Data

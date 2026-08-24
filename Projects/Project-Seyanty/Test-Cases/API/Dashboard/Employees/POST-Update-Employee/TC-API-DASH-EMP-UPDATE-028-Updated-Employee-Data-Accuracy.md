@@ -9,6 +9,7 @@ priority: High
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-EMP-028
 tags:
   - api
@@ -16,6 +17,7 @@ tags:
   - update
   - data-accuracy
   - verification
+run_result: Pass
 ---
 
 # Test Data

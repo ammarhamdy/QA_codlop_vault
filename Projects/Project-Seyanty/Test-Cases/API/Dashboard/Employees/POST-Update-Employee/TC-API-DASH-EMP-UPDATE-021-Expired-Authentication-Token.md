@@ -9,6 +9,7 @@ priority: High
 type: Security
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-SEC-003
 tags:
   - api

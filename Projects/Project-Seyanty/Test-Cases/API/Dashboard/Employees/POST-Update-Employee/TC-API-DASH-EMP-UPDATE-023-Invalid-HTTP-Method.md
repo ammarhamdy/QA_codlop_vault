@@ -9,6 +9,7 @@ priority: Medium
 type: Functional
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-API-001
 tags:
   - api

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-005
 title: Already Deleted Employee
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-005
 tags:
@@ -11,6 +12,7 @@ tags:
   - already-deleted
   - idempotency
   - api
+run_result: Pass
 ---
 
 # Test Data

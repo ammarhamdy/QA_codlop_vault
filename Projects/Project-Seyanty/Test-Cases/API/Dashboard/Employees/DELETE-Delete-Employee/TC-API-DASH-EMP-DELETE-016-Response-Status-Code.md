@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-016
 title: Response Status Code
 priority: High
 status:
+  - Ready
 type: API
 linked_requirement: REQ-DASH-EMP-016
 tags:
@@ -11,6 +12,7 @@ tags:
   - status-code
   - response-validation
   - api
+run_result: Pass
 ---
 
 # Test Data

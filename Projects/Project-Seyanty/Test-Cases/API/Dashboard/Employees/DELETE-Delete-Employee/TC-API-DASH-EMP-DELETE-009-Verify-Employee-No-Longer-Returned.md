@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-009
 title: Verify Employee No Longer Returned
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-009
 tags:
@@ -11,6 +12,7 @@ tags:
   - verification
   - list-endpoint
   - api
+run_result: Pass
 ---
 
 # Test Data
