@@ -1,0 +1,139 @@
+---
+tc_id: TC-API-EMP-AUTH-PROFILE-001
+title: Get Profile With Valid Token
+priority:
+  - High
+status:
+type:
+  - API
+linked_requirement: REQ-EMP-AUTH-PROFILE-001
+tags:
+  - test-case
+  - api
+  - employee
+  - auth
+  - profile
+severity: Critical
+module: Employee - Auth - Profile
+endpoint: https://seyanty.info/api/employee/profile
+method: GET
+author: QA Automation Engineer
+---
+
+# Description & Objective
+Validate that an authenticated employee can retrieve their profile using a valid Bearer token via GET /api/employee/profile.
+
+> **Endpoint:** `GET https://seyanty.info/api/employee/profile`
+> **Content-Type:** `application/json` | **Auth:** `Bearer <valid_token>` (JWT from `POST /api/employee/login`)
+> **Sample:** `curl --location --request GET 'https://seyanty.info/api/employee/profile' --header 'Authorization: Bearer <valid-token>' --header 'Accept: */*'`
+
+# Test Data
+| Field | Value |
+| ----- | ----- |
+| Endpoint | `GET https://seyanty.info/api/employee/profile` |
+| Method | `GET` |
+| Content-Type | `application/json` |
+| Authorization | `Bearer <valid_token>` (obtained via login) |
+| Accept | `application/json` (`*/*` also accepted) |
+
+# Preconditions
+- Employee account `employee-09@mail.com` / `employee-09` exists with password `Admin#123`.
+- Login endpoint `POST /api/employee/login` is reachable to obtain a valid JWT.
+- Profile endpoint `GET /api/employee/profile` is reachable and requires `Authorization: Bearer <token>`.
+
+# Request Details
+- **Method & URL:** `GET https://seyanty.info/api/employee/profile`
+- **Headers:**
+  ```http
+  User-Agent: Apidog/1.0.0 (https://apidog.com)
+  Authorization: Bearer <valid_token>
+  Accept: */*  (or application/json)
+  Host: seyanty.info
+  Connection: keep-alive
+  Content-Type: application/json
+  ```
+- **Query/Path Params:** None.
+- **Payload:** None (GET has no body).
+- **Notes:** Headers: `Authorization: Bearer <valid_token>`, `Accept: */*` or `application/json`, `User-Agent: Apidog/1.0.0`. No query params or body.
+- **Complete executable cURL for this scenario:**
+  ```bash
+TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+  --header 'Accept: application/json' \
+  --header 'User-Agent: Apidog/1.0.0 (https://apidog.com)' \
+  --form 'email_or_name="employee-09@mail.com"' \
+  --form 'password="Admin#123"' | jq -r '.data.token')
+echo "TOKEN:$TOKEN"
+curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --header 'User-Agent: Apidog/1.0.0 (https://apidog.com)' \
+  --header "Authorization: Bearer $TOKEN" \
+  --header 'Accept: */*' \
+  --header 'Host: seyanty.info' \
+  --header 'Connection: keep-alive'
+  ```
+
+# Steps
+1. Login as `employee-09@mail.com` / `Admin#123` via `POST /api/employee/login` (multipart/form-data) and extract `data.token` with `jq -r .data.token`.
+2. Set header `Authorization: Bearer $TOKEN` and `Accept: */*`.
+3. Send `GET` to `https://seyanty.info/api/employee/profile`.
+4. Capture HTTP status and body.
+5. Validate success schema and field values.
+
+# Expected Result
+- HTTP `200 OK`.
+- Header `Content-Type` contains `application/json`.
+- Body: `{"status":"success","code":200,"message":"","data":{"id":63,"name":"employee-09","email":"employee-09@mail.com","phone":"0500000109","photo":"https://seyanty.info/storage/employees/...","job_title":"engineer","overview":null,"status":"inactive","orders_count":0,"orders":[]}}` (message may be empty string).
+- `data.id` is integer, `data.token` must NOT be present (profile does not return token).
+- No `password` or sensitive fields.
+
+- **Response Headers:** `Content-Type: application/json` must be present.
+- **Database Assertion:** Profile read is non-mutating; no DB write. Data matches `employees` table for authenticated user.
+
+# Post-conditions / Cleanup
+No state change. Token remains valid until expiry/logout; no cleanup required. Optionally call `POST /api/employee/logout` to invalidate.
+
+# Notes
+Primary happy-path for authenticated profile retrieval. Token acquisition is prerequisite.
+
+# Attachments/Script
+```bash
+#!/usr/bin/env bash
+# Test Case: TC-API-EMP-AUTH-PROFILE-001 - Get Profile With Valid Token
+# Endpoint: GET https://seyanty.info/api/employee/profile
+TITLE="TC-API-EMP-AUTH-PROFILE-001: Get Profile With Valid Token"
+echo "=================================================="
+echo "Running: $TITLE"
+echo "=================================================="
+
+RESPONSE=$(TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+  --header 'Accept: application/json' \
+  --header 'User-Agent: Apidog/1.0.0 (https://apidog.com)' \
+  --form 'email_or_name="employee-09@mail.com"' \
+  --form 'password="Admin#123"' | jq -r '.data.token')
+echo "TOKEN:$TOKEN"
+curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --header 'User-Agent: Apidog/1.0.0 (https://apidog.com)' \
+  --header "Authorization: Bearer $TOKEN" \
+  --header 'Accept: */*' \
+  --header 'Host: seyanty.info' \
+  --header 'Connection: keep-alive' 2>&1)
+HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | sed -e '/^TOKEN:/d' | tail -n 50)
+HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r')
+
+# If status not parsed (multi-cURL cases), try alternative extraction
+if ! echo "$HTTP_STATUS" | grep -qE '^[0-9]{3}$'; then
+  HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
+fi
+
+echo "Status Code: $HTTP_STATUS"
+echo "Response Body:"
+echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
+echo "=================================================="
+echo "Assertions:"
+echo "- Check HTTP status matches Expected Result"
+echo "- Check body schema: status/code/message/data"
+echo "- Check security: no password/sensitive leak"
+echo "=================================================="
+```
+
+---
+*Last Updated: {{date}} {{time}}*
