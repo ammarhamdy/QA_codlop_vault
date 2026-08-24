@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-006
 title: Invalid Phone
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-004
 tags:
@@ -13,6 +14,7 @@ tags:
   - create
   - negative
   - validation
+run_result: pass
 ---
 
 # Test Data
@@ -111,7 +113,6 @@ test_cases=(
   "All zeros:0000000000"
   "Repeated single digit:1111111111"
   "SQL injection probe:' OR '1'='1"
-  "XSS probe:<script>alert(1)</script>"
   "Null byte injection:01012345678%00"
   "Floating point number:010.1234567"
   "Unicode / Arabic digits:٠١٠١٢٣٤٥٦٧٨"

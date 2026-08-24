@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-022
 title: Invalid Authentication Token
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-016
 tags:
@@ -14,6 +15,7 @@ tags:
   - negative
   - security
   - authentication
+run_result: pass
 ---
 
 # Test Data

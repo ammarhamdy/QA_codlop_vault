@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-GET-028
 title: Empty Employees List
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-028
 tags:
@@ -12,6 +13,7 @@ tags:
   - employees
   - edge-case
   - positive
+run_result: pass
 ---
 
 # Test Data

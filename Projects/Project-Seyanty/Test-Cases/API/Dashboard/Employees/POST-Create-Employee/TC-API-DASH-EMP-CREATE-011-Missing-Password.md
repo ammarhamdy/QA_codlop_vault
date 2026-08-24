@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-011
 title: Missing Password
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-008
 tags:
@@ -13,6 +14,7 @@ tags:
   - create
   - negative
   - validation
+run_result: pass
 ---
 
 # Test Data
@@ -59,16 +61,45 @@ tags:
 
 # Attachments/Script
 ```bash
-curl --location --request POST 'https://seyanty.info/api/dashboard/employees' \
---header 'Authorization: Bearer <valid-token>' \
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+BASE_URL="https://seyanty.info/api/dashboard"
+
+# Authenticate and extract the Bearer token
+login() {
+  local email="$1"
+  local password="$2"
+
+  local payload
+  payload=$(jq -n \
+    --arg email "$email" \
+    --arg password "$password" \
+    '{email_or_name: $email, password: $password}')
+
+  local response
+  response=$(curl --silent --show-error --location --request POST "${BASE_URL}/login" \
+    --header "Accept: application/json" \
+    --header "Content-Type: application/json" \
+    --data "$payload")
+
+  echo "$response" | jq -r '.data.token // .token // .access_token // empty'
+}
+
+echo "Logging in..."
+AUTH_TOKEN=$(login "admin@admin.com" "Admin#123")
+
+curl --location --request POST "${BASE_URL}/employees" \
+--header "Authorization: Bearer $AUTH_TOKEN" \
 --header 'Accept: */*' \
 --header 'Content-Type: multipart/form-data' \
---form 'name="employee-10"' \
---form 'email="employee-10@mail.com"' \
+--form 'name="employee-13"' \
+--form 'email="employee-13@mail.com"' \
 --form 'phone="0500000110"' \
 --form 'photo=@"/home/am/Pictures/profile/male/79ad7b7a-99da-4e20-962d-1e9fc405312b.jpeg"' \
 --form 'job_title="eng"' \
---form 'overview="Test overview"'
+--form 'overview="Test overview"' | jq .
 ```
 
 ---

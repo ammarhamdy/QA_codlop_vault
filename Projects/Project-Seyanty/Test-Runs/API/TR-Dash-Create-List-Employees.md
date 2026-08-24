@@ -22,11 +22,8 @@ views:
     name: Table
     filters:
       or:
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/DELETE-Delete-Employee")
         - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Get-Employees")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Search-Employees")
         - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Create-Employee")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Update-Employee")
     groupBy:
       property: file.folder
       direction: ASC
@@ -35,6 +32,7 @@ views:
       - file.name
       - status
       - run_result
+    sort: []
     columns:
       - property: tc_id
     columnSize:
@@ -51,11 +49,8 @@ views:
 ```dataviewjs
 // Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
 const folderPaths = [
-    "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/DELETE-Delete-Employee",
     "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Get-Employees",
-    "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Search-Employees",
     "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Create-Employee",
-    "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Update-Employee",
 ];
 
 // 1. Fetch all notes in the specified folders

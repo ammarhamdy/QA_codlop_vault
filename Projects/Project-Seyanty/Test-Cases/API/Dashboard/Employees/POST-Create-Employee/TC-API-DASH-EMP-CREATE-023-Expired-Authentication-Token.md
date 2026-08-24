@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-023
 title: Expired Authentication Token
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-017
 tags:
@@ -14,6 +15,7 @@ tags:
   - negative
   - security
   - authentication
+run_result: pass
 ---
 
 # Test Data

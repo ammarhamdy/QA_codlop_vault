@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-CREATE-028
 title: Response Status Code
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-DASH-EMP-022
 tags:
@@ -13,6 +14,7 @@ tags:
   - create
   - positive
   - response-validation
+run_result: pass
 ---
 
 # Test Data
