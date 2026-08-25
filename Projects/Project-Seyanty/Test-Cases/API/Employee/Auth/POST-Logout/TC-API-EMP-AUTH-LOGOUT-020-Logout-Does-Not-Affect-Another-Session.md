@@ -4,6 +4,7 @@ title: Logout Does Not Affect Another Session
 priority:
   - Medium
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-LOGOUT-006
@@ -18,6 +19,7 @@ module: Employee - Auth - Logout
 endpoint: https://seyanty.info/api/employee/logout
 method: POST
 author: ammar
+run_result: pass
 ---
 
 # Description & Objective
@@ -108,51 +110,69 @@ Critical concurrency – logout must be token-scoped, not user-scoped.
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-LOGOUT-020 - Logout Does Not Affect Another Session
 # Endpoint: POST https://seyanty.info/api/employee/logout
+
 TITLE="TC-API-EMP-AUTH-LOGOUT-020: Logout Does Not Affect Another Session"
 echo "=================================================="
 echo "Running: $TITLE"
 echo "=================================================="
 
-RESPONSE=$(TOKEN_A=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+# Step 1: Generate Session A (TOKEN_A)
+echo "1. Logging in Session A..."
+RES_LOGIN_A=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
+  --form 'password="Admin#123"')
+TOKEN_A=$(echo "$RES_LOGIN_A" | jq -r '.data.token // empty')
+echo "TOKEN_A: $TOKEN_A"
+
 sleep 1
-TOKEN_B=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+
+# Step 2: Generate Session B (TOKEN_B)
+echo -e "\n2. Logging in Session B..."
+RES_LOGIN_B=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
-echo "TOKEN_A:$TOKEN_A"
-echo "TOKEN_B:$TOKEN_B"
-echo "Logout TOKEN_A:"
-curl --silent --location --request POST 'https://seyanty.info/api/employee/logout' \
+  --form 'password="Admin#123"')
+TOKEN_B=$(echo "$RES_LOGIN_B" | jq -r '.data.token // empty')
+echo "TOKEN_B: $TOKEN_B"
+
+# Step 3: Invalidate Session A (Logout)
+echo -e "\n3. Logging out TOKEN_A..."
+RES_LOGOUT_A=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/logout' \
   --header "Authorization: Bearer $TOKEN_A" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' | jq .
-echo "Profile with TOKEN_B (should still be 200):"
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --header 'Host: seyanty.info')
+echo "$RES_LOGOUT_A" | jq . 2>/dev/null || echo "$RES_LOGOUT_A"
+
+# Step 4: Verify Session B is still valid (Expected 200)
+echo -e "\n4. Verifying Profile with TOKEN_B (Expected 200):"
+RES_PROFILE_B=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
   --header "Authorization: Bearer $TOKEN_B" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info'
-echo "\nProfile with TOKEN_A (should be 401):"
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --header 'Host: seyanty.info')
+
+STATUS_B=$(echo "$RES_PROFILE_B" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+BODY_B=$(echo "$RES_PROFILE_B" | sed '/HTTP_STATUS:/d')
+echo "Status Code: $STATUS_B"
+echo "Response Body:"
+echo "$BODY_B" | jq . 2>/dev/null || echo "$BODY_B"
+
+# Step 5: Verify Session A is invalidated (Expected 401)
+echo -e "\n5. Verifying Profile with TOKEN_A (Expected 401):"
+RES_PROFILE_A=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
   --header "Authorization: Bearer $TOKEN_A" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' 2>&1)
-HTTP_BODY=$(echo "$RESPONSE" | grep -o '{.*}' | tail -n1)
-# Fallback: last lines
-if [ -z "$HTTP_BODY" ]; then HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | grep -v "^TOKEN" | tail -n20); fi
-HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
-if [ -z "$HTTP_STATUS" ]; then HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r'); fi
+  --header 'Host: seyanty.info')
 
-echo "Status Code: $HTTP_STATUS"
+STATUS_A=$(echo "$RES_PROFILE_A" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+BODY_A=$(echo "$RES_PROFILE_A" | sed '/HTTP_STATUS:/d')
+echo "Status Code: $STATUS_A"
 echo "Response Body:"
-echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
-# For multi-token cases, also show tokens
-echo "$RESPONSE" | grep "^TOKEN" || true
-echo "=================================================="
+echo "$BODY_A" | jq . 2>/dev/null || echo "$BODY_A"
+
+echo -e "\n=================================================="
 echo "Assertions:"
-echo "- Check HTTP status matches Expected Result"
+echo "- Check HTTP status matches Expected Result (Session B = 200, Session A = 401)"
 echo "- Check body: status/code/message/data per spec"
 echo "- For logout success, verify data==null and message تم تسجيل الخروج بنجاح"
 echo "- For auth failures, verify لابد من تسجيل الدخول أولا"

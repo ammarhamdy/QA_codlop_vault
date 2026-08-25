@@ -4,6 +4,7 @@ title: Logout With Another Employee Token
 priority:
   - Medium
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-LOGOUT-003
@@ -18,6 +19,7 @@ module: Employee - Auth - Logout
 endpoint: https://seyanty.info/api/employee/logout
 method: POST
 author: ammar
+run_result: pass
 ---
 
 # Description & Objective
@@ -42,19 +44,19 @@ Verify logout with a valid token belonging to a different employee succeeds for 
 # Request Details
 - **Method & URL:** `POST https://seyanty.info/api/employee/logout`
 - **Headers:**
-  ```http
-  User-Agent: Apidog/1.0.0 (https://apidog.com)
-  Authorization: Bearer <valid_token>
-  Accept: */*
-  Host: seyanty.info
-  Connection: keep-alive
-  Content-Type: application/json
-  ```
+```http
+User-Agent: Apidog/1.0.0 (https://apidog.com)
+Authorization: Bearer <valid_token>
+Accept: */*
+Host: seyanty.info
+Connection: keep-alive
+Content-Type: application/json
+```
 - **Query/Path Params:** None.
 - **Payload:** None (logout has no body).
 - **Notes:** Login as other employee, then logout with that other token. Verify success and isolation.
 - **Complete executable cURL for this scenario:**
-  ```bash
+```bash
 TOKEN_OTHER=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
@@ -70,7 +72,7 @@ curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request POST
   --header "Authorization: Bearer $TOKEN_OTHER2" \
   --header 'Accept: */*' \
   --header 'Host: seyanty.info'
-  ```
+```
 
 # Steps
 1. Login as other employee (or second session of employee-09) to get TOKEN_OTHER.
@@ -93,6 +95,7 @@ Re-login as needed; no cross-contamination.
 If only one seed exists, second login of same user simulates another session – still validates token-scoped logout.
 
 # Attachments/Script
+
 ```bash
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-LOGOUT-008 - Logout With Another Employee Token

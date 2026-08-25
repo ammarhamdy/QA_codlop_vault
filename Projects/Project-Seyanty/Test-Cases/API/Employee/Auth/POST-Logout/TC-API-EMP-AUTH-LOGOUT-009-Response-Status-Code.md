@@ -4,6 +4,7 @@ title: Response Status Code
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-LOGOUT-004
@@ -18,6 +19,7 @@ module: Employee - Auth - Logout
 endpoint: https://seyanty.info/api/employee/logout
 method: POST
 author: ammar
+run_result: pass
 ---
 
 # Description & Objective

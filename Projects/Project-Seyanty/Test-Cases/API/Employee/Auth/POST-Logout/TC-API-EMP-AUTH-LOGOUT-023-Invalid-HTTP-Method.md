@@ -4,6 +4,7 @@ title: Invalid HTTP Method
 priority:
   - Medium
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-LOGOUT-009
@@ -18,6 +19,7 @@ module: Employee - Auth - Logout
 endpoint: https://seyanty.info/api/employee/logout
 method: POST
 author: ammar
+run_result: pass
 ---
 
 # Description & Objective
@@ -99,44 +101,63 @@ Spec header lists GET but sample uses POST – POST is authoritative; GET must f
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-LOGOUT-023 - Invalid HTTP Method
 # Endpoint: POST https://seyanty.info/api/employee/logout
+
 TITLE="TC-API-EMP-AUTH-LOGOUT-023: Invalid HTTP Method"
 echo "=================================================="
 echo "Running: $TITLE"
 echo "=================================================="
 
-RESPONSE=$(TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+# Step 1: Login to acquire token
+echo "1. Performing login..."
+RES_LOGIN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
-echo "=== GET should be 405 ==="
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/logout' \
-  --header "Authorization: Bearer $TOKEN" \
-  --header 'Accept: application/json' \
-  --header 'Host: seyanty.info'
-echo "\n=== PUT should be 405 ==="
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request PUT 'https://seyanty.info/api/employee/logout' \
-  --header "Authorization: Bearer $TOKEN" \
-  --header 'Accept: application/json' \
-  --header 'Host: seyanty.info'
-echo "\n=== POST should be 200 (control) ==="
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request POST 'https://seyanty.info/api/employee/logout' \
-  --header "Authorization: Bearer $TOKEN" \
-  --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' 2>&1)
-HTTP_BODY=$(echo "$RESPONSE" | grep -o '{.*}' | tail -n1)
-# Fallback: last lines
-if [ -z "$HTTP_BODY" ]; then HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | grep -v "^TOKEN" | tail -n20); fi
-HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
-if [ -z "$HTTP_STATUS" ]; then HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r'); fi
+  --form 'password="Admin#123"')
+TOKEN=$(echo "$RES_LOGIN" | jq -r '.data.token // empty')
+echo "TOKEN: $TOKEN"
 
-echo "Status Code: $HTTP_STATUS"
+# Step 2: Test GET method (Expected 405)
+echo -e "\n2. Testing GET method (Expected 405):"
+RES_GET=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/logout' \
+  --header "Authorization: Bearer $TOKEN" \
+  --header 'Accept: application/json' \
+  --header 'Host: seyanty.info')
+
+STATUS_GET=$(echo "$RES_GET" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+BODY_GET=$(echo "$RES_GET" | sed '/HTTP_STATUS:/d')
+echo "Status Code: $STATUS_GET"
 echo "Response Body:"
-echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
-# For multi-token cases, also show tokens
-echo "$RESPONSE" | grep "^TOKEN" || true
-echo "=================================================="
+echo "$BODY_GET" | jq . 2>/dev/null || echo "$BODY_GET"
+
+# Step 3: Test PUT method (Expected 405)
+echo -e "\n3. Testing PUT method (Expected 405):"
+RES_PUT=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request PUT 'https://seyanty.info/api/employee/logout' \
+  --header "Authorization: Bearer $TOKEN" \
+  --header 'Accept: application/json' \
+  --header 'Host: seyanty.info')
+
+STATUS_PUT=$(echo "$RES_PUT" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+BODY_PUT=$(echo "$RES_PUT" | sed '/HTTP_STATUS:/d')
+echo "Status Code: $STATUS_PUT"
+echo "Response Body:"
+echo "$BODY_PUT" | jq . 2>/dev/null || echo "$BODY_PUT"
+
+# Step 4: Test POST method control (Expected 200)
+echo -e "\n4. Testing POST method (Control - Expected 200):"
+RES_POST=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request POST 'https://seyanty.info/api/employee/logout' \
+  --header "Authorization: Bearer $TOKEN" \
+  --header 'Accept: application/json' \
+  --header 'Host: seyanty.info')
+
+STATUS_POST=$(echo "$RES_POST" | grep -o 'HTTP_STATUS:[0-9]*' | cut -d: -f2)
+BODY_POST=$(echo "$RES_POST" | sed '/HTTP_STATUS:/d')
+echo "Status Code: $STATUS_POST"
+echo "Response Body:"
+echo "$BODY_POST" | jq . 2>/dev/null || echo "$BODY_POST"
+
+echo -e "\n=================================================="
 echo "Assertions:"
-echo "- Check HTTP status matches Expected Result"
+echo "- Check HTTP status matches Expected Result (GET: 405, PUT: 405, POST: 200)"
 echo "- Check body: status/code/message/data per spec"
 echo "- For logout success, verify data==null and message تم تسجيل الخروج بنجاح"
 echo "- For auth failures, verify لابد من تسجيل الدخول أولا"

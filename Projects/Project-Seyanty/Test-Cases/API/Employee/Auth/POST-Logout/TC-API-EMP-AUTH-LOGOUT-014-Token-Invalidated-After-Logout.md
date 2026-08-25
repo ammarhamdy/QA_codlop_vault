@@ -4,6 +4,7 @@ title: Token Invalidated After Logout
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-LOGOUT-005
@@ -18,6 +19,7 @@ module: Employee - Auth - Logout
 endpoint: https://seyanty.info/api/employee/logout
 method: POST
 author: ammar
+run_result: pass
 ---
 
 # Description & Objective
