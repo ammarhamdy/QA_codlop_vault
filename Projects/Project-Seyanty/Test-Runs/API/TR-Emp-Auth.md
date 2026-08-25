@@ -1,18 +1,18 @@
 ---
-run_id: TR-Dash-Employees
+run_id: TR-Emp-Auth
 executor: ammar
 environment: Prod
 build: v1
 status:
   - in-progress
-start_date: 2026-08-23T12:21:00
-end_date: 2026-08-24T14:54:00
+start_date: 2026-08-24T16:23:00
+end_date:
 tags:
   - test-run
 ---
 
 # Scope
-Cover all test-cases related to Employees  
+All employees endpoints 
 
 # Executed Cases
 
@@ -22,8 +22,10 @@ views:
     name: Table
     filters:
       or:
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Get-Employees")
-        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Create-Employee")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Login")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/GET-Profile")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Update-Profile")
+        - file.inFolder("Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Logout")
     groupBy:
       property: file.folder
       direction: ASC
@@ -32,12 +34,11 @@ views:
       - file.name
       - status
       - run_result
-    sort: []
     columns:
       - property: tc_id
     columnSize:
-      note.title: 346
-      file.name: 524
+      note.title: 301
+      file.name: 502
       note.status: 114
       note.run_result: 100
 
@@ -49,8 +50,10 @@ views:
 ```dataviewjs
 // Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
 const folderPaths = [
-    "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/GET-Get-Employees",
-    "Projects/Project-Seyanty/Test-Cases/API/Dashboard/Employees/POST-Create-Employee",
+    "Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Login",
+    "Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/GET-Profile",
+    "Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Update-Profile",
+    "Projects/Project-Seyanty/Test-Cases/API/Employee/Auth/POST-Logout"
 ];
 
 // 1. Fetch all notes in the specified folders
@@ -94,4 +97,4 @@ dv.paragraph(`
 # Notes
 
 ---
-*Last Updated: 2026-08-23 12:21*
+*Last Updated: 2026-08-24 16:22*

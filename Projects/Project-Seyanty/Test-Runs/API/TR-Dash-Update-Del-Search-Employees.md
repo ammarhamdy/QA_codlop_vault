@@ -33,11 +33,7 @@ views:
       - file.name
       - status
       - run_result
-    sort:
-      - property: title
-        direction: DESC
-      - property: file.name
-        direction: ASC
+    sort: []
     columns:
       - property: tc_id
     columnSize:
