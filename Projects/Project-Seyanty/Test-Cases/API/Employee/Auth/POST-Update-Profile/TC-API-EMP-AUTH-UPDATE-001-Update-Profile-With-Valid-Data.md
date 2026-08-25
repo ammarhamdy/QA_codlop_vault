@@ -4,6 +4,7 @@ title: Update Profile With Valid Data
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-UPDATE-001
@@ -19,6 +20,7 @@ module: Employee - Auth - Update Profile
 endpoint: https://seyanty.info/api/employee/update-profile
 method: POST
 author: ammar
+run_result: Pass
 ---
 
 # Description & Objective
@@ -29,19 +31,19 @@ Validate successful profile update with all valid fields via POST /api/employee/
 > **Sample:** `curl --location --request POST 'https://seyanty.info/api/employee/update-profile' --header 'Authorization: Bearer <valid-token>' --form 'name="employee-09"' --form 'email="employee-09@mail.com"' ...`
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Endpoint | `POST https://seyanty.info/api/employee/update-profile` |
-| Method | `POST` |
-| Content-Type | `multipart/form-data; boundary=--------------------------918253417226265533759659` |
-| Authorization | `Bearer <valid_token>` |
-| name | `employee-09` |
-| email | `employee-09@mail.com` |
-| password | `Admin#123` |
-| phone | `0500000109` |
-| job_title | `eng` |
-| overview | `experienced engineer` |
-| photo | `@/tmp/valid_profile.png` (image/png) |
+| Field         | Value                                                                              |
+| ------------- | ---------------------------------------------------------------------------------- |
+| Endpoint      | `POST https://seyanty.info/api/employee/update-profile`                            |
+| Method        | `POST`                                                                             |
+| Content-Type  | `multipart/form-data; boundary=--------------------------918253417226265533759659` |
+| Authorization | `Bearer <valid_token>`                                                             |
+| name          | `employee-09`                                                                      |
+| email         | `employee-09@mail.com`                                                             |
+| password      | `Admin#123`                                                                        |
+| phone         | `0500000109`                                                                       |
+| job_title     | `eng`                                                                              |
+| overview      | `experienced engineer`                                                             |
+| photo         | `@/tmp/valid_profile.png` (image/png)                                              |
 
 # Preconditions
 - Employee `employee-09@mail.com` exists with password `Admin#123` (id 63).

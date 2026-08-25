@@ -4,6 +4,7 @@ title: Authentication Token Handling
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-UPDATE-023

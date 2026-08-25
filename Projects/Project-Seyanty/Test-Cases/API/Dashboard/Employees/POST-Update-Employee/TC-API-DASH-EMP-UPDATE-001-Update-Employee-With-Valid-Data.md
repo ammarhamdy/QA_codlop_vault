@@ -56,15 +56,15 @@ run_result: Pass
 | id | 63 |
 
 ## Form Data Payload
-| Field | Value | Type |
-| ----- | ----- | ---- |
-| _method | put | text |
-| name | employee-10.1 | text |
-| email | employee-10@mail.com | text |
-| phone | 0500000110 | text |
-| password |  | text |
-| job_title | engineer | text |
-| photo | @"/path/to/valid_image.jpeg" | file |
+| Field     | Value                        | Type |
+| --------- | ---------------------------- | ---- |
+| _method   | put                          | text |
+| name      | employee-10.1                | text |
+| email     | employee-10@mail.com         | text |
+| phone     | 0500000110                   | text |
+| password  |                              | text |
+| job_title | engineer                     | text |
+| photo     | @"/path/to/valid_image.jpeg" | file |
 
 ## cURL Command
 ```bash

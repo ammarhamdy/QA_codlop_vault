@@ -4,6 +4,7 @@ title: Orders Count Handling
 priority:
   - Low
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-UPDATE-022
@@ -19,6 +20,7 @@ module: Employee - Auth - Update Profile
 endpoint: https://seyanty.info/api/employee/update-profile
 method: POST
 author: ammar
+run_result: Fail
 ---
 
 # Description & Objective
