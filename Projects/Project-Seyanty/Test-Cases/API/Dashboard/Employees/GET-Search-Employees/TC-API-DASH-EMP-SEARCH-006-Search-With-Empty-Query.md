@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-006
 title: Search With Empty Query
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-006
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - negative
   - boundary
+run_result: Pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-004
 title: Search By Employee Email
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-004
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - positive
   - email-search
+run_result: Pass
 ---
 
 # Test Data

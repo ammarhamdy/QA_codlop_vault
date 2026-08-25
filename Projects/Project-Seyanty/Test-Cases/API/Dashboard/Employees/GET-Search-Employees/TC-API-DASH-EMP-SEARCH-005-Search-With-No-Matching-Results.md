@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-005
 title: Search With No Matching Results
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-005
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - negative
   - empty-results
+run_result: Fail
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-021
 title: Invalid HTTP Method
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-021
 tags:
@@ -14,6 +15,7 @@ tags:
   - negative
   - http-method
   - validation
+run_result: Pass
 ---
 
 # Test Data

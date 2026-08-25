@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-008
 title: Search With Special Characters
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-008
 tags:
@@ -14,6 +15,7 @@ tags:
   - negative
   - security
   - special-characters
+run_result: Fail
 ---
 
 # Test Data

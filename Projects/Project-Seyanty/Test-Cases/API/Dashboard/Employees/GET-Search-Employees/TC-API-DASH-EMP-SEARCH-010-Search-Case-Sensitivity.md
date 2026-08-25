@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-010
 title: Search Case Sensitivity
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-010
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - functional
   - case-sensitivity
+run_result: Pass
 ---
 
 # Test Data

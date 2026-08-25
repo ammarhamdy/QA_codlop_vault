@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-020
 title: Sensitive Data Not Exposed
 priority: Critical
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-SEARCH-020
 tags:
@@ -14,6 +15,7 @@ tags:
   - security
   - sensitive-data
   - privacy
+run_result: Pass
 ---
 
 # Test Data

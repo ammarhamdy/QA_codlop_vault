@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-013
 title: Invalid Authentication Token
 priority: Critical
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-013
 tags:
@@ -14,6 +15,7 @@ tags:
   - authentication
   - negative
   - security
+run_result: Pass
 ---
 
 # Test Data

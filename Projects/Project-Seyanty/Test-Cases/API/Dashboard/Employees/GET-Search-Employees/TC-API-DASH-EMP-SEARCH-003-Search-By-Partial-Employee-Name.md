@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-003
 title: Search By Partial Employee Name
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-003
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - positive
   - partial-match
+run_result: Pass
 ---
 
 # Test Data

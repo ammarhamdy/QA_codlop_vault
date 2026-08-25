@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-001
 title: Search Employees With Valid Query
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-001
 tags:
@@ -12,6 +13,7 @@ tags:
   - employees
   - search
   - positive
+run_result: Pass
 ---
 
 # Test Data

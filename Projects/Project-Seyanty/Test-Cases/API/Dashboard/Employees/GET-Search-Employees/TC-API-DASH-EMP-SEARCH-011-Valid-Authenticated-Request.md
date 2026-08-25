@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-011
 title: Valid Authenticated Request
 priority: Critical
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-011
 tags:
@@ -14,6 +15,7 @@ tags:
   - authentication
   - positive
   - security
+run_result: Pass
 ---
 
 # Test Data

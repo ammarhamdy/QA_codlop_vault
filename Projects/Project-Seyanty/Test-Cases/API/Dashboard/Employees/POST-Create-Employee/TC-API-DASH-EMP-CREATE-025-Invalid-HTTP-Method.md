@@ -18,15 +18,15 @@ run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| name | employee-10 |
-| email | employee-10@mail.com |
-| password | Admin#123 |
-| phone | 0500000110 |
-| job_title | eng |
-| overview | Test overview |
-| photo | /home/am/Pictures/profile/male/79ad7b7a-99da-4e20-962d-1e9fc405312b.jpeg |
+| Field     | Value                                                                    |
+| --------- | ------------------------------------------------------------------------ |
+| name      | employee-10                                                              |
+| email     | employee-10@mail.com                                                     |
+| password  | Admin#123                                                                |
+| phone     | 0500000110                                                               |
+| job_title | eng                                                                      |
+| overview  | Test overview                                                            |
+| photo     | /home/am/Pictures/profile/male/79ad7b7a-99da-4e20-962d-1e9fc405312b.jpeg |
 
 # Preconditions
 - Valid authentication token (Bearer token) available for admin user

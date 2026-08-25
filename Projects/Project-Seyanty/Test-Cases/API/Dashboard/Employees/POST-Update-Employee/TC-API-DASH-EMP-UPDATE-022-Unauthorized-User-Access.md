@@ -9,6 +9,7 @@ priority: High
 type: Security
 author: QA Automation Engineer
 status:
+  - Ready
 linked_requirement: REQ-SEC-004
 tags:
   - api
@@ -18,6 +19,7 @@ tags:
   - rbac
   - negative
   - security
+run_result: Pass
 ---
 
 # Test Data

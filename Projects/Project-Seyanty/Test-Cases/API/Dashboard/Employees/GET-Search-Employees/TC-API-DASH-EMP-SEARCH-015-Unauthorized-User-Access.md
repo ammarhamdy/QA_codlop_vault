@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-015
 title: Unauthorized User Access
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-015
 tags:
@@ -15,6 +16,7 @@ tags:
   - negative
   - security
   - rbac
+run_result: Pass
 ---
 
 # Test Data

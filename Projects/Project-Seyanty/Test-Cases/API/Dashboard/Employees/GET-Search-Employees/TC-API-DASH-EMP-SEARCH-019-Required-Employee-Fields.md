@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-019
 title: Required Employee Fields
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-019
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - validation
   - required-fields
+run_result: Pass
 ---
 
 # Test Data

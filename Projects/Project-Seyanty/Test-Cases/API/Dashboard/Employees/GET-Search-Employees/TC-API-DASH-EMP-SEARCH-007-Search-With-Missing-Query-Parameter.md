@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-007
 title: Search With Missing Query Parameter
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-007
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - negative
   - validation
+run_result: Pass
 ---
 
 # Test Data

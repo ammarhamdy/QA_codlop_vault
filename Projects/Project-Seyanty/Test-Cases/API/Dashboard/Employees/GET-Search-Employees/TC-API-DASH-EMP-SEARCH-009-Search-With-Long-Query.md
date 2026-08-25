@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-009
 title: Search With Long Query
 priority: Medium
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-009
 tags:
@@ -14,6 +15,7 @@ tags:
   - negative
   - boundary
   - validation
+run_result: Fail
 ---
 
 # Test Data

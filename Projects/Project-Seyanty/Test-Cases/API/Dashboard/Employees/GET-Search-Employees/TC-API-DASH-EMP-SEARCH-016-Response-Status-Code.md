@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-016
 title: Response Status Code
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-016
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - validation
   - response
+run_result: Pass
 ---
 
 # Test Data

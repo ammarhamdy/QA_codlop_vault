@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-DELETE-013
 title: Expired Authentication Token
 priority: High
 status:
+  - Ready
 type: Security
 linked_requirement: REQ-DASH-EMP-013
 tags:
@@ -12,6 +13,7 @@ tags:
   - expired-token
   - security
   - api
+run_result: Pass
 ---
 
 # Test Data

@@ -13,6 +13,7 @@ tags:
   - rbac
   - security
   - api
+run_result: Pass
 ---
 
 # Test Data

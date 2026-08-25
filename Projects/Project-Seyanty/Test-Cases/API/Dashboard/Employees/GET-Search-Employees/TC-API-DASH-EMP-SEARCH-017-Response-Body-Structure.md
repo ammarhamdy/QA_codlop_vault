@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-017
 title: Response Body Structure
 priority: High
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-017
 tags:
@@ -14,6 +15,7 @@ tags:
   - validation
   - response
   - schema
+run_result: Pass
 ---
 
 # Test Data

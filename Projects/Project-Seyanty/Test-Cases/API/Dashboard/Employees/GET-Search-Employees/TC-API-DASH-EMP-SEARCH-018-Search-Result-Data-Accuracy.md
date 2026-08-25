@@ -3,6 +3,7 @@ tc_id: TC-API-DASH-EMP-SEARCH-018
 title: Search Result Data Accuracy
 priority: Critical
 status:
+  - Ready
 type: Functional
 linked_requirement: REQ-DASH-EMP-SEARCH-018
 tags:
@@ -13,6 +14,7 @@ tags:
   - search
   - validation
   - data-accuracy
+run_result: Pass
 ---
 
 # Test Data

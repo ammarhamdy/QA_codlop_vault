@@ -17,6 +17,7 @@ tags:
   - update
   - http-method
   - negative
+run_result: Pass
 ---
 
 # Test Data
