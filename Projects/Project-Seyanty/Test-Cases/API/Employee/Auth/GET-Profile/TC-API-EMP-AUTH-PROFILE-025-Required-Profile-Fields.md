@@ -4,6 +4,7 @@ title: Required Profile Fields
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-PROFILE-001
@@ -18,6 +19,7 @@ module: Employee - Auth - Profile
 endpoint: https://seyanty.info/api/employee/profile
 method: GET
 author: QA Automation Engineer
+run_result: pass
 ---
 
 # Description & Objective
@@ -87,34 +89,45 @@ Missing field indicates regression.
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-PROFILE-025 - Required Profile Fields
 # Endpoint: GET https://seyanty.info/api/employee/profile
+
 TITLE="TC-API-EMP-AUTH-PROFILE-025: Required Profile Fields"
 echo "=================================================="
 echo "Running: $TITLE"
 echo "=================================================="
 
-RESPONSE=$(TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+# Step 1: Login to acquire auth token
+echo "1. Performing login..."
+RES_LOGIN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
-curl --silent --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --form 'password="Admin#123"')
+
+TOKEN=$(echo "$RES_LOGIN" | jq -r '.data.token // empty')
+echo "TOKEN: $TOKEN"
+
+# Step 2: Fetch Profile and inspect response schema (Expected 200)
+echo -e "\n2. Fetching profile to verify required fields (Expected 200):"
+RES_PROFILE=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
   --header "Authorization: Bearer $TOKEN" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' | jq '.data | keys' 2>&1)
-HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | sed -e '/^TOKEN:/d' | tail -n 50)
-HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r')
+  --header 'Host: seyanty.info')
 
-# If status not parsed (multi-cURL cases), try alternative extraction
-if ! echo "$HTTP_STATUS" | grep -qE '^[0-9]{3}$'; then
-  HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
-fi
+HTTP_STATUS=$(echo "$RES_PROFILE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
+HTTP_BODY=$(echo "$RES_PROFILE" | sed '/HTTP_STATUS:/d')
 
 echo "Status Code: $HTTP_STATUS"
 echo "Response Body:"
 echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
-echo "=================================================="
+
+# Step 3: Extract and list profile fields
+echo -e "\nProfile Object Keys (.data):"
+echo "$HTTP_BODY" | jq '.data | keys' 2>/dev/null || echo "Unable to parse keys"
+
+echo -e "\n=================================================="
 echo "Assertions:"
-echo "- Check HTTP status matches Expected Result"
+echo "- Check HTTP status matches Expected Result (200)"
 echo "- Check body schema: status/code/message/data"
+echo "- Check required profile fields exist in .data"
 echo "- Check security: no password/sensitive leak"
 echo "=================================================="
 ```

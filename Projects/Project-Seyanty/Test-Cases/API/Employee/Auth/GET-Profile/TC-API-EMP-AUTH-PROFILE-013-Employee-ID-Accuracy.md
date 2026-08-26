@@ -4,6 +4,7 @@ title: Employee ID Accuracy
 priority:
   - Medium
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-PROFILE-004
@@ -18,6 +19,7 @@ module: Employee - Auth - Profile
 endpoint: https://seyanty.info/api/employee/profile
 method: GET
 author: QA Automation Engineer
+run_result: pass
 ---
 
 # Description & Objective
@@ -86,34 +88,43 @@ Isolated ID check.
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-PROFILE-013 - Employee ID Accuracy
 # Endpoint: GET https://seyanty.info/api/employee/profile
+
 TITLE="TC-API-EMP-AUTH-PROFILE-013: Employee ID Accuracy"
 echo "=================================================="
 echo "Running: $TITLE"
 echo "=================================================="
 
-RESPONSE=$(TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+# Step 1: Login to acquire token
+echo "1. Performing login..."
+RES_LOGIN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --form 'password="Admin#123"')
+
+TOKEN=$(echo "$RES_LOGIN" | jq -r '.data.token // empty')
+echo "TOKEN: $TOKEN"
+
+# Step 2: Fetch Profile and verify employee ID (Expected 200)
+echo -e "\n2. Fetching profile to verify employee ID (Expected 200):"
+RES_PROFILE=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
   --header "Authorization: Bearer $TOKEN" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' | jq '.data.id' 2>&1)
-HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | sed -e '/^TOKEN:/d' | tail -n 50)
-HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r')
+  --header 'Host: seyanty.info')
 
-# If status not parsed (multi-cURL cases), try alternative extraction
-if ! echo "$HTTP_STATUS" | grep -qE '^[0-9]{3}$'; then
-  HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
-fi
+HTTP_STATUS=$(echo "$RES_PROFILE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
+HTTP_BODY=$(echo "$RES_PROFILE" | sed '/HTTP_STATUS:/d')
+EMP_ID=$(echo "$HTTP_BODY" | jq -r '.data.id // empty' 2>/dev/null)
 
 echo "Status Code: $HTTP_STATUS"
+echo "Employee ID: $EMP_ID"
 echo "Response Body:"
 echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
-echo "=================================================="
+
+echo -e "\n=================================================="
 echo "Assertions:"
-echo "- Check HTTP status matches Expected Result"
+echo "- Check HTTP status matches Expected Result (200)"
 echo "- Check body schema: status/code/message/data"
+echo "- Check that Employee ID (.data.id) matches expected record"
 echo "- Check security: no password/sensitive leak"
 echo "=================================================="
 ```

@@ -4,6 +4,7 @@ title: Empty Authentication Token
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-PROFILE-002
@@ -18,6 +19,7 @@ module: Employee - Auth - Profile
 endpoint: https://seyanty.info/api/employee/profile
 method: GET
 author: QA Automation Engineer
+run_result: pass
 ---
 
 # Description & Objective

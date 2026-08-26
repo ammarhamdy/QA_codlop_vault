@@ -4,6 +4,7 @@ title: Null Overview Handling
 priority:
   - Low
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-EMP-AUTH-PROFILE-004
@@ -18,6 +19,7 @@ module: Employee - Auth - Profile
 endpoint: https://seyanty.info/api/employee/profile
 method: GET
 author: QA Automation Engineer
+run_result: pass
 ---
 
 # Description & Objective
@@ -85,34 +87,49 @@ Dedicated null-handling check – ensures frontend can handle null without crash
 #!/usr/bin/env bash
 # Test Case: TC-API-EMP-AUTH-PROFILE-020 - Null Overview Handling
 # Endpoint: GET https://seyanty.info/api/employee/profile
+
 TITLE="TC-API-EMP-AUTH-PROFILE-020: Null Overview Handling"
 echo "=================================================="
 echo "Running: $TITLE"
 echo "=================================================="
 
-RESPONSE=$(TOKEN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
+# Step 1: Login to acquire token
+echo "1. Performing login..."
+RES_LOGIN=$(curl --silent --location --request POST 'https://seyanty.info/api/employee/login' \
   --header 'Accept: application/json' \
   --form 'email_or_name="employee-09@mail.com"' \
-  --form 'password="Admin#123"' | jq -r '.data.token')
-curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
+  --form 'password="Admin#123"')
+
+TOKEN=$(echo "$RES_LOGIN" | jq -r '.data.token // empty')
+echo "TOKEN: $TOKEN"
+
+# Step 2: Fetch Profile and check overview field handling (Expected 200)
+echo -e "\n2. Fetching profile to verify null overview handling (Expected 200):"
+RES_PROFILE=$(curl --silent --write-out "\nHTTP_STATUS:%{http_code}" --location --request GET 'https://seyanty.info/api/employee/profile' \
   --header "Authorization: Bearer $TOKEN" \
   --header 'Accept: application/json' \
-  --header 'Host: seyanty.info' | jq -e '.data.overview == null and (.data | has("overview"))' && echo "PASS null handling" || echo "FAIL 2>&1)
-HTTP_BODY=$(echo "$RESPONSE" | sed -e '$d' | sed -e '/^TOKEN:/d' | tail -n 50)
-HTTP_STATUS=$(echo "$RESPONSE" | tail -n1 | sed -e 's/.*HTTP_STATUS://' | tr -d ' \n\r')
+  --header 'Host: seyanty.info')
 
-# If status not parsed (multi-cURL cases), try alternative extraction
-if ! echo "$HTTP_STATUS" | grep -qE '^[0-9]{3}$'; then
-  HTTP_STATUS=$(echo "$RESPONSE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
-fi
+HTTP_STATUS=$(echo "$RES_PROFILE" | grep -o 'HTTP_STATUS:[0-9]*' | tail -n1 | cut -d: -f2)
+HTTP_BODY=$(echo "$RES_PROFILE" | sed '/HTTP_STATUS:/d')
 
 echo "Status Code: $HTTP_STATUS"
 echo "Response Body:"
 echo "$HTTP_BODY" | jq . 2>/dev/null || echo "$HTTP_BODY"
-echo "=================================================="
+
+# Step 3: Specific field assertion for null overview
+echo -e "\nNull Overview Check:"
+if echo "$HTTP_BODY" | jq -e '.data.overview == null and (.data | has("overview"))' >/dev/null 2>&1; then
+  echo "PASS: null overview handling verified"
+else
+  echo "FAIL: overview field missing or not null"
+fi
+
+echo -e "\n=================================================="
 echo "Assertions:"
-echo "- Check HTTP status matches Expected Result"
+echo "- Check HTTP status matches Expected Result (200)"
 echo "- Check body schema: status/code/message/data"
+echo "- Check overview field exists and is correctly handled as null"
 echo "- Check security: no password/sensitive leak"
 echo "=================================================="
 ```
