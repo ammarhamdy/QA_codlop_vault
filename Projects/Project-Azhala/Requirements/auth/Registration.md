@@ -84,3 +84,7 @@
 * **WHEN** the user initiates logout from settings/profile
 * **THEN** the system calls `POST /api/auth/logout` sending the `device_token` under the active `Bearer <token>`
 * **AND** clears local storage tokens and returns the app to the Initial/Login Screen.
+
+
+----
+
