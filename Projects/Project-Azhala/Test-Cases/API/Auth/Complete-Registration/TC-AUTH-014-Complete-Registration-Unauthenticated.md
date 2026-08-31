@@ -4,11 +4,13 @@ title: Complete Registration - Unauthenticated Request
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-003
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

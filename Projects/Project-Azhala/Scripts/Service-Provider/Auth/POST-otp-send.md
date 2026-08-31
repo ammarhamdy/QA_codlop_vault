@@ -13,7 +13,7 @@ curl --location --request POST 'https://azhala.codlop.sa/api/otp/send' \
 ```
 
 # Response
-```sh
+```json
 {
     "success": true,
     "message": "تم إرسال رمز التحقق بنجاح (وضع الاختبار)",

@@ -10,7 +10,7 @@ curl --location --request POST 'https://azhala.codlop.sa/api/auth/logout' \
 ```
 
 #  Response
-```sh
+```json
 {
     "success": true,
     "message": "تم تسجيل الخروج بنجاح",

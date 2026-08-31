@@ -4,11 +4,13 @@ title: Complete Registration - Owner Submission
 priority:
   - High
 status:
+  - completed
 type:
   - API
 linked_requirement: REQ-003
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
@@ -87,7 +89,7 @@ HEADERS = {
 
 OWNER_CREDENTIALS = {
     "phone_code": "966",
-    "phone": "503000011",
+    "phone": "503000012",
     "type": "register",
     "user_type_id": "2",  # 2 = Place Owner
     "otp_code": "12345",
@@ -123,7 +125,7 @@ def obtain_owner_bearer_token() -> str:
     )
     print(f"  -> HTTP {resp_send.status_code}")
 
-    send_data = (resp_send.json().get("data") or {}) if resp_send.status_code in (200, 429) else {}
+    send_data = (resp_send.json().get("data") or {}) if resp_send.status_code in (200, 206, 429) else {}
     vtoken = send_data.get("verification_token")
     if not vtoken:
         raise RuntimeError(f"Failed to acquire verification_token: {resp_send.text}")

@@ -15,7 +15,7 @@ curl --location --request POST 'https://azhala.codlop.sa/api/auth/complete-regis
 ```
 
 # Response
-```sh\
+```json
 {
     "success": true,
     "message": "يرجى إكمال معلومات الحساب البنكي",

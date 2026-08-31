@@ -13,7 +13,7 @@ curl --location --request POST 'https://azhala.codlop.sa/api/bank-accounts' \
 ```
 
 # Response
-```sh
+```json
 {
     "success": true,
     "message": "تم إضافة الحساب البنكي بنجاح",

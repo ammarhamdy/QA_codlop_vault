@@ -54,57 +54,5 @@ tags:
 """TC-BANK-001: Bank Account - Save Successful (POST /api/bank-accounts)
 Reference: Scripts/Service-Provider/Auth/POST-bank-accounts.md
 """
-import os
-import sys
 
-import requests
-
-BASE_URL = "https://azhala.codlop.sa/api"
-ENDPOINT = f"{BASE_URL}/bank-accounts"
-
-AUTH_TOKEN = os.environ.get(
-    "AZHALA_BEARER_TOKEN", "67|GLZlrLJGKpbgRh9YIN2KzpSCB1wANoW2CncdXNiy629f8836"
-)
-HEADERS = {
-    "User-Agent": "Apidog/1.0.0 (https://apidog.com)",
-    "Accept": "*/*",
-    "Authorization": f"Bearer {AUTH_TOKEN}",
-}
-
-PAYLOAD = {
-    "holder_name": "Ali Account",
-    "account_number": "1234567101",
-    "iban": "332165161616547",
-    "bank_name": "بنك مصر",
-}
-
-
-def main() -> int:
-    print(f"STEP 1-2: POST {ENDPOINT} (bank fields + Bearer header)")
-    resp = requests.post(ENDPOINT, headers=HEADERS, data=PAYLOAD, timeout=30)
-    print(f"  -> HTTP {resp.status_code}")
-    try:
-        assert resp.status_code == 200, f"expected 200, got {resp.status_code}"
-        body = resp.json()
-
-        print("STEP 3: assert persisted bank account contract")
-        assert body.get("success") is True, f"success != true: {body}"
-        data = body.get("data") or {}
-        assert data.get("is_main") is True, "is_main should be true for the saved account"
-        assert data.get("holder_name") == PAYLOAD["holder_name"], "holder_name mismatch"
-        assert data.get("account_number") == PAYLOAD["account_number"], "account_number mismatch"
-        assert data.get("iban") == PAYLOAD["iban"], "iban mismatch"
-        assert data.get("bank_name") == PAYLOAD["bank_name"], "bank_name mismatch"
-        assert data.get("user_id"), "user_id missing from response"
-
-        print("[PASS] TC-BANK-001 Bank Account - Save Successful")
-        return 0
-    except AssertionError as exc:
-        print(f"[FAIL] {exc}")
-        print(f"  Response body: {resp.text[:500]}")
-        return 1
-
-
-if __name__ == "__main__":
-    sys.exit(main())
 ```

@@ -11,7 +11,7 @@ curl --location --request POST 'https://azhala.codlop.sa/api/otp/verify' \
 ```
 
 # Response
-```sh
+```json
 {
     "success": true,
     "message": "تم التحقق من رمز التحقق بنجاح. يرجى إكمال إعداد حسابك",
