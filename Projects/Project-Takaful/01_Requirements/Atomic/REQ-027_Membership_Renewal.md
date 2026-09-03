@@ -1,25 +1,16 @@
 ---
-
-type="requirement"  
-project: Takaful  
-source_document: Takaful_Client_Requirements_Original_v1.0  
-source_section: "26"  
-status: extracted  
+type: requirement
+project: Takaful
+source_document: Takaful_Client_Requirements_Original_v1.0
+source_section: "26"
+status: extracted
 tags:
-
-- takaful
-    
-- requirement
-    
-- membership
-    
-- renewal
-    
-- subscription
-    
-
+  - takaful
+  - requirement
+  - membership
+  - renewal
+  - subscription
 ---
-
 # Requirement Group: Membership Renewal
 
 ## Source Reference
