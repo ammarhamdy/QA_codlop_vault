@@ -25,7 +25,7 @@
 * Fulfill eligible medical services.
 * Maintain required contractual and operational information.
 * Respond to operational or quality issues.
-* Cooperate with Takafol monitoring and quality processes.
+* Cooperate with `Takafol` monitoring and quality processes.
 
 ---
 

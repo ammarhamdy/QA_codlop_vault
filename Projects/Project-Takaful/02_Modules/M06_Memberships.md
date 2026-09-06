@@ -58,9 +58,9 @@ This module covers:
 
 ### 1. Membership Levels
 
-**Which membership levels should be available at launch?**
+**Which membership levels should be available at launch?** -
 
-* [ ] ==Basic==, Silver, Gold, and Diamond. 👈
+* [x] ==Basic==, Silver, Gold, and Diamond. 👈
 * [ ] Basic, Silver, and Gold.
 * [ ] Basic and Premium only.
 * [ ] Admin can create and manage membership levels.
