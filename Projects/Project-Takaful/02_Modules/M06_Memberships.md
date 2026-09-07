@@ -84,7 +84,7 @@ This module covers:
 
 * [ ] Pending, Active, Expired, and Cancelled.
 * [ ] Pending, Active, Suspended, Expired, and Cancelled.
-* [ ] Active and Expired only.
+* [x] Active and Expired only.
 * [ ] Admin can configure membership statuses.
 * [ ] Other: \__________
 
@@ -95,7 +95,7 @@ This module covers:
 
 * [ ] Customers can only upgrade.
 * [ ] Customers can upgrade or downgrade according to configured rules.
-* [ ] Level changes happen automatically based on usage.
+* [x] Level changes happen automatically based on usage.
 * [ ] Admin manually approves level changes.
 * [ ] Different rules can be configured per membership level.
 * [ ] Other: \__________
@@ -107,7 +107,7 @@ This module covers:
 
 * [ ] Only after the membership expires.
 * [ ] Before expiration only.
-* [ ] Both before and after expiration.
+* [x] Both before and after expiration.
 * [ ] Renewal period is configurable by the admin.
 * [ ] Other: \__________
 
@@ -116,7 +116,7 @@ This module covers:
 
 **How should auto-renewal work?**
 
-* [ ] Enabled by default. 👈
+* [x] Enabled by default. 👈
 * [ ] Disabled by default and customer must enable it.
 * [ ] Customer chooses during subscription.
 * [ ] Auto-renewal is available only for selected membership levels.
@@ -128,7 +128,7 @@ This module covers:
 
 **Who can receive a gifted membership?**
 
-* [ ] Existing customers only.
+* [x] Existing customers only.
 * [ ] New customers only.
 * [ ] Both existing and new customers.
 * [ ] Eligibility depends on the membership type.
@@ -140,7 +140,7 @@ This module covers:
 **What should the customer membership card contain?**
 
 * [ ] Customer name, membership level, membership number, QR code, start date, and expiry date.
-* [ ] The above information plus membership benefits.
+* [x] The above information plus membership benefits.
 * [ ] Complete membership details defined by the admin.
 * [ ] Card information is fixed and cannot be configured.
 * [ ] Other: \__________
@@ -150,7 +150,7 @@ This module covers:
 **Are the names of the four membership levels fixed, or should they be completely manageable from the control panel?**
 
 * [ ]  Fixed values (Basic, Silver, Gold, Diamond) that cannot be changed.
-* [ ]  Fully dynamic and manageable (names can be added, edited, or deleted from the admin panel).
+* [x]  Fully dynamic and manageable (names can be added, edited, or deleted from the admin panel).
 * [ ]  Partially dynamic (default names exist, but admins can modify them).
 * [ ]  Other: \__________
 
@@ -177,7 +177,7 @@ This module covers:
 **How are the specific benefits for each membership level defined and managed?**
 
 * [ ]  Fixed, pre-defined benefits hard-coded into the system for each level.
-* [ ]  Dynamic benefits fully manageable and assignable via the admin control panel.
+* [x]  Dynamic benefits fully manageable and assignable via the admin control panel.
 * [ ]  Hybrid (core fixed benefits, with additional dynamic perks managed by admins).
 * [ ]  Other: \__________
 
@@ -186,7 +186,7 @@ This module covers:
 **What are the rules and mechanisms for transitioning between membership levels?**
 
 * [ ]  User-initiated only (the user must manually purchase an upgrade/downgrade).
-* [ ]  Automatic system transition based on predefined usage metrics or loyalty rules.
+* [x]  Automatic system transition based on predefined usage metrics or loyalty rules.
 * [ ]  Admin-initiated only (manual level change by administrators from the control panel).
 * [ ]  A combination of user-initiated purchases and automatic policy-based transitions.
 * [ ]  Other: \__________
@@ -198,7 +198,7 @@ This module covers:
 
 * [ ]  Automatically by the system only (based on predefined rules or usage metrics).
 * [ ]  Manually by the administration only.
-* [ ]  Both (the system applies automatic rules, and the administration can intervene manually).
+* [x]  Both (the system applies automatic rules, and the administration can intervene manually).
 * [ ]  Other: \__________
 
 ---
