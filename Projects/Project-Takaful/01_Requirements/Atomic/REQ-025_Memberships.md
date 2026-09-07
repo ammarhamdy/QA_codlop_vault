@@ -1,21 +1,14 @@
 ---
-
-type: requirement  
-project: Takaful  
-source_document: Takaful_Client_Requirements_Original_v1.0  
-source_section: "24"  
-status: extracted  
+type: requirement
+project: Takaful
+source_document: Takaful_Client_Requirements_Original_v1.0
+source_section: "24"
+status: extracted
 tags:
-
-- takaful
-    
-- requirement
-    
-- membership
-    
-- subscription
-    
-
+  - takaful
+  - requirement
+  - membership
+  - subscription
 ---
 
 # Requirement Group: Memberships

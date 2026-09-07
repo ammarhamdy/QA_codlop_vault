@@ -71,7 +71,7 @@ This module covers:
 
 **What should be the standard membership duration?**
 
-* [ ] One year.
+* [x] One year.
 * [ ] Different duration can be configured per membership level.
 * [ ] Different duration can be configured per subscription.
 * [ ] Admin can configure the available durations.
