@@ -50,7 +50,7 @@ This module covers:
 
 **Who should be eligible to use a medical center discount?**
 
-* [ ] Active members only.
+* [x] Active members only.
 * [ ] All customers.
 * [ ] Eligibility depends on the membership level.
 * [ ] Eligibility depends on the specific discount configuration.
