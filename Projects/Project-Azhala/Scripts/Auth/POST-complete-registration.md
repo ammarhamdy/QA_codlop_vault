@@ -11,6 +11,8 @@ curl --location --request POST 'https://azhala.codlop.sa/api/auth/complete-regis
 --form 'address="شارع الملك فهد، الرياض"' \
 --form 'latitude="24.7136"' \
 --form 'longitude="46.6753"' \
+--form 'commercial_register="5212725211"' \
+--form 'tax_number="545125229571211"' \
 --form 'service_provider_type="ui/ux"'
 ```
 

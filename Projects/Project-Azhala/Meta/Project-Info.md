@@ -23,6 +23,13 @@ project: azhala
 - **Prod Env:** 
 
 ## More Info
+```
+5123 4567 8901 2346
+
+12/34
+
+123
+```
 
 ---
 *Last Updated: 2026-08-16 10:27*
