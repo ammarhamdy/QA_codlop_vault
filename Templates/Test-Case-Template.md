@@ -23,7 +23,9 @@ tags:
 
 # Notes
 
-# Attachments/Script
+# Attachments
+
+# Script
 
 ---
 *Last Updated: {{date}} {{time}}*
