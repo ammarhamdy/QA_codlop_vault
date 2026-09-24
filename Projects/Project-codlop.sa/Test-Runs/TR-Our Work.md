@@ -22,7 +22,7 @@ views:
     name: Table
     filters:
       and:
-        - file.inFolder("Projects/Project-codlop.sa/Test Cases/Our Work")
+        - file.inFolder("Projects/Project-codlop.sa/Test-Cases/Our Work")
     groupBy:
       property: file.folder
       direction: ASC
@@ -33,6 +33,7 @@ views:
       - run_result
 
 ```
+
 
 
 

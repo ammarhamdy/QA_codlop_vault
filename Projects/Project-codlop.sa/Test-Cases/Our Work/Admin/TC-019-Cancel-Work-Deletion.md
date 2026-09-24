@@ -1,6 +1,6 @@
 ---
-tc_id: TC-Work-014
-title: Verify creating a Draft work
+tc_id: TC-Work-019
+title: Verify cancelling the deletion keeps the work unchanged
 priority:
   - High
 status:
@@ -10,6 +10,7 @@ type:
 linked_requirement: US-001-Our-Work
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
@@ -19,12 +20,12 @@ tags:
 |       |       |
 
 # Preconditions
--Admin is on Add Work form.
+-At least one work exists.
 # Steps
-Enter valid data.
-2. Select **Draft** & Submit.
+1. Click Delete for a work.
+2. Cancel deletion.
 # Expected Result
--Work is created with Draft status and is not displayed on the public website.
+-Work remains unchanged.
 # Notes
 
 # Attachments/Script

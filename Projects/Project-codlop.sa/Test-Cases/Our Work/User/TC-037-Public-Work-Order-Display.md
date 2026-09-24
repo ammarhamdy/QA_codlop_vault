@@ -1,6 +1,6 @@
 ---
-tc_id: TC-Work-030
-title: Verify filter and search work together
+tc_id: TC-Work-037
+title: Verify work order is reflected publicly
 priority:
   - High
 status:
@@ -10,6 +10,7 @@ type:
 linked_requirement: US-001-Our-Work
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
@@ -19,15 +20,17 @@ tags:
 |       |       |
 
 # Preconditions
--Multiple works exist.
+-Multiple published works exist.
 # Steps
-1. Select a work type.
-2. Search by work name.
+1. Check work order as Admin.
+2. Open public Our Work section
 # Expected Result
--Search results contain only works matching both the selected type and search term.
+-Public works are displayed according to the configured order.
 # Notes
 
-# Attachments/Script
+# Attachments
+
+# Script
 
 ---
 *Last Updated: {{date}} {{time}}*

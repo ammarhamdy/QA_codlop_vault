@@ -10,6 +10,7 @@ type:
 linked_requirement: US-001-Our-Work
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
