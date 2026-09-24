@@ -2,7 +2,7 @@
 tc_id: TC-CU-029
 title: Reject or Ignore Requests That Populate the Invisible Anti-Spam Field
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-023
 title: Reject Email Longer Than 180 Characters
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

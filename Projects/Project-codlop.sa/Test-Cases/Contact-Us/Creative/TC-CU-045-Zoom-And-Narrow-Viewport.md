@@ -2,7 +2,7 @@
 tc_id: TC-CU-045
 title: Verify Layout and Controls at 200% Zoom and 320px Viewport
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

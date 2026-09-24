@@ -2,7 +2,7 @@
 tc_id: TC-CU-022
 title: Reject Malformed Emails When the Optional Field Is Provided
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

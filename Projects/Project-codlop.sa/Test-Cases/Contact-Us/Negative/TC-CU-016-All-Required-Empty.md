@@ -2,7 +2,7 @@
 tc_id: TC-CU-016
 title: Submit With All Required Fields Empty and Consent Missing
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:
@@ -45,7 +45,7 @@ tags:
 ```bash
 # Runner modification: empty every required field and drop the consent parameter entirely
 sed -e 's|^NAME=.*|NAME=""|' -e 's|^PHONE=.*|PHONE=""|' -e 's|^EMAIL=.*|EMAIL=""|' \
-    -e 's|^MESSAGE=.*|MESSAGE=""|' -e '/-F "consent=1"/d' Projects/Project-codlop.sa/Scripts/contect-us.sh > /tmp/tc-cu-016.sh
+    -e 's|^MESSAGE=.*|MESSAGE=""|' -e '/-F "consent=1"/d' /home/am/Vault/QA_codlop_vault/Projects/Project-codlop.sa/Scripts/contect-us.sh > /tmp/tc-cu-016.sh
 bash /tmp/tc-cu-016.sh
 # Expect: HTTP 422; errors keys = name, phone, message, consent only.
 ```

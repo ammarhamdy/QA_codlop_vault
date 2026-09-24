@@ -2,7 +2,7 @@
 tc_id: TC-CU-026
 title: Treat Newline/Whitespace-Only Project Details as Empty
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

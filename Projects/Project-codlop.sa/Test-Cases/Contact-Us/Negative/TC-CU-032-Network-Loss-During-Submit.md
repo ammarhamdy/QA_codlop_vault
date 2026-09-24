@@ -2,7 +2,7 @@
 tc_id: TC-CU-032
 title: Show Recoverable Error and Preserve Entered Data When Network Drops Mid-Submit
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-024
 title: Enforce the 4,000-Character Message Limit Without Silent Truncation
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

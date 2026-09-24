@@ -2,7 +2,7 @@
 tc_id: TC-CU-018
 title: Reject Whitespace-Only Name, Phone and Message
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

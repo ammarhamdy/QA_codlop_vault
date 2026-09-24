@@ -2,7 +2,7 @@
 tc_id: TC-CU-027
 title: Reject Requests With Removed/Altered Hidden Metadata Despite Valid Visible Fields
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

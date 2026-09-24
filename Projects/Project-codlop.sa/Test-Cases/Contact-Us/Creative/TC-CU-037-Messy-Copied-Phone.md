@@ -2,7 +2,7 @@
 tc_id: TC-CU-037
 title: Paste Phone Copied From Chat App With NBSP, Parentheses and Country-Code Prefix
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-001
 tags:

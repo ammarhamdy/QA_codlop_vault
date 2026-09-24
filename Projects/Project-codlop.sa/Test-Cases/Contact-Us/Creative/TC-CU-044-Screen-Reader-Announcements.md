@@ -2,7 +2,7 @@
 tc_id: TC-CU-044
 title: Verify Labels, Errors, Consent and Send Status Announce Meaningfully (AR Locale)
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

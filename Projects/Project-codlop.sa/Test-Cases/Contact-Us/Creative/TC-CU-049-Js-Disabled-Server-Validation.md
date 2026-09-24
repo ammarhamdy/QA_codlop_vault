@@ -2,7 +2,7 @@
 tc_id: TC-CU-049
 title: Submit With JavaScript Disabled; Server-Side Validation Must Still Protect the Endpoint
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-019
 title: Reject or Prevent Name Longer Than 120 Characters
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

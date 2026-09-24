@@ -2,7 +2,7 @@
 tc_id: TC-CU-039
 title: Paste 4,000-Char Mixed RTL/LTR Message With URLs, Bullets and Newlines
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-001
 tags:

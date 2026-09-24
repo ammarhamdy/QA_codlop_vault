@@ -2,7 +2,7 @@
 tc_id: TC-CU-042
 title: Complete and Submit Different Data in Two Tabs and Verify Isolated Requests
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-001
 tags:

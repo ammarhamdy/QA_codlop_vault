@@ -2,7 +2,7 @@
 tc_id: TC-CU-035
 title: Reject Altered or Non-Allow-List Project Type Values
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

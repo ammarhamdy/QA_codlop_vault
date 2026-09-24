@@ -2,7 +2,7 @@
 tc_id: TC-CU-040
 title: Use Browser Autofill for Name, Phone and Email and Verify Correct Mapping
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

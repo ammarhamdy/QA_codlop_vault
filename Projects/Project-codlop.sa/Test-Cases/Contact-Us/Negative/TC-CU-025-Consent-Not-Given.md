@@ -2,7 +2,7 @@
 tc_id: TC-CU-025
 title: Block Submission Without Privacy/Contact-Processing Consent
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

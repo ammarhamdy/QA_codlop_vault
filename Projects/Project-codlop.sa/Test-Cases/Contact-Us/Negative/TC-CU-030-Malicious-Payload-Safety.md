@@ -2,7 +2,7 @@
 tc_id: TC-CU-030
 title: Handle Scripts, HTML, SQL-Like and Oversized Encoded Input Safely in All Text Fields
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

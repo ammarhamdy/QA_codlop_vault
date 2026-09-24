@@ -2,7 +2,7 @@
 tc_id: TC-CU-031
 title: Guarantee Single Request on Double-Click / Repeated Enter During Submit
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-002
 tags:

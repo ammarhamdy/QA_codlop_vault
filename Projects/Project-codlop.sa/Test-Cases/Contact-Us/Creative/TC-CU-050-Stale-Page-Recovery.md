@@ -2,7 +2,7 @@
 tc_id: TC-CU-050
 title: Submit From a Long-Open Page After Token/Session Expiry and Verify Safe Recovery
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-002
 tags:

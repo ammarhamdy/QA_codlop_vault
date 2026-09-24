@@ -2,7 +2,7 @@
 tc_id: TC-CU-028
 title: Reject Manipulated or Expired Antiforgery Token Safely
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

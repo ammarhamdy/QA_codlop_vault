@@ -2,7 +2,7 @@
 tc_id: TC-CU-047
 title: Send Identical Contact Details Repeatedly and Verify Honest Duplicate Handling
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-002
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-033
 title: Recover Gracefully From 5xx / Timeout With Re-Enabled Retry Path
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-034
 title: Verify Consistent Data-Loss Behavior When Leaving the Form Before Submitting
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

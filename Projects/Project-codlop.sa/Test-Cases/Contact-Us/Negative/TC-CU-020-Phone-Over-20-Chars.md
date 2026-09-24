@@ -2,7 +2,7 @@
 tc_id: TC-CU-020
 title: Prevent Submitting a Phone Number Longer Than 20 Characters
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

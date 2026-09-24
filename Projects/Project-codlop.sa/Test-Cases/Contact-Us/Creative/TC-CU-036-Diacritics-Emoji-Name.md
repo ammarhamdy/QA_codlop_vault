@@ -2,7 +2,7 @@
 tc_id: TC-CU-036
 title: Paste Name With Tashkeel, Apostrophe, Hyphen and Emoji Without Corruption
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-001
 tags:

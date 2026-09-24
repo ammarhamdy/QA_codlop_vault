@@ -2,7 +2,7 @@
 tc_id: TC-CU-048
 title: Enter Legitimate Angle Brackets, Quotes, Ampersand and Emoji; Preserve as Text
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-001
 tags:

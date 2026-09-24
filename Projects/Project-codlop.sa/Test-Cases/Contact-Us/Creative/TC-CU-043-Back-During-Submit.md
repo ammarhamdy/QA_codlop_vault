@@ -2,7 +2,7 @@
 tc_id: TC-CU-043
 title: Press Back Mid-Submit and Verify No Stuck Busy State on Return
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-046
 title: Verify Sending Indicator on Throttled Network Is Prompt and Unambiguous
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-003
 tags:

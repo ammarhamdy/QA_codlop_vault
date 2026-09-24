@@ -2,7 +2,7 @@
 tc_id: TC-CU-041
 title: Verify Password Managers Touching the Anti-Spam Field Do Not Wrongly Block Legitimate Users
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: REQ-CODLOP-SA-002
 tags:

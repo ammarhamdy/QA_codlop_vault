@@ -2,7 +2,7 @@
 tc_id: TC-CU-021
 title: Reject Letters, Unsupported Symbols and Obviously Invalid Numbers in Phone
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-CU-038
 title: Enter Arabic-Indic Numerals in Phone Field and Verify Locale Normalization
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: REQ-CODLOP-SA-001
 tags:
