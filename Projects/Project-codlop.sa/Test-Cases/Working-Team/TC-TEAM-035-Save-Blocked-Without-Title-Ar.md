@@ -3,6 +3,7 @@ tc_id: TC-TEAM-035
 title: Attempt Save Without Arabic Job Title Verify Blocked
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - required-field
   - negative
+run_result:
 ---
 
 # Test Data

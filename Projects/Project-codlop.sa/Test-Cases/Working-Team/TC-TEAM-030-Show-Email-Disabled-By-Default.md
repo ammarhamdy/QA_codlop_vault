@@ -3,6 +3,7 @@ tc_id: TC-TEAM-030
 title: Verify Show Email Disabled By Default And Email Hidden
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - email-visibility
   - default-value
+run_result: pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-TEAM-067
 title: Open Form On Mobile Screen Verify Usable Without Horizontal Scroll
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - responsive
   - creative
+run_result: pass
 ---
 
 # Test Data

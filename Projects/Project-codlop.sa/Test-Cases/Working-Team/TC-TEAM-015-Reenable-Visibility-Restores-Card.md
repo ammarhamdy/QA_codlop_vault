@@ -3,12 +3,14 @@ tc_id: TC-TEAM-015
 title: Turn Visibility Back On Verify Member Reappears With Saved Information
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - visibility
+run_result: pass
 ---
 
 # Test Data

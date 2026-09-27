@@ -3,6 +3,7 @@ tc_id: TC-TEAM-024
 title: Verify Selected Card Color Reflected In Preview And Team Card
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - card-color
   - preview
+run_result: pass
 ---
 
 # Test Data

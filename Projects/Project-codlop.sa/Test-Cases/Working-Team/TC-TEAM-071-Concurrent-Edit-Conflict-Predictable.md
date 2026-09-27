@@ -3,6 +3,7 @@ tc_id: TC-TEAM-071
 title: Conflicting Edits In Two Sessions Behave Predictably No Silent Overwrite
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - concurrency
   - creative
+run_result: pass
 ---
 
 # Test Data

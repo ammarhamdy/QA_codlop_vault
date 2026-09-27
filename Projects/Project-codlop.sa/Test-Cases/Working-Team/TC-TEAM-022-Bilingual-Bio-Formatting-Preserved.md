@@ -3,6 +3,7 @@ tc_id: TC-TEAM-022
 title: Verify Bilingual Biographies Preserve Breaks Punctuation Direction
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - bilingual
   - biography
+run_result: pass
 ---
 
 # Test Data

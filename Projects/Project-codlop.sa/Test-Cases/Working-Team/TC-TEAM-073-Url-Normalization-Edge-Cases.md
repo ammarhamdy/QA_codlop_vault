@@ -3,6 +3,7 @@ tc_id: TC-TEAM-073
 title: URLs With Query Fragments Unicode Spaces Normalized Or Rejected
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - url-validation
   - creative
+run_result: pass
 ---
 
 # Test Data

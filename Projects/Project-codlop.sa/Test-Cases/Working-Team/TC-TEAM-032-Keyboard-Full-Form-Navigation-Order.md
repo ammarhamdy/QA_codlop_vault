@@ -3,6 +3,7 @@ tc_id: TC-TEAM-032
 title: Verify Keyboard Reaches All Fields Upload Placeholder Toggles In Order
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - accessibility
   - keyboard
+run_result: pass
 ---
 
 # Test Data

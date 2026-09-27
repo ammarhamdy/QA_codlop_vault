@@ -3,6 +3,7 @@ tc_id: TC-TEAM-054
 title: Toggle Show Email Without Valid Email Verify No Empty Link
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - email-visibility
   - negative
+run_result: pass
 ---
 
 # Test Data

@@ -3,6 +3,7 @@ tc_id: TC-TEAM-045
 title: Upload Damaged JPG WebP Verify Useful Error No Broken Preview
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - negative
+run_result: pass
 ---
 
 # Test Data

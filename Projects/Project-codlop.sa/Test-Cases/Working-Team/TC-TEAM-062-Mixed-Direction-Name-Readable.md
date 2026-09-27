@@ -3,6 +3,7 @@ tc_id: TC-TEAM-062
 title: Arabic Name With Latin Surname Keeps Mixed Direction Readable
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - bidi
   - creative
+run_result: pass
 ---
 
 # Test Data

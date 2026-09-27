@@ -3,6 +3,7 @@ tc_id: TC-TEAM-076
 title: Slow Network Upload And Save Prevent Duplicates And Inconsistent State
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - image-upload
   - reliability
   - creative
+run_result: pass
 ---
 
 # Test Data

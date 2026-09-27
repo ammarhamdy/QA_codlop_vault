@@ -3,6 +3,7 @@ tc_id: TC-TEAM-055
 title: Simulate Failed Save Verify Notification And No Silent Data Loss
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - reliability
   - negative
+run_result: fail
 ---
 
 # Test Data

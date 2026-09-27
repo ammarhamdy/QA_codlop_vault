@@ -3,6 +3,7 @@ tc_id: TC-TEAM-020
 title: Verify Arabic Member Fields Shown By Default With RTL Labels
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - arabic-fields
   - rtl
+run_result: pass
 ---
 
 # Test Data

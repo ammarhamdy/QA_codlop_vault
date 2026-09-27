@@ -3,6 +3,7 @@ tc_id: TC-TEAM-068
 title: Complete Full Profile With Keyboard Only No Mouse
 priority: Low
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - accessibility
   - keyboard
   - creative
+run_result: pass
 ---
 
 # Test Data

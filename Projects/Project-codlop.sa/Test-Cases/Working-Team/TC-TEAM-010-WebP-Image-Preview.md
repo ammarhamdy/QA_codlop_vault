@@ -3,6 +3,7 @@ tc_id: TC-TEAM-010
 title: Upload Valid WebP Image and Verify Previewed Successfully
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - webp
+run_result: pass
 ---
 
 # Test Data

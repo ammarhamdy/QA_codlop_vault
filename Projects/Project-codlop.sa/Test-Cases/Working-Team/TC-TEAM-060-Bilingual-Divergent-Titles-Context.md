@@ -3,6 +3,7 @@ tc_id: TC-TEAM-060
 title: Bilingual Divergent Titles Show Correct Version Per Language Context
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - bilingual
   - creative
+run_result: pass
 ---
 
 # Test Data

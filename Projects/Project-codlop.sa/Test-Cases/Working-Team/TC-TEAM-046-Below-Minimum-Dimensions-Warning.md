@@ -3,6 +3,7 @@ tc_id: TC-TEAM-046
 title: Upload Image Below Minimum Dimensions Verify Rejected Or Warned
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - negative
+run_result: fail
 ---
 
 # Test Data

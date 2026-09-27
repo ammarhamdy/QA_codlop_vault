@@ -3,6 +3,7 @@ tc_id: TC-TEAM-044
 title: Upload Unsupported Image Format Verify Rejected When Unsupported
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - negative
+run_result: pass
 ---
 
 # Test Data

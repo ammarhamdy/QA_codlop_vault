@@ -3,6 +3,7 @@ tc_id: TC-TEAM-021
 title: Save Bilingual Names Titles Verify Correct Language In Team View
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - bilingual
   - team-view
+run_result: pass
 ---
 
 # Test Data

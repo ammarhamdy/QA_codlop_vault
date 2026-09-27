@@ -3,12 +3,14 @@ tc_id: TC-TEAM-014
 title: Turn Off Team Page Visibility Verify Member Hidden Without Data Loss
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - visibility
+run_result: pass
 ---
 
 # Test Data

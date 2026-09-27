@@ -3,6 +3,7 @@ tc_id: TC-TEAM-029
 title: Verify Real Image Takes Precedence Over Selected Placeholder
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - placeholder
+run_result: pass
 ---
 
 # Test Data

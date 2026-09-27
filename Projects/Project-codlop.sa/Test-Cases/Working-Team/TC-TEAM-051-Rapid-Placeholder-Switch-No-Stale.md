@@ -3,6 +3,7 @@ tc_id: TC-TEAM-051
 title: Rapidly Switch Placeholders Verify No Stale Preview
 priority: Low
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

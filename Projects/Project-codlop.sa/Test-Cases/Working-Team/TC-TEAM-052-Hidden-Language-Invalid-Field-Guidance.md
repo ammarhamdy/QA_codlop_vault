@@ -3,6 +3,7 @@ tc_id: TC-TEAM-052
 title: Submit With Invalid Hidden Language Field Verify Guided Correction
 priority: Medium
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

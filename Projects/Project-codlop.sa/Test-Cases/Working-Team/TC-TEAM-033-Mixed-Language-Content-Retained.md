@@ -3,6 +3,7 @@ tc_id: TC-TEAM-033
 title: Verify Mixed Arabic Latin Numbers Punctuation Retained Without Conversion
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - i18n
   - data-integrity
+run_result: pass
 ---
 
 # Test Data

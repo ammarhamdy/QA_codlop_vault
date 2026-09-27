@@ -3,6 +3,7 @@ tc_id: TC-TEAM-070
 title: Email Toggle Change In Second Session Reflects Without Stale Data
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - email-visibility
   - concurrency
   - creative
+run_result: pass
 ---
 
 # Test Data

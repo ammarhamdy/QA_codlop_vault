@@ -8,13 +8,13 @@ status:
   - in-progress
   - completed
 start_date: 2026-09-24T14:52:00
-end_date:
+end_date: 2026-09-27T16:36:00
 tags:
   - test-run
 ---
 
 # Scope
-[Which feature / sprint / release this run covers.]
+Working team
 
 # Executed Cases
 

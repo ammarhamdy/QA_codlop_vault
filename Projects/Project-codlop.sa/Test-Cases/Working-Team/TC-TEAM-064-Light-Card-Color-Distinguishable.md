@@ -3,6 +3,7 @@ tc_id: TC-TEAM-064
 title: Select Light Card Color Verify Labels Title Links Distinguishable
 priority: Low
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - card-color
   - contrast
   - creative
+run_result: pass
 ---
 
 # Test Data

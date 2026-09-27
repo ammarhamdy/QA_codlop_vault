@@ -3,6 +3,7 @@ tc_id: TC-TEAM-039
 title: Enter Invalid X Profile Value Verify Not Silently Accepted
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - url-validation
   - negative
+run_result: pass
 ---
 
 # Test Data

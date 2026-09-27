@@ -3,6 +3,7 @@ tc_id: TC-TEAM-041
 title: Enter Extremely Long Inputs Verify Usability And Limits
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - boundary
   - negative
+run_result: pass
 ---
 
 # Test Data

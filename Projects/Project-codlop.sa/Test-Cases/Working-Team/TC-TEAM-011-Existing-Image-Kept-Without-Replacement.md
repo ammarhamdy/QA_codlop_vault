@@ -3,6 +3,7 @@ tc_id: TC-TEAM-011
 title: Verify Existing Image Displayed When No Replacement Selected
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - no-change
+run_result: pass
 ---
 
 # Test Data

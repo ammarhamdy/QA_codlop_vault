@@ -3,6 +3,7 @@ tc_id: TC-TEAM-018
 title: Verify Switch Controls Operable Via Mouse Touch and Keyboard
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - accessibility
   - switches
+run_result: pass
 ---
 
 # Test Data

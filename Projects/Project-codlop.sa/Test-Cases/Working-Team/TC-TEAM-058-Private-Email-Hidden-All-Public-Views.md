@@ -3,6 +3,7 @@ tc_id: TC-TEAM-058
 title: Verify Private Email Hidden In All Public Views Including Cached
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - email-visibility
   - privacy
   - negative
+run_result: pass
 ---
 
 # Test Data
