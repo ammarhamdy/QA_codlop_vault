@@ -3,12 +3,14 @@ tc_id: TC-TEAM-031
 title: Enable Show Email Then Disable Verify Visible Then Hidden
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - email-visibility
+run_result: pass
 ---
 
 # Test Data

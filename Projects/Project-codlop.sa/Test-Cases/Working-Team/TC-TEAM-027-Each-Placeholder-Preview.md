@@ -3,6 +3,7 @@ tc_id: TC-TEAM-027
 title: Select Each Temporary Illustration Verify Placeholder Preview
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - placeholder
   - preview
+run_result: pass
 ---
 
 # Test Data

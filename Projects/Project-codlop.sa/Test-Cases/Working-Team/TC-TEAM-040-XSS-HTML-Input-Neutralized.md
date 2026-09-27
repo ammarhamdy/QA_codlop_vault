@@ -3,6 +3,7 @@ tc_id: TC-TEAM-040
 title: Paste Script HTML Into Text And Link Fields Verify Safe Handling
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - security
   - xss
   - negative
+run_result: pass
 ---
 
 # Test Data

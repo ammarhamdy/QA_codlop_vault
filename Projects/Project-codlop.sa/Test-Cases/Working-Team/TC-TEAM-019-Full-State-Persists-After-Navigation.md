@@ -3,6 +3,7 @@ tc_id: TC-TEAM-019
 title: Verify Card Color Visibility Email Text Image Persist After Navigation
 priority: High
 status:
+  - completed
 type: Regression
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - persistence
   - regression
+run_result: pass
 ---
 
 # Test Data

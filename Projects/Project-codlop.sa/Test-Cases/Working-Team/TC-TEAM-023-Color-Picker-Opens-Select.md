@@ -3,12 +3,14 @@ tc_id: TC-TEAM-023
 title: Verify Card Color Picker Opens And Allows Color Selection
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - card-color
+run_result: pass
 ---
 
 # Test Data

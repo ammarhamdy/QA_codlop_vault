@@ -3,12 +3,14 @@ tc_id: TC-TEAM-028
 title: Verify Selected Placeholder Used When No Real Image Uploaded
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - placeholder
+run_result: pass
 ---
 
 # Test Data

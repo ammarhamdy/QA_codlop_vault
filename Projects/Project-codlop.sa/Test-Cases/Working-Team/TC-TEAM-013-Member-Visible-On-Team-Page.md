@@ -3,6 +3,7 @@ tc_id: TC-TEAM-013
 title: Verify Member Initially Visible On Team Page
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - visibility
   - smoke
+run_result: pass
 ---
 
 # Test Data

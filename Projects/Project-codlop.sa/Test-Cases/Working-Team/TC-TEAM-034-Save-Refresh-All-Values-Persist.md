@@ -3,6 +3,7 @@ tc_id: TC-TEAM-034
 title: Save Refresh Verify All Values Visibility Color Image Persist
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - persistence
   - regression
+run_result: pass
 ---
 
 # Test Data

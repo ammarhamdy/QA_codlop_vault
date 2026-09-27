@@ -3,6 +3,7 @@ tc_id: TC-TEAM-072
 title: Remove Real Image Later Verify Placeholder Restored Automatically
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - image-upload
   - placeholder
   - creative
+run_result: pass
 ---
 
 # Test Data

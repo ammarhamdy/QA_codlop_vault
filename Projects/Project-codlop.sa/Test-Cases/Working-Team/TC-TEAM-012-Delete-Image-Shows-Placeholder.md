@@ -3,6 +3,7 @@ tc_id: TC-TEAM-012
 title: Select Delete Image Option Verify Placeholder After Saving
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-delete
   - placeholder
+run_result: fail
 ---
 
 # Test Data

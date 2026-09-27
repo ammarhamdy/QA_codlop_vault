@@ -3,6 +3,7 @@ tc_id: TC-TEAM-065
 title: Replace Highres Image With Smaller Valid Image Verify Latest Only
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - creative
+run_result: pass
 ---
 
 # Test Data

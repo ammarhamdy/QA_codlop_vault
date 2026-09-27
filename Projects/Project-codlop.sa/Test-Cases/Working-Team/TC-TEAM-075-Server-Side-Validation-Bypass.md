@@ -3,6 +3,7 @@ tc_id: TC-TEAM-075
 title: Bypass Client Validation Verify Server Still Protects Fields And Files
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - security
   - validation
   - creative
+run_result: pass
 ---
 
 # Test Data

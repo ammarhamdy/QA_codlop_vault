@@ -3,6 +3,7 @@ tc_id: TC-TEAM-056
 title: Refresh Or Navigate Before Save Verify Unsaved Changes Handling
 priority: Medium
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

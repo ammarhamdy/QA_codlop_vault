@@ -3,17 +3,19 @@ tc_id: TC-TEAM-008
 title: Enter Valid Email Address and Verify It Can Be Saved
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - email-field
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field   | Value                |
+| ------- | -------------------- |
 | `email` | `codlop.sa@mail.com` |
 
 # Preconditions

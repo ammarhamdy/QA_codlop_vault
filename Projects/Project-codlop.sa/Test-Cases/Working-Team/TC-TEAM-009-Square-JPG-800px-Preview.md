@@ -3,6 +3,7 @@ tc_id: TC-TEAM-009
 title: Upload Valid Square JPG At Least 800x800 Verify Preview Updates
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - jpg
+run_result: pass
 ---
 
 # Test Data

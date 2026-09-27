@@ -3,6 +3,7 @@ tc_id: TC-TEAM-026
 title: Verify Uploaded Image Persists After Save And Reopen
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - image-upload
   - persistence
+run_result: pass
 ---
 
 # Test Data

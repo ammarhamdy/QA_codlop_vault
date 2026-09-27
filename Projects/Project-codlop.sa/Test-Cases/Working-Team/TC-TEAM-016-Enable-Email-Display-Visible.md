@@ -3,6 +3,7 @@ tc_id: TC-TEAM-016
 title: Enable Email Display Verify Email Visible To Permitted Visitors
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - email-display
   - visibility
+run_result: pass
 ---
 
 # Test Data

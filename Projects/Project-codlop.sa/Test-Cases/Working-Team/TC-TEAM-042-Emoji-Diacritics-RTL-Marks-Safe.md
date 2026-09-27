@@ -3,6 +3,7 @@ tc_id: TC-TEAM-042
 title: Enter Emoji Diacritics RTL Marks Verify No Content Corruption
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - i18n
   - negative
+run_result: pass
 ---
 
 # Test Data

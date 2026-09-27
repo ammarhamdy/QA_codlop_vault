@@ -3,6 +3,7 @@ tc_id: TC-TEAM-066
 title: Upload Image With Misleading Extension Verify Type Based Validation
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - image-upload
   - security
   - creative
+run_result: pass
 ---
 
 # Test Data

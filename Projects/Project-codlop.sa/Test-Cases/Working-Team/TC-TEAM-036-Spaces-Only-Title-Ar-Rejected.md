@@ -3,6 +3,7 @@ tc_id: TC-TEAM-036
 title: Enter Spaces Only In Arabic Job Title Verify Treated As Empty
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

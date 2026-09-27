@@ -3,6 +3,7 @@ tc_id: TC-TEAM-038
 title: Enter Invalid LinkedIn Value Verify Rejected Or Flagged
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - url-validation
   - negative
+run_result: pass
 ---
 
 # Test Data

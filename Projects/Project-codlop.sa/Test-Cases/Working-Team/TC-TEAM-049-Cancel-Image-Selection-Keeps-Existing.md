@@ -3,6 +3,7 @@ tc_id: TC-TEAM-049
 title: Cancel Image Selection Verify Existing Preview And Image Kept
 priority: Low
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

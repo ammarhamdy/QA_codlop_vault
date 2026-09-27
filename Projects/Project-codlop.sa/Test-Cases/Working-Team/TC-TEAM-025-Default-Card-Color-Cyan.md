@@ -3,6 +3,7 @@ tc_id: TC-TEAM-025
 title: Verify Default Card Color Is Cyan Without Custom Selection
 priority: Low
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -10,6 +11,7 @@ tags:
   - working-team
   - card-color
   - default-value
+run_result: pass
 ---
 
 # Test Data

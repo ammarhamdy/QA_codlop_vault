@@ -3,6 +3,7 @@ tc_id: TC-TEAM-061
 title: Long Arabic Bio With Paragraphs Urls Emoji Keeps Card Readable
 priority: Low
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
@@ -11,6 +12,7 @@ tags:
   - biography
   - layout
   - creative
+run_result: pass
 ---
 
 # Test Data

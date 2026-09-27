@@ -3,6 +3,7 @@ tc_id: TC-TEAM-053
 title: Toggle Team Visibility Rapidly Verify Final State Saved
 priority: Medium
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:

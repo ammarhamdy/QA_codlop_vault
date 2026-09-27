@@ -3,12 +3,14 @@ tc_id: TC-TEAM-017
 title: Disable Email Display Verify Hidden While Stored Email Unchanged
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
   - test-case
   - working-team
   - email-display
+run_result: pass
 ---
 
 # Test Data

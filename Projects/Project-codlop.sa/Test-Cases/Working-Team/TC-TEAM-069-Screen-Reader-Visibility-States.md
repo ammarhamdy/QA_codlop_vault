@@ -3,6 +3,7 @@ tc_id: TC-TEAM-069
 title: Screen Reader Confirms Visibility Toggles State And Purpose
 priority: Low
 status:
+  - closed
 type: Functional
 linked_requirement: REQ-CODLOP-SA-TEAM-001
 tags:
