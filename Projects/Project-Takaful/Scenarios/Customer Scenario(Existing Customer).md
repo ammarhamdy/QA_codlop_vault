@@ -1,4 +1,4 @@
-
+### (Existing Customer, No Subscription)
 
 1.**Customer — Login & OTP 
 
@@ -12,6 +12,22 @@
 3. **Customer — View Subscription Packages **
 
 - Client (existing customer, not subscribed to any package) → on Home → taps More → taps Subscriptions → views the available packages (Individual Package, Family Package) → views the details of each package (price, benefits, allowed number of members) → taps Subscribe Now → proceeds to complete the subscription.
+
+###### 4. Customer — Individual Package Subscription
+
+- Client → selects **Individual Package** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+
+5. Customer — Family Package Subscription
+
+- Client → selects **Family Package** → enters the **number of members according to the allowed maximum** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+
+#5. **Customer — Family Package Subscription**
+
+- Client → selects **Family Package** → enters the **number of members according to the allowed maximum** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+
+6. **Customer — Membership Upgrade**
+
+- Client → starts with **Classic** membership → uses the app through **actual visits and services** → meets the upgrade conditions → membership is upgraded **Classic → Silver → Gold → Diamond**.
 
 
 **Notes:**
@@ -59,7 +75,3 @@
 - Client → taps Renew → reviews the package details and fee → pays the renewal fee → renewal is successful → subscription is reactivated (status Active) → membership level stays the same as before expiry → continues using the app normally.
 - Note: If the renewal payment fails, the subscription stays Expired and the membership level doesn't change.
 
-5. **Customer — Membership Upgrade After Renewal**
-
-- Client → renews successfully → continues from the same membership level → uses the app through actual visits and services → meets the upgrade conditions → membership is upgraded to the next level (Classic → Silver → Gold → Diamond).
-- Note: Renewal doesn't reset the level and doesn't upgrade it automatically. Only the upgrade conditions move it up.
