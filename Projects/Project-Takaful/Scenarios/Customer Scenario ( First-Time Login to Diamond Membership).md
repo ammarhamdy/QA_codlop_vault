@@ -1,27 +1,27 @@
-### 1. Customer — Login & OTP
+### ### 1. العميل — تسجيل الدخول والـ OTP
 
-- Client → enters phone number → receives OTP via **SMS or WhatsApp** → OTP is valid for **10 minutes** → can resend OTP after **60 seconds** → enters valid OTP → successfully logs in.
+- **العميل ← يدخل رقم الهاتف ← يستلم OTP عن طريق SMS أو WhatsApp ← يكون الـ OTP صالحًا لمدة 10 دقائق ← يمكنه إعادة إرسال OTP بعد 60 ثانية ← يدخل OTP صحيح ← يتم تسجيل الدخول بنجاح.**
 
-### 2. Customer — Location Selection
+### 2. العميل — اختيار الموقع
 
-- Client → selects **city (required)** → selects **area** → selects **district** → confirms location → `Latitude` & `Longitude` are captured and sent with the client's location → reaches Home.
+- **العميل ← يختار المدينة (إجباري) ← يختار المنطقة ← يختار الحي ← يؤكد الموقع ← يتم تسجيل وإرسال Latitude و Longitude مع بيانات موقع العميل ← يصل إلى Home.**
 
-### 3. Customer —  Subscription Popup
+### 3. العميل — Subscription Popup
 
-- Client → enters the app for the first time after login and location selection → subscription packages popup appears → clicks **Subscribe Now** → proceeds to complete personal information.
+- **العميل ← يدخل التطبيق لأول مرة بعد تسجيل الدخول واختيار الموقع ← تظهر له نافذة الاشتراكات ← يضغط اشترك الأن ← ينتقل لاستكمال البيانات الشخصية.**
 
-### 4. Customer — Complete Personal Information
+### 4. العميل — استكمال البيانات الشخصية
 
-- Client → enters **Name** → enters **Passport ID** → enters **National ID** → uploads **Image** → proceeds to package selection.
-**Note:** All personal information fields (**Name, Passport ID, National ID, and Image**) are optional.
-### 5. Customer — Individual Package Subscription
+- **العميل ← يدخل الاسم ← يدخل رقم جواز السفر ← يدخل الرقم القومي ← يرفع الصورة ← ينتقل لاختيار الباقة.**
 
-- Client → selects **Individual Package** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+**ملاحظة:** جميع بيانات العميل الشخصية **اختيارية**:(**الاسم - رقم الجواز - الرقم القومي - الصورة**)
 
-### 6. Customer — Family Package Subscription
+### 5. العميل — الاشتراك في الباقة
 
-- Client → selects **Family Package** → enters the **number of members according to the allowed maximum** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+- **العميل ← يختار نوع الباقة (فردية أو عائلية) ← يستكمل البيانات المطلوبة ← يدفع قيمة الاشتراك ← يتم تفعيل الاشتراك ← يصبح مستوى العضوية Classic.**
+    - **الباقة الفردية:** يستكمل البيانات المطلوبة للعميل فقط.
+    - **الباقة العائلية:** يدخل عدد أفراد الأسرة وفقًا للحد الأقصى المسموح، ويستكمل البيانات المطلوبة للأفراد.
 
-### 7. Customer — Membership Upgrade
+### 6. العميل — ترقية مستوى العضوية
 
-- Client → starts with **Classic** membership → uses the app through **actual visits and services** → meets the upgrade conditions → membership is upgraded **Classic → Silver → Gold → Diamond**.
+- **العميل ← يبدأ بعضوية Classic ← يستخدم التطبيق من خلال الزيارات والخدمات الفعلية ← يحقق شروط الترقية ← تتم ترقية العضوية بالترتيب:   فضية ← ذهبية ← ماسية.**

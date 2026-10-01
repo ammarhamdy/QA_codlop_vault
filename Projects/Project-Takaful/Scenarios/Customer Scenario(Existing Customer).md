@@ -1,77 +1,72 @@
-### (Existing Customer, No Subscription)
+##                                   ==(عميل مسجل، بدون اشتراك )==
 
-1.**Customer — Login & OTP 
+### 1. العميل — تسجيل الدخول والـ OTP
 
-- Client (existing customer, has no active subscription) → enters phone number → receives OTP via SMS or WhatsApp → OTP is valid for 10 minutes → can resend OTP after 60 seconds → enters valid OTP → OTP is verified successfully → logs in.
+- **العميل (عميل حالي، ليس لديه اشتراك فعال) ← يدخل رقم الهاتف ← يستلم OTP عن طريق SMS أو WhatsApp  ← يدخل OTP  ← يتم التحقق من الـ OTP بنجاح ← يتم تسجيل الدخول.**
 
-2. **Customer — Navigation to Home (No Active Subscription)**
+### 2. العميل — الانتقال إلى الرئيسية (بدون اشتراك فعال)
 
-- Client (existing customer, not subscribed to any package) → after OTP verification → is redirected directly to Home.
+- **العميل (عميل حالي، غير مشترك في أي باقة) ← بعد التحقق من الـ OTP ← يتم توجيهه مباشرةً إلى Home.**
 
+### 3. العميل — عرض باقات الاشتراك
 
-3. **Customer — View Subscription Packages **
+- **العميل (عميل حالي، غير مشترك في أي باقة) ← من الرئيسية ← يضغط على المزيد ← يضغط على الاشتراكات ← تظهر باقات الاشتراك المتاحة (الباقة الفردية، الباقة العائلية) ← يعرض تفاصيل كل باقة (السعر، المميزات، العدد المسموح به من الأعضاء) ← يضغط على اشترك الان ← ينتقل لاستكمال عملية الاشتراك.**
+### 4. العميل — الاشتراك في الباقة
 
-- Client (existing customer, not subscribed to any package) → on Home → taps More → taps Subscriptions → views the available packages (Individual Package, Family Package) → views the details of each package (price, benefits, allowed number of members) → taps Subscribe Now → proceeds to complete the subscription.
+- **العميل ← يختار نوع الباقة (فردية أو عائلية) ← يستكمل البيانات المطلوبة ← يدفع قيمة الاشتراك ← يتم تفعيل الاشتراك ← يصبح مستوى العضوية Classic.**
+    - **الباقة الفردية:** يستكمل البيانات المطلوبة للعميل فقط.
+    - **الباقة العائلية:** يدخل عدد أفراد الأسرة وفقًا للحد الأقصى المسموح، ويستكمل البيانات المطلوبة للأفراد.
 
-###### 4. Customer — Individual Package Subscription
+### 5. العميل — ترقية مستوى العضوية
 
-- Client → selects **Individual Package** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+- **العميل ← يبدأ بعضوية Classic ← يستخدم التطبيق من خلال الزيارات والخدمات الفعلية ← يحقق شروط الترقية ← تتم ترقية العضوية بالترتيب:   فضية ← ذهبية ← ماسية.**
 
-5. Customer — Family Package Subscription
+###                                  ==(عميل مسجل،اشتراك فعال)==
 
-- Client → selects **Family Package** → enters the **number of members according to the allowed maximum** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+### 1. **العميل — تسجيل الدخول والـ OTP**
 
-#5. **Customer — Family Package Subscription**
+- **العميل (مسجل مسبقًا،  اشتراك فعال) ←  يدخل رقم الهاتف ← يستلم OTP عن طريق SMS أو WhatsApp  ← يدخل OTP  ← يتم التحقق من الـ OTP بنجاح ← يتم تسجيل الدخول.**
 
-- Client → selects **Family Package** → enters the **number of members according to the allowed maximum** → completes required data → pays the subscription fee → subscription is activated → membership level becomes **Classic**.
+### 2. **العميل — الانتقال إلى الرئيسية**
 
-6. **Customer — Membership Upgrade**
+- **العميل (مسجل مسبقًا،  مشترك في أي باقة) ← بعد التحقق من الـ OTP ← يتم توجيهه مباشرةً إلى الرئيسية.**
 
-- Client → starts with **Classic** membership → uses the app through **actual visits and services** → meets the upgrade conditions → membership is upgraded **Classic → Silver → Gold → Diamond**.
+### 3. **العميل — عرض الاشتراك الحالي (اشتراك فعال)**
 
+- **العميل ← من الرئيسية ← يضغط على المزيد ← يضغط على الاشتراكات ← يعرض الباقة الحالية (فردية أو عائلية) ← يعرض تفاصيل الاشتراك (الحالة: Active، تاريخ البدء، تاريخ الانتهاء، قيمة الاشتراك) ← يعرض مستوى العضوية الحالي من بطاقتي (كلاسيك -فضية-ذهبية-ماسية).**
 
-**Notes:**
-- If the client has no active subscription, the packages are displayed with a Subscribe Now option.
+**ملاحظة:** في حالة الباقة العائلية، يظهر أيضًا **عدد أفراد الأسرة**.
 
-###  (Existing Customer, Active Subscription)
+**ملاحظة:** لا يظهر خيار اشترك الأن.
 
-1. **Customer — Login & OTP 
+### 4. **العميل — ترقية مستوى العضوية (اشتراك فعال)**
 
-- Client (existing customer, has no active subscription) → enters phone number → receives OTP via SMS or WhatsApp → OTP is valid for 10 minutes → can resend OTP after 60 seconds → enters valid OTP → OTP is verified successfully → logs in.
+- **العميل ← يستمر في استخدام التطبيق من خلال الزيارات والخدمات الفعلية ← يحقق شروط الترقية ← تتم ترقية العضوية إلى المستوى التالي (كلاسيك ← فضية ← ذهبية ← ماسية) ← يظهر المستوى الجديد في شاشة بطاقتي.**
 
-2. **Customer — Navigation to Home 
+##                          ==(عميل مسجل، اشتراك منته)==
 
-- Client (existing customer, not subscribed to any package) → after OTP verification → is redirected directly to Home.
+### 1. **العميل — تسجيل الدخول والـ OTP**
 
+- **العميل (مسجل مسبقًا، بدون اشتراك فعال) ←   يدخل رقم الهاتف ← يستلم OTP عن طريق SMS أو WhatsApp  ← يدخل OTP  ← يتم التحقق من الـ OTP بنجاح ← يتم تسجيل الدخول.**
 
-3. **Customer — View Current Subscription (Active Subscription)**
+### 2. **العميل — الانتقال إلى الرئيسية**
 
-- Client → on Home → taps More → taps Subscriptions → views the current package (Individual or Family) → views the subscription details (status Active, start date, expiry date, fee) → views the current membership level (Classic / Silver / Gold / Diamond).
-- Note: For a Family Package, the number of members is also shown.
-- Note: The Subscribe Now option is not displayed..
+- **العميل (مسجل مسبقًا، اشتراكه منتهي) ← بعد التحقق من الـ OTP ← يتم توجيهه مباشرةً إلى Home.**
 
-4. **Customer — Membership Upgrade (Active Subscription)**
+### 3. **العميل — عرض مستوي العضوية الحالي (اشتراك منتهي)**
 
-- Client → continues using the app through actual visits and services → meets the upgrade conditions → membership is upgraded to the next level (Classic → Silver → Gold → Diamond) → the new level is shown on the Subscriptions screen
+- **العميل (كان لديه باقة وانتهى اشتراكه) ← من الرئيسية ← يضغط على بطاقتي ← يظهرله مستوي العضويه الذي كان عليه قبل انتهاء الاشتراك  ← ييكون رمز العضويه متوقف ← يظهر خيار التجديد.**
 
-## (Existing Customer, Expired Subscription)
+**ملاحظة:** حتى يتم تجديد الاشتراك بنجاح، لا يمكن للعميل الاستفادة من **مميزات الباقة**.
 
-1. **Customer — Login & OTP 
+### 4. **العميل — تجديد الاشتراك**
 
-- Client (existing customer, has no active subscription) → enters phone number → receives OTP via SMS or WhatsApp → OTP is valid for 10 minutes → can resend OTP after 60 seconds → enters valid OTP → OTP is verified successfully → logs in.
+- **العميل ← يضغط على تجديد العضوية ← يراجع تفاصيل الباقة وقيمة الاشتراك ← يدفع رسوم التجديد ← يتم التجديد بنجاح ← يتم إعادة تفعيل الاشتراك (الحالة: Active) ← يظل مستوى العضوية كما كان قبل انتهاء الاشتراك ← يستمر في استخدام التطبيق بشكل طبيعي.**
 
-2. **Customer — Navigation to Home 
+**ملاحظة:** في حالة فشل عملية دفع التجديد، يظل الاشتراك بحالة **منتهي** ولا يتغير مستوى العضوية.
 
-- Client (existing customer, not subscribed to any package) → after OTP verification → is redirected directly to Home.
+### 5. **العميل — استكمال الترقية بعد التجديد
+ 
+. **العميل ← يستمر في استخدام التطبيق من خلال الزيارات والخدمات الفعلية ← يحقق شروط الترقية ← تتم ترقيته إلى المستوى التالي (Classic ← Silver ← Gold ← Diamond) ← يظهر المستوى الجديد في شاشة Subscriptions.**
 
-
-3. **Customer — View Current Subscription (Active Subscription)**
-
-- Client (had a package, subscription has expired) → on Home → taps More → taps Subscriptions → sees the previous package with status **Expired** → sees the membership level he had before expiry → the Renew option is displayed.
-- Note: Until the renewal succeeds, the client can't use the package benefits.
-
-4. **Customer — Renew Subscription**
-
-- Client → taps Renew → reviews the package details and fee → pays the renewal fee → renewal is successful → subscription is reactivated (status Active) → membership level stays the same as before expiry → continues using the app normally.
-- Note: If the renewal payment fails, the subscription stays Expired and the membership level doesn't change.
-
+**ملاحظة:** يبدأ احتساب الترقية من **المستوى الذي كان عليه العميل قبل انتهاء الاشتراك**.

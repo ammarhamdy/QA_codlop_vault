@@ -1,53 +1,72 @@
-### Customer — QR Scan at the Center
+### العميل — مسح QR في المركز
 
-### ( How the Client Scans the QR)
+###                                               ==(طرق مسح العميل للـ QR)==
 
-**1. Customer — Scan QR Inside the App**
+#### 1.1. العميل — مسح QR من داخل التطبيق
 
-- Client → arrives at the center → opens the app → scans the center QR from inside the app → the system checks the package subscription status (Active / Expired / Not Subscribed).
+- **العميل ← يصل إلى المركز ← يفتح التطبيق ← يمسح QR الخاص بالمركز من داخل التطبيق ← يتحقق النظام من حالة اشتراك الباقة (Active / Expired / Not Subscribed).**
+    
 
-**2. Customer — Scan QR Using Phone Camera (App Installed)**
+#### 1.2. العميل — مسح QR باستخدام كاميرا الهاتف (التطبيق مثبت)
 
-- Client → arrives at the center → scans the center QR using the phone camera outside the app → the system uses Universal Link / Deep Link / App Link → the app is installed → the requested content opens inside the app → the system checks the package subscription status (Active / Expired / Not Subscribed).
+- **العميل ← يصل إلى المركز ← يمسح QR الخاص بالمركز باستخدام كاميرا الهاتف من خارج التطبيق ← يستخدم النظام Universal Link / Deep Link / App Link ← يكون التطبيق مثبتًا ← يتم فتح المحتوى المطلوب داخل التطبيق ← يتحقق النظام من حالة اشتراك الباقة (Active / Expired / Not Subscribed).**
+    
 
-**3. Customer — Scan QR Using Phone Camera (App Not Installed)**
+#### 1.3. العميل — مسح QR باستخدام كاميرا الهاتف (التطبيق غير مثبت)
 
-- Client → arrives at the center → scans the center QR using the phone camera outside the app → the system uses Universal Link / Deep Link / App Link → the app is not installed → an appropriate web page opens → the page displays: center name, center overview, benefits, app download link, and the subscription option according to the client's status.
+- **العميل ← يصل إلى المركز ← يمسح QR الخاص بالمركز باستخدام كاميرا الهاتف من خارج التطبيق ← يستخدم النظام Universal Link / Deep Link / App Link ← لا يكون التطبيق مثبتًا ← يتم فتح صفحة ويب مناسبة ← تعرض الصفحة: اسم المركز، نبذة عن المركز، المميزات، رابط تحميل التطبيق، وخيار الاشتراك حسب حالة العميل.**
+    
 
-   ### **(Active Subscription)**
+---
 
-**4. Customer — Active Subscription, Eligible, Purchase**
+###                           ==(اشتراك فعال — Active Subscription)====
 
-- Client (active subscription) → after scanning the center QR → the system verifies the client's eligibility for the service → the client is eligible → is allowed to complete the service → scans the invoice / voucher QR → the system verifies the transaction and payment data → the transaction type is Purchase → the purchase is confirmed → the service is executed.
+#### 2. العميل — اشتراك فعال (مؤهل، شراء، حجز)
 
-**5. Customer — Active Subscription, Eligible, Booking**
+**2.1 الشراء:**
 
-- Client (active subscription) → after scanning the center QR → the system verifies the client's eligibility for the service → the client is eligible → is allowed to complete the service → scans the invoice / voucher QR → the system verifies the transaction and payment data → the transaction type is Booking → the paid amount and the remaining amount are displayed → the booking is confirmed → the service is executed.
+- **العميل (لديه اشتراك فعال) ← يمسح QR الخاص بالمركز ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← يكون العميل مؤهلًا ← يُسمح له بإتمام الخدمة ← يمسح QR الخاص بالفاتورة / القسيمة ← يتحقق النظام من بيانات العملية والدفع ← يكون نوع العملية Purchase ← يتم تأكيد عملية الشراء ← يتم تنفيذ الخدمة.**
+    
+   **2.2 الحجز:**
 
-**6. Customer — Active Subscription, Not Eligible**
+- **العميل (لديه اشتراك فعال) ← يمسح QR الخاص بالمركز ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← يكون العميل مؤهلًا ← يُسمح له بإتمام الخدمة ← يمسح QR الخاص بالفاتورة / القسيمة ← يتحقق النظام من بيانات العملية والدفع ← يكون نوع العملية Booking ← يظهر المبلغ المدفوع والمبلغ المتبقي ← يتم تأكيد الحجز ← يتم تنفيذ الخدمة.**
+    
 
-- Client (active subscription) → after scanning the center QR → the system verifies the client's eligibility for the service → the client is not eligible → the client is denied the service benefit.
+#### 3. العميل — اشتراك فعال، غير مؤهل
 
-### (Expired Subscription) 
+- **العميل (لديه اشتراك فعال) ← يمسح QR الخاص بالمركز ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← لا يكون العميل مؤهلًا ← يتم رفض استفادته من الخدمة ضمن الباقة.**
+    
 
-**7. Customer — Expired Subscription, Not Renewed**
+---
 
-- Client (expired subscription) → after scanning the center QR → the system displays that the package subscription has expired → displays the Renew option → the client does not renew → the client is not allowed to benefit from the package benefits.
+###                    ==(اشتراك منتهي — Expired Subscription)==
 
-**8. Customer — Expired Subscription, Renewed, Eligible, Purchase**
+### 4.  العميل — اشتراك منتهي ولم يتم التجديد
 
-- Client (expired subscription) → after scanning the center QR → the system displays that the package subscription has expired → displays the Renew option → the client renews → the package subscription is activated → the system verifies the client's eligibility for the service → the client is eligible → scans the invoice / voucher QR → the system verifies the transaction and payment data → the transaction type is Purchase → the purchase is confirmed → the service is executed.
+- **العميل (لديه اشتراك منتهي) ← يمسح QR الخاص بالمركز ← يعرض النظام أن اشتراك الباقة منتهي ← يظهر خيار Renew ← لا يقوم العميل بالتجديد ← لا يُسمح للعميل بالاستفادة من مميزات الباقة.**
+    
 
-**9. Customer — Expired Subscription, Renewed, Eligible, Booking**
+### 5. العميل — اشتراك منتهي، تم التجديد
 
-- Client (expired subscription) → after scanning the center QR → the system displays that the package subscription has expired → displays the Renew option → the client renews → the package subscription is activated → the system verifies the client's eligibility for the service → the client is eligible → scans the invoice / voucher QR → the system verifies the transaction and payment data → the transaction type is Booking → the paid amount and the remaining amount are displayed → the booking is confirmed → the service is executed.
+#### **5.1. مؤهل، شراء**
 
-**10. Customer — Expired Subscription, Renewed, Not Eligible**
+- **العميل (لديه اشتراك منتهي) ← يمسح QR الخاص بالمركز ← يعرض النظام أن اشتراك الباقة منتهي ← يظهر خيار Renew ← يقوم العميل بالتجديد ← يتم تفعيل اشتراك الباقة ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← يكون العميل مؤهلًا ← يمسح QR الخاص بالفاتورة / القسيمة ← يتحقق النظام من بيانات العملية والدفع ← يكون نوع العملية Purchase ← يتم تأكيد عملية الشراء ← يتم تنفيذ الخدمة.**
+    
 
-- Client (expired subscription) → after scanning the center QR → the system displays that the package subscription has expired → displays the Renew option → the client renews → the package subscription is activated → the system verifies the client's eligibility for the service → the client is not eligible → the client is denied the service benefit.
+#### **5.2. مؤهل، حجز**
 
-  ### (No subscription) 
+- **العميل (لديه اشتراك منتهي) ← يمسح QR الخاص بالمركز ← يعرض النظام أن اشتراك الباقة منتهي ← يظهر خيار Renew ← يقوم العميل بالتجديد ← يتم تفعيل اشتراك الباقة ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← يكون العميل مؤهلًا ← يمسح QR الخاص بالفاتورة / القسيمة ← يتحقق النظام من بيانات العملية والدفع ← يكون نوع العملية Booking ← يظهر المبلغ المدفوع والمبلغ المتبقي ← يتم تأكيد الحجز ← يتم تنفيذ الخدمة.**
+    
 
-**11. Customer — Not Subscribed to a Package**
+### 6. العميل — اشتراك منتهي، تم التجديد، غير مؤهل
 
-- Client (not subscribed to any package) → after scanning the center QR → the system displays that the client is not subscribed to a package → the client scans the invoice / voucher QR → the system verifies the purchase transaction data → the purchase is confirmed → the service is executed.
+- **العميل (لديه اشتراك منتهي) ← يمسح QR الخاص بالمركز ← يعرض النظام أن اشتراك الباقة منتهي ← يظهر خيار Renew ← يقوم العميل بالتجديد ← يتم تفعيل اشتراك الباقة ← يتحقق النظام من أهلية العميل للاستفادة من الخدمة ← لا يكون العميل مؤهلًا ← يتم رفض استفادته من الخدمة ضمن الباقة.**
+    
+
+---
+
+###                         ==(بدون اشتراك — No Subscription)==
+
+#### 7. العميل — غير مشترك في أي باقة
+
+- **العميل (غير مشترك في أي باقة) ← يمسح QR الخاص بالمركز ← يعرض النظام أن العميل غير مشترك في أي باقة ← يمسح العميل QR الخاص بالفاتورة / القسيمة ← يتحقق النظام من بيانات عملية الشراء ← يتم تأكيد عملية الشراء ← يتم تنفيذ الخدمة.**
