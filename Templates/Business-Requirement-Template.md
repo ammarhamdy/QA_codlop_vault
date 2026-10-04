@@ -2,83 +2,49 @@
 requirement_id: REQ-
 title: ""
 priority: High / Medium / Low
-status: Draft / Approved
+status: Draft / In Review / Approved
 epic_link: ""
 tags:
   - requirement
 ---
 
-# Requirement: [Requirement Name]
+# Requirement: [Name]
 
-## Objective
-[What does this requirement achieve?]
+## Description
+[What this requirement does and why — 2–3 sentences.]
 
 ## Actors
 - [Actor]
-- [Actor]
-- [System / External System]
 
 ## Preconditions
 - [Condition]
-- [Condition]
-- [Condition]
 
 ## Main Flow
-1. [Actor] [Action].
-2. [Actor] [Action].
-3. System [Action].
-4. System [Action].
-5. [Actor] [Action].
-6. System [Final Result].
+1. [Actor] [action].
+2. System [validation/processing].
+3. System [final result].
+
+## Exceptions
+- [Condition] → [System behavior / error shown]
 
 ## Business Rules
-- [Business rule]
-- [Business rule]
-- [Business rule]
+- [Rule]
 
-## [Entity] Lifecycle
+## [Entity] Lifecycle *(optional — only if the entity has states)*
 ```text
-[Status]
-    ↓
-[Status]
-    ↓
-[Status]
-    ↓
-[Status]
-
-Alternative:
-
-[Status] → [Status]
-[Status] → [Status]
-````
+[Status] → [Status] → [Status]
+```
 
 ## Scenarios
 
 ### [Scenario Name]
-
-**Given** [initial condition]  
-**When** [action]  
-**Then** [expected result].
-
-### [Scenario Name]
-
-**Given** [initial condition]  
-**When** [action]  
-**Then** [expected result].
-
-### [Scenario Name]
-
-**Given** [initial condition]  
-**When** [action]  
-**Then** [expected result].
+**Given** [context]
+**When** [action]
+**Then** [result]
 
 ## Acceptance Criteria
-
-- [Expected behavior]
-- [Expected behavior]
-- [Expected behavior]
-- [Expected behavior]
+1. [Verifiable statement]
+2. [Verifiable statement]
 
 ---
-
-_Last Updated: {{date}} {{time}}_  
+*Last Updated: {{date}}*
