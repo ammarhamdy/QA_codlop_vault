@@ -10,7 +10,7 @@ Follow these paths exactly:
   {==Path==}
 
 - **Test Case Template:**
-  {==Path==}
+  /home/am/Vault/QA_codlop_vault/Templates/Test-Case-Template.md
 
 - **Requirement File:**
   {==Path==}

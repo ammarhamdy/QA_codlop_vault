@@ -1,0 +1,15 @@
+# When can a customer open a dispute?
+
+| Step                                                                                                        | Can open a dispute? | Reason                                                                                                         |
+| ----------------------------------------------------------------------------------------------------------- | ------------------- | -------------------------------------------------------------------------------------------------------------- |
+| 1. Views the place                                                                                          | ❌ No                | No booking exists                                                                                              |
+| 2. Temporary Booking (receipt not yet uploaded)                                                             | ❌ No                | Window starts at receipt upload                                                                                |
+| 3. Pays (transfers outside the app), no receipt yet                                                         | ❌ No                | Same: no receipt uploaded                                                                                      |
+| 4. Uploads receipt, **Awaiting Lessor Confirmation**<br>- يرفع الإيصال، والحالة **«بانتظار تأكيد المؤجّر»** | ✅ Yes               | Window opens here (e.g. type A: transfer not acknowledged). Booking is frozen and the confirmation timer stops |
+| 5. Lessor **rejects** (customer says they paid)<br>- **تأكيد** المؤجّر، والحالة **«محجوز»**                 | ✅ Yes               | Type A, as long as it is within the window                                                                     |
+| 6. Lessor **confirms** (Booked)<br>- **ملغى بالاتفاق** ولم يُعد المؤجّر المبلغ                              | ✅ Yes               | Until 7 days after check-out (e.g. type D: place doesn’t match or is unavailable)                              |
+| 7. Lessor cancels by agreement, no refund<br>- **ملغى من العميل** ولم يُسترد المبلغ                         | ✅ Yes               | Allowed (example 6)                                                                                            |
+| 8. Customer cancels, no refund                                                                              | ✅ Yes               | Type C                                                                                                         |
+| 9. **Timed Out** (no receipt in time)                                                                       | ❌ No                | Explicitly blocked (example 49)                                                                                |
+| 10. After check-out<br>- بعد وقت الخروج                                                                     | ✅ Yes, for 7 days   | After that, “Open Dispute” is hidden                                                                           |
+

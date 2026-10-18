@@ -1,10 +1,11 @@
 # User Flows: Transfer and Receipt Cycle
 
-| ID | Flow | Actor | Status |
-|----|------|-------|--------|
-| UF-02 | Transfer Payment and Upload Receipt | Customer | **Replaces previous UF-02** |
-| UF-04 | Lessor Confirms or Rejects Booking | Lessor | New |
-| UF-05 | Customer Penalty and Appeal | Admin / Customer | New |
+| ID    | Flow                                | Actor            | Status                      |
+| ----- | ----------------------------------- | ---------------- | --------------------------- |
+| UF-02 | Transfer Payment and Upload Receipt | Customer         | **Replaces previous UF-02** |
+| UF-04 | Lessor Confirms or Rejects Booking  | Lessor           | New                         |
+| UF-05 | Customer Penalty and Appeal         | Admin / Customer | New                         |
+|       |                                     |                  |                             |
 
 ---
 

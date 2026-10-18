@@ -1,10 +1,10 @@
 # User Flows: Booking Confirmation or Rejection Cycle
 
-| ID | Flow | Actor | Status |
-|----|------|-------|--------|
-| UF-04 | Lessor Confirms Booking | Lessor | **Replaces previous UF-04** |
-| UF-06 | Lessor Rejects Booking | Lessor | New |
-| UF-07 | Lessor Delays the Decision | System / Support | New |
+| ID    | Flow                       | Actor            |
+| ----- | -------------------------- | ---------------- |
+| UF-04 | Lessor Confirms Booking    | Lessor           |
+| UF-06 | Lessor Rejects Booking     | Lessor           |
+| UF-07 | Lessor Delays the Decision | System / Support |
 
 ---
 
