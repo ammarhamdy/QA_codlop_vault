@@ -78,19 +78,19 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: FR-xx
+- Related requirements: [[متطلبات مشروع تنفيذ#١٤. التقييم بعد الإقامة]]
 - One rating per confirmed booking after check-out, or per external stay recorded by the lessor.
 - A rating cannot be edited after submission. Deleting is allowed (UF-18).
 - Displayed name is the first name plus one letter of the family name.
 - Average: calculated over visible ratings only, one decimal place, updated on every add, delete, or hide.
 - Admin setting: minimum number of ratings before the average is shown (default 1).
 - The booking moves to the "Completed" status at check-out, which makes it eligible for rating.
-- Open questions:
-  - The info message says "first name" but the policy says first name plus one letter of the family name. Which is correct?
+- Closed questions:
+  - The info message says "first name" but the policy says first name plus one letter of the family name. Which is correct? First name plus one letter of the family name
+  - Example 50 says a rating added before a dispute opens is "saved but not published". Does an already visible rating become Withheld when a dispute is opened later? NO
+  - Does the lessor get the "New Rating" notification when a withheld rating is published? YES
+  - The lessor reply ("Reply Now") has no rules in the source: length, one reply only, edit or delete? JUST one reply **only** for the lessor can be edited.
   - Is the invitation reminded again if the customer ignores it?
-  - Example 50 says a rating added before a dispute opens is "saved but not published". Does an already visible rating become Withheld when a dispute is opened later?
-  - Does the lessor get the "New Rating" notification when a withheld rating is published?
-  - The lessor reply ("Reply Now") has no rules in the source: length, one reply only, edit or delete. Needs its own flow once defined.
 
 ---
 
@@ -114,11 +114,11 @@ flowchart TD
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 1 | Customer cancels the confirmation | Nothing changes |
-| E1 | 5 | Customer tries to rate the same source again | Not allowed, deletion is final |
-| E2 | 1 | Rating is Hidden by Admin | Delete is not offered, the customer sees «مخفي من الإدارة» (see UF-19) |
+| ID  | At Step | Condition                                    | Result                                                                 |
+| --- | ------- | -------------------------------------------- | ---------------------------------------------------------------------- |
+| A1  | 1       | Customer cancels the confirmation            | Nothing changes                                                        |
+| E1  | 5       | Customer tries to rate the same source again | Not allowed, deletion is final                                         |
+| E2  | 1       | Rating is Hidden by Admin                    | Delete is not offered, the customer sees «مخفي من الإدارة» (see UF-19) |
 
 ## Diagram
 
@@ -135,11 +135,12 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: FR-xx
+- Related requirements: [[متطلبات مشروع تنفيذ#١٤. التقييم بعد الإقامة]]
 - Deletion is final and cannot be undone.
-- Open questions:
-  - Can the customer delete a Withheld rating while the dispute is open?
-  - Is the lessor notified when a rating is deleted?
+- Closed questions:
+  - Can the customer delete a Withheld (محجوب) rating while the dispute is open? YES
+  - Is the lessor notified when a rating is deleted? NO
+- Opened questions:
   - Is E2 correct? The source says a hidden rating stays visible to its author but does not say whether the author can delete it.
 
 ---
@@ -187,10 +188,7 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: FR-xx
+- Related requirements: [[متطلبات مشروع تنفيذ#١٤. التقييم بعد الإقامة]]
 - Hiding a rating is **not** part of the penalty ladder.
 - Open questions:
-  - Who can report a rating (the lessor, any user, or both)?
-  - Is a reason or category required when reporting?
-  - Can the author appeal the hiding? No appeal rule is defined for it.
   - Is the reason shown to the author in the notification?

@@ -8,12 +8,13 @@
 | UF-17 | Appeal a Dispute Decision | Customer / Lessor / Reviewer | New |
 
 ## Dispute Types
-| Type | Meaning |
-|------|---------|
-| A | Transfer not acknowledged |
-| B | Lessor cancelled a confirmed booking |
-| C | No refund after customer cancellation |
-| D | Place does not match, is unavailable, or other |
+
+| Type | Meaning                                                                                   |
+| ---- | ----------------------------------------------------------------------------------------- |
+| A    | Transfer not acknowledged (أ) تحويل لم يُعترف به.                                         |
+| B    | Lessor cancelled a confirmed booking (ب) إلغاء المؤجّر للحجز المؤكد.                      |
+| C    | No refund after customer cancellation (ج) عدم استرداد المبلغ بعد إلغاء العميل.            |
+| D    | Place does not match, is unavailable, or other (د) المكان غير مطابق أو غير متاح، أو أخرى. |
 
 ## Dispute Status Lifecycle
 
@@ -58,19 +59,19 @@ flowchart TD
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 1 | Booking is "Cancelled by Agreement" and the lessor did not refund | Dispute is allowed within the window |
-| A2 | 1 | Booking was rejected but the customer confirms they transferred | Customer opens a type A dispute |
-| A3 | 6 | Lessor tries to confirm or reject during the freeze | Blocked. Only support can change the status |
-| A4 | 6 | Either party tries to cancel or send a cancellation request during the freeze | Blocked for the whole freeze |
-| A5 | 6 | Booking is "Awaiting Lessor Confirmation" | Confirmation timer and reminders stop (see UF-07) |
-| A6 | 6 | A rating already exists on the booking | Rating is saved but not published until the dispute is closed |
-| E1 | 1 | More than 7 days after check-out | "Open Dispute" is hidden. A direct request shows: «انتهت مهلة فتح النزاع لهذا الحجز. يمكنك التواصل مع الدعم» |
-| E2 | 5 | A dispute is already open on the booking | Rejected with «يوجد نزاع مفتوح على هذا الحجز». The existing dispute opens instead |
-| E3 | 5 | Description is shorter than 20 characters | Blocked with «اكتب وصف المشكلة (20 حرفًا على الأقل)». Customer can edit and resend |
-| E4 | 4 | More than 10 files, or a video over 200 MB | Blocked with «الحد الأقصى 10 ملفات، والفيديو 200 ميجابايت» |
-| E5 | 1 | Booking status is "Timed Out" | Dispute is not allowed |
+| ID  | At Step | Condition                                                                     | Result                                                                                                       |
+| --- | ------- | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| A1  | 1       | Booking is "Cancelled by Agreement" and the lessor did not refund             | Dispute is allowed within the window                                                                         |
+| A2  | 1       | Booking was rejected but the customer confirms they transferred               | Customer opens a type A dispute                                                                              |
+| A3  | 6       | Lessor tries to confirm or reject during the freeze                           | Blocked. Only support can change the status                                                                  |
+| A4  | 6       | Either party tries to cancel or send a cancellation request during the freeze | Blocked for the whole freeze                                                                                 |
+| A5  | 6       | Booking is "Awaiting Lessor Confirmation"                                     | Confirmation timer and reminders stop (see UF-07)                                                            |
+| A6  | 6       | A rating already exists on the booking                                        | Rating is saved but not published until the dispute is closed                                                |
+| E1  | 1       | More than 7 days after check-out                                              | "Open Dispute" is hidden. A direct request shows: «انتهت مهلة فتح النزاع لهذا الحجز. يمكنك التواصل مع الدعم» |
+| E2  | 5       | A dispute is already open on the booking                                      | Rejected with «يوجد نزاع مفتوح على هذا الحجز». The existing dispute opens instead                            |
+| E3  | 5       | Description is shorter than 20 characters                                     | Blocked with «اكتب وصف المشكلة (20 حرفًا على الأقل)». Customer can edit and resend                           |
+| E4  | 4       | More than 10 files, or a video over 200 MB                                    | Blocked with «الحد الأقصى 10 ملفات، والفيديو 200 ميجابايت»                                                   |
+| E5  | 1       | Booking status is "Timed Out"                                                 | Dispute is not allowed                                                                                       |
 
 ## Diagram
 
