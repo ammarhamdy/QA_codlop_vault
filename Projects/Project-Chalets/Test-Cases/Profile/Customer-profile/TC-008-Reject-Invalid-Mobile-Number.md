@@ -19,7 +19,7 @@ tags:
 | New Ohone | 55122244444444424 |
 
 # Preconditions
--User is logged in..
+-User is logged in.
 # Steps
 1. Open Change Mobile Number.
 2. Enter an invalid mobile number.

@@ -1,5 +1,5 @@
 ---
-tc_id: TC-PROF-002
+tc_id: TCInfo-031
 title: Verify Profile Rejection When National ID Does Not Start With 1
 priority: High
 status: Ready

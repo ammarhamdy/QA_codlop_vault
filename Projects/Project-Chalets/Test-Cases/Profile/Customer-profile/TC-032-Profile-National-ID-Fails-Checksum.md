@@ -1,5 +1,5 @@
 ---
-tc_id: TC-PROF-004
+tc_id: TC-Info-032
 title: Verify Profile Rejection When National ID Fails Checksum Algorithm
 priority: High
 status: Ready
