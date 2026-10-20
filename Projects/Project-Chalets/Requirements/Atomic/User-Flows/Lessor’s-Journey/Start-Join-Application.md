@@ -8,14 +8,14 @@
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Taps **"Join as Lessor"** | Shows the benefits, steps, and required documents |
-| 2 | Chooses **Individual** or **Company** | Opens the form with the admin-defined fields for that scope |
-| 3 | Individual: enters national ID (10 digits, starts with 1) and the other fields (default: name, national ID, activity name optional, ID photo) | Validates the ID format and the verification algorithm |
-| 4 | Company: enters company name, trade name, CR number (10 digits), activity address, responsible/authorized person data, authorization document | Validates the CR number |
-| 5 | Uploads the required documents | Stores them (rules in §20) |
-| 6 | n/a | Auto-saves every step as a draft |
+| #   | User Action                                                                                                                                                                 | System Response                                              |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------ |
+| 1   | Taps **"Join as Lessor"**                                                                                                                                                   | Shows the benefits, steps, and required documents            |
+| 2   | Chooses **Individual** or **Company**                                                                                                                                       | Opens the form with the admin-defined fields for that scope  |
+| 3   | Individual: enters <br>- National ID (10 digits, starts with 1). <br>- Name.<br>- Activity name optional. <br>- ID photo.                                                   | Validates the ID format and the verification algorithm       |
+| 4   | Company: enters <br>- Company name. <br>- Trade name.<br>- CR number (10 digits).<br>- Activity address<br>- Responsible/authorized person data<br>- Authorization document | Validates the CR number   (رقم السجل التجاري)                |
+| 5   | Uploads the required documents                                                                                                                                              | Stores them (rules in [[متطلبات مشروع تنفيذ#٢٠. المستندات]]) |
+| 6   | n/a                                                                                                                                                                         | Auto-saves every step as a draft                             |
 
 ## Alternative / Error Flows
 
@@ -44,21 +44,22 @@ flowchart TD
     C -- Yes --> D[Open existing application] --> Z([End])
     C -- No --> E[Choose Individual or Company]
     E --> F[Enter ID or CR and fields]
-    F --> G{Valid, not duplicate, not banned?}
+    F --> I[Upload documents]
+    I --> G{Valid, not duplicate, not banned?}
     G -- No --> H[Show error message] --> F
-    G -- Yes --> I[Upload documents]
-    I --> J[Auto-save draft]
+    G -- Yes --> J[Auto-save draft] 
     J --> K([To UF-29])
 ```
 
 ## Notes
-- Related requirements: §19-1 to §19-5, §19-8, §19-12, policy (individual Saudi only, no duplicates, encrypted ID/CR), penalties (permanent ban)
+- Related requirements: policy (individual Saudi only, no duplicates, encrypted ID/CR), penalties (permanent ban)
 - Fields and documents are admin-defined per scope (see UF-34).
 - No sub-accounts for company employees.
+- Closed question:
+	  - What happens for an individual whose ID starts with a digit other than 1 or 2? The source defines only the message for 2.
+	  - Which document types, sizes, and formats are allowed? `PDF أو JPG أو PNG أو HEIC، حتى 10 ميجابايت للملف.`
+	  - Where does the user delete a draft? From the status page 
 - Open questions:
-  - What happens for an individual whose ID starts with a digit other than 1 or 2? The source defines only the message for 2.
-  - Which document types, sizes, and formats are allowed? (§20 not provided)
-  - Where does the user delete a draft?
   - Is the banned-ID check done on entry of the ID, or at submission?
 
 ---
@@ -73,26 +74,26 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Taps **"Add Place"** | Opens the place form. The type field is fixed to "Chalet" and hidden |
-| 2 | Enters name (3 to 80), city, district (belongs to the city), address (5 to 200) | Validates |
-| 3 | Opens the map pin | Asks for location permission: **Allow** or **Set manually** |
-| 4 | Allows | Centers the map on the user's location |
-| 5 | Places the pin inside the Kingdom | Saves the pin |
-| 6 | Adds at least 3 photos | Stores them |
-| 7 | Uploads the document proving the right to manage and rent the place | Stores it |
-| 8 | Saves the place | Auto-saves the draft. More places can be added |
+| #   | User Action                                                                                                 | System Response                                                                                                                            |
+| --- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 1   | Taps **"Add Place"**                                                                                        | Opens the place form. <br>The type field is fixed to "Chalet" and hidden if there is only one type, else should be visible and selectable. |
+| 2   | Enters:<br>- Name (3 to 80).<br>- City.<br>- District منطقة (belongs to the city).<br>- Address (5 to 200). | Validates                                                                                                                                  |
+| 3   | Opens the map pin                                                                                           | Asks for location permission: **Allow** or **Set manually**                                                                                |
+| 4   | Allows                                                                                                      | Centers the map on the user's location                                                                                                     |
+| 5   | Places the pin inside the Kingdom                                                                           | Saves the pin                                                                                                                              |
+| 6   | Adds at least 3 photos                                                                                      | Stores them                                                                                                                                |
+| 7   | Uploads the document proving the right to manage and rent the place                                         | Stores it                                                                                                                                  |
+| 8   | Saves the place                                                                                             | Auto-saves the draft. More places can be added                                                                                             |
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 3 | User chooses "Set manually" or denies permission | Map opens on the city center with address search, and the pin is moved by hand |
-| A2 | 8 | User adds another place | Repeats from step 1 |
-| E1 | 6 | Fewer than 3 photos | «أضف 3 صور على الأقل للمكان» |
-| E2 | 5 | Pin is outside the Kingdom | Not accepted (message not defined) |
-| E3 | 2 | Name or address length is out of range | Not accepted (message not defined) |
+| ID  | At Step | Condition                                        | Result                                                                         |
+| --- | ------- | ------------------------------------------------ | ------------------------------------------------------------------------------ |
+| A1  | 3       | User chooses "Set manually" or denies permission | Map opens on the city center with address search, and the pin is moved by hand |
+| A2  | 8       | User adds another place                          | Repeats from step 1                                                            |
+| E1  | 6       | Fewer than 3 photos                              | «أضف 3 صور على الأقل للمكان»                                                   |
+| E2  | 5       | Pin is outside the Kingdom                       | Not accepted (message not defined)                                             |
+| E3  | 2       | Name or address length is out of range           | Not accepted (message not defined)                                             |
 
 ## Diagram
 
@@ -115,11 +116,8 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §19-6, §19-7, §19-8
-- Open questions:
-  - What message is shown for a pin outside the Kingdom and for invalid name/address length?
-  - Maximum number of places and photos per application?
-  - Allowed photo formats and size?
+- Related requirements: [[متطلبات مشروع تنفيذ#٢٤. إضافة الشاليه و الإعلان و المراجعة]]
+
 
 ---
 
@@ -135,7 +133,7 @@ flowchart TD
 
 | #   | User Action                                   | System Response                                                                                                          |
 | --- | --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| 1   | Taps **"Review and Submit"**                  | Lists every missing item with a link to its step. <br>Submit is disabled until all are complete                          |
+| 1   | Taps **"Review and Submit"**                  | Lists every missing item with a link to its step. <br>Submit is disabled until all are complete.                         |
 | 2   | Completes the missing items through the links | Updates the list                                                                                                         |
 | 3   | Taps **Submit**                               | Creates the application with its number, status **Submitted**, and a copy of the field definitions it was submitted with |
 | 4   | n/a                                           | Shows «أُرسل طلبك برقم APP-…»                                                                                            |
@@ -143,12 +141,12 @@ flowchart TD
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 3 | Submit is pressed twice | Only one application is created |
-| E1 | 1 | No place was added | «أضف مكانًا واحدًا على الأقل للمعاينة» |
-| E2 | 1 | A place has fewer than 3 photos | «أضف 3 صور على الأقل للمكان» |
-| E3 | 1 | Any other item is missing | Submit stays disabled |
+| ID  | At Step | Condition                       | Result                                 |
+| --- | ------- | ------------------------------- | -------------------------------------- |
+| A1  | 3       | Submit is pressed twice         | Only one application is created        |
+| E1  | 1       | No place was added              | «أضف مكانًا واحدًا على الأقل للمعاينة» |
+| E2  | 1       | A place has fewer than 3 photos | «أضف 3 صور على الأقل للمكان»           |
+| E3  | 1       | Any other item is missing       | Submit stays disabled                  |
 
 ## Diagram
 
@@ -165,9 +163,11 @@ flowchart TD
 
 ## Notes
 - Related requirements: §19-9, policy (field copy per submitted application, one open application per user)
+- Closed question:
+	- Can the applicant edit or withdraw the application after submission and before review? No
 - Open questions:
   - Through which channel is the "we received your application" notification sent? UF-26 lists onboarding stages as push and in-app for the lessor.
-  - Can the applicant edit or withdraw the application after submission and before review?
+
 
 ---
 
@@ -181,14 +181,14 @@ flowchart TD
 
 ## Main Flow
 
-| #   | User Action                                        | System Response                                                                                                                                                                                                                               |
-| --- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1   | Opens the application                              | Shows a timeline: <br>- Submitted (مُرسل)<br>- Under Review (قيد المراجعة)<br>- Needs Completion (يحتاج استكمال)<br>- Inspection Scheduled (المعاينة مجدولة)<br>- Under Inspection (قيد المعاينة)<br>- Accepted (مقبول)<br>- Rejected (مرفوض) |
-| 2   | n/a (reviewer opens it)                            | Status becomes **Under Review**                                                                                                                                                                                                               |
-| 3   | n/a (reviewer schedules inspection)                | Status becomes **Inspection Scheduled**, with an inspector and an appointment                                                                                                                                                                 |
-| 4   | n/a (inspector records the first result)           | Status becomes **Under Inspection**                                                                                                                                                                                                           |
-| 5   | n/a (inspector finishes the result for each place) | Status becomes **Inspection Complete**                                                                                                                                                                                                        |
-| 6   | n/a (reviewer decides)                             | Moves to Accepted (UF-33), Rejected (UF-33), or Needs Completion (UF-32)                                                                                                                                                                      |
+| #   | User Action                                        | System Response                                                                                                                                                                                                                                           |
+| --- | -------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Opens the application                              | Shows a timeline: <br>- Submitted (مُرسل)<br>- Under Review (قيد المراجعة)<br>- Needs Completion (يحتاج استكمال)<br>- ==🔴Inspection Scheduled (المعاينة مجدولة)==<br>- ==🔴Under Inspection (قيد المعاينة)==<br>- Accepted (مقبول)<br>- Rejected (مرفوض) |
+| 2   | n/a (reviewer opens it)                            | Status becomes **Under Review**                                                                                                                                                                                                                           |
+| 3   | n/a (reviewer schedules inspection)                | Status becomes **Inspection Scheduled**, with an inspector and an appointment                                                                                                                                                                             |
+| 4   | n/a (inspector records the first result)           | Status becomes **Under Inspection**                                                                                                                                                                                                                       |
+| 5   | n/a (inspector finishes the result for each place) | Status becomes **Inspection Complete**                                                                                                                                                                                                                    |
+| 6   | n/a (reviewer decides)                             | Moves to Accepted (UF-33), Rejected (UF-33), or Needs Completion (UF-32)                                                                                                                                                                                  |
 
 ## Alternative / Error Flows
 

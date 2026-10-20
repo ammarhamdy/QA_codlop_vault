@@ -8,21 +8,21 @@
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Reviewer sends the application to inspection | Creates inspection request `INS-…` (reason: Join) with status **New** |
-| 2 | Chooses one inspection type for the whole request (field or remote), the inspector, and the appointment | Validates the inspector |
-| 3 | Saves | Request becomes **Scheduled**, application becomes **Inspection Scheduled**, and the inspector gets access to this request only |
-| 4 | n/a | Notifies the applicant with the type and appointment |
+| #   | User Action                                                                                             | System Response                                                                                                                 |
+| --- | ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Reviewer sends the application to inspection                                                            | Creates inspection request `INS-…` (reason: Join) with status **New**                                                           |
+| 2   | Chooses one inspection type for the whole request (field or remote), the inspector, and the appointment | Validates the inspector                                                                                                         |
+| 3   | Saves                                                                                                   | Request becomes **Scheduled**, application becomes **Inspection Scheduled**, and the inspector gets access to this request only |
+| 4   | n/a                                                                                                     | Notifies the applicant with the type and appointment                                                                            |
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 4 | Type is remote and no appointment is set | Applicant sees «سيتواصل معك المعاين لترتيب المعاينة عن بُعد» |
-| A2 | After 3 | Request is reassigned to another inspector | The previous inspector loses access immediately |
-| A3 | Any step before Complete | Admin cancels the request with a reason | Request becomes **Cancelled** |
-| E1 | 2 | Selected inspector is the application owner | Not allowed |
+| ID  | At Step                  | Condition                                   | Result                                                       |
+| --- | ------------------------ | ------------------------------------------- | ------------------------------------------------------------ |
+| A1  | 4                        | Type is remote and no appointment is set    | Applicant sees «سيتواصل معك المعاين لترتيب المعاينة عن بُعد» |
+| A2  | After 3                  | Request is reassigned to another inspector  | The previous inspector loses access immediately              |
+| A3  | Any step before Complete | Admin cancels the request with a reason     | Request becomes **Cancelled**                                |
+| E1  | 2                        | Selected inspector is the application owner | Not allowed                                                  |
 
 ## Diagram
 
@@ -62,13 +62,13 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Visits the chalet at the appointment (field), or holds a video call or video through an external channel agreed with the lessor (remote) | n/a |
-| 2 | Records **Approved** or **Rejected** for a chalet, with an optional note (up to 1000 characters) | Saves the result. On the first result, the request becomes **In Progress** and the application becomes **Under Inspection** |
-| 3 | Repeats step 2 for every chalet | n/a |
-| 4 | Taps **"Finish Inspection"** | Shows a dialog with the counts |
-| 5 | Confirms | Request becomes **Complete** and the application becomes **Inspection Complete** |
+| #   | User Action                                                                                                                              | System Response                                                                                                             |
+| --- | ---------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Visits the chalet at the appointment (field), or holds a video call or video through an external channel agreed with the lessor (remote) | n/a                                                                                                                         |
+| 2   | Records **Approved** or **Rejected** for a chalet, with an optional note (up to 1000 characters)                                         | Saves the result. On the first result, the request becomes **In Progress** and the application becomes **Under Inspection** |
+| 3   | Repeats step 2 for every chalet                                                                                                          | n/a                                                                                                                         |
+| 4   | Taps **"Finish Inspection"**                                                                                                             | Shows a dialog with the counts                                                                                              |
+| 5   | Confirms                                                                                                                                 | Request becomes **Complete** and the application becomes **Inspection Complete**                                            |
 
 ## Alternative / Error Flows
 
@@ -130,12 +130,12 @@ flowchart TD
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 4 | Lessor cancels while the request is still **New** (not scheduled) | Request becomes **Cancelled** |
-| A2 | 5 | Chalet is rejected | Lessor continues with UF-38 |
-| E1 | 4 | Lessor tries to cancel after the request is scheduled | Not allowed. Only Admin can cancel, with a reason |
-| E2 | 2 | Fewer than 3 photos, or other place data is invalid | Same validation as UF-29 |
+| ID  | At Step | Condition                                                         | Result                                            |
+| --- | ------- | ----------------------------------------------------------------- | ------------------------------------------------- |
+| A1  | 4       | Lessor cancels while the request is still **New** (not scheduled) | Request becomes **Cancelled**                     |
+| A2  | 5       | Chalet is rejected                                                | Lessor continues with UF-38                       |
+| E1  | 4       | Lessor tries to cancel after the request is scheduled             | Not allowed. Only Admin can cancel, with a reason |
+| E2  | 2       | Fewer than 3 photos, or other place data is invalid               | Same validation as UF-29                          |
 
 ## Diagram
 
