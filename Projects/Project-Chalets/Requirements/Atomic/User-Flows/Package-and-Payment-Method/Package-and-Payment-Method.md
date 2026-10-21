@@ -49,10 +49,10 @@ flowchart TD
 	- Ads count 1 or more.
 	- Featured ads 0 up to the ads count.
 	- priority 1 to 100.
-- Open questions:
-  - What does the lessor see when no package exists (the default until the manager creates one)?
-  - If only one method is enabled on the platform, is the method choice skipped?
-  - Which statuses count as "pending" for the one-request rule (Awaiting Payment, Payment Failed, Awaiting Approval, Rejected)?
+- Closed questions:
+  - What does the lessor see when no package exists (the default until the manager creates one)? Always be at least one package.
+  - If only one method is enabled on the platform, is the method choice skipped? YES
+
 
 ---
 
@@ -77,14 +77,14 @@ flowchart TD
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 1-6 | Lessor cancels before the decision (Awaiting Payment, Awaiting Approval, or Rejected) | Status becomes **Cancelled** (final). If a receipt was uploaded, it stays for Finance with the tag «يحتاج معالجة مبلغ» |
-| A2 | 6 | Receipt was rejected (UF-44) | Lessor taps «رفع إيصال جديد» on the same request. Status returns to Awaiting Approval |
-| E1 | 3 | No receipt attached | «ارفع إيصال التحويل» |
-| E2 | 4 | Transfer date is after today | «تاريخ التحويل لا يمكن أن يكون بعد اليوم» |
-| E3 | 3 | File type or size is not allowed | Not defined |
-| E4 | 4 | Payer name or note exceeds its limit | Not defined |
+| ID  | At Step | Condition                                                                                                                          | Result                                                                                                                     |     |
+| --- | ------- | ---------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | --- |
+| A1  | 1-6     | Lessor cancels before the decision:<br>- Awaiting Payment . بانتظار الد<br>- Awaiting Approval . بانتظار الاعت<br>- Rejected مرفوض | Status becomes **Cancelled** (final). <br>If a receipt was uploaded, it stays for Finance with the tag «يحتاج معالجة مبلغ» |     |
+| A2  | 6       | Receipt was rejected (UF-44)                                                                                                       | Lessor taps «رفع إيصال جديد» on the same request. <br>Status returns to Awaiting Approval                                  |     |
+| E1  | 3       | No receipt attached                                                                                                                | «ارفع إيصال التحويل»                                                                                                       |     |
+| E2  | 4       | Transfer date is after today                                                                                                       | «تاريخ التحويل لا يمكن أن يكون بعد اليوم»                                                                                  |     |
+| E3  | 3       | File type or size is not allowed                                                                                                   | Not defined                                                                                                                |     |
+| E4  | 4       | Payer name or note exceeds its limit                                                                                               | Not defined                                                                                                                |     |
 
 ## Diagram
 
@@ -104,9 +104,9 @@ flowchart TD
 ## Notes
 - Related requirements: [[متطلبات مشروع تنفيذ#٢٢. الباقات والاشتراك والدفع]] policy (bank transfer at launch, platform accounts for packages only)
 - The only bank account the lessor sees in this path is the platform account.
-- Open questions:
-  - Allowed behavior when the transfer amount differs from the request amount? (Finance rejects with «المبلغ غير مطابق», but the lessor-side step is not defined.)
-  - Is the cancel button available while the status is Awaiting Payment, or only after the receipt is uploaded? (Item 6 says "before the decision".)
+- Closed questions:
+  - Allowed behavior when the transfer amount differs from the request amount? (Finance rejects with «المبلغ غير مطابق», but the lessor-side step is Just Upload an approval as an evidence .)
+  - Is the cancel button available while the status is Awaiting Payment, or only after the receipt is uploaded? (Item 6 says "before the decision" and after the receipt uploaded.) 
 
 ---
 
@@ -116,28 +116,30 @@ flowchart TD
 **Goal:** Verify the transfer and decide on the payment request
 **Entry Point:** Payment request with status **Awaiting Approval**
 **Preconditions:** A receipt is uploaded and the request is not cancelled
-**Postconditions:** Approved: subscription is active and a payment document is issued. Rejected: the lessor has the reason and may upload a new receipt or cancel
+**Postconditions:** 
+- Approved: subscription is active and a payment document is issued. 
+- Rejected: the lessor has the reason and may upload a new receipt or cancel.
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens the request | Shows the receipt, the fixed amount, the package, and the transfer date |
-| 2 | Checks the platform bank account | n/a (outside the app) |
-| 3 | Approves | Sets status **Approved** and activates the subscription immediately. It starts at approval and ends at 23:59:59 Riyadh time on day (start + duration − 1) |
-| 4 | n/a | Issues the payment document (see Notes) |
-| 5 | n/a | Notifies the lessor «تم تفعيل اشتراكك في {الباقة} حتى {التاريخ}» with a "Payment Receipt" link (PDF, share and download) |
+| #   | User Action                      | System Response                                                                                                                                               |
+| --- | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Opens the request                | Shows the receipt, the fixed amount, the package, and the transfer date                                                                                       |
+| 2   | Checks the platform bank account | n/a (outside the app)                                                                                                                                         |
+| 3   | Approves                         | Sets status **Approved** and activates the subscription immediately. <br>It starts at approval and ends at 23:59:59 Riyadh time on day (start + duration − 1) |
+| 4   | n/a                              | Issues the payment document (see Notes)                                                                                                                       |
+| 5   | n/a                              | Notifies the lessor «تم تفعيل اشتراكك في {الباقة} حتى {التاريخ}» with a "Payment Receipt" link (PDF, share and download)                                      |
 
 ## Alternative / Error Flows
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 3 | Finance rejects and selects a reason (amount not received, amount does not match, receipt unclear, other) | Status **Rejected**. Lessor is notified «رُفض إيصالك: {السبب}» with «رفع إيصال جديد», or may cancel (UF-43) |
-| A2 | 3 | Lessor uploads a new receipt after a rejection | Status returns to Awaiting Approval, same request |
-| A3 | 3 | The same lessor has 3 rejected receipts | A tag appears in the lessor's profile for Finance. It is not a penalty |
-| A4 | 1 | Review time passes (default 24 hours) with no decision | The request is **never** approved automatically. Further behavior is not defined |
-| A5 | 1 | Admin changes the review time | The new value is used |
-| E1 | 3 | Rejection without a reason | Not defined |
+| ID  | At Step | Condition                                                                                                                     | Result                                                                                                      |
+| --- | ------- | ----------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| A1  | 3       | Finance rejects and selects a reason:<br>- Amount not received.<br>- Amount does not match.<br>- Receipt unclear.<br>- Other. | Status **Rejected**. Lessor is notified «رُفض إيصالك: {السبب}» with «رفع إيصال جديد», or may cancel (UF-43) |
+| A2  | 3       | Lessor uploads a new receipt after a rejection                                                                                | Status returns to Awaiting Approval, same request                                                           |
+| A3  | 3       | The same lessor has 3 rejected receipts                                                                                       | A tag appears in the lessor's profile for Finance. <br>It is not a penalty                                  |
+| A4  | 1       | Review time passes (default 24 hours) with no decision                                                                        | The request is **never** approved automatically. Further behavior is not defined                            |
+| A5  | 1       | Admin changes the review time                                                                                                 | The new value is used                                                                                       |
+| E1  | 3       | Rejection without a reason                                                                                                    | Not defined                                                                                                 |
 
 ## Diagram
 
@@ -161,11 +163,11 @@ flowchart TD
 - Payment document: **payment receipt** (`RCPT-YYYY-NNNNNN`, no tax) while the invoice key is off. After the key is on, a **simplified tax invoice** (`INV-YYYY-NNNNNN`) with a QR code. Price includes 15% tax: net = total ÷ 1.15 rounded to two halalas, tax = total − net. Numbers are sequential with no gaps per year, and an issued document is never deleted.
 - Example: approved 2026-10-21 for 30 days ends 2026-11-19 23:59:59.
 - A rejected receipt carries no penalty. A later penalty (UF-11) means no refund of any subscription amount.
-- Open questions:
-  - What happens when the review time passes without a decision (reminder, escalation)?
-  - Does "other" require written details, as in the booking rejection (UF-06)?
-  - Which role is "Finance", and who can view the receipt?
-  - After the invoice key is enabled, are earlier receipts re-issued as invoices?
+- Closed questions:
+  - What happens when the review time passes without a decision (reminder, escalation)? Nothing
+  - Does "other" require written details, as in the booking rejection (UF-06)? Yes require written details
+  - Which role is "Finance", and who can view the receipt? any authorized admin 
+
 
 ---
 
@@ -211,10 +213,9 @@ flowchart TD
 
 ## Notes
 - Related requirements: [[متطلبات مشروع تنفيذ#٢٢. الباقات والاشتراك والدفع]] policy (gateway built but off, enabled per platform, iOS stays off pending store policy review), settings table
-- Open questions:
-  - Is the lessor notified on gateway success (the source says only that activation and the document happen)?
-  - When the lessor switches from the gateway to bank transfer, is it the same request or a new one?
-  - Does a failed payment count as a pending request?
+- Closed questions:
+  - When the lessor switches from the gateway to bank transfer, is it the same request or a new one? gateway will be on V2
+  - Does a failed payment count as a pending request? NO 
 
 ---
 
@@ -228,11 +229,11 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens "My Subscription" | Shows the package, start and end, remaining days, ads and featured ads used and remaining (for example «3 من 5 مستخدمة — متبقٍ 2») |
-| 2 | Taps **Renew** or **Upgrade** | Starts a new payment request (UF-42) |
-| 3 | Taps **"My Payments"** | Shows the lessor's payments |
+| #   | User Action                   | System Response                                                                                                                    |
+| --- | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Opens "My Subscription"       | Shows the package, start and end, remaining days, ads and featured ads used and remaining (for example «3 من 5 مستخدمة — متبقٍ 2») |
+| 2   | Taps **Renew** or **Upgrade** | Starts a new payment request (UF-42)                                                                                               |
+| 3   | Taps **"My Payments"**        | Shows the lessor's payments                                                                                                        |
 
 ## Alternative / Error Flows
 
@@ -259,11 +260,11 @@ flowchart TD
 - Related requirements: [[متطلبات مشروع تنفيذ#٢٢. الباقات والاشتراك والدفع]] policy (credit rule, subscription end, no refund after a penalty), penalties block, §22 status table
 - Credit rule: one ad is consumed only at the **first publication**. Drafts, review, rejection, edit, disabling, and re-show do not consume. Disabling does not give the credit back. Publishing a new chalet consumes even if an earlier one was disabled. Featuring is immediate, needs no review, and uses no credit within the package's featured count.
 - Expiry reminders (7, 3, and 1 day, and expiry) are in UF-26.
-- Open questions:
-  - If the lessor renews while the subscription is active, does the new one start at approval or after the current end?
-  - On upgrade, what happens to the remaining days and unused credits?
-  - What does "My Payments" show (requests, documents, statuses)?
-  - What happens to published ads when the subscription ends? (Ad publishing requirement not provided.)
+- Closed questions:
+  - If the lessor renews while the subscription is active, does the new one start at approval or after the current end? No start directly
+  - On upgrade, what happens to the remaining days and unused credits? Expired
+  - What does "My Payments" show (requests, documents, statuses)? requests, documents and statuses
+  - What happens to published ads when the subscription ends? No new Ads can published, Old Ads disabled.  
 
 ---
 
@@ -277,11 +278,11 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens "Billing Data" | Shows the tax number field (optional) |
-| 2 | Enters the tax number (15 digits, starts and ends with 3) | Validates the format |
-| 3 | Saves | Stores the number |
+| #   | User Action                                               | System Response                       |
+| --- | --------------------------------------------------------- | ------------------------------------- |
+| 1   | Opens "Billing Data"                                      | Shows the tax number field (optional) |
+| 2   | Enters the tax number (15 digits, starts and ends with 3) | Validates the format                  |
+| 3   | Saves                                                     | Stores the number                     |
 
 ## Alternative / Error Flows
 
@@ -303,9 +304,8 @@ flowchart TD
 
 ## Notes
 - Related requirements: [[متطلبات مشروع تنفيذ#٢٢. الباقات والاشتراك والدفع]]
-- Open questions:
-  - Is the field available to individual lessors? (The source says company only.)
-  - Does the number appear on the payment document or invoice, and can it be edited after documents were issued?
+- Closed questions:
+  - Does the number appear on the payment document or invoice, and can it be edited after documents were issued? NO
 
 ---
 
@@ -354,7 +354,6 @@ flowchart TD
 ## Notes
 - Related requirements: [[متطلبات مشروع تنفيذ#٢٢. الباقات والاشتراك والدفع]] settings table, policy (packages, platforms, document rules)
 - Defaults: no packages, bank transfer on, gateway off on both platforms (test mode), review time 24 hours, tax included at 15%, invoice key off, no bank accounts. A platform bank account is required before launch.
-- Open questions:
-  - What stops a launch with no package or no bank account?
-  - Is every settings change audit-logged?
-  - Does changing the review time or rejection reasons affect requests already waiting?
+- Closed questions:
+  - What stops a launch with no package or no bank account? packages  always allowed and if there is no Bank account no customer can book this Ads
+  - Is every settings change audit-logged? Yes
