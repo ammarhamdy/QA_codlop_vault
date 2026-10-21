@@ -14,11 +14,11 @@ run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| verification_token | "01a03d2e-f961-701a-94fd-a907412d0d54" |
-| otp_code | "12345" |
-| device_token | "bxWAwEODSUCeRnG3hgsGZq:APA91bEIthwLZwa6jdf-MJOYkO9uJvhvPI_j5E-poqLejLo6s_6Fd4m-gGxLc7nXvjuHxlAAQncovaDVB5dNgGpDU5hOrmGs-PD9mWNhp4zWWi7BS1MqKof" |
+| Field              | Value                                                                                                                                            |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| verification_token | "01a03d2e-f961-701a-94fd-a907412d0d54"                                                                                                           |
+| otp_code           | "12345"                                                                                                                                          |
+| device_token       | "bxWAwEODSUCeRnG3hgsGZq:APA91bEIthwLZwa6jdf-MJOYkO9uJvhvPI_j5E-poqLejLo6s_6Fd4m-gGxLc7nXvjuHxlAAQncovaDVB5dNgGpDU5hOrmGs-PD9mWNhp4zWWi7BS1MqKof" |
 
 # Preconditions
 - User has successfully called `/api/otp/send` and received `verification_token`
