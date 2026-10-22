@@ -217,7 +217,7 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §19-10, status table
+- Related requirements: [[متطلبات مشروع تنفيذ# ١٩. الانضمام كمؤجّر]], status table
 - **Contradiction:** the timeline in item 10 omits "Inspection Complete", but the status table includes it. I kept it in the flow.
 - Closed questions:
   - Who is alerted when the late threshold is reached, and what does that person do? The Lessor
@@ -263,7 +263,7 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §19-11, status table
+- Related requirements: [[متطلبات مشروع تنفيذ# ١٩. الانضمام كمؤجّر]], status table
 - Closed questions:
   - Can the applicant edit only flagged fields, or all fields? All fields
   - Is there a limit on the number of rounds or a deadline to respond? NO
@@ -307,7 +307,7 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §19-13, §19-14, status table, policy (one open application per user)
+- Related requirements: [[متطلبات مشروع تنفيذ# ١٩. الانضمام كمؤجّر]], status table, policy (one open application per user)
 - Package selection and ad publishing are outside this requirement.
 - Lessor penalties and grievances after acceptance: see UF-11 and UF-12.
 - Closed questions:
@@ -356,7 +356,7 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: policy (fields not fixed in code), settings table
+- Related requirements: [[متطلبات مشروع تنفيذ# ١٩. الانضمام كمؤجّر]], policy (fields not fixed in code), settings table
 - Tourism permit stays built and disabled until the lawyer's opinion.
 - Closed questions:
   - Is every settings change audit-logged? YES

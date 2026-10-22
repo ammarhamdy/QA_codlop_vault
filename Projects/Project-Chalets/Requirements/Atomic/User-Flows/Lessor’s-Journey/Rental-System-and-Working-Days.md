@@ -62,11 +62,11 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens the prices step | Shows a base price field for each unit type |
-| 2 | Enters a whole-number price in SAR (1 to 100,000) | Validates the value |
-| 3 | Saves | Saves the base price. A published ad changes immediately |
+| #   | User Action                                       | System Response                                          |
+| --- | ------------------------------------------------- | -------------------------------------------------------- |
+| 1   | Opens the prices step                             | Shows a base price field for each unit type              |
+| 2   | Enters a whole-number price in SAR (1 to 100,000) | Validates the value                                      |
+| 3   | Saves                                             | Saves the base price. A published ad changes immediately |
 
 ## Alternative / Error Flows
 
@@ -90,11 +90,11 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §25-2, §25-6, policy (price rules, total, price fixed on booking), settings table (price limits), UF-01
+- Related requirements: [[متطلبات مشروع تنفيذ#٢٥. التقويم و الأسعار و الأوقات]], policy (price rules, total, price fixed on booking), settings table (price limits), UF-01
 - Total = sum of the unit prices. A full day from check-in on D1 to check-out on D2 covers the units from D1 to D2−1. It is shown like «1,900 ر.س».
-- Open questions:
-  - With only Full Day, is there still more than one "unit type"? If not, should the field be hidden?
-  - Is a base price required before the ad can be submitted (UF-51), and what message appears if it is missing?
+- Closed questions:
+  - With only Full Day, is there still more than one "unit type"? If not, should the field be hidden? Yes if there is only one type no need to select any thing
+  - Is a base price required before the ad can be submitted (UF-51), and what message appears if it is missing? It can not be missing.
 
 ---
 
@@ -108,13 +108,13 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens the calendar and selects an ad | Shows the calendar of that ad |
-| 2 | Moves forward through the days (up to 365 days ahead) | Shows each day's status and price with a color key: available, manually booked, external stay, closed |
-| 3 | n/a | Shows past days in grey, read only |
-| 4 | n/a | Shows a non-working day as «مغلق (يوم غير عامل)» |
-| 5 | n/a | Shows app booking states automatically: temporarily booked, awaiting your confirmation, booked via app |
+| #   | User Action                                           | System Response                                                                                                      |
+| --- | ----------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| 1   | Opens the calendar and selects an ad                  | Shows the calendar of that ad                                                                                        |
+| 2   | Moves forward through the days (up to 365 days ahead) | Shows each day's status and price with a color key: <br>- Available <br>- Booked <br>- Temporary Booked <br>- Closed |
+| 3   | n/a                                                   | Shows past days in grey, read only                                                                                   |
+| 4   | n/a                                                   | Shows a non-working day as «مغلق (يوم غير عامل)»                                                                     |
+| 5   | n/a                                                   | Shows app booking states automatically: temporarily booked, awaiting your confirmation, booked via app               |
 
 ## Alternative / Error Flows
 
@@ -140,12 +140,12 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §25-3, policy (manual calendar, app booking states are automatic, last update shown), status table, settings table (range 365 days)
+- Related requirements: [[متطلبات مشروع تنفيذ#٢٥. التقويم و الأسعار و الأوقات]], policy (manual calendar, app booking states are automatic, last update shown), status table, settings table (range 365 days)
 - The calendar is managed by the lessor by hand. App booking states cannot be changed manually.
-- Open questions:
-  - The color key lists four states, but the status table has seven. What color do the three app booking states use?
-  - Can the calendar be opened for an ad that is not published, or hidden or suspended?
-  - Can the lessor open an external stay from the calendar?
+- Closed questions:
+  - The color key lists four states, but the status table has seven? We will ONLY work on those 4 status(Available, Booked, Temporary Booked, Closed). 
+  - Can the calendar be opened for an ad that is not published, or hidden or suspended? the Calendar should be connected to the chalet (place) not the Ad  
+  - Can the lessor open an external stay from the calendar? NO
 
 ---
 
@@ -159,12 +159,12 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Touches a day, or drags across several days | Highlights the selection |
-| 2 | Taps **"Edit Selected"** | Opens the edit form |
-| 3 | Selects the status: available, manually booked, or closed with a reason (maintenance, private use, external booking, other), and enters the custom price | Validates the price |
-| 4 | Saves | Applies the change immediately and updates the calendar |
+| #   | User Action                                                                                                                                                                 | System Response                                         |
+| --- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 1   | Touches a day, or drags across several days                                                                                                                                 | Highlights the selection                                |
+| 2   | Taps **"Edit Selected"**                                                                                                                                                    | Opens the edit form                                     |
+| 3   | Selects the status: <br>- Available. <br>- Manually booked. <br>- Closed with a reason (maintenance, private use, external booking other).<br>- And enters the custom price | Validates the price                                     |
+| 4   | Saves                                                                                                                                                                       | Applies the change immediately and updates the calendar |
 
 ## Alternative / Error Flows
 
@@ -193,118 +193,13 @@ flowchart TD
 
 ## Notes
 - Related requirements: §25-4, §25-6, policy (manual calendar, instant edits, no past edits, app booking states are automatic), status table
+- Closed questions:
+	- Can the lessor change a non-working day to available? Yes
+	- Can the status or the price be left empty, so that only one changes? No
 - Open questions:
   - "Closed because: external booking" and the status "Booked (external stay)" look alike. Does a closure with that reason create an external stay?
   - The status table moves an external stay to available only by cancelling the stay with "Yes". Can the lessor set such a day to available from this form?
-  - Can the lessor change a non-working day to available?
-  - Can the status or the price be left empty, so that only one changes?
-  - Which section defines recording and cancelling an external stay, and its "Yes" confirmation?
-
----
-
-# UF-68: Bulk Pricing
-
-**Actor:** Lessor (accepted)
-**Goal:** Apply one price to many days at once
-**Entry Point:** "Bulk Pricing" in the calendar
-**Preconditions:** The lessor selected an ad and is connected
-**Postconditions:** Custom prices are applied to the matching days immediately
-
-## Main Flow
-
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens bulk pricing | Shows the form |
-| 2 | Enters a date range, weekdays, unit type, and price | Validates the price |
-| 3 | Requests a preview | Shows the effect, for example «سيتغير سعر 13 يومًا» |
-| 4 | Confirms | Applies the price to the matching days immediately |
-| 5 | n/a | Shows the result |
-
-## Alternative / Error Flows
-
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 5 | Part of the date range is outside the allowed range | «طُبق السعر على {n} يومًا. تجاهلنا {m} يومًا خارج المدى المسموح» |
-| A2 | 3 | Lessor does not confirm after the preview | Not defined |
-| E1 | 2 | Price is 0, negative, fractional, or above the limit | «السعر بالريال من 1 إلى 100,000 بدون كسور» |
-| E2 | 4 | Some days are linked to an app booking | Not defined for bulk pricing (UF-67 E2 applies to single edits) |
-
-## Diagram
-
-```mermaid
-flowchart TD
-    A([Start]) --> B[Open bulk pricing]
-    B --> C[Enter range, weekdays, unit type, price]
-    C --> D{Price valid?}
-    D -- No --> E[Show price error] --> C
-    D -- Yes --> F[Show preview of days that will change]
-    F --> G{Confirm?}
-    G -- No --> Z([End])
-    G -- Yes --> H[Apply price to matching days]
-    H --> I{Some days outside allowed range?}
-    I -- Yes --> J[Show applied and ignored day counts]
-    I -- No --> K[Show result]
-    J --> Z
-    K --> Z
-```
-
-## Notes
-- Related requirements: §25-5, §25-6, policy (price rules, instant edits, no past edits), settings table (calendar range)
-- Open questions:
-  - With only Full Day, is "unit type" still a field in this form, or fixed?
-  - What is the "allowed range": the calendar range (365 days), or also excluding past days?
-  - Are days linked to an app booking skipped, blocked, or counted in the preview?
-  - Does the preview count non-working days?
-  - Can the lessor undo a bulk change?
-
----
-
-# UF-69: Calendar Update Reminder
-
-**Actor:** System (the lessor is notified)
-**Goal:** Keep the calendar of a published chalet current so customers see correct availability
-**Entry Point:** The calendar of a published chalet has not been updated for 7 days (default)
-**Preconditions:** The chalet is published and the reminder setting is not 0
-**Postconditions:** The lessor is reminded. After an update, the "last calendar update" time is refreshed
-
-## Main Flow
-
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | n/a (7 days pass without an update) | Sends «حدّث تقويم {المكان} حتى يرى العملاء التوافر الصحيح» |
-| 2 | Opens the notification | Opens the calendar of that chalet (UF-66) |
-| 3 | Updates the calendar (UF-67 or UF-68) | Refreshes the "last calendar update" time |
-| 4 | n/a | Shows the "last calendar update" time to customers |
-
-## Alternative / Error Flows
-
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 1 | Reminder days are set to 0 | No reminder is sent |
-| A2 | 4 | "Show last calendar update" is set to No | The time is not shown to customers |
-
-## Diagram
-
-```mermaid
-flowchart TD
-    A([Calendar not updated for 7 days]) --> B{Reminder enabled and chalet published?}
-    B -- No --> Z([End])
-    B -- Yes --> C[Send reminder to lessor]
-    C --> D[Lessor opens calendar]
-    D --> E[Lessor updates calendar]
-    E --> F[Refresh last update time]
-    F --> G{Show last update setting on?}
-    G -- Yes --> H[Show last update to customers] --> Z
-    G -- No --> Z
-```
-
-## Notes
-- Related requirements: §25-7, policy (last update shown to customers), settings table, UF-26 (calendar reminder is push and in-app for the lessor)
-- Open questions:
-  - What counts as an "update": any edit, or only status changes?
-  - Is the reminder repeated every 7 days until the lessor updates?
-  - Does an app booking changing the calendar automatically count as an update?
-  - Does the reminder stop while the ad is disabled, hidden for expiry, or suspended?
+  - Which section defines recording and cancelling an external stay, and its "Yes" confirmation? 
 
 ---
 
@@ -318,14 +213,14 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens the calendar settings | Shows the defaults: check-in 4:00 PM, check-out 12:00 PM, range 365 days, price limits 1 and 100,000, reminder 7 days, show last update Yes |
-| 2 | Changes the default check-in and check-out times | Validates |
-| 3 | Changes the calendar range in days | Validates |
-| 4 | Changes the lowest and highest unit price | Validates |
-| 5 | Changes the reminder days (0 turns it off) and "Show last calendar update" | Validates |
-| 6 | Saves | Applies the values. The default times affect only new chalets |
+| #   | User Action                                                                | System Response                                                                      |
+| --- | -------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 1   | Opens the calendar settings                                                | Shows the defaults: range 365 days, price limits 1 and 100,000, show last update Yes |
+| 2   | Changes the default check-in and check-out Days                            | Validates                                                                            |
+| 3   | Changes the calendar range in days                                         | Validates                                                                            |
+| 4   | Changes the lowest and highest unit price                                  | Validates                                                                            |
+| 5   | Changes the reminder days (0 turns it off) and "Show last calendar update" | Validates                                                                            |
+| 6   | Saves                                                                      | Applies the values. The default times affect only new chalets                        |
 
 ## Alternative / Error Flows
 
@@ -348,9 +243,9 @@ flowchart TD
 ```
 
 ## Notes
-- Related requirements: §25 settings table
-- Open questions:
-  - Do new price limits affect existing prices that fall outside them?
-  - Does lowering the calendar range affect days already edited or booked beyond it?
-  - The price error message shows fixed numbers (1 to 100,000), but the limits are configurable. Should the message use the current limits?
-  - Is every settings change audit-logged?
+- Related requirements: [[متطلبات مشروع تنفيذ#٢٥. التقويم و الأسعار و الأوقات]], settings table
+- Closed questions:
+  - Do new price limits affect existing prices that fall outside them? No, only affect new added chalet.
+  - Does lowering the calendar range affect days already edited or booked beyond it? No
+  - The price error message shows fixed numbers (1 to 100,000), but the limits are configurable. Should the message use the current limits? OK will use the current limits
+  - Is every settings change audit-logged? Yes
