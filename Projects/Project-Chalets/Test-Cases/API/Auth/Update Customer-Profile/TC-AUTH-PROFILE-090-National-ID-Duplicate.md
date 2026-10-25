@@ -1,16 +1,16 @@
 ---
 tc_id: TC-AUTH-PROFILE-090
-title: "National ID validation — duplicate"
+title: National ID validation — duplicate
 priority: Medium
 status: Ready
 type: API
-linked_requirement: "PRD Section 17 — Account and Phone Change"
+linked_requirement: PRD Section 17 — Account and Phone Change
 tags:
   - test-case
   - api
   - customer-profile
   - validation
-run_result: Not Run
+run_result:
 ---
 
 # TC-AUTH-PROFILE-090-National-ID-Duplicate

@@ -1,16 +1,16 @@
 ---
 tc_id: TC-AUTH-PROFILE-093
-title: "Reject changing phone to number owned by another account"
+title: Reject changing phone to number owned by another account
 priority: High
 status: Ready
 type: API
-linked_requirement: "PRD Section 17 — Account and Phone Change"
+linked_requirement: PRD Section 17 — Account and Phone Change
 tags:
   - test-case
   - api
   - phone-change
   - validation
-run_result: Not Run
+run_result: "-"
 ---
 
 # TC-AUTH-PROFILE-093-Phone-Change-Registered-Number

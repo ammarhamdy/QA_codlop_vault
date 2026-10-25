@@ -1,16 +1,16 @@
 ---
 tc_id: TC-AUTH-PROFILE-089
-title: "National ID validation — invalid checksum"
+title: National ID validation — invalid checksum
 priority: Medium
 status: Ready
 type: API
-linked_requirement: "PRD Section 17 — Account and Phone Change"
+linked_requirement: PRD Section 17 — Account and Phone Change
 tags:
   - test-case
   - api
   - customer-profile
   - negative
-run_result: Not Run
+run_result:
 ---
 
 # TC-AUTH-PROFILE-089-National-ID-Invalid-Checksum
