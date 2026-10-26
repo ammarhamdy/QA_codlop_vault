@@ -66,14 +66,14 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Opens the bank transfer step | Shows the enabled platform accounts (bank, beneficiary, IBAN with copy), the amount, and the `PAY-YYYY-NNNNNN` number to write in the transfer description |
-| 2 | Transfers the amount from their bank app | n/a (outside the app) |
-| 3 | Uploads the receipt (JPG, PNG, or PDF, up to 10 MB) | Validates the file |
-| 4 | Enters the transfer date, and optionally the payer name (up to 80 characters) and a note (up to 500 characters) | Validates the date |
-| 5 | Submits | Sets status **Awaiting Approval** and shows «استلمنا إيصالك PAY-… وسنراجعه خلال {المهلة}» |
-| 6 | Follows the request in "Payment Request Status" | Shows the current status |
+| #   | User Action                                                                                                     | System Response                                                                                                                                            |
+| --- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | Opens the bank transfer step                                                                                    | Shows the enabled platform accounts (bank, beneficiary, IBAN with copy), the amount, and the `PAY-YYYY-NNNNNN` number to write in the transfer description |
+| 2   | Transfers the amount from their bank app                                                                        | n/a (outside the app)                                                                                                                                      |
+| 3   | Uploads the receipt (JPG, PNG, or PDF, up to 10 MB)                                                             | Validates the file                                                                                                                                         |
+| 4   | Enters the transfer date, and optionally the payer name (up to 80 characters) and a note (up to 500 characters) | Validates the date                                                                                                                                         |
+| 5   | Submits                                                                                                         | Sets status **Awaiting Approval** and shows «استلمنا إيصالك PAY-… وسنراجعه خلال {المهلة}»                                                                  |
+| 6   | Follows the request in "Payment Request Status"                                                                 | Shows the current status                                                                                                                                   |
 
 ## Alternative / Error Flows
 

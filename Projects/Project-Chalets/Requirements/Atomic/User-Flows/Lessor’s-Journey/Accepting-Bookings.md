@@ -128,15 +128,15 @@ flowchart TD
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | Taps **"Reject"** | Shows the reason list |
-| 2 | Selects a reason: amount not received, amount insufficient, receipt unclear, or other | n/a |
-| 3 | If "Other", enters the details | Requires the details text |
-| 4 | Submits the rejection | Sets status to **"Rejected"** |
-| 5 | n/a | Releases the slot within 1 minute |
-| 6 | n/a | Notifies the customer with the rejection reason |
-| 7 | Customer may tap **"Report a Problem"** | Allows opening a dispute (UF-08) |
+| #   | User Action                                                                           | System Response                                 |
+| --- | ------------------------------------------------------------------------------------- | ----------------------------------------------- |
+| 1   | Taps **"Reject"**                                                                     | Shows the reason list                           |
+| 2   | Selects a reason: amount not received, amount insufficient, receipt unclear, or other | n/a                                             |
+| 3   | If "Other", enters the details                                                        | Requires the details text                       |
+| 4   | Submits the rejection                                                                 | Sets status to **"Rejected"**                   |
+| 5   | n/a                                                                                   | Releases the slot within 1 minute               |
+| 6   | n/a                                                                                   | Notifies the customer with the rejection reason |
+| 7   | Customer may tap **"Report a Problem"**                                               | Allows opening a dispute (UF-08)                |
 
 ## Alternative / Error Flows
 
@@ -228,48 +228,6 @@ flowchart TD
 
 ---
 
-# UF-82: Lessor Reminder Before Check-in
-
-**Actor:** System (the lessor is notified)
-**Goal:** Remind the lessor of an upcoming stay
-**Entry Point:** The reminder time before check-in is reached (default 24 hours)
-**Preconditions:** The booking is within the reminder time before check-in
-**Postconditions:** The lessor received the reminder
-
-## Main Flow
-
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 | n/a (24 hours before check-in) | Sends the lessor a reminder (push and in-app, per UF-26) |
-| 2 | Opens the notification | Opens the booking details |
-
-## Alternative / Error Flows
-
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 1 | Admin changed the reminder hours | The new value is used |
-| E1 | 1 | Booking is frozen by a dispute | Not defined |
-
-## Diagram
-
-```mermaid
-flowchart TD
-    A([Reminder time before check-in]) --> B{Booking eligible?}
-    B -- No --> Z([End])
-    B -- Yes --> C[Send reminder to lessor]
-    C --> D[Lessor opens booking details]
-    D --> Z
-```
-
-## Notes
-- Related requirements: §27-9, settings table, UF-26 (reminder before check-in is a lessor push and in-app event)
-- Open questions:
-  - Which booking statuses get the reminder: only "Booked", or also bookings awaiting confirmation?
-  - Is the reminder sent for a booking frozen by a dispute?
-  - Does the customer's own 24-hour reminder (UF-26) share the same setting?
-
----
-
 # UF-83: View a Booking Frozen by a Dispute
 
 **Actor:** Lessor
@@ -308,9 +266,9 @@ flowchart TD
 
 ## Notes
 - Related requirements: §27-10, UF-08 (A3, A4, A5), UF-04, UF-06, UF-07, UF-09, UF-15
-- Open questions:
-  - Does the confirmation window resume or restart after the dispute (carried from earlier questions)?
-  - Does the lessor see the customer's evidence count in this screen? (UF-08 says only the count)
+- Closed questions:
+  - Does the confirmation window resume or restart after the dispute (carried from earlier questions)? No
+  - Does the lessor see the customer's evidence count in this screen? (UF-08 says only the count) Yes
 
 ---
 
@@ -351,10 +309,9 @@ flowchart TD
 
 ## Notes
 - Related requirements: §27 policy (no customer actions on own chalets), UF-14 E5, UF-49
-- Open questions:
-  - Does «إدارة الإعلان» open "Place and Ad Details" (UF-49)?
-  - Does the rule also apply to a lessor's chalets for the shared link page (UF-22)?
-  - Does favoriting and sharing own chalet stay allowed?
+- Closed questions:
+  - Does «إدارة الإعلان» open "Place and Ad Details" (UF-49)? Open the Places and from places can navigate to Ad Details.
+  - Does favoriting and sharing own chalet stay allowed? No
 
 ---
 
@@ -399,7 +356,7 @@ flowchart TD
 ## Notes
 - Related requirements: §27 settings table, UF-07, UF-85
 - The rejection reasons here are for **bookings**. The payment receipt reasons in §22 (UF-44, UF-48) are a separate list.
-- Open questions:
-  - Do changed values affect bookings already waiting for confirmation?
-  - Is the list of reasons mandatory to keep "Other"?
-  - Is every settings change audit-logged?
+- Closed questions:
+  - Do changed values affect bookings already waiting for confirmation? No
+  - Is the list of reasons mandatory to keep "Other"? No, can remove the "Other" option from reasons  
+  - Is every settings change audit-logged? Yes
