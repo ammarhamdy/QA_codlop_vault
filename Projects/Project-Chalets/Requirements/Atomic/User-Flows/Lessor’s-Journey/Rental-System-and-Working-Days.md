@@ -208,7 +208,7 @@ flowchart TD
 **Actor:** Admin
 **Goal:** Control the default times, calendar range, price limits, reminder, and last update display
 **Entry Point:** Admin panel, calendar settings
-**Preconditions:** The admin has permission to manage settings
+- [ ] **Preconditions:** The admin has permission to manage settings
 **Postconditions:** The new values apply to later use. The default times apply to new chalets only
 
 ## Main Flow

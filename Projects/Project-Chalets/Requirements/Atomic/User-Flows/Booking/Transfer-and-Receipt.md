@@ -121,7 +121,7 @@ flowchart TD
 
 ---
 
-# UF-05: Customer Penalty and Appeal (استئناف)
+# UF-05: Customer Penalty عقوبة and Appeal (استئناف)
 
 **Actor:** Admin (imposes), Customer (appeals), System Manager / General Manager (decides)
 **Goal:** Penalize proven abuse and give the customer one fair appeal
