@@ -2,7 +2,7 @@
 tc_id: TC-BKG-009
 title: Verify Anti-Abuse Rule Blocks or Flags Repeated Book-Then-Cancel Behavior
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

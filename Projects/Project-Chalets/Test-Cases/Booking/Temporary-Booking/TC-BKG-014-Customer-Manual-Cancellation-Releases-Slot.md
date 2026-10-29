@@ -2,7 +2,7 @@
 tc_id: TC-BKG-014
 title: Verify Customer Manual Cancellation Releases Slot and Does Not Count Toward Expiry Limit
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

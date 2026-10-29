@@ -2,7 +2,7 @@
 tc_id: TC-BKG-013
 title: Verify Timer Continues When App Closes and Sends Reminder 15 Minutes Before Expiry
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

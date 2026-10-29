@@ -2,7 +2,7 @@
 tc_id: TC-BKG-011
 title: Verify Customer Can Book Same Chalet Multiple Times for Non-Overlapping Dates
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

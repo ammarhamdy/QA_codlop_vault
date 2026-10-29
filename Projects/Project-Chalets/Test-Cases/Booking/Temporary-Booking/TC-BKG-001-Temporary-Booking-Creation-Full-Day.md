@@ -2,11 +2,13 @@
 tc_id: TC-BKG-001
 title: Verify Successful Temporary Booking Creation for Full Day Slot
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

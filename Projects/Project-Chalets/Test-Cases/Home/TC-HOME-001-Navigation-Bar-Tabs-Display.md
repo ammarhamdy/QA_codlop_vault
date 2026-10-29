@@ -2,11 +2,13 @@
 tc_id: TC-HOME-001
 title: Verify Bottom Navigation Bar Displays Five Primary Tabs with Home Active
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

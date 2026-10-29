@@ -2,7 +2,7 @@
 tc_id: TC-BKG-018
 title: Verify Book Again Option Appears on Expired Booking Screen When Slot Remains Available
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

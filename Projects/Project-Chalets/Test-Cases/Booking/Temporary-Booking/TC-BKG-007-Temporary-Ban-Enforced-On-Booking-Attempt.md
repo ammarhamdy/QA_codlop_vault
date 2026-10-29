@@ -2,7 +2,7 @@
 tc_id: TC-BKG-007
 title: Verify Temporary Booking Is Blocked for 24 Hours for User with Three Expiries in One Day
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

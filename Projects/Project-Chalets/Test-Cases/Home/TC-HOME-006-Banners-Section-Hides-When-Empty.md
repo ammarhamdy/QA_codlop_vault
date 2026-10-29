@@ -2,11 +2,13 @@
 tc_id: TC-HOME-006
 title: Verify Banners Section Completely Disappears When No Active Banners Exist
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-016
 title: Verify Receipt Upload Is Rejected When Timer Expires Before Upload Completes
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

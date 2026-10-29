@@ -2,7 +2,7 @@
 tc_id: TC-BKG-008
 title: Verify System Idempotency When Connection Is Lost Immediately After Booking Submission
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

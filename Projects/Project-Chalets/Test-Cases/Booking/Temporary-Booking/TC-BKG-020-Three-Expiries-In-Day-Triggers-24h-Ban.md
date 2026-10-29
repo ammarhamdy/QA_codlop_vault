@@ -2,7 +2,7 @@
 tc_id: TC-BKG-020
 title: Verify Accumulating Three Booking Expiries in One Calendar Day Triggers 24-Hour Temporary Ban
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

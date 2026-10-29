@@ -2,11 +2,13 @@
 tc_id: TC-HOME-003
 title: Verify Banners Display Strictly According to Target Audience Segment
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

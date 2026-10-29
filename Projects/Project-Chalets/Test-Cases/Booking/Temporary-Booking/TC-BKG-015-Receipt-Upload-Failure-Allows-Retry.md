@@ -2,7 +2,7 @@
 tc_id: TC-BKG-015
 title: Verify Receipt Upload Failure Displays Error Keeps Timer Running and Allows Retry
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

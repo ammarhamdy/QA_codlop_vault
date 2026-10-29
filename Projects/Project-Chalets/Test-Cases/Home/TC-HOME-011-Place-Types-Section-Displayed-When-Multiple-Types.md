@@ -2,7 +2,7 @@
 tc_id: TC-HOME-011
 title: Verify Place Types Section Appears When Multiple Place Types Are Active
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:

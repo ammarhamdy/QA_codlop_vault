@@ -2,11 +2,13 @@
 tc_id: TC-HOME-002
 title: Verify Search Bar Renders with City Dates and Guests Selectors and Opens Search Flow
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

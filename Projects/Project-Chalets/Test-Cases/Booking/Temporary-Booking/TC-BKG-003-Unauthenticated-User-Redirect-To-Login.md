@@ -2,7 +2,7 @@
 tc_id: TC-BKG-003
 title: Verify Unauthenticated User Is Redirected to Login and Returned to Booking Screen
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

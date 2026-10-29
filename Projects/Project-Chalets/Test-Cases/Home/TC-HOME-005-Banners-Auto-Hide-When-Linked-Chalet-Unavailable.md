@@ -2,7 +2,7 @@
 tc_id: TC-HOME-005
 title: Verify Banner Linked to Chalet Automatically Disappears When Chalet Becomes Unavailable
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:

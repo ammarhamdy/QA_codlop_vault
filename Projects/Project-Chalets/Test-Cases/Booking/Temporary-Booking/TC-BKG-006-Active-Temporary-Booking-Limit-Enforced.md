@@ -2,7 +2,7 @@
 tc_id: TC-BKG-006
 title: Verify System Enforces Maximum Limit of Two Active Temporary Bookings
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

@@ -2,11 +2,13 @@
 tc_id: TC-HOME-010
 title: Verify Place Types Section Is Hidden When Only Single Place Type Is Active
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

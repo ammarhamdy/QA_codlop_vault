@@ -2,11 +2,13 @@
 tc_id: TC-HOME-008
 title: Verify Tapping View All in Featured Section Navigates to Full Featured Listings
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

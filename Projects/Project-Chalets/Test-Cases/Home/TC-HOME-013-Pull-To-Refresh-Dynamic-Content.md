@@ -2,11 +2,13 @@
 tc_id: TC-HOME-013
 title: Verify Pull-to-Refresh Updates Dynamic Content on Home Screen
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

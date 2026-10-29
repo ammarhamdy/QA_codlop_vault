@@ -2,11 +2,13 @@
 tc_id: TC-HOME-004
 title: Verify Banners Display Strictly Within Their Configured Active Time Window
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

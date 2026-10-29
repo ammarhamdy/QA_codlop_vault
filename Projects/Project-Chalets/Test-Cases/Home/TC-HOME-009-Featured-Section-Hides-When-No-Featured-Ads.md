@@ -2,11 +2,13 @@
 tc_id: TC-HOME-009
 title: Verify Featured Section Completely Disappears When No Featured Listings Exist
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

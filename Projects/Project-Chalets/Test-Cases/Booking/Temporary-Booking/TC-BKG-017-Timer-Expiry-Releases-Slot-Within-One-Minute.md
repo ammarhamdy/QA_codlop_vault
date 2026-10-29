@@ -2,7 +2,7 @@
 tc_id: TC-BKG-017
 title: Verify Booking Expiration Sets Status to Expired and Releases Slot Within One Minute
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:

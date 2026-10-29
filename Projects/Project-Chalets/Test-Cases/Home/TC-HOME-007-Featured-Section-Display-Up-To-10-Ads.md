@@ -2,7 +2,7 @@
 tc_id: TC-HOME-007
 title: Verify Featured Section Displays Up to Ten Ads with View All Control
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Home-Screen-For-Customer.md
 tags:
@@ -10,11 +10,11 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
+| Field                            | Value                      |
+| -------------------------------- | -------------------------- |
 | Published Featured Ads in System | 15 active featured chalets |
-| Section Maximum Display Limit | `10` listings |
-| Action Button | `عرض الكل` (View All) |
+| Section Maximum Display Limit    | `10` listings              |
+| Action Button                    | `عرض الكل` (View All)      |
 
 # Preconditions
 1. 15 active chalets have the "مميز" (Featured) badge/status and are published in the platform.

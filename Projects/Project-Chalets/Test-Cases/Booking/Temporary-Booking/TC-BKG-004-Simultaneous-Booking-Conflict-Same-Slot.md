@@ -2,20 +2,22 @@
 tc_id: TC-BKG-004
 title: Verify Simultaneous Booking Race Condition Rejects Second Attempt with Explicit Arabic Error
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Chalet / Place | `شاليه السعادة` |
-| Slot Date | `2026-11-10` (Full Day) |
-| Customer A | Authenticated Client A |
-| Customer B | Authenticated Client B |
+| Field                   | Value                                                               |
+| ----------------------- | ------------------------------------------------------------------- |
+| Chalet / Place          | `شاليه السعادة`                                                     |
+| Slot Date               | `2026-11-10` (Full Day)                                             |
+| Customer A              | Authenticated Client A                                              |
+| Customer B              | Authenticated Client B                                              |
 | Expected Conflict Error | `هذا الموعد محجوز مؤقتًا لعميل آخر. جرّب لاحقًا أو اختر موعدًا آخر` |
 
 # Preconditions
