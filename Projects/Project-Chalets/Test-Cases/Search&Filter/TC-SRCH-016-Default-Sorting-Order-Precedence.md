@@ -7,16 +7,17 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Search&Filter.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
-| Listing | Published Timestamp | Price (SAR) | Rating |
-| ------- | ------------------- | ----------- | ------ |
-| Listing A | `2026-10-15 10:00` (Newest) | 1,500 | 4.2 |
-| Listing B | `2026-10-14 08:00` | 800 (Lower Price) | 4.8 |
-| Listing C | `2026-10-14 08:00` (Same Date) | 1,200 (Higher Price) | 4.9 |
-| Listing D | `2026-10-10 12:00` | 800 | 4.9 |
-| Listing E | `2026-10-10 12:00` (Same Date & Price) | 800 | 4.5 |
+| Listing   | Published Timestamp                    | Price (SAR)          | Rating |
+| --------- | -------------------------------------- | -------------------- | ------ |
+| Listing A | `2026-10-15 10:00` (Newest)            | 1,500                | 4.2    |
+| Listing B | `2026-10-14 08:00`                     | 800 (Lower Price)    | 4.8    |
+| Listing C | `2026-10-14 08:00` (Same Date)         | 1,200 (Higher Price) | 4.9    |
+| Listing D | `2026-10-10 12:00`                     | 800                  | 4.9    |
+| Listing E | `2026-10-10 12:00` (Same Date & Price) | 800                  | 4.5    |
 
 # Preconditions
 1. Listings A, B, C, D, and E are published, non-featured listings matching the query in the same location.

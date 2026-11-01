@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/Home/Search&Filter.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
