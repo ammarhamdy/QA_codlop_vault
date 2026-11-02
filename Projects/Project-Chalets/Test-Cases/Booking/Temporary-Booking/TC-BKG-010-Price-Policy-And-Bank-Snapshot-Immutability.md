@@ -10,20 +10,20 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Chalet / Place | `منتجع الواحة الخضراء` |
-| Initial Price at Booking | `1,500 SAR` |
-| Initial Cancellation Policy | `استرداد كامل قبل 48 ساعة` |
-| Initial Bank Details | IBAN: `SA4420000001234567890123`, Bank: `Al Rajhi Bank` |
-| Updated Lessor Price | `2,000 SAR` (modified by lessor post-booking) |
-| Updated Lessor Policy | `لا يوجد استرداد` (modified post-booking) |
-| Updated Lessor Bank | IBAN: `SA8810000009876543210987`, Bank: `SNB` |
+| Field                       | Value                                                                   |
+| --------------------------- | ----------------------------------------------------------------------- |
+| Chalet / Place              | `chalet-al-reem-ad` - `شاليه الريم الفخم بإطلالة بانورامية على الحديقة` |
+| Initial Price at Booking    | `1,500 SAR`                                                             |
+| Initial Cancellation Policy | `استرداد كامل قبل 48 ساعة`                                              |
+| Initial Bank Details        | IBAN: `SA4420000001234567890123`, Bank: `Al Rajhi Bank`                 |
+| Updated Lessor Price        | `2,000 SAR` (modified by lessor post-booking)                           |
+| Updated Lessor Policy       | `لا يوجد استرداد` (modified post-booking)                               |
+| Updated Lessor Bank         | IBAN: `SA8810000009876543210987`, Bank: `SNB`                           |
 
 # Preconditions
-1. Customer is logged in and creates a temporary booking for `منتجع الواحة الخضراء`.
+1. Customer is logged in and creates a temporary booking for `chalet-al-reem-ad` .
 2. Temporary booking is successfully created with status "محجوز مؤقتًا" with the initial snapshot values.
-3. Lessor updates the chalet price, policy, and bank account in their lessor portal after the customer's temporary booking creation.
+3. Lessor updates the chalet price, policy, and bank account in their lessor portal **==after==** the customer's temporary booking creation.
 
 # Steps
 1. In the customer application, view the active temporary booking details screen.

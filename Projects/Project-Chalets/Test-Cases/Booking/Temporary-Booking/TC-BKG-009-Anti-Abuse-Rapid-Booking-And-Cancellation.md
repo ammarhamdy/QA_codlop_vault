@@ -3,17 +3,19 @@ tc_id: TC-BKG-009
 title: Verify Anti-Abuse Rule Blocks or Flags Repeated Book-Then-Cancel Behavior
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Customer Account | Client account used to trigger repeated cancellations |
-| Target Place | `شاليه الأرجوان` |
+| Field             | Value                                                                    |
+| ----------------- | ------------------------------------------------------------------------ |
+| Customer Account  | Client account used to trigger repeated cancellations                    |
+| Target Place      | `al-wadi-chalet-ad` - `شاليه الوادي`                                     |
 | Pattern Simulated | Repeated rapid creation and immediate cancellation of temporary bookings |
 
 # Preconditions
@@ -22,7 +24,7 @@ tags:
 3. Anti-abuse detection rules are active in the booking service.
 
 # Steps
-1. Customer books a temporary slot for `شاليه الأرجوان`.
+1. Customer books a temporary slot for `al-wadi-chalet-ad` - `شاليه الوادي`.
 2. Immediately cancel the temporary booking.
 3. Repeat the book-then-cancel sequence multiple times consecutively within a short time threshold to block other customers from booking.
 4. Attempt to create another temporary booking.

@@ -3,10 +3,12 @@ tc_id: TC-BKG-005
 title: Verify Booking Rejection When Requested Slot Overlaps Existing Booking
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

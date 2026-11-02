@@ -1,22 +1,24 @@
 ---
 tc_id: TC-BKG-006
-title: Verify System Enforces Maximum Limit of Two Active Temporary Bookings
+title: Verify System Enforces Maximum Limit of {Two} Active Temporary Bookings
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Customer Account | Authenticated Client with 2 Active Temporary Bookings |
-| Active Booking 1 | `BKG-2026-000101` (Temporary, countdown running) |
-| Active Booking 2 | `BKG-2026-000102` (Temporary, countdown running) |
-| Attempted Booking 3 | `شاليه الريف`, Date: `2026-11-20` (Available slot) |
-| Expected Error Message | `لديك حجزان مؤقتان نشطان. أكمل أحدهما أو ألغه أولًا` |
+| Field                  | Value                                                 |
+| ---------------------- | ----------------------------------------------------- |
+| Customer Account       | Authenticated Client with 2 Active Temporary Bookings |
+| Active Booking 1       | `BKG-2026-000101` (Temporary, countdown running)      |
+| Active Booking 2       | `BKG-2026-000102` (Temporary, countdown running)      |
+| Attempted Booking 3    | `شاليه الريف`, Date: `2026-11-20` (Available slot)    |
+| Expected Error Message | `لديك حجزان مؤقتان نشطان. أكمل أحدهما أو ألغه أولًا`  |
 
 # Preconditions
 1. Customer is logged in to the mobile application.
