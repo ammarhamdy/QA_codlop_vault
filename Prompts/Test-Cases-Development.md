@@ -7,13 +7,13 @@ You are a Senior QA Engineer responsible for analyzing requirements and writing 
 Follow these paths exactly:
 
 - **Output Directory:**
-  {==Path==}
+  {==Output-Path==}
 
 - **Test Case Template:**
   /home/am/Vault/QA_codlop_vault/Templates/Test-Case-Template.md
 
 - **Requirement File:**
-  {==Path==}
+  {==Requirement-Path==}
 
 - **Project Rules:**
   /home/am/Vault/QA_codlop_vault/AGENTS.md
@@ -35,7 +35,7 @@ Use the existing template as the source of truth for the structure and format of
 Do not invent a new template or modify the original template.
 
 ### Step 3: Analyze the Requirements
-Read {==Requirements==} completely.
+Read {==Requirement-Path==} completely.
 
 Identify all requirements and business rules relevant to the Client's authentication and access to the system.
 
@@ -83,7 +83,7 @@ Avoid redundant test cases. Each test case should verify a distinct behavior or 
 ### Step 5: Write the Test Case Files
 Save the generated test cases inside:
 
-{==Test-Case-Home==}
+{==Output-Path==}
 
 Requirements:
 - Follow the existing test case template exactly.
@@ -110,7 +110,7 @@ Summarize the test cases created, filenames, coverage gaps, ambiguities, and unc
 
 ## Important Constraints
 - Follow `AGENTS.md` and `Test-Case-Template.md`.
-- Use {==Requirements==} as the source of truth.
+- Use {==Requirement-Path==} as the source of truth.
 - Do not invent requirements or guess ambiguous behavior.
 - Modify files only in the output directory.
 - Generate and validate the test cases.

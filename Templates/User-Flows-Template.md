@@ -1,33 +1,35 @@
 ---
-UF-ID: [Flow Name]
-Actor: [Who]
-Goal: [What they want to achieve]
-Entry Point: [Where the flow starts]
-Preconditions: [What must be true before starting]
-Postconditions: [System state after success]
+id: UF-001
+name: [Flow name]
+actor: [Primary actor]
+goal: [What they want to achieve]
+entry: [Where/how the flow starts]
+pre: [What must be true before starting]
+post_success: [System state after success]
+post_failure: [System state after failure]
+reqs: [FR-xxx, BR-xxx]
+status: Draft
 ---
 
 ## Main Flow
 
-| # | User Action | System Response |
-|---|-------------|-----------------|
-| 1 |             |                 |
-| 2 |             |                 |
-| 3 |             |                 |
+| # | Actor Action | System Response | Ref |
+|---|--------------|-----------------|-----|
+| 1 |              |                 | SCR-xx |
+| 2 |              |                 | BR-xx  |
 
-## Alternative / Error Flows
+## Alternatives & Errors
 
-| ID | At Step | Condition | Result |
-|----|---------|-----------|--------|
-| A1 | 2       |           |        |
-| E1 | 3       |           |        |
+| ID | At Step | Condition | System Behavior | Resumes At |
+|----|---------|-----------|-----------------|------------|
+| A1 | 2       |           |                 | Step 3     |
+| E1 | 3       |           |                 | End (fail) |
 
-## Diagram
+## Diagram (optional: only if 3+ branches)
 
 ```mermaid
 flowchart TD
-    A([Start]) --> B[Step 1]
-    B --> C{Valid?}
-    C -- Yes --> D[Step 2]
-    C -- No --> E[Show error]
-    D --> F([End])
+    A([Start]) --> B[Step 1] --> C{Valid?}
+    C -- Yes --> D[Step 2] --> F([End])
+    C -- No: E1 --> B
+```
