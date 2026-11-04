@@ -2,11 +2,13 @@
 tc_id: TC-TND-009
 title: Verify File Upload Previews and Acceptance for Valid Images and Documents
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,25 +2,27 @@
 tc_id: TC-TND-003
 title: Verify Validation Highlighting and Submission Blocking When Mandatory Fields Are Blank
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Title | `[Empty]` |
-| Description | `[Empty]` |
-| Project Type | `[Unselected]` |
-| City | `[Empty]` |
-| District | `[Empty]` |
-| Coordinates | `[Unset]` |
-| Project Area | `[Empty]` |
-| Budget | `[Empty]` |
-| Expiration Date | `[Unset]` |
+| Field                 | Value                                                                    |
+| --------------------- | ------------------------------------------------------------------------ |
+| Title                 | `[Empty]`                                                                |
+| Description           | `[Empty]`                                                                |
+| Project Type          | `[Unselected]`                                                           |
+| City                  | `[Empty]`                                                                |
+| District              | `[Empty]`                                                                |
+| Coordinates           | `[Unset]`                                                                |
+| Project Area          | `[Empty]`                                                                |
+| Budget                | `[Empty]`                                                                |
+| Expiration Date       | `[Unset]`                                                                |
 | Sample Error Messages | `"Title is required"`, `"Description is required"`, `"City is required"` |
 
 # Preconditions

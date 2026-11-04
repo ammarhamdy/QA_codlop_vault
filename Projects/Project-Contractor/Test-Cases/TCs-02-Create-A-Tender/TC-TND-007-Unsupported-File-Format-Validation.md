@@ -2,11 +2,13 @@
 tc_id: TC-TND-007
 title: Verify File Validation and Error Handling When Uploading Unsupported File Formats
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

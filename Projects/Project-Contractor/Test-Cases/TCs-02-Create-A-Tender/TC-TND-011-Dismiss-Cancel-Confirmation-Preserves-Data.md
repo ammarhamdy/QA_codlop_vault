@@ -2,11 +2,13 @@
 tc_id: TC-TND-011
 title: Verify Form Data Is Preserved When Dismissing Cancel Confirmation Prompt
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

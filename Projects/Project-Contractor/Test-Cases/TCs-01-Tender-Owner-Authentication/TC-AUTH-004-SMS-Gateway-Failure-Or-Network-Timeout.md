@@ -3,10 +3,12 @@ tc_id: TC-AUTH-004
 title: Verify System Error Handling During SMS Gateway Failure or Network Timeout
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

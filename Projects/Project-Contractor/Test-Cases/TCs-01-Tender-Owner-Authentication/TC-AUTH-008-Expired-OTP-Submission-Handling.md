@@ -3,10 +3,12 @@ tc_id: TC-AUTH-008
 title: Verify Handling and Redirection When Expired OTP Is Submitted
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -30,6 +30,7 @@ status: Draft
 | A1 | 3       | Actor views or downloads an attachment | Serves the requested project attachment file without requiring authentication. | Step 3 |
 | A2 | 4       | Actor decides not to submit an offer | Clicks back navigation to return to the public tender catalog. | End (success) |
 
+
 ## Diagram (optional: only if 3+ branches)
 
 ```mermaid

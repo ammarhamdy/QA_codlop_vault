@@ -3,10 +3,12 @@ tc_id: TC-AUTH-012
 title: Verify Access Prevention and Redirect to Login When Unauthenticated User Accesses Dashboard
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,13 @@
 tc_id: TC-TND-001
 title: Verify Successful Tender Creation and Immediate Publication with All Fields
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -3,10 +3,12 @@ tc_id: TC-AUTH-006
 title: Verify Resend OTP Functionality After Countdown Timer Expires
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

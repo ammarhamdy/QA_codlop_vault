@@ -2,28 +2,30 @@
 tc_id: TC-TND-002
 title: Verify Successful Tender Creation and Publication with Mandatory Fields Only
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Title | `Commercial Office Interior Fit-out` |
-| Description | `Interior finishing and electrical wiring for a commercial workspace.` |
-| Project Type | `Renovation` |
-| City | `Jeddah` |
-| District | `Al Rawdah` |
-| Latitude | `21.5721` |
-| Longitude | `39.1628` |
-| Project Area | `200 sqm` |
-| Budget | `120000` |
-| Expiration Date (`end_date`) | Valid future date (e.g., `+14 days` from today) |
-| Tender Image | `[Empty]` |
-| Attachments | `[Empty]` |
+| Field                        | Value                                                                  |
+| ---------------------------- | ---------------------------------------------------------------------- |
+| Title                        | `Commercial Office Interior Fit-out`                                   |
+| Description                  | `Interior finishing and electrical wiring for a commercial workspace.` |
+| Project Type                 | `Renovation`                                                           |
+| City                         | `Jeddah`                                                               |
+| District                     | `Al Rawdah`                                                            |
+| Latitude                     | `21.5721`                                                              |
+| Longitude                    | `39.1628`                                                              |
+| Project Area                 | `200 sqm`                                                              |
+| Budget                       | `120000`                                                               |
+| Expiration Date (`end_date`) | Valid future date (e.g., `+14 days` from today)                        |
+| Tender Image                 | `image.png`                                                            |
+| Attachments                  | `[Empty]`                                                              |
 
 # Preconditions
 1. Tender Owner is authenticated with valid credentials.

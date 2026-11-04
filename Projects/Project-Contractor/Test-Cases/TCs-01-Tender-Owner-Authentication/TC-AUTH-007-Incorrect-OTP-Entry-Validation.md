@@ -3,10 +3,12 @@ tc_id: TC-AUTH-007
 title: Verify System Rejection, Input Clearing, and Error Handling for Incorrect OTP
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

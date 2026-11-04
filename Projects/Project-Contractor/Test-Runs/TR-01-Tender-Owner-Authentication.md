@@ -8,7 +8,7 @@ status:
   - in-progress
   - completed
 start_date: 2026-11-04T14:44:00
-end_date:
+end_date: 2026-11-04T16:01:00
 tags:
   - test-run
 ---

@@ -3,10 +3,12 @@ tc_id: TC-AUTH-005
 title: Verify OTP Verification Screen Display and Active Countdown Timer Behavior
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

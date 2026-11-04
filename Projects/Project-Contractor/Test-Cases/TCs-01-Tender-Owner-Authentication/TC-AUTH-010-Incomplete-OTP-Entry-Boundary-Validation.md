@@ -3,17 +3,19 @@ tc_id: TC-AUTH-010
 title: Verify Input Boundary Handling and Submission Prevention for Incomplete OTP Entry
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Mobile Number | `+966501234567` |
-| Valid OTP Length | Exactly 4 numeric digits |
+| Field             | Value                                            |
+| ----------------- | ------------------------------------------------ |
+| Mobile Number     | `+966501234567`                                  |
+| Valid OTP Length  | Exactly 4 numeric digits                         |
 | Incomplete Inputs | 1 digit (`5`), 2 digits (`58`), 3 digits (`582`) |
 
 # Preconditions

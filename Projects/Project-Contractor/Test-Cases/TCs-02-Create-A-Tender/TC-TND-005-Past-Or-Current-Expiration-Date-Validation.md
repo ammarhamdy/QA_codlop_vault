@@ -2,11 +2,13 @@
 tc_id: TC-TND-005
 title: Verify Error Handling When Expiration Date Is Set to Current or Past Date
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Create-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

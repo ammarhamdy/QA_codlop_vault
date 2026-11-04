@@ -3,10 +3,12 @@ tc_id: TC-AUTH-001
 title: Verify Successful Tender Owner Authentication with Valid Mobile Number and 4-Digit OTP
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-01-Tender-Owner-Authentication.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
