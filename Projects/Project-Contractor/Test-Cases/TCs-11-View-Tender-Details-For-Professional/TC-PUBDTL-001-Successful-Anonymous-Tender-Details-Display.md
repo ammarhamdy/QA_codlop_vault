@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-001
 title: Verify Comprehensive Tender Specifications Display for Active Open Tender
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

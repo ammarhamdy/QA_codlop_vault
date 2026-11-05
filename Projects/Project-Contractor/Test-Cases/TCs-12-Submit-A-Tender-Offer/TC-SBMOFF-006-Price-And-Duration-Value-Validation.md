@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-006
 title: Verify Boundary and Numeric Validation When Price or Duration Is Non-Positive
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

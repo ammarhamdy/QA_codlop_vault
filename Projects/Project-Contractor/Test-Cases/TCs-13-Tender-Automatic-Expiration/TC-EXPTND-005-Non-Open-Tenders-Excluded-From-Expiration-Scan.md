@@ -2,7 +2,7 @@
 tc_id: TC-EXPTND-005
 title: Verify Tenders with Status Closed or Awarded Are Excluded from Expiration Scan
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:

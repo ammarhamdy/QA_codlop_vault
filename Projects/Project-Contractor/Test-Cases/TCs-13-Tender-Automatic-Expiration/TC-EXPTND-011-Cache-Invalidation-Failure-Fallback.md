@@ -2,7 +2,7 @@
 tc_id: TC-EXPTND-011
 title: Verify Real-Time Query Fallback Prevents Viewing Expired Tenders When Cache Invalidation Fails
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:

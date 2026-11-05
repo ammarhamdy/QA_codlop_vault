@@ -2,11 +2,13 @@
 tc_id: TC-MYTND-002
 title: Verify Empty State Display and Actionable Prompt When Owner Has No Tenders
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-03-View-My-Tenders.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

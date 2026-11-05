@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-004
 title: Verify Non-Accepted Offers Remain Listed as Pending and Are Not Deleted
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

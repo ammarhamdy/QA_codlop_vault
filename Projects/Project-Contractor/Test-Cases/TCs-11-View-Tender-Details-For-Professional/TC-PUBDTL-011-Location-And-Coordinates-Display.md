@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-011
 title: Verify Location and Geographic Coordinates Display Accuracy
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

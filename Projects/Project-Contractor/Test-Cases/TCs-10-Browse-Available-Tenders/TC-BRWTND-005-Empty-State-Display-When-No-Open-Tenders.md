@@ -2,11 +2,12 @@
 tc_id: TC-BRWTND-005
 title: Verify Empty State Display When No Active Open Tenders Exist
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Browse-Available-Tenders.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

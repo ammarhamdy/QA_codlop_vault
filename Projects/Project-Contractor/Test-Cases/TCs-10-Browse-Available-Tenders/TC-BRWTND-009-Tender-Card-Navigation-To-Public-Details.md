@@ -2,11 +2,12 @@
 tc_id: TC-BRWTND-009
 title: Verify Navigation to Public Tender Details Screen from Catalog Card
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Browse-Available-Tenders.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

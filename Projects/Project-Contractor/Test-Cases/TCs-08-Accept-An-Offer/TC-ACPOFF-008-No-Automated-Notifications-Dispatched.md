@@ -2,7 +2,7 @@
 tc_id: TC-ACPOFF-008
 title: Verify System Enforces No Automated Notification Dispatch Upon Offer Acceptance
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:

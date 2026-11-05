@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-003
 title: Verify Cancellation of Offer Acceptance Leaves Statuses Unaltered
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

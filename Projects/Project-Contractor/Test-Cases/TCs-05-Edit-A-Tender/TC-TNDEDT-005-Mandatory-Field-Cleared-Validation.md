@@ -2,11 +2,13 @@
 tc_id: TC-TNDEDT-005
 title: Verify Validation Highlighting and Submission Prevention When Mandatory Field Is Cleared
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-05-Edit-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

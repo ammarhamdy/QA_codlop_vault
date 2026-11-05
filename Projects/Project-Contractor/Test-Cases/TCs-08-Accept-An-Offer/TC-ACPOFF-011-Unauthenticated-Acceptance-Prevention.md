@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-011
 title: Verify Route Protection Blocks Unauthenticated Access to Offer Acceptance
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-002
 title: Verify Owner Catalog Query Scopes to Owner Across All Tender Lifecycle Statuses
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

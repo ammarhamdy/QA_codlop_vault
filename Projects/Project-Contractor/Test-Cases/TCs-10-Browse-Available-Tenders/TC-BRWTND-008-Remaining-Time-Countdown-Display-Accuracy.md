@@ -2,11 +2,12 @@
 tc_id: TC-BRWTND-008
 title: Verify Accuracy of Remaining Time Countdown Display on Tender Cards
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Browse-Available-Tenders.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

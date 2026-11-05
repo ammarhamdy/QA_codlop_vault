@@ -2,11 +2,13 @@
 tc_id: TC-TNDDTL-003
 title: Verify Contextual Actions and State for Manually Closed Tender
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

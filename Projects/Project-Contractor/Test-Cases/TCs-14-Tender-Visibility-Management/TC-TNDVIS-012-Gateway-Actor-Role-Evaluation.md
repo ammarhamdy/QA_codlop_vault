@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-012
 title: Verify Gateway Interception and Actor Role Context Evaluation
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

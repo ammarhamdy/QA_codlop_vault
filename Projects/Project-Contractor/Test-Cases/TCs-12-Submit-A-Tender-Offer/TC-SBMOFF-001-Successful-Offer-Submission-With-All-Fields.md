@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-001
 title: Verify Successful Tender Offer Submission with All Fields by Professional
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

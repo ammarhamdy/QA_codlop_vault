@@ -2,11 +2,12 @@
 tc_id: TC-TNDVIS-001
 title: Verify Professional Catalog Query Enforces Mandatory Open and Unexpired Predicate
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

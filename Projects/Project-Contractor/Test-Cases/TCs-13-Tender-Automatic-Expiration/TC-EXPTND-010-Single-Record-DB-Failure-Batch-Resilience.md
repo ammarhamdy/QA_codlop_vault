@@ -2,7 +2,7 @@
 tc_id: TC-EXPTND-010
 title: Verify Batch Resilience and Error Isolation on Single Tender Database Failure
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:

@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-004
 title: Verify the Same Professional Can Submit Multiple Offers for the Same Tender
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

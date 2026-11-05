@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-009
 title: Verify System Permits Offer Submission Against Active Open Tenders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

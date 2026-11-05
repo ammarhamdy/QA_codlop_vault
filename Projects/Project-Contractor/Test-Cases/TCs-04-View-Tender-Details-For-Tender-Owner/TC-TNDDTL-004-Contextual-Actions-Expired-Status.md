@@ -2,7 +2,7 @@
 tc_id: TC-TNDDTL-004
 title: Verify Contextual Actions and State for Automatically Expired Tender
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:

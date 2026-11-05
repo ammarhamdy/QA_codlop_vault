@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-007
 title: Verify Authenticated Owner Can Access Details of Owned Tenders Across All Statuses
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

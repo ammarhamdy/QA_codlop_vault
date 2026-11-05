@@ -2,11 +2,13 @@
 tc_id: TC-TNDDTL-010
 title: Verify Unauthorized Cross-Owner Access Control and Redirection (IDOR Prevention)
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

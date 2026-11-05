@@ -2,11 +2,13 @@
 tc_id: TC-RCVOFF-003
 title: Verify Accepted Offer Is Prominently Displayed with Accepted Badge
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-06-View-Received-Offers.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

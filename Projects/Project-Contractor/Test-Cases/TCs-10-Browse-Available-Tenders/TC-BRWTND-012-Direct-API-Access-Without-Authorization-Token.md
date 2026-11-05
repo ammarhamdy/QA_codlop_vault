@@ -2,11 +2,12 @@
 tc_id: TC-BRWTND-012
 title: Verify Public Catalog API Allows Unrestricted Access Without Authentication Tokens
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Browse-Available-Tenders.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

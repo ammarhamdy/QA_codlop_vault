@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-009
 title: Verify Navigation to Offer Submission Form via Submit Offer Action
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

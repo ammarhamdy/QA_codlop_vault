@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-006
 title: Verify Tender Editing Is Disabled Once an Offer Has Been Accepted
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

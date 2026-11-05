@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-006
 title: Verify Error Handling and Redirection for Non-Existent or Invalid Tender ID
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

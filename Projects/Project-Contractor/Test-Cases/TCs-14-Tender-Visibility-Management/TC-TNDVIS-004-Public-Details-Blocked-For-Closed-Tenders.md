@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-004
 title: Verify Public Details Endpoint Blocks Anonymous Access to Manually Closed Tenders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

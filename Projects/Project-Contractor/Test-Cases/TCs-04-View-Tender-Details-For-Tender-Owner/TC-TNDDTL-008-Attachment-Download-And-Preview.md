@@ -2,11 +2,13 @@
 tc_id: TC-TNDDTL-008
 title: Verify File Download and Preview for Uploaded Tender Attachments
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

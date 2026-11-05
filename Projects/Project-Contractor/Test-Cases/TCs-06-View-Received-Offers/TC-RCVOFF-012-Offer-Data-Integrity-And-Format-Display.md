@@ -2,11 +2,13 @@
 tc_id: TC-RCVOFF-012
 title: Verify Data Formatting and Integrity for Price, Duration, and Submission Date on Offer Cards
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-06-View-Received-Offers.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

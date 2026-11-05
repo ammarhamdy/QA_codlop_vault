@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-003
 title: Verify Offer Submission Requires No User Registration, Login, or Phone OTP
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

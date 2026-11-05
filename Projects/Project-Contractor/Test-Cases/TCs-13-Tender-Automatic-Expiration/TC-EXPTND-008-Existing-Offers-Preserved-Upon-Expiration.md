@@ -2,7 +2,7 @@
 tc_id: TC-EXPTND-008
 title: Verify Existing Received Offers Remain Fully Preserved When Tender Expires
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:

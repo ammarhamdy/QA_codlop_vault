@@ -2,11 +2,13 @@
 tc_id: TC-MYTND-005
 title: Verify List Filtering for Closed, Expired, and Awarded Tenders
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-03-View-My-Tenders.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

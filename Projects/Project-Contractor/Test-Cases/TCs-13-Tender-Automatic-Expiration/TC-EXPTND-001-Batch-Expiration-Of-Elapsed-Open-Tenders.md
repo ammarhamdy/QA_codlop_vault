@@ -2,7 +2,7 @@
 tc_id: TC-EXPTND-001
 title: Verify Batch Identification and Status Transition to Expired for Elapsed Open Tenders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:

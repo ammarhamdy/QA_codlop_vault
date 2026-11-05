@@ -2,11 +2,13 @@
 tc_id: TC-TNDDTL-002
 title: Verify Contextual Actions and Restrictions for Awarded Tender
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

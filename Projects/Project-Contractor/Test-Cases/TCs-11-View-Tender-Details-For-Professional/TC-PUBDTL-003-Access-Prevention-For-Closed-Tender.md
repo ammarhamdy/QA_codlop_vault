@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-003
 title: Verify Access Prevention and Notice Display for Closed Tender
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-010
 title: Verify Back Navigation from Tender Details to Public Tender Catalog
 priority: Low
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

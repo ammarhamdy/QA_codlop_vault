@@ -2,11 +2,12 @@
 tc_id: TC-TNDVIS-010
 title: Verify System Blocks Offer Submissions Against Closed, Expired, and Awarded Tenders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

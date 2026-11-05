@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-09-Close-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

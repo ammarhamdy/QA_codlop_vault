@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-012
 title: Verify System Prevents Submitting Offers Against Non-Existent Tenders
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

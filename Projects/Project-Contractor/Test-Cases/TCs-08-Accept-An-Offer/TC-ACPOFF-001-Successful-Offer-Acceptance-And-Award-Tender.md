@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-001
 title: Verify Successful Offer Acceptance, Status Transitions, and Project Awarding
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,13 @@
 tc_id: TC-MYTND-009
 title: Verify Successful Data Reload When User Clicks Retry After Error
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-03-View-My-Tenders.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

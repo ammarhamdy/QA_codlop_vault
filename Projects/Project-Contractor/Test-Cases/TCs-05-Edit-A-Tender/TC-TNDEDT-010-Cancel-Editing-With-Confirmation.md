@@ -2,11 +2,13 @@
 tc_id: TC-TNDEDT-010
 title: Verify Confirmation Prompt and Discard Behavior When Canceling Tender Edits
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-05-Edit-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

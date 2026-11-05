@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-009
 title: Verify System Rejection When Submitting an Offer Against a Concurrently Closed or Expired Tender
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

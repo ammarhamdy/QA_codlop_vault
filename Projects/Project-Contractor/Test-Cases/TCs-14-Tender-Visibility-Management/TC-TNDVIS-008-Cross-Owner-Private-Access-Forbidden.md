@@ -2,7 +2,7 @@
 tc_id: TC-TNDVIS-008
 title: Verify Cross-Owner Access Control Returns 403 Forbidden on Unauthorized Access Attempts
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:

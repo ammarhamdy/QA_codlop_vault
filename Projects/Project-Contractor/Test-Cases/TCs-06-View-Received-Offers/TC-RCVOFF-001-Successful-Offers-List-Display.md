@@ -2,11 +2,13 @@
 tc_id: TC-RCVOFF-001
 title: Verify Successful Retrieval and Display of Received Offers for an Owned Tender
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-06-View-Received-Offers.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

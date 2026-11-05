@@ -2,11 +2,13 @@
 tc_id: TC-OFFDTL-004
 title: Verify Contact Display When Offer Does Not Contain a WhatsApp Number
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-07-View-Offer-Details.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

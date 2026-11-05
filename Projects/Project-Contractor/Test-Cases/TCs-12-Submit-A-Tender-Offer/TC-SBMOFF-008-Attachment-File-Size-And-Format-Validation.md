@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-008
 title: Verify File Validation When Uploading Oversized or Unsupported Attachments
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

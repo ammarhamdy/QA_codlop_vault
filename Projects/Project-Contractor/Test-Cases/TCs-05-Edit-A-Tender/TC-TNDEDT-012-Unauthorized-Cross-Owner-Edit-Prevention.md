@@ -2,11 +2,13 @@
 tc_id: TC-TNDEDT-012
 title: Verify Authorization Control Prevents Editing Tenders Belonging to Other Owners (IDOR Prevention)
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-05-Edit-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

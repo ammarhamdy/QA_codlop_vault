@@ -2,11 +2,12 @@
 tc_id: TC-BRWTND-006
 title: Verify Public Catalog Filtering by City and Project Type
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Browse-Available-Tenders.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

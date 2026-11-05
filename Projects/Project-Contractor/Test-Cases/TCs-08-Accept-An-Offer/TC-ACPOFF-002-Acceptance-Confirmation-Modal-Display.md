@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-002
 title: Verify Confirmation Modal Presentation and Warning Message Before Offer Acceptance
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

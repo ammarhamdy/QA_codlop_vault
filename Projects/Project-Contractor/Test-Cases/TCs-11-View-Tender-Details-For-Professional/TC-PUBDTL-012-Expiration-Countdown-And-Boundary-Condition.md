@@ -2,11 +2,12 @@
 tc_id: TC-PUBDTL-012
 title: Verify Expiration Date Formatting and Remaining Time Countdown Accuracy
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-11-View-Tender-Details-For-Professional.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

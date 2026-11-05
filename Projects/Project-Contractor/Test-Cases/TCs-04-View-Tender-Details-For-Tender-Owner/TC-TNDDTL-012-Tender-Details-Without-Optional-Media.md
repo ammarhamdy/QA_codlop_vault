@@ -2,11 +2,13 @@
 tc_id: TC-TNDDTL-012
 title: Verify Tender Details Clean Display When No Optional Media or Attachments Exist
 priority: Low
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

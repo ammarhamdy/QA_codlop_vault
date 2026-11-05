@@ -2,11 +2,12 @@
 tc_id: TC-EXPTND-004
 title: Verify Precision Boundary Handling for Exact Expiration Timestamps
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

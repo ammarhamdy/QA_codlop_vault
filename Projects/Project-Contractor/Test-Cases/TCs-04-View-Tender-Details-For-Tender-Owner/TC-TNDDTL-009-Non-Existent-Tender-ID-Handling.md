@@ -2,7 +2,7 @@
 tc_id: TC-TNDDTL-009
 title: Verify System Error Handling and Redirection for Non-Existent Tender ID
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-04-View-Tender-Details.md
 tags:

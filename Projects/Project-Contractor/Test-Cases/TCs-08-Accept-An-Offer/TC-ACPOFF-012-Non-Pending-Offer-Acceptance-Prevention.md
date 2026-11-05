@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-012
 title: Verify System Blocks Acceptance on Offers Not in Pending Status
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,12 @@
 tc_id: TC-TNDVIS-011
 title: Verify Newly Created Tender Is Immediately Published to Public Directory Without Approval Delay
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-14-Tender-Visibility-Management.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

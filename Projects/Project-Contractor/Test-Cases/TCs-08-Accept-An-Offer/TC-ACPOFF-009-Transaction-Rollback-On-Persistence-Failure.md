@@ -2,11 +2,13 @@
 tc_id: TC-ACPOFF-009
 title: Verify Atomic Transaction Rollback and Error Handling on Persistence Failure
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Accept-An-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,13 @@
 tc_id: TC-TNDEDT-007
 title: Verify Error Handling When Updated Expiration Date Is Set to Past or Current Time
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-05-Edit-A-Tender.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

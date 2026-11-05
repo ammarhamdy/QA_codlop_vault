@@ -2,11 +2,13 @@
 tc_id: TC-RCVOFF-005
 title: Verify Distinct Display of Multiple Offers Submitted by the Same Professional
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-06-View-Received-Offers.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

@@ -2,11 +2,12 @@
 tc_id: TC-EXPTND-007
 title: Verify System Blocks Offer Submissions Against Automatically Expired Tenders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-13-Tender-Automatic-Expiration.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,11 +2,12 @@
 tc_id: TC-SBMOFF-010
 title: Verify Discard Confirmation and Navigation on Canceling Offer Submission
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-12-Submit-A-Tender-Offer.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

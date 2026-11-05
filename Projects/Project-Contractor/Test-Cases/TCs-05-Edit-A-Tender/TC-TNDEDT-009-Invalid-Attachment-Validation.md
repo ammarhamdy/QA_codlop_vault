@@ -2,11 +2,13 @@
 tc_id: TC-TNDEDT-009
 title: Verify File Validation and Error Handling When Uploading Invalid Attachment During Edit
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-05-Edit-A-Tender.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
