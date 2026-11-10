@@ -8,6 +8,7 @@ linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-10-Br
 tags:
   - test-case
 run_result: pass
+web_run_result: pass
 ---
 
 # Test Data

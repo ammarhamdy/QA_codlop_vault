@@ -9,23 +9,24 @@ linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Cr
 tags:
   - test-case
 run_result: pass
+web_run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Title | `Residential Villa Construction` |
-| Description | `Full turnkey construction of a two-story residential villa according to attached engineering drawings.` |
-| Project Type | `Construction` |
-| City | `Riyadh` |
-| District | `Al Narjis` |
-| Latitude | `24.8322` |
-| Longitude | `46.6738` |
-| Project Area | `450 sqm` |
-| Budget | `850000` |
-| Expiration Date (`end_date`) | Valid future date (e.g., `+30 days` from today) |
-| Tender Image | `villa_render.jpg` (valid image under size limit) |
-| Attachments | `structural_specs.pdf` (valid document) |
+| Field                        | Value                                                                                                    |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Title                        | `Residential Villa Construction`                                                                         |
+| Description                  | `Full turnkey construction of a two-story residential villa according to attached engineering drawings.` |
+| Project Type                 | `Construction`                                                                                           |
+| City                         | `Riyadh`                                                                                                 |
+| District                     | `Al Narjis`                                                                                              |
+| Latitude                     | `24.8322`                                                                                                |
+| Longitude                    | `46.6738`                                                                                                |
+| Project Area                 | `450 sqm`                                                                                                |
+| Budget                       | `850000`                                                                                                 |
+| Expiration Date (`end_date`) | Valid future date (e.g., `+30 days` from today)                                                          |
+| Tender Image                 | `villa_render.jpg` (valid image under size limit)                                                        |
+| Attachments                  | `structural_specs.pdf` (valid document)                                                                  |
 
 # Preconditions
 1. Tender Owner is logged in with an active authentication session.

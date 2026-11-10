@@ -33,6 +33,7 @@ views:
       - file.name
       - status
       - run_result
+      - web_run_result
     columns:
       - property: tc_id
     columnSize:
@@ -40,7 +41,7 @@ views:
       file.name: 124
       note.status: 114
       note.run_result: 100
-
+      note.web_run_result: 100
 ```
 
 

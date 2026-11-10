@@ -33,13 +33,18 @@ views:
       - file.name
       - status
       - run_result
+      - web_run_result
+    sort:
+      - property: title
+        direction: ASC
     columns:
       - property: tc_id
     columnSize:
       note.title: 720
-      file.name: 151
+      file.name: 72
       note.status: 114
       note.run_result: 100
+      note.web_run_result: 100
 
 ```
 

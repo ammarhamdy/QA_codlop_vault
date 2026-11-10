@@ -8,7 +8,7 @@ status:
   - in-progress
   - completed
 start_date: 2026-11-04T14:47:00
-end_date:
+end_date: 2026-11-08T13:35:00
 tags:
   - test-run
 ---
@@ -33,14 +33,16 @@ views:
       - file.name
       - status
       - run_result
+      - web_run_result
+    sort: []
     columns:
       - property: tc_id
     columnSize:
       note.title: 634
-      file.name: 153
+      file.name: 115
       note.status: 114
       note.run_result: 100
-
+	  note.web_run_result: 100
 ```
 
 

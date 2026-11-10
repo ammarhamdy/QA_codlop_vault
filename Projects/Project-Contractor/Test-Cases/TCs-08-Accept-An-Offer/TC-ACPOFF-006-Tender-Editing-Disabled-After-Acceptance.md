@@ -9,6 +9,7 @@ linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-08-Ac
 tags:
   - test-case
 run_result: fail
+web_run_result: fail
 ---
 
 # Test Data

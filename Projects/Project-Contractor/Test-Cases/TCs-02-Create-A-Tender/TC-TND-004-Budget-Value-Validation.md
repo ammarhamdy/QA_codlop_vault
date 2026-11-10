@@ -9,15 +9,16 @@ linked_requirement: Projects/Project-Contractor/Requirements/User-Flows/UF-02-Cr
 tags:
   - test-case
 run_result: pass
+web_run_result: pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Budget Boundary (Zero) | `0` |
-| Budget Boundary (Negative) | `-500` |
-| Valid Mandatory Fields | Complete valid project information |
-| Expected Error Message | `"Budget must be greater than zero"` |
+| Field                      | Value                                |
+| -------------------------- | ------------------------------------ |
+| Budget Boundary (Zero)     | `0`                                  |
+| Budget Boundary (Negative) | `-500`                               |
+| Valid Mandatory Fields     | Complete valid project information   |
+| Expected Error Message     | `"Budget must be greater than zero"` |
 
 # Preconditions
 1. Tender Owner is authenticated.
