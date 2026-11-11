@@ -3,10 +3,12 @@ tc_id: TC-CINSP-001
 title: Verify Unauthenticated Visitor Tapping Request Inspection is Prompted to Authenticate and Returns Upon Success
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

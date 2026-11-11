@@ -3,10 +3,12 @@ tc_id: TC-CINSP-010
 title: Verify Inspection Request on Inactive or Unavailable Chalet Listing is Blocked
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

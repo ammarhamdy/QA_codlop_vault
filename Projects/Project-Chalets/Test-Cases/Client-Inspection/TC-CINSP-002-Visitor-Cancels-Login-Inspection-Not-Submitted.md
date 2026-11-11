@@ -3,10 +3,12 @@ tc_id: TC-CINSP-002
 title: Verify Unauthenticated Visitor Canceling Login Does Not Submit Inspection Request
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

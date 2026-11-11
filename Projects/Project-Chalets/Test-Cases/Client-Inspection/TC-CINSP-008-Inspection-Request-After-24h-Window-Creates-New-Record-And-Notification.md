@@ -3,10 +3,12 @@ tc_id: TC-CINSP-008
 title: Verify Inspection Request After 24-Hour Deduplication Window Creates New Record and Notification
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

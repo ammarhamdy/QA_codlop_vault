@@ -3,10 +3,12 @@ tc_id: TC-CINSP-004
 title: Verify Accepting Disclosure Submits Inspection Request, Displays Toast, Reveals Contact Channels, and Notifies Lessor
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data
