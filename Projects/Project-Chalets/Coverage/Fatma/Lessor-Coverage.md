@@ -19,50 +19,50 @@
 
 - Host On-boarding:
   - [ ] View On-boarding Requirements
-  - [ ] View On-boarding Form Fields
-  - [ ] Start Host Application
-  - [ ] View Host Application
-  - [ ] Update Host Application
+  - [x] View On-boarding Form Fields
+  - [x] Start Host Application
+  - [x] View Host Application
+  - [x] Update Host Application
   - [ ] Delete Draft Application
-  - [ ] Upload Application Documents
-  - [ ] Remove Application Documents
-  - [ ] Add Places to Application
-  - [ ] Submit Host Application
-  - [ ] View Application Status
+  - [x] Upload Application Documents
+  - [x] Remove Application Documents
+  - [x] Add Places to Application
+  - [x] Submit Host Application
+  - [x] View Application Status
   - [ ] View Application Feedback
-  - [ ] Submit Required Information Updates
+  - [x] Submit Required Information Updates
 
 - Places Management:
-  - [ ] View Places
+  - [x] View Places
   - [ ] View Place Details
-  - [ ] Add Place to Application
+  - [x] Add Place to Application
   - [ ] Update Place Information
   - [ ] Delete Place
-  - [ ] Upload Place Photos
-  - [ ] Remove Place Photos
-  - [ ] Upload Place Documents
-  - [ ] Request Place Inspection
+  - [x] Upload Place Photos
+  - [x] Remove Place Photos
+  - [x] Upload Place Documents
+  - [x] Request Place Inspection
   - [ ] View Inspection Requests
   - [ ] View Inspection Results
   - [ ] Cancel Inspection Request
   - [ ] Request Place Reinspection
 
 - Listings (Ads) Management:
-  - [ ] Create Ad
-  - [ ] View Ad
-  - [ ] View Ad Details
-  - [ ] Update Ad
+  - [x] Create Ad
+  - [x] View Ad
+  - [x] View Ad Details
+  - [x] Update Ad
   - [ ] Delete Draft Ad
-  - [ ] Upload Ad Photos
-  - [ ] Reorder Ad Photos
-  - [ ] Remove Ad Photos
+  - [x] Upload Ad Photos
+  - [x] Reorder Ad Photos
+  - [x] Remove Ad Photos
   - [ ] Configure Rental Schedule
-  - [ ] Submit Ad for Review
+  - [x] Submit Ad for Review
   - [ ] Withdraw Ad from Review
   - [ ] View Listing Status
-  - [ ] Disable Ad
-  - [ ] Enable Ad
-  - [ ] Feature Ad
+  - [x] Disable Ad
+  - [x] Enable Ad
+  - [x] Feature Ad
   - [ ] View Pending Ad Revisions
   - [ ] View Revision Rejection Reasons
   - [ ] Withdraw Pending Ad Revision
@@ -75,14 +75,14 @@
   - [ ] Bulk Update Prices
 
 - Subscription & Packages:
-  - [ ] View Available Packages
-  - [ ] View Current Subscription
-  - [ ] View Subscription Status
-  - [ ] View Renewal Details
+  - [x] View Available Packages
+  - [x] View Current Subscription
+  - [x] View Subscription Status
+  - [x] View Renewal Details
   - [ ] View Upgrade Options
-  - [ ] Create Subscription Payment Request
-  - [ ] View Payment Request Details
-  - [ ] Upload Subscription Payment Receipt
+  - [x] Create Subscription Payment Request
+  - [x] View Payment Request Details
+  - [x] Upload Subscription Payment Receipt
   - [ ] Cancel Payment Request
   - [ ] Initiate Online Subscription Payment
   - [ ] View Payment Documents
