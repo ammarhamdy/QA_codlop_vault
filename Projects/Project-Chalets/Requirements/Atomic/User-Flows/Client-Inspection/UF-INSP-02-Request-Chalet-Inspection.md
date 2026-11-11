@@ -1,0 +1,118 @@
+---
+id: UF-INSP-02
+name: Request Chalet Inspection
+actor: Customer
+goal: "Submit an in-person inspection request to view the chalet directly with the lessor before booking or paying, and obtain contact channels to coordinate the visit"
+entry: "Secondary action button «طلب معاينة» on the Chalet Details screen"
+pre: "Chalet listing is published and active; customer is viewing the listing details"
+post_success: "Lessor receives real-time notification of inspection interest; customer is recorded as an interested customer (type: inspection request); confirmation toast «أبلغنا المؤجّر باهتمامك بالمعاينة» is displayed; contact channels and exact map pin are revealed"
+post_failure: "Inspection request is not submitted; contact details and exact location remain hidden; no interested customer record is created; error message is displayed"
+reqs:
+  - FR-INSP-02
+  - FR-INSP-03
+  - BR-INSP-01
+  - BR-INSP-02
+  - BR-INSP-03
+  - BR-INSP-04
+  - BR-INSP-05
+  - BR-INSP-06
+  - BR-INSP-07
+  - BR-INSP-08
+  - BR-INSP-09
+  - BR-INSP-10
+status: Draft
+---
+
+## Main Flow
+
+| #   | Actor Action                                                         | System Response                                                                                                                                                                                                                                                                                                                             | Ref                                                           |
+| --- | -------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| 1   | Taps «طلب معاينة» (Request Inspection) on the chalet listing screen. | Verifies customer authentication status, daily quota, listing availability, and listing ownership.                                                                                                                                                                                                                                          | SCR-CHALET-01, BR-INSP-01, BR-INSP-04, BR-INSP-06, BR-INSP-07 |
+| 2   | Awaits system display.                                               | Detects this is the customer's first interaction for this ad and displays the Disclosure Bottom Sheet («ورقة الإفصاح») with text: «سيصل اسمك ورقم جوالك إلى المؤجّر ليتواصل معك» and safety advisory: «عاين المكان بنفسك قبل أن تدفع أي مبلغ. الاتفاق والدفع بينك وبين المؤجّر خارج المنصة», along with «موافق، أظهر البيانات» and «إلغاء». | SCR-DISCLOSE-01, BR-INSP-02, FR-INSP-02                       |
+| 3   | Taps «موافق، أظهر البيانات» (Agree, Show Data).                      | Validates connection and initiates the inspection request and disclosure transaction.                                                                                                                                                                                                                                                       | SCR-DISCLOSE-01, FR-INSP-02                                   |
+| 4   | Awaits transaction completion.                                       | Records customer as an interested customer («عميل مهتم») with type «طلب معاينة», discloses customer name and phone to the lessor, and dispatches real-time notification to the lessor: «{الاسم} ({الرقم}) يريد معاينة {المكان}».                                                                                                            | BR-INSP-02, BR-INSP-05, FR-INSP-03                            |
+| 5   | Awaits confirmation.                                                 | Dismisses disclosure sheet and displays confirmation toast: «أبلغنا المؤجّر باهتمامك بالمعاينة» (We notified the lessor of your interest in an inspection).                                                                                                                                                                                 | SCR-CHALET-01, FR-INSP-02                                     |
+| 6   | Awaits contact presentation.                                         | Reveals direct communication channels («اتصال», «واتساب», «نسخ الرقم») and upgrades map from approximate area to exact pin with «افتح في الخرائط» (Open in Maps) so the customer can coordinate visit logistics.                                                                                                                            | SCR-CHALET-01, FR-INSP-02, BR-INSP-09                         |
+| 7   | Taps «واتساب» or «اتصال» to coordinate the inspection.               | Opens WhatsApp directly with prefilled message or opens native phone dialer with lessor's number to agree on the visit timing outside the platform.                                                                                                                                                                                         | SCR-CHALET-01, FR-INSP-02, BR-INSP-09, BR-INSP-10             |
+
+## Alternatives & Errors
+
+| ID | At Step | Condition | System Behavior | Resumes At |
+|----|---------|-----------|-----------------|------------|
+| A1 | 2 | Customer has previously accepted disclosure for this listing | Bypasses the Disclosure Sheet entirely. Displays toast: «أبلغنا المؤجّر باهتمامك بالمعاينة». Directly presents contact actions and exact map location. Checks 24-hour deduplication window (`BR-INSP-05`): if > 24 hours since last inspection request, creates a new interested record and notifies lessor; if within 24 hours, creates no new record and sends no notification. | Step 6 |
+| A2 | 1 | Actor is an unauthenticated Visitor (guest user) | Displays login prompt: visitor must authenticate via mobile OTP. Upon successful login, redirects back to the chalet listing screen with the inspection request action activated. | Step 1 |
+| A3 | 6 | Customer taps «نسخ الرقم» (Copy Number) | Copies lessor phone number to device clipboard and displays confirmation toast: «تم نسخ الرقم». | Step 6 |
+| A4 | 6 | Customer taps «افتح في الخرائط» (Open in Maps) | Launches external map application (e.g., Google Maps / Apple Maps) centered on the exact geo-coordinates of the chalet. | Step 6 |
+| A5 | 3 | Customer taps «إلغاء» (Cancel) on Disclosure Sheet | Dismisses Disclosure Sheet and returns to chalet listing screen without submitting inspection request or revealing contact info. No interested customer is recorded and no notification is sent. | End (canceled) |
+| E1 | 1 | Customer daily reveal/inspection limit reached (30 listings/day) | Rejects request, logs attempt, and displays error toast/dialog: «وصلت للحد اليومي لإظهار بيانات التواصل. حاول غدًا». Access is restored the following day. | End (fail) |
+| E2 | 4 | Network disconnection during or immediately after consent | Automatically retries the transaction once. If retry fails, aborts transaction, does not record an interested customer, sends no notification, keeps contact details hidden, and displays: «تعذر إظهار البيانات. تحقق من الاتصال وأعد المحاولة». | End (fail) |
+| E3 | 1 | Actor is the owner lessor of this listing (via old or direct link) | Prevents action, shows notice: «هذا إعلانك» (This is your ad), and suppresses recording of an interested customer. | End (fail) |
+| E4 | 1 | Listing is no longer active or available (suspended, expired, deleted) | Prevents action and displays notice: «هذا المكان لم يعد متاحًا» (This place is no longer available). | End (fail) |
+
+## Diagram (optional: only if 3+ branches)
+
+```mermaid
+flowchart TD
+
+A(["Start: Tap 'Request Inspection'"]) --> B{"User Logged In?"}
+
+B -- "No: Visitor (A2)" --> C["Prompt Login / OTP"] --> D{"Login Success?"}
+
+D -- "No" --> E(["End: Canceled"])
+D -- "Yes" --> F["Return to Chalet Screen"] --> G
+
+B -- "Yes" --> G{"Lessor owns listing?"}
+
+G -- "Yes: E3" --> H["Display: هذا إعلانك"] --> I(["End: Blocked"])
+G -- "No" --> J{"Listing Available?"}
+
+J -- "No: E4" --> K["Display: هذا المكان لم يعد متاحًا"] --> I
+J -- "Yes" --> L{"Daily Limit Reached (30)?"}
+
+L -- "Yes: E1" --> M["Display: وصلت للحد اليومي لإظهار بيانات التواصل. حاول غدًا"] --> I
+L -- "No" --> N{"First Time for this Listing?"}
+
+N -- "No (A1)" --> O{"Within 24h Window?"}
+
+O -- "Yes" --> P["Suppress New Record & Notification"] --> Q["Toast: أبلغنا المؤجّر باهتمامك بالمعاينة"]
+O -- "No" --> R["Record Interest & Notify Lessor"] --> Q
+
+N -- "Yes" --> S["Display Disclosure Sheet: ورقة الإفصاح"]
+
+S --> T{"Actor Decision?"}
+
+T -- "Cancel (A5)" --> U["Dismiss Sheet, Keep Hidden"] --> E
+T -- "Agree" --> V{"Network Connection OK?"}
+
+V -- "No (Auto-Retry Failed: E2)" --> W["Display: تعذر إظهار البيانات. تحقق من الاتصال وأعد المحاولة"] --> I
+V -- "Yes" --> X["Record Interest & Notify Lessor"] --> Q
+
+Q --> Y["Reveal Contact Channels & Exact Map Pin"]
+
+Y --> Z{"Selected Action?"}
+
+Z -- "Call / WhatsApp" --> AA["Launch Dialer or WhatsApp to Coordinate Visit"] --> AB(["End: Success"])
+
+Z -- "Copy Number (A3)" --> AC["Copy to Clipboard & Toast: تم نسخ الرقم"] --> AB
+
+Z -- "Open Maps (A4)" --> AD["Launch Map App at Exact Pin"] --> AB
+```
+
+## Notes & Assumptions
+
+- **Traceability:**
+  - `FR-INSP-02`: Customer Request Inspection action, toast message «أبلغنا المؤجّر باهتمامك بالمعاينة», disclosure sheet, and revealed contact channels.
+  - `FR-INSP-03`: Real-time notification dispatched to lessor with inspection text: «{الاسم} ({الرقم}) يريد معاينة {المكان}».
+  - `BR-INSP-01`: Guest users must authenticate before requesting an inspection.
+  - `BR-INSP-02`: Mandatory safety disclosure and identity sharing consent required on first interaction per listing.
+  - `BR-INSP-03`: Subsequent inspection requests on the same ad bypass disclosure sheet.
+  - `BR-INSP-04`: Combined daily quota of 30 contact reveals / inspection requests per customer across distinct ads.
+  - `BR-INSP-05`: 24-hour duplicate suppression window for identical customer, ad, and inquiry type.
+  - `BR-INSP-06`: Lessors are blocked from requesting inspection on their own properties.
+  - `BR-INSP-07`: Inactive or suspended listings cannot receive inspection requests.
+  - `BR-INSP-08`: Automatic single retry upon network disruption post-consent; fails cleanly without partial state.
+  - `BR-INSP-09`: External coordination via WhatsApp and direct call; no in-app inspection booking calendar.
+  - `BR-INSP-10`: Inspection request is non-binding and does not hold dates or guarantee reservation.
+- **Assumptions Requiring Clarification:**
+  - *Inspection Scheduling Mechanism:* In the current version, the system notifies the lessor and reveals contact info, but does not provide an automated in-app appointment calendar for customer inspections. Physical visit coordination is conducted directly between customer and lessor.
+  - *WhatsApp Canned Text:* Assumed to use standard template message («السلام عليكم، أستفسر عن {اسم المكان} في تطبيق تنفيذ») or an inspection-specific variant once approved by product team.
