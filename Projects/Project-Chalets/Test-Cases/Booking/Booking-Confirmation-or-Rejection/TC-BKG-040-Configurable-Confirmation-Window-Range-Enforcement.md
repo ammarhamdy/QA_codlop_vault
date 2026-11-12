@@ -2,7 +2,7 @@
 tc_id: TC-BKG-040
 title: Verify Configurable Confirmation Window Range Enforced Between 1 and 72 Hours
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

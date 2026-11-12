@@ -2,7 +2,7 @@
 tc_id: TC-BKG-025
 title: Verify Lessor Can Confirm Pending Booking Even When Lessor Subscription Has Expired
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

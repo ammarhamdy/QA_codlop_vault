@@ -2,7 +2,7 @@
 tc_id: TC-BKG-024
 title: Verify Exact Location and Lessor Phone Number Are Hidden Until Confirmation
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

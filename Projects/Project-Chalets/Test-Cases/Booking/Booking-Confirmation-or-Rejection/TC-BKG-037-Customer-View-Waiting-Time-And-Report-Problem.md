@@ -2,7 +2,7 @@
 tc_id: TC-BKG-037
 title: Verify Customer Views Waiting Time Message on Delayed Confirmation and Can Report Problem
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

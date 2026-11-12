@@ -3,10 +3,12 @@ tc_id: TC-CINSP-013
 title: Verify Network Interruption During Consent Recovers Successfully via Automatic Retry
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -3,10 +3,12 @@ tc_id: TC-CINSP-014
 title: Verify Exhausted Network Retry Aborts Inspection Request Without Disclosing Contact Data
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-039
 title: Verify Lessor Reminders Stop Immediately When Decision Is Made or Dispute Is Opened
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

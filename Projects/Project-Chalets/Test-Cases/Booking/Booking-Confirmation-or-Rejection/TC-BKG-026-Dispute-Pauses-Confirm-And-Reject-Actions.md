@@ -2,7 +2,7 @@
 tc_id: TC-BKG-026
 title: Verify Open Dispute Pauses Both Confirm and Reject Actions as Well as Reminders
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

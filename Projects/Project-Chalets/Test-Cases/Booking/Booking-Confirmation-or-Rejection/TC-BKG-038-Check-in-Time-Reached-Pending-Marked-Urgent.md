@@ -2,7 +2,7 @@
 tc_id: TC-BKG-038
 title: Verify Booking Reaching Check-in Time Without Decision Is Kept Pending and Marked Urgent
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

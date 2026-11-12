@@ -2,7 +2,7 @@
 tc_id: TC-BKG-032
 title: Verify Slot Is Released and Becomes Available Within One Minute of Rejection
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-021
 title: Verify Lessor Successfully Confirms Booking in Awaiting Lessor Confirmation Status
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

@@ -3,10 +3,12 @@ tc_id: TC-CINSP-011
 title: Verify Client Exceeding Daily Quota of 30 Listings is Blocked from Requesting Inspection
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Client-Inspection/UF-INSP-02-Request-Chalet-Inspection.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data

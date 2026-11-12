@@ -25,6 +25,7 @@ views:
     filters:
       or:
         - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking")
+        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection")
     groupBy:
       property: file.folder
       direction: ASC
@@ -48,7 +49,10 @@ views:
 
 ```dataviewjs
 // Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
-const folderPaths = ["Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking"];
+const folderPaths = [
+"Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking",
+"Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection"
+];
 
 // 1. Fetch all notes in the specified folders
 const testCases = folderPaths

@@ -1,8 +1,8 @@
 ---
 run_id: TR-
-executor:
-environment:
-build:
+executor: ammar
+environment: Prod
+build: v1
 status:
   - started
   - in-progress
@@ -37,7 +37,7 @@ views:
       - property: tc_id
     columnSize:
       note.title: 781
-      file.name: 148
+      file.name: 123
       note.status: 114
       note.run_result: 100
 

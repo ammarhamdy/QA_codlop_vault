@@ -3,10 +3,12 @@ tc_id: TC-BKG-010
 title: Verify Snapshot Immutability of Price Cancellation Policy and Lessor Bank Details
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-030
 title: Verify Rejection Reason Other Requires Non-Empty Details Text
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

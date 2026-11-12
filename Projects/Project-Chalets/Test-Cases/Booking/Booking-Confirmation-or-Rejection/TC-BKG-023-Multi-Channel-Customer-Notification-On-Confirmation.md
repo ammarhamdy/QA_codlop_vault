@@ -2,7 +2,7 @@
 tc_id: TC-BKG-023
 title: Verify Multi-Channel Notification Dispatched to Customer Upon Booking Confirmation
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
