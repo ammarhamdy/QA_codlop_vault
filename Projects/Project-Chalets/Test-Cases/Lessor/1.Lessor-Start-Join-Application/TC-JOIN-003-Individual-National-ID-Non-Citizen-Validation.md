@@ -7,13 +7,14 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Start-Join-Application.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| ID Type | Resident Iqama ID (Starts with 2) |
-| Test ID Number | `2012345678` (10 digits) |
+| Field                  | Value                                                                               |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| ID Type                | Resident Iqama ID (Starts with 2)                                                   |
+| Test ID Number         | `2012345678` (10 digits)                                                            |
 | Expected Error Message | `«الانضمام كفرد متاح للمواطنين السعوديين فقط. يمكن لغير السعودي الانضمام عبر شركة»` |
 
 # Preconditions

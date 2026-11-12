@@ -41,9 +41,9 @@
   - [ ] View Place Types
 
 - Search & Filters:
-  - [ ] Search Ads
-  - [ ] Filter Ads
-  - [ ] Sort Search Results
+  - [x] Search Ads
+  - [x] Filter Ads
+  - [x] Sort Search Results
 
 - Ad Details:
   - [ ] View Ad Details

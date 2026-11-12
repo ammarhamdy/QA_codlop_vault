@@ -7,19 +7,20 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Start-Join-Application.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Scope | **Company** (`منشأة / شركة`) |
-| Company Official Name | `شركة واحة الشاليهات الفندقية المحدودة` |
-| Trade Name | `منتجعات الواحة` |
-| Commercial Registration (CR) Number | `1010987654` (10 digits) |
-| Activity Address | `الرياض، حي الملقا، طريق أنس بن مالك` |
-| Authorized Person Name | `محمد بن سالم القحطاني` |
-| Authorized Person Mobile | `0501122334` |
-| Authorization Document | `delegation_letter.pdf` (1.8 MB) |
+| Field                               | Value                                   |
+| ----------------------------------- | --------------------------------------- |
+| Scope                               | **Company** (`منشأة / شركة`)            |
+| Company Official Name               | `شركة واحة الشاليهات الفندقية المحدودة` |
+| Trade Name                          | `منتجعات الواحة`                        |
+| Commercial Registration (CR) Number | `1010987654` (10 digits)                |
+| Activity Address                    | `الرياض، حي الملقا، طريق أنس بن مالك`   |
+| Authorized Person Name              | `محمد بن سالم القحطاني`                 |
+| Authorized Person Mobile            | `0501122334`                            |
+| Authorization Document              | `delegation_letter.pdf` (1.8 MB)        |
 
 # Preconditions
 1. User taps "Join as Lessor" and selects **Company** (`منشأة / شركة`).

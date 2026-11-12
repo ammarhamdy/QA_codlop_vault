@@ -7,15 +7,16 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Start-Join-Application.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| National ID | `1012345678` (10 digits, starts with 1, valid checksum) |
-| Full Name | `عبدالرحمن بن عبدالعزيز الفهد` |
-| Activity Name (Optional) | `شاليهات النسيم` |
-| ID Document Photo | `national_id_front.jpg` (Valid image, 2.5 MB) |
+| Field                    | Value                                                   |
+| ------------------------ | ------------------------------------------------------- |
+| National ID              | `1012345678` (10 digits, starts with 1, valid checksum) |
+| Full Name                | `عبدالرحمن بن عبدالعزيز الفهد`                          |
+| Activity Name (Optional) | `شاليهات النسيم`                                        |
+| ID Document Photo        | `national_id_front.jpg` (Valid image, 2.5 MB)           |
 
 # Preconditions
 1. User taps "Join as Lessor" and selects **Individual** (`فرد`).

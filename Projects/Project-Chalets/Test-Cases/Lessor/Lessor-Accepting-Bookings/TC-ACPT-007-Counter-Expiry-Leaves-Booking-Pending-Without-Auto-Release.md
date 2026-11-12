@@ -10,13 +10,14 @@ tags:
 ---
 
 # Test Data
-| Parameter | Value |
-| --------- | ----- |
-| Confirmation Window | 24 hours |
-| Elapsed Time | 26 hours (2 hours past expiry) |
-| Expected Booking Status | `Awaiting Lessor Confirmation` (`بانتظار تأكيد المؤجر`) |
-| Expected Calendar Slot State | Held / Reserved (Not released to public) |
-| Counter Appearance | Red indicator |
+| Parameter                    | Value                                                   |
+| ---------------------------- | ------------------------------------------------------- |
+| Confirmation Window          | 24 hours                                                |
+| Elapsed Time                 | 26 hours (2 hours past expiry)                          |
+| Expected Booking Status      | `Awaiting Lessor Confirmation` (`بانتظار تأكيد المؤجر`) |
+| Expected Calendar Slot State | Held / Reserved (Not released to public)                |
+| Counter Appearance           | Red indicator                                           |
+
 
 # Preconditions
 1. Customer uploaded a transfer receipt 26 hours ago on a chalet with a 24-hour confirmation window.

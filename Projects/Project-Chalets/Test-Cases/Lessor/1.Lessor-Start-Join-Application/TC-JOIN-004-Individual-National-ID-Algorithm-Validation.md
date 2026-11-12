@@ -7,13 +7,14 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Start-Join-Application.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Invalid National ID | `1111111111` (Starts with 1, 10 digits, fails Luhn/checksum check) |
-| Expected Error Message | `«رقم الهوية غير صحيح»` |
+| Field                  | Value                                                              |
+| ---------------------- | ------------------------------------------------------------------ |
+| Invalid National ID    | `1111111111` (Starts with 1, 10 digits, fails Luhn/checksum check) |
+| Expected Error Message | `«رقم الهوية غير صحيح»`                                            |
 
 # Preconditions
 1. User is on the Individual applicant form.

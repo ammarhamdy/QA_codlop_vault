@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Start-Join-Application.md
 tags:
   - test-case
+run_result: "-"
 ---
 
 # Test Data
