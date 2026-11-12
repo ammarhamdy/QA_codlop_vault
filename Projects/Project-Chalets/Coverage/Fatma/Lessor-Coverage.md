@@ -104,11 +104,11 @@
   - [ ] Verify Bank Account Changes with OTP
 
 - Booking Management:
-  - [ ] View Bookings
+  - [x] View Bookings
   - [ ] Filter Bookings
-  - [ ] View Booking Details
-  - [ ] View Payment Receipt
-  - [ ] Confirm Booking
+  - [x] View Booking Details
+  - [x] View Payment Receipt
+  - [x] Confirm Booking
   - [ ] Reject Booking
   - [ ] Submit Booking Cancellation Request
   - [ ] Withdraw Cancellation Request

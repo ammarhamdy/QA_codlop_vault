@@ -16,8 +16,8 @@
 
 - Booking:
   - [ ] Create Ad Booking
-  - [ ] View Bookings
-  - [ ] View Booking Details
+  - [x] View Bookings
+  - [x] View Booking Details
   - [ ] Track Booking Status
   - [ ] Upload Payment Receipt
   - [ ] Cancel Booking
