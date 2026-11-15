@@ -109,8 +109,8 @@
   - [x] View Booking Details
   - [x] View Payment Receipt
   - [x] Confirm Booking
-  - [ ] Reject Booking
-  - [ ] Submit Booking Cancellation Request
+  - [x] Reject Booking
+  - [x] Submit Booking Cancellation Request
   - [ ] Withdraw Cancellation Request
 
 - Disputes:
@@ -122,7 +122,7 @@
   - [ ] Appeal Dispute Decision
 
 - Notifications:
-  - [ ] View Notifications
+  - [x] View Notifications
   - [ ] View Unread Notifications Count
   - [ ] Mark Notification as Read
   - [ ] Mark All Notifications as Read
