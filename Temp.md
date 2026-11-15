@@ -1,118 +1,223 @@
-# Task: Generate Client-Inspection Test Cases
+# العميل
 
-You are a Senior QA Engineer responsible for analyzing requirements and writing high-quality, comprehensive test cases.
+- **المصادقة:**
+  - [x] تسجيل الدخول
+  - [x] تسجيل الخروج
+  - [x] التحقق من رمز التحقق (OTP)
 
-## 1. Project Files and Directories
+- **إدارة الحساب:**
+  - [ ] استكمال الملف الشخصي
+  - [ ] تحديث الملف الشخصي
+  - [ ] حذف الحساب
+  - [ ] استعادة الحساب
+  - [ ] عرض تفاصيل إيقاف الحساب
+  - [ ] عرض العقوبات المفروضة على الحساب
+  - [ ] تقديم اعتراض على عقوبة أو إيقاف الحساب
 
-Follow these paths exactly:
+- **الحجوزات:**
+  - [x] إنشاء حجز إعلان
+  - [x] عرض الحجوزات
+  - [x] عرض تفاصيل الحجز
+  - [ ] متابعة حالة الحجز
+  - [ ] رفع إيصال الدفع
+  - [ ] إلغاء الحجز
+  - [ ] الرد على طلب إلغاء الحجز المقدم من المالك
 
-- **Output Directory:**
-  /home/am/Vault/QA_codlop_vault/Projects/Project-Chalets/Test-Cases/Client-Inspection
+- **المفضلة:**
+  - [ ] إضافة إلى المفضلة
+  - [ ] إزالة من المفضلة
+  - [ ] عرض المفضلة
 
-- **Test Case Template:**
-  /home/am/Vault/QA_codlop_vault/Templates/Test-Case-Template.md
+- **النزاعات:**
+  - [ ] فتح نزاع
+  - [ ] عرض النزاعات
+  - [ ] عرض تفاصيل النزاع
+  - [ ] تقديم أدلة النزاع
+  - [ ] تأكيد إيصال استرداد المبلغ أو رفضه
 
-- **Requirement File:**
-  /home/am/Vault/QA_codlop_vault/Projects/Project-Chalets/Requirements/Atomic/User-Flows/Inspection-Client/UF-INSP-02-Request-Chalet-Inspection.md
+- **الرئيسية:**
+  - [ ] عرض البنرات
+  - [ ] عرض الإعلانات المميزة
+  - [ ] عرض أنواع الأماكن
 
-- **Project Rules:**
-  /home/am/Vault/QA_codlop_vault/AGENTS.md
+- **البحث والتصفية:**
+  - [x] البحث عن الإعلانات
+  - [x] تصفية الإعلانات
+  - [x] ترتيب نتائج البحث
 
-## 2. Execution Instructions
+- **تفاصيل الإعلان:**
+  - [ ] عرض تفاصيل الإعلان
+  - [ ] عرض عدد المشاهدات
+  - [ ] عرض تقويم التوافر
+  - [ ] عرض عرض السعر
+  - [ ] عرض التقييمات
+  - [ ] عرض الشارات
+  - [ ] إظهار معلومات التواصل
+  - [x] طلب معاينة
+  - [ ] مشاركة الإعلان
 
-Follow these steps in order:
+- **التقييمات:**
+  - [ ] عرض الحجوزات المؤهلة للتقييم
+  - [ ] إضافة تقييم
+  - [ ] عرض التقييمات
+  - [ ] حذف التقييم الخاص بي
 
-### Step 1: Read Project Rules
-Read and understand AGENTS.md before starting any work.
+- **الإشعارات:**
+  - [x] عرض الإشعارات
+  - [x] عرض عدد الإشعارات غير المقروءة
+  - [ ] تحديد الإشعار كمقروء
+  - [ ] تحديد جميع الإشعارات كمقروءة
+  - [ ] حذف إشعار
+  - [ ] إدارة تفضيلات الإشعارات
 
-Follow all applicable instructions, conventions, naming rules, and restrictions defined in that file.
+- **الدعم الفني:**
+  - [ ] عرض معلومات التواصل مع الدعم الفني
+  - [ ] التواصل مع الدعم الفني
+  - [ ] عرض رسائل الدعم الفني
+  - [ ] عرض تفاصيل رسالة الدعم الفني
+  - [ ] الرد على الدعم الفني
 
-### Step 2: Analyze the Test Case Template
-Read Test-Case-Template.md carefully.
+- **البيانات والخصوصية:**
+  - [x] عرض الشروط والأحكام
+  - [x] عرض سياسة الخصوصية
+  - [ ] عرض سياسة النزاعات
+  - [ ] الموافقة على السياسات المحدّثة
+  - [ ] طلب تصدير البيانات الشخصية
+  - [ ] طلب تصحيح البيانات الشخصية
+  - [ ] طلب حذف البيانات الشخصية
+  - [ ] عرض حالة طلبات البيانات
 
-Use the existing template as the source of truth for the structure and format of every generated test case.
 
-Do not invent a new template or modify the original template.
+# المؤجّر (صاحب المكان)
 
-### Step 3: Analyze the Requirements
-Read /home/am/Vault/QA_codlop_vault/Projects/Project-Chalets/Requirements/Atomic/User-Flows/Inspection-Client/UF-INSP-02-Request-Chalet-Inspection.md completely.
+- **المصادقة:**
+  - [ ] تسجيل الدخول
+  - [ ] تسجيل الخروج
+  - [ ] التحقق من رمز التحقق (OTP)
 
-Identify all requirements and business rules relevant to the Client's authentication and access to the system.
+- **إدارة الحساب والملف الشخصي:**
+  - [ ] استكمال الملف الشخصي
+  - [ ] تحديث الملف الشخصي
+  - [ ] تغيير رقم الهاتف
+  - [ ] إدارة الجلسات
+  - [ ] عرض حالة الحساب
+  - [ ] عرض العقوبات المفروضة على الحساب
+  - [ ] عرض تفاصيل إيقاف الحساب
+  - [ ] تقديم اعتراض على عقوبة أو إيقاف الحساب
+  - [ ] عرض تفاصيل الاعتراض
 
-Extract the following information where applicable:
-- Functional requirements.
-- Business rules.
-- Actors and permissions.
-- Preconditions and postconditions.
-- Input validation rules.
-- Authentication and authorization behavior.
-- Error handling.
-- Security-related requirements.
-- Positive and negative scenarios.
-- Boundary conditions.
-- Relevant integration behavior.
+- **التسجيل كمؤجّر:**
+  - [ ] عرض متطلبات التسجيل
+  - [x] عرض حقول نموذج التسجيل
+  - [x] بدء طلب التسجيل كمؤجّر
+  - [x] عرض طلب التسجيل
+  - [x] تحديث طلب التسجيل
+  - [ ] حذف طلب التسجيل غير المكتمل
+  - [x] رفع مستندات الطلب
+  - [x] إزالة مستندات الطلب
+  - [x] إضافة أماكن إلى الطلب
+  - [x] إرسال طلب التسجيل
+  - [x] عرض حالة الطلب
+  - [ ] عرض ملاحظات وملاحظات المراجعة على الطلب
+  - [x] إرسال التحديثات المطلوبة على المعلومات
 
-Do not assume that a feature exists simply because it is common in other applications.
+- **إدارة الأماكن:**
+  - [x] عرض الأماكن
+  - [ ] عرض تفاصيل المكان
+  - [x] إضافة مكان إلى الطلب
+  - [ ] تحديث بيانات المكان
+  - [ ] حذف المكان
+  - [x] رفع صور المكان
+  - [x] إزالة صور المكان
+  - [x] رفع مستندات المكان
+  - [x] طلب معاينة المكان
+  - [ ] عرض طلبات المعاينة
+  - [ ] عرض نتائج المعاينة
+  - [ ] إلغاء طلب المعاينة
+  - [ ] طلب إعادة معاينة المكان
 
-If a behavior is not documented, do not present it as a confirmed requirement.
+- **إدارة الإعلانات:**
+  - [x] إنشاء إعلان
+  - [x] عرض الإعلان
+  - [x] عرض تفاصيل الإعلان
+  - [x] تحديث الإعلان
+  - [ ] حذف الإعلان غير المنشور
+  - [x] رفع صور الإعلان
+  - [x] إعادة ترتيب صور الإعلان
+  - [x] إزالة صور الإعلان
+  - [ ] إعداد جدول التأجير
+  - [x] إرسال الإعلان للمراجعة
+  - [ ] سحب الإعلان من المراجعة
+  - [ ] عرض حالة الإعلان
+  - [x] إيقاف الإعلان
+  - [x] تفعيل الإعلان
+  - [x] تمييز الإعلان
+  - [ ] عرض تعديلات الإعلانات قيد الانتظار
+  - [ ] عرض أسباب رفض التعديلات
+  - [ ] سحب تعديل الإعلان قيد الانتظار
 
-### Step 4: Design Test Cases
-Create test cases covering all authentication-related behaviors explicitly supported by the requirements.
+- **التقويم والتوافر:**
+  - [ ] عرض تقويم الإعلانات
+  - [ ] عرض مدى توافر الوحدات
+  - [ ] تحديث أسعار الوحدات
+  - [ ] تحديث حالة توافر الوحدات
+  - [ ] تحديث أسعار عدة وحدات دفعة واحدة
 
-Consider the following categories where applicable:
+- **الاشتراكات والباقات:**
+  - [x] عرض الباقات المتاحة
+  - [x] عرض الاشتراك الحالي
+  - [x] عرض حالة الاشتراك
+  - [x] عرض تفاصيل التجديد
+  - [ ] عرض خيارات الترقية
+  - [x] إنشاء طلب دفع الاشتراك
+  - [x] عرض تفاصيل طلب الدفع
+  - [x] رفع إيصال دفع الاشتراك
+  - [ ] إلغاء طلب الدفع
+  - [ ] بدء الدفع الإلكتروني للاشتراك
+  - [ ] عرض مستندات الدفع
+  - [ ] تحميل مستند الدفع بصيغة PDF
+  - [ ] تحديث البيانات الضريبية للشركة
 
-1. Positive test cases.
-2. Negative test cases.
-3. Input validation.
-4. Required and optional fields.
-5. Boundary-value analysis.
-6. Invalid input formats.
-7. Authentication failures.
-8. Authorization and access control.
-9. Session management.
-10. Security-related scenarios.
-11. Error messages and system responses.
-12. Edge cases and unexpected inputs.
+- **التقييمات:**
+  - [ ] عرض التقييمات على إعلاناتي
+  - [ ] الرد على التقييم
+  - [ ] تحديث الرد على التقييم
+  - [ ] حذف الرد على التقييم
 
-Only include scenarios relevant to the documented requirements.
+- **الحسابات البنكية:**
+  - [ ] عرض الحسابات البنكية
+  - [ ] إضافة حساب بنكي
+  - [ ] تحديث حساب بنكي
+  - [ ] حذف حساب بنكي
+  - [ ] ربط حساب بنكي بمكان
+  - [ ] التحقق من تغييرات الحساب البنكي باستخدام رمز التحقق (OTP)
 
-For security scenarios, test only behavior that is applicable to the specified authentication functionality.
+- **إدارة الحجوزات:**
+  - [x] عرض الحجوزات
+  - [ ] تصفية الحجوزات
+  - [x] عرض تفاصيل الحجز
+  - [x] عرض إيصال الدفع
+  - [x] تأكيد الحجز
+  - [ ] رفض الحجز
+  - [ ] تقديم طلب إلغاء الحجز
+  - [ ] سحب طلب إلغاء الحجز
 
-Avoid redundant test cases. Each test case should verify a distinct behavior or meaningful condition.
+- **النزاعات:**
+  - [ ] عرض النزاعات
+  - [ ] عرض تفاصيل النزاع
+  - [ ] تقديم أدلة النزاع
+  - [ ] تقديم إفادة بشأن النزاع
+  - [ ] تقديم سجل استرداد المبلغ
+  - [ ] تقديم اعتراض على قرار النزاع
 
-### Step 5: Write the Test Case Files
-Save the generated test cases inside:
+- **الإشعارات:**
+  - [ ] عرض الإشعارات
+  - [ ] عرض عدد الإشعارات غير المقروءة
+  - [ ] تحديد الإشعار كمقروء
+  - [ ] تحديد جميع الإشعارات كمقروءة
+  - [ ] حذف إشعار
 
-/home/am/Vault/QA_codlop_vault/Projects/Project-Chalets/Test-Cases/Client-Inspection
-
-Requirements:
-- Follow the existing test case template exactly.
-- Preserve all required sections and metadata fields.
-- Use clear, concise, and unambiguous language.
-- Give every test case a unique identifier following the project's naming conventions.
-- Provide explicit preconditions, test data, execution steps, and expected results wherever required by the template.
-- Make each test case independently executable.
-- Use realistic test data without exposing real credentials or sensitive information.
-- Keep each test case focused on one primary objective.
-- Use descriptive filenames consistent with the project's conventions.
-- Organize the test cases into separate Markdown files when appropriate.
-- Do not overwrite existing test cases without first inspecting them and confirming that doing so is necessary.
-- Do not modify the requirement file, template, or AGENTS.md.
-
-### Step 6: Review and Validate
-- Verify template compliance, requirement coverage, and unique test IDs.
-- Ensure steps are clear and expected results are testable.
-- Check for unsupported assumptions and duplicate tests.
-- Confirm all files are saved in the correct directory.
-
-### Step 7: Report Results
-Summarize the test cases created, filenames, coverage gaps, ambiguities, and unchanged existing files.
-
-## Important Constraints
-- Follow `AGENTS.md` and `Test-Case-Template.md`.
-- Use /home/am/Vault/QA_codlop_vault/Projects/Project-Chalets/Requirements/Atomic/User-Flows/Inspection-Client/UF-INSP-02-Request-Chalet-Inspection.md as the source of truth.
-- Do not invent requirements or guess ambiguous behavior.
-- Modify files only in the output directory.
-- Generate and validate the test cases.
-
-Begin by reading AGENTS.md, then inspect the template and requirements before creating any files.
+- **الدعم الفني:**
+  - [ ] عرض رسائل الدعم الفني
+  - [ ] عرض تفاصيل رسالة الدعم الفني
+  - [ ] الرد على الدعم الفني

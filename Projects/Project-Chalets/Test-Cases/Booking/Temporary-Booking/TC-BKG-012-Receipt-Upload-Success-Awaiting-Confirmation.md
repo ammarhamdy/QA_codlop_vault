@@ -3,10 +3,12 @@ tc_id: TC-BKG-012
 title: Verify Successful Transfer Receipt Upload Stops Timer and Sets Status to Awaiting Lessor Confirmation
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

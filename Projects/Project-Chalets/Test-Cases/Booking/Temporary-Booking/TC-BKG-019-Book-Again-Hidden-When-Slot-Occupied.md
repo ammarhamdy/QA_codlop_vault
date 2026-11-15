@@ -3,10 +3,12 @@ tc_id: TC-BKG-019
 title: Verify Book Again Option Is Hidden When Expired Slot Is Taken by Another Customer
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Temporary-Booking.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

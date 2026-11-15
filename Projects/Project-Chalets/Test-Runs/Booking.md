@@ -37,13 +37,18 @@ views:
     columns:
       - property: tc_id
     columnSize:
-      note.title: 738
-      file.name: 136
+      note.title: 757
+      file.name: 114
       note.status: 114
       note.run_result: 100
 
 ```
 
+```
+	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Customer-Cancelation")
+	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Lessor-Cancellation")
+	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt")
+```
 
 # Summary
 
