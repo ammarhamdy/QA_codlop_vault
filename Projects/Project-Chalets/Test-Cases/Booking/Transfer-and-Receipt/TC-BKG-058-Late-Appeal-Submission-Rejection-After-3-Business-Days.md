@@ -2,7 +2,7 @@
 tc_id: TC-BKG-058
 title: Verify Customer Appeal Submitted After Three Business Days Is Rejected as Late
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

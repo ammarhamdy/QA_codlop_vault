@@ -3,10 +3,12 @@ tc_id: TC-BKG-027
 title: Verify Receipt Privacy Restricts Lessor to View-Only Without Download or External Share
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

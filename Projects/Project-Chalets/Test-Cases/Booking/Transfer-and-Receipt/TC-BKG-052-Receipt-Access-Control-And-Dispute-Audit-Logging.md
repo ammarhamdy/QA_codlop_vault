@@ -2,11 +2,13 @@
 tc_id: TC-BKG-052
 title: Verify Receipt Access Control and Dispute-Only Admin Access with Mandatory Audit Logging
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

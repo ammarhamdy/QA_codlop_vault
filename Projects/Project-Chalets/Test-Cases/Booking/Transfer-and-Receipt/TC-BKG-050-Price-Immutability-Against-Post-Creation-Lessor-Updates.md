@@ -2,7 +2,7 @@
 tc_id: TC-BKG-050
 title: Verify Required Amount Remains Fixed to Price Snapshot Despite Post-Creation Lessor Rate Changes
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

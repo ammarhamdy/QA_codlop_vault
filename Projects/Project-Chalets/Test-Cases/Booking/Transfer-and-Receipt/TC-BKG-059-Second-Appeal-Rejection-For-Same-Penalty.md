@@ -2,7 +2,7 @@
 tc_id: TC-BKG-059
 title: Verify System Blocks Submission of a Second Appeal for the Same Penalty
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-049
 title: Verify Application Closure Preserves Active Booking and Dispatches Reminder 15 Minutes Before Expiry
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

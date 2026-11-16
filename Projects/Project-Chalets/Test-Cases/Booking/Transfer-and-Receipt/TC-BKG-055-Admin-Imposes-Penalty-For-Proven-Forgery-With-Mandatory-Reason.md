@@ -2,7 +2,7 @@
 tc_id: TC-BKG-055
 title: Verify Admin Applies Customer Penalty for Proven Forged Receipt with Mandatory Reason
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

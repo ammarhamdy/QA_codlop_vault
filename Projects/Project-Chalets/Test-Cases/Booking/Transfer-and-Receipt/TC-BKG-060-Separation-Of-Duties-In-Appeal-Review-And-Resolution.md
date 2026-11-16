@@ -2,7 +2,7 @@
 tc_id: TC-BKG-060
 title: Verify Separation of Duties in Appeal Review and Penalty Lifting with Mandatory Reason
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

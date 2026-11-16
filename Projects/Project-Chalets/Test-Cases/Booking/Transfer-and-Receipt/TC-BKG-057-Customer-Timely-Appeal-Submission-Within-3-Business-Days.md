@@ -2,7 +2,7 @@
 tc_id: TC-BKG-057
 title: Verify Customer Can Submit Appeal Within Three Business Days with Penalty Remaining in Force
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

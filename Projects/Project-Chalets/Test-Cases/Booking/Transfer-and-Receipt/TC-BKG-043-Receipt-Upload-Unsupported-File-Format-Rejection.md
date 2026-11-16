@@ -2,11 +2,13 @@
 tc_id: TC-BKG-043
 title: Verify System Rejects Unsupported Receipt File Formats
 priority: Medium
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

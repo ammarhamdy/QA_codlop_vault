@@ -2,11 +2,13 @@
 tc_id: TC-BKG-051
 title: Verify Lessor Is Notified Within 60 Seconds of Successful Receipt Upload with Full Details
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

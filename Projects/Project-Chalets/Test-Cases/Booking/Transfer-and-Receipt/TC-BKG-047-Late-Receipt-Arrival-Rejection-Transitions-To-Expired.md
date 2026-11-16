@@ -2,7 +2,7 @@
 tc_id: TC-BKG-047
 title: Verify Late Receipt Arrival Is Rejected and Booking Transitions to Expired
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

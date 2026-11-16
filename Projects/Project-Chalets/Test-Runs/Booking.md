@@ -26,6 +26,7 @@ views:
       or:
         - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking")
         - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection")
+        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt")
     groupBy:
       property: file.folder
       direction: ASC
@@ -47,7 +48,7 @@ views:
 ```
 	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Customer-Cancelation")
 	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Lessor-Cancellation")
-	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt")
+	
 ```
 
 # Summary
@@ -56,7 +57,8 @@ views:
 // Use paths relative to your Obsidian Vault root (NO absolute Linux paths like /home/am/...)
 const folderPaths = [
 "Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking",
-"Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection"
+"Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection",
+"Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt"
 ];
 
 // 1. Fetch all notes in the specified folders

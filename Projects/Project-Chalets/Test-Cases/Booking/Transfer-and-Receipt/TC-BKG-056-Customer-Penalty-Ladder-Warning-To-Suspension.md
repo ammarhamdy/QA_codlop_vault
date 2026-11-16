@@ -2,7 +2,7 @@
 tc_id: TC-BKG-056
 title: Verify Customer Penalty Progression from 12-Month Warning to Permanent Account Suspension
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

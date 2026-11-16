@@ -3,10 +3,12 @@ tc_id: TC-BKG-031
 title: Verify Booking Rejection Is Blocked When No Reason Is Selected
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

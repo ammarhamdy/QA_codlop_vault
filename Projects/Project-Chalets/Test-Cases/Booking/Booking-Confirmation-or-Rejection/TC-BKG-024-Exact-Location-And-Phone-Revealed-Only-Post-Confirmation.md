@@ -3,10 +3,12 @@ tc_id: TC-BKG-024
 title: Verify Exact Location and Lessor Phone Number Are Hidden Until Confirmation
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
   - test-case
+run_result: fail
 ---
 
 # Test Data
@@ -34,7 +36,7 @@ tags:
 # Expected Result
 1. Before confirmation, the exact place location and lessor phone number are strictly hidden from the customer (only approximate area/neighborhood is shown).
 2. After the lessor confirms the booking, the status becomes "Booked" and the system immediately reveals the exact location and lessor phone number (`0551234567`).
-3. Under no circumstances are contact details or exact location exposed while status is "Awaiting Lessor Confirmation" or "Temporary".
+3. Under no circumstances ظروف are contact details or exact location exposed while status is "Awaiting Lessor Confirmation" or "Temporary".
 
 # Notes
 - Requirement: UF-04 Step 6 and Notes ("Location and phone are hidden before this point. They appear only after confirmation").
