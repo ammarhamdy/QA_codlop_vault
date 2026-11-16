@@ -68,7 +68,7 @@
   - [ ] Withdraw Pending Ad Revision
 
 - Calendar & Availability:
-  - [ ] View Ads Calendar
+  - [x] View Ads Calendar
   - [ ] View Unit Availability
   - [ ] Update Unit Prices
   - [ ] Update Unit Availability Status
@@ -96,12 +96,18 @@
   - [ ] Delete Review Reply
 
 - Bank Accounts:
-  - [ ] View Bank Accounts
-  - [ ] Add Bank Account
-  - [ ] Update Bank Account
-  - [ ] Delete Bank Account
-  - [ ] Link Bank Account to Place
-  - [ ] Verify Bank Account Changes with OTP
+  - [x] View Bank Accounts
+  - [x] Add Bank Account
+  - [x] Update Bank Account
+  - [x] Delete Bank Account
+  - [ ] ==🔴Link Bank Account to Place==
+  - [ ] ==🔴Verify Bank Account Changes with OTP==
+  - [x] Validate Bank Account Fields (IBAN, Beneficiary Name, Bank)
+  - [x] Set & Change Default Bank Account
+  - [x] Validate Default Bank Account Restrictions
+  - [x] Verify IBAN Masking & Copy Functionality
+  - [x] **Verify Default Account Fallback**
+
 
 - Booking Management:
   - [x] View Bookings
@@ -109,13 +115,14 @@
   - [x] View Booking Details
   - [x] View Payment Receipt
   - [x] Confirm Booking
-  - [ ] Reject Booking
+  - [x] Reject Booking
   - [ ] Submit Booking Cancellation Request
   - [ ] Withdraw Cancellation Request
 
 - Disputes:
-  - [ ] View Disputes
-  - [ ] View Dispute Details
+  - [x] View Disputes
+  - [x] View Dispute Details
+  - [x] Verify Dispute Notifications
   - [ ] Submit Dispute Evidence
   - [ ] Submit Dispute Statement
   - [ ] Submit Refund Record
