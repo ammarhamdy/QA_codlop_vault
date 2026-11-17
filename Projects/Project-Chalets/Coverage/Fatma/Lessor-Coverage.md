@@ -7,9 +7,9 @@
   - [ ] OTP Verification
 
 - Account & Profile Management:
-  - [ ] Complete Profile
-  - [ ] Update Profile
-  - [ ] Change Phone Number
+  - [x] Complete Profile
+  - [x] Update Profile
+  - [ ] ==🔴Change Phone Number==
   - [ ] Manage Sessions
   - [ ] View Account Status
   - [ ] View Account Sanctions
@@ -18,7 +18,7 @@
   - [ ] View Appeal Details
 
 - Host On-boarding:
-  - [ ] View On-boarding Requirements
+  - [x] View On-boarding Requirements
   - [x] View On-boarding Form Fields
   - [x] Start Host Application
   - [x] View Host Application
@@ -42,8 +42,8 @@
   - [x] Remove Place Photos
   - [x] Upload Place Documents
   - [x] Request Place Inspection
-  - [ ] View Inspection Requests
-  - [ ] View Inspection Results
+  - [x] View Inspection Requests
+  - [x] View Inspection Results
   - [ ] Cancel Inspection Request
   - [ ] Request Place Reinspection
 
@@ -69,10 +69,10 @@
 
 - Calendar & Availability:
   - [x] View Ads Calendar
-  - [ ] View Unit Availability
-  - [ ] Update Unit Prices
-  - [ ] Update Unit Availability Status
-  - [ ] Bulk Update Prices
+  - [x] View Unit Availability
+  - [x] Update Unit Prices
+  - [x] Update Unit Availability Status
+  - [x] Bulk Update Prices
 
 - Subscription & Packages:
   - [x] View Available Packages
@@ -90,10 +90,10 @@
   - [ ] Update Company Tax Information
 
 - Reviews (التقييمات):
-  - [ ] View Reviews on Own Listings
-  - [ ] Reply to Review
-  - [ ] Update Review Reply
-  - [ ] Delete Review Reply
+  - [x] View Reviews on Own Listings
+  - [x] Reply to Review
+  - [ ] ==🔴Update Review Reply==
+  - [ ] ==🔴Delete Review Reply==
 
 - Bank Accounts:
   - [x] View Bank Accounts
@@ -111,12 +111,12 @@
 
 - Booking Management:
   - [x] View Bookings
-  - [ ] Filter Bookings
+  - [x] Filter Bookings
   - [x] View Booking Details
   - [x] View Payment Receipt
   - [x] Confirm Booking
   - [x] Reject Booking
-  - [ ] Submit Booking Cancellation Request
+  - [x] Submit Booking Cancellation Request
   - [ ] Withdraw Cancellation Request
 
 - Disputes:
@@ -129,9 +129,9 @@
   - [ ] Appeal Dispute Decision
 
 - Notifications:
-  - [ ] View Notifications
-  - [ ] View Unread Notifications Count
-  - [ ] Mark Notification as Read
+  - [x] View Notifications
+  - [x] View Unread Notifications Count
+  - [x] Mark Notification as Read
   - [ ] Mark All Notifications as Read
   - [ ] Delete Notification
 

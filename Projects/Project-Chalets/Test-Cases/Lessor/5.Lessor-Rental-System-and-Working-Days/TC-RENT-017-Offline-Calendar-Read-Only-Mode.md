@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Lessor’s-Journey/Rental-System-and-Working-Days.md
 tags:
   - test-case
+run_result: Fail
 ---
 
 # Test Data
