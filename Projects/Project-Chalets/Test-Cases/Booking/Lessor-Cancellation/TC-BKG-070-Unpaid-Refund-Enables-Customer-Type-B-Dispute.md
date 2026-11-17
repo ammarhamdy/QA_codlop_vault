@@ -2,7 +2,7 @@
 tc_id: TC-BKG-070
 title: Verify Customer Can Open Type B Dispute When 3-Business-Day Refund Deadline Expires Unpaid
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

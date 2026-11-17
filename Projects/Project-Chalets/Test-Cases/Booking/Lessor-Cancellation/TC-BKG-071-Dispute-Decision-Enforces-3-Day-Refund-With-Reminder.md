@@ -2,7 +2,7 @@
 tc_id: TC-BKG-071
 title: Verify Dispute Decision Enforces 3-Business-Day Refund With 1-Day Prior Reminder
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

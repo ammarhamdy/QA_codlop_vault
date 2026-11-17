@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-011
 title: Cancel Confirmed Booking More Than 24 Hours Before Check-In
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

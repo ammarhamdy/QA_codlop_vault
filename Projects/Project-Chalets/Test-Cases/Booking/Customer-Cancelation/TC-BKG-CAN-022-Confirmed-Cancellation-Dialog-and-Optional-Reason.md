@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-022
 title: Confirmed Cancellation Dialog and Optional Reason
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

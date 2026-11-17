@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-057
 title: Host Refund Confirmation and Customer Receipt Acknowledgement
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

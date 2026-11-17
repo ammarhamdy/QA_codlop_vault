@@ -2,7 +2,7 @@
 tc_id: TC-BKG-064
 title: Verify Lessor Can Withdraw Open Cancellation Request Leaving Booking Confirmed
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

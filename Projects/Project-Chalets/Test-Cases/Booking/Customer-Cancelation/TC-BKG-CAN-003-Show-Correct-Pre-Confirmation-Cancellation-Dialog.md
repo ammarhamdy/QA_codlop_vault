@@ -2,12 +2,14 @@
 tc_id: TC-BKG-CAN-003
 title: Show Correct Pre-Confirmation Cancellation Dialog
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -17,7 +19,7 @@ tags:
 
 # Preconditions
 
--Customer owns an eligible unconfirmed booking.
+- Customer owns an eligible unconfirmed booking.
 
 # Steps
 

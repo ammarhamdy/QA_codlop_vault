@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-054
 title: Cancellation Network Failure Does Not Duplicate Operation
 priority: Medium
-status: Ready
+status:
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

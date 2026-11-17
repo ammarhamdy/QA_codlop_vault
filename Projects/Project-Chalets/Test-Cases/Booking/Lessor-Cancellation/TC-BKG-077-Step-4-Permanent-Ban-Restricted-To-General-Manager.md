@@ -2,7 +2,7 @@
 tc_id: TC-BKG-077
 title: Verify Step 4 Permanent Ban Is Restricted to General Manager and Restricts Lessor to Customer Role
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

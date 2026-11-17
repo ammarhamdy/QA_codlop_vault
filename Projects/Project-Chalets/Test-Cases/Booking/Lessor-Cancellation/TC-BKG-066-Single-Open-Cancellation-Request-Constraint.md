@@ -2,7 +2,7 @@
 tc_id: TC-BKG-066
 title: Verify System Enforces Only One Open Cancellation Request Per Booking
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-067
 title: Verify Lessor Cancellation Request Is Blocked When an Active Dispute Exists on Booking
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

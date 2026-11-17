@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-017
 title: Near-Term Cancellation Boundary Exactly Two Hours After Creation
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-025
 title: Cancellation Button Hidden for Frozen Booking
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

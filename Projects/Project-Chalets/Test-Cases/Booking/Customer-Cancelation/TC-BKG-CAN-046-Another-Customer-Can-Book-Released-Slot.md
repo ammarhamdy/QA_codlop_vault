@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-046
 title: Another Customer Can Book Released Slot
 priority: High
-status: Ready
+status:
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

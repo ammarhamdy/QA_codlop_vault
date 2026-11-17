@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-028
 title: Medium Policy Refund at 48 Hours Before Check-In (50%)
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

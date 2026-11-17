@@ -3,6 +3,7 @@ tc_id: TC-BKG-037
 title: Verify Customer Views Waiting Time Message on Delayed Confirmation and Can Report Problem
 priority: Medium
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
@@ -27,7 +28,7 @@ tags:
 2. Open booking `BKG-2026-000523`.
 3. Inspect the pending status banner and information card.
 4. Verify the elapsed waiting time text.
-5. Tap the **"Report a Problem"** (`الإبلاغ عن مشكلة`) button.
+5. ==🔴Tap the **"Report a Problem"** (`الإبلاغ عن مشكلة`) button.==
 
 # Expected Result
 1. The customer sees a clear message stating how long they have been waiting for confirmation (e.g., `بانتظار تأكيد المؤجّر منذ 28 ساعة`).

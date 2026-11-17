@@ -2,7 +2,7 @@
 tc_id: TC-BKG-074
 title: Verify Step 1 Warning Is Logged and Automatically Expires After 12 Months Without Violations
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

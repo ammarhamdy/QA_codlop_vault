@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-037
 title: Refund Uses Fixed Policy When Admin Edits Policy for New Bookings
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

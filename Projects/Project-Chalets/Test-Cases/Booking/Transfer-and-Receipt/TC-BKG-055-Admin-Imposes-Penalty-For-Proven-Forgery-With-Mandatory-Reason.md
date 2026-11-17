@@ -3,6 +3,7 @@ tc_id: TC-BKG-055
 title: Verify Admin Applies Customer Penalty for Proven Forged Receipt with Mandatory Reason
 priority: High
 status:
+  - in-progress
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
@@ -10,12 +11,12 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Offending Customer Account | `CUST-9012` |
-| Offense Type | Proven Receipt Forgery (`ثبوت تزوير إيصال`) |
-| Mandatory Penalty Reason | `تم التحقق من البنك وثبوت تزوير إيصال التحويل المرفوع للحجز BKG-2026-000612` |
-| Initial Penalty Level | Warning (`تحذير`) from first proven case |
+| Field                      | Value                                                                        |
+| -------------------------- | ---------------------------------------------------------------------------- |
+| Offending Customer Account | `CUST-9012`                                                                  |
+| Offense Type               | Proven Receipt Forgery (`ثبوت تزوير إيصال`)                                  |
+| Mandatory Penalty Reason   | `تم التحقق من البنك وثبوت تزوير إيصال التحويل المرفوع للحجز BKG-2026-000612` |
+| Initial Penalty Level      | Warning (`تحذير`) from first proven case                                     |
 
 # Preconditions
 1. Admin user is logged in to the Admin Operations Console with penalty management permissions.
@@ -30,7 +31,7 @@ tags:
 5. Inspect the resulting customer penalty record and notification dispatched to the customer.
 
 # Expected Result
-1. Applying a penalty without a reason is blocked; the reason is strictly mandatory.
+1. Applying a penalty without a reason is blocked; the reason is strictly mandatory (لا يُسمح بفرض عقوبة دون سبب؛).
 2. When the reason is provided, the penalty is applied immediately from the very first proven case of receipt forgery.
 3. System records the penalty with timestamp, imposing admin ID, and reason.
 4. An automated notification is sent to the customer informing them of the penalty and their right to appeal within 3 business days.

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-061
 title: Verify Lessor Cancellation Request Flow and Customer Acceptance Cancels Booking and Releases Slot
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

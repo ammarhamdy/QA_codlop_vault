@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-019
 title: No Cancellation for Completed Booking
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

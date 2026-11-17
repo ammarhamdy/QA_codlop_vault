@@ -3,6 +3,7 @@ tc_id: TC-BKG-054
 title: Verify Booking Remains in Awaiting Lessor Confirmation Indefinitely Without Auto-Expiry
 priority: High
 status:
+  - in-progress
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:

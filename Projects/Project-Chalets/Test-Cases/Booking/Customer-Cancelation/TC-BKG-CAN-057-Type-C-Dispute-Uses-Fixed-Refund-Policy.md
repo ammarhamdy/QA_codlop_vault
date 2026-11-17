@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-057
-title: "Type C Dispute Uses Fixed Refund Policy"
+title: Type C Dispute Uses Fixed Refund Policy
 priority: High
-status: Ready
+status:
 type: Functional
-linked_requirement: "PRD §11, §13"
+linked_requirement: PRD §11, §13
 tags:
   - test-case
   - customer-booking-cancellation

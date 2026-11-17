@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-064
 title: Customer Cannot Respond to Host Request on Frozen Booking
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

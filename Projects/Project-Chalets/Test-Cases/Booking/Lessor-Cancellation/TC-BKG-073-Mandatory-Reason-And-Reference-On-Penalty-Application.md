@@ -2,7 +2,7 @@
 tc_id: TC-BKG-073
 title: Verify Support Penalty Application Enforces Mandatory Reason and Dispute Reference
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

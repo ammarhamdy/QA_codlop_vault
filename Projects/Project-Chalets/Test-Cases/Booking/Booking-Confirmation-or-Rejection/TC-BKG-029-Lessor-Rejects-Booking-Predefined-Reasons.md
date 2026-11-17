@@ -3,6 +3,7 @@ tc_id: TC-BKG-029
 title: Verify Lessor Successfully Rejects Booking With Each Predefined Rejection Reason
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:

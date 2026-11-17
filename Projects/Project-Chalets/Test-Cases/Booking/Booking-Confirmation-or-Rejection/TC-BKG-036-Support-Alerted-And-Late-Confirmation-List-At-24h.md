@@ -3,10 +3,12 @@ tc_id: TC-BKG-036
 title: Verify Support Team Alerted and Booking Added to Late Confirmation List After 24 Hours
 priority: High
 status:
+  - in-progress
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
   - test-case
+run_result:
 ---
 
 # Test Data

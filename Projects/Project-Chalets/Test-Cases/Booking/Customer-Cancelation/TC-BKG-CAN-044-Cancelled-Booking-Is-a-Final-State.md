@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-044
-title: "Cancelled Booking Is a Final State"
+title: Cancelled Booking Is a Final State
 priority: High
-status: Ready
+status:
 type: API
-linked_requirement: "PRD §11"
+linked_requirement: PRD §11
 tags:
   - test-case
   - customer-booking-cancellation

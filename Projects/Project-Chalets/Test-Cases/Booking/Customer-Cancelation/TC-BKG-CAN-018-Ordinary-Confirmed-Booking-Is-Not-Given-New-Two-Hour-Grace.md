@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-018
 title: Ordinary Confirmed Booking Is Not Given New Two-Hour Grace
 priority: High
-status: Ready
+status:
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

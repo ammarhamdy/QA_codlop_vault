@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-021
 title: No Cancellation for Host-Rejected Booking
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

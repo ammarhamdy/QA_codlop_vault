@@ -1,5 +1,5 @@
 ---
-run_id: TR-
+run_id: TR-BOOKING
 executor: ammar
 environment: Prod
 build: v1
@@ -24,9 +24,8 @@ views:
     name: Table
     filters:
       or:
-        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking")
-        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection")
-        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt")
+        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Customer-Cancelation")
+        - file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Lessor-Cancellation")
     groupBy:
       property: file.folder
       direction: ASC
@@ -38,17 +37,18 @@ views:
     columns:
       - property: tc_id
     columnSize:
-      note.title: 757
-      file.name: 114
+      note.title: 642
+      file.name: 169
       note.status: 114
       note.run_result: 100
 
 ```
 
-```
-	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Customer-Cancelation")
-	- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Lessor-Cancellation")
-	
+
+```  
+- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking")
+- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection")
+- file.inFolder("Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt")
 ```
 
 # Summary
@@ -58,7 +58,8 @@ views:
 const folderPaths = [
 "Projects/Project-Chalets/Test-Cases/Booking/Temporary-Booking",
 "Projects/Project-Chalets/Test-Cases/Booking/Booking-Confirmation-or-Rejection",
-"Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt"
+"Projects/Project-Chalets/Test-Cases/Booking/Transfer-and-Receipt",
+"Projects/Project-Chalets/Test-Cases/Booking/Customer-Cancelation"
 ];
 
 // 1. Fetch all notes in the specified folders

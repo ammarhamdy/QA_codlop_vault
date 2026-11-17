@@ -3,6 +3,7 @@ tc_id: TC-BKG-034
 title: Verify Dispute on Rejection Enforces 48-Hour Bank Statement SLA for Lessor
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
@@ -10,11 +11,11 @@ tags:
 ---
 
 # Test Data
-| Field | Value |
-| ----- | ----- |
-| Booking Reference | `BKG-2026-000518` (Status: Rejected) |
-| Customer Action | Confirms payment transferred & opens dispute |
-| Bank Statement SLA | `48 Hours` from dispute initiation |
+| Field              | Value                                        |
+| ------------------ | -------------------------------------------- |
+| Booking Reference  | `BKG-2026-000518` (Status: Rejected)         |
+| Customer Action    | Confirms payment transferred & opens dispute |
+| Bank Statement SLA | `48 Hours` from dispute initiation           |
 
 # Preconditions
 1. Booking `BKG-2026-000518` was rejected by the lessor.

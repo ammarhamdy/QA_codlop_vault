@@ -2,12 +2,14 @@
 tc_id: TC-BKG-CAN-005
 title: Cancel Unconfirmed Booking Near Hold Expiry
 priority: High
-status: Ready
+status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-075
 title: Verify Step 2 Ad Suspension Hides Listing and Stops New Bookings While Preserving Existing Bookings
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

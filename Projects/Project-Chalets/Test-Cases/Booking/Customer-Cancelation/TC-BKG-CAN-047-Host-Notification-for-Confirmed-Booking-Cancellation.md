@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-047
 title: Host Notification for Confirmed Booking Cancellation
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

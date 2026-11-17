@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-040
-title: "Custom Admin Cancellation Window Applies"
+title: Custom Admin Cancellation Window Applies
 priority: High
-status: Ready
+status:
 type: Functional
-linked_requirement: "PRD §11, §36"
+linked_requirement: PRD §11, §36
 tags:
   - test-case
   - customer-booking-cancellation

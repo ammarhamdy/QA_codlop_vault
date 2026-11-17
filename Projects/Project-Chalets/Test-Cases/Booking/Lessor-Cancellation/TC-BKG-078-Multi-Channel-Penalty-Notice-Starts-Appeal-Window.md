@@ -2,7 +2,7 @@
 tc_id: TC-BKG-078
 title: Verify Multi-Channel Penalty Notice Dispatched to Lessor and Starts 3-Business-Day Appeal Window
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

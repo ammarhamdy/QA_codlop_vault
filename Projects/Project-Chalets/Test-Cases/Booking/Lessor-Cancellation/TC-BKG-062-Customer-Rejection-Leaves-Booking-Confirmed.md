@@ -2,7 +2,7 @@
 tc_id: TC-BKG-062
 title: Verify Customer Rejection Leaves Booking Confirmed and Binding on Lessor
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

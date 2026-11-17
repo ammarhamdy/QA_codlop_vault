@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-034
 title: Strict Policy Boundary at 48 Hours
 priority: High
-status: Draft
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

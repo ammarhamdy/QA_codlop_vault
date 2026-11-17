@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-036
 title: Refund Uses Original Cancellation Policy After Host Changes Listing Policy
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-079
 title: Verify Lessor Appeal Enforces Written Reason Single Submission and 3-Business-Day Window
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

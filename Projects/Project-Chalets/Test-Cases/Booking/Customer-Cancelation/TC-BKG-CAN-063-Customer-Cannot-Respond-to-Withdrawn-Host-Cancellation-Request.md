@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-063
 title: Customer Cannot Respond to Withdrawn Host Cancellation Request
 priority: Medium
-status: Ready
+status:
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-038
 title: Cancellation Amount Is Consistent Across Customer and Host
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -3,10 +3,12 @@ tc_id: TC-BKG-046
 title: Verify System Validates Receipt Reached Server Before Countdown Expiry
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

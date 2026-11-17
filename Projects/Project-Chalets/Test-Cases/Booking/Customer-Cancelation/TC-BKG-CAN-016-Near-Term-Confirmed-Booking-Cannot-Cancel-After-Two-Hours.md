@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-016
 title: Near-Term Confirmed Booking Cannot Cancel After Two Hours
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-056
-title: "Open Type C Dispute After Permitted Customer Cancellation"
+title: Open Type C Dispute After Permitted Customer Cancellation
 priority: High
-status: Ready
+status:
 type: Functional
-linked_requirement: "PRD §11, §13"
+linked_requirement: PRD §11, §13
 tags:
   - test-case
   - customer-booking-cancellation

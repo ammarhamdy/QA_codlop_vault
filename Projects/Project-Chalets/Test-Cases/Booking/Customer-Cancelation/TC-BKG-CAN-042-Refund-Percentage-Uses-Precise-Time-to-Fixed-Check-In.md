@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-042
-title: "Refund Percentage Uses Precise Time to Fixed Check-In"
+title: Refund Percentage Uses Precise Time to Fixed Check-In
 priority: High
-status: Ready
+status:
 type: Regression
-linked_requirement: "PRD §11"
+linked_requirement: PRD §11
 tags:
   - test-case
   - customer-booking-cancellation

@@ -3,10 +3,12 @@ tc_id: TC-BKG-048
 title: Verify Upload Failure Due to Network Error Keeps Timer Running and Allows Immediate Retry
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Transfer-and-Receipt-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

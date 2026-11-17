@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-055
 title: Dispute Filing Window Ends Seven Days After Check-Out
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

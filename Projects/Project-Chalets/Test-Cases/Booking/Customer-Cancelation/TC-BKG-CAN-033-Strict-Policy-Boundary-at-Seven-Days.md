@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-033
 title: Strict Policy Boundary at Seven Days
 priority: High
-status: Draft
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

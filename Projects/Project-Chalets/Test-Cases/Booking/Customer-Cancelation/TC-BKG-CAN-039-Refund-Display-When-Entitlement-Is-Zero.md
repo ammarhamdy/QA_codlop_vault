@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-039
 title: Refund Display When Entitlement Is Zero
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

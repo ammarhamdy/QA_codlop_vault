@@ -2,7 +2,7 @@
 tc_id: TC-BKG-068
 title: Verify Booking Remains in Booked Status and Cannot Be Cancelled Directly by Lessor
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

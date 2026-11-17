@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-066
 title: Existing Customer Cancellation and Account Deletion Blocker
 priority: Medium
-status: Ready
+status:
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

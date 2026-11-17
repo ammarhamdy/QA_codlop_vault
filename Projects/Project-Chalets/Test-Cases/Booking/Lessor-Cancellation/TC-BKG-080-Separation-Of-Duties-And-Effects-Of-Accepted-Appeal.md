@@ -2,7 +2,7 @@
 tc_id: TC-BKG-080
 title: Verify Separation of Duties in Lessor Appeal Review and Effects of Accepted Appeal
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

@@ -1,10 +1,10 @@
 ---
 tc_id: TC-BKG-CAN-043
-title: "Cancelled Booking Appears in Correct My Bookings Tab"
+title: Cancelled Booking Appears in Correct My Bookings Tab
 priority: High
-status: Ready
+status:
 type: Functional
-linked_requirement: "PRD §10, §11"
+linked_requirement: PRD §10, §11
 tags:
   - test-case
   - customer-booking-cancellation

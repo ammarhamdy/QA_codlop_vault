@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-049
 title: Unauthenticated Cancellation Request Is Rejected
 priority: High
-status: Ready
+status:
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

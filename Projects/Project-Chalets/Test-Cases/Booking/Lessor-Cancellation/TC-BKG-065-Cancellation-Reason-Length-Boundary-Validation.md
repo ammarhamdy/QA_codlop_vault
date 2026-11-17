@@ -2,7 +2,7 @@
 tc_id: TC-BKG-065
 title: Verify Cancellation Reason Enforces Length Boundary Between 10 and 1000 Characters
 priority: Medium
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

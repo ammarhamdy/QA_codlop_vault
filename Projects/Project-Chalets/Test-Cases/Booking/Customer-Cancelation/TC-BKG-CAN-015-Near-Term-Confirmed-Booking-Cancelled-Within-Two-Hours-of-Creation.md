@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-015
 title: Near-Term Confirmed Booking Cancelled Within Two Hours of Creation
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

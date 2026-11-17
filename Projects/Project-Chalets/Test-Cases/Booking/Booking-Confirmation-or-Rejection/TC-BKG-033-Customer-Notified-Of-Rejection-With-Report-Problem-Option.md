@@ -3,10 +3,12 @@ tc_id: TC-BKG-033
 title: Verify Customer Receives Rejection Notification With Reason and Report Problem Action
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Booking-Confirmation-or-Rejection-Cycle.md
 tags:
   - test-case
+run_result: pass
 ---
 
 # Test Data

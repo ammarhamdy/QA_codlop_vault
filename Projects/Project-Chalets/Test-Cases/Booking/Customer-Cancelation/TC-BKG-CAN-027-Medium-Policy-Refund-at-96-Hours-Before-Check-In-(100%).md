@@ -2,7 +2,7 @@
 tc_id: TC-BKG-CAN-027
 title: Medium Policy Refund at 96 Hours Before Check-In (100%)
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

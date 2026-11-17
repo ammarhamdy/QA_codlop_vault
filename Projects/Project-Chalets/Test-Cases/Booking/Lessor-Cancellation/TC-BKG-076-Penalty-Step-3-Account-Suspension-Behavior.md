@@ -2,7 +2,7 @@
 tc_id: TC-BKG-076
 title: Verify Step 3 Account Suspension Terminates Sessions Blocks Login and Moves Bookings to Follow-up
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

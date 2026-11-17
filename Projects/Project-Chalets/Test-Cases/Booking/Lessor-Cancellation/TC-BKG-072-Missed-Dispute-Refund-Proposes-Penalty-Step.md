@@ -2,7 +2,7 @@
 tc_id: TC-BKG-072
 title: Verify System Proposes Next Penalty Ladder Step When Dispute Refund Deadline Expires
 priority: High
-status: Ready
+status:
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:
