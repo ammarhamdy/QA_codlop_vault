@@ -123,8 +123,8 @@
   - [x] View Disputes
   - [x] View Dispute Details
   - [x] Verify Dispute Notifications
-  - [ ] Submit Dispute Evidence
-  - [ ] Submit Dispute Statement
+  - [x] Submit Dispute Evidence
+  - [x] Submit Dispute Statement
   - [ ] Submit Refund Record
   - [ ] Appeal Dispute Decision
 
@@ -133,7 +133,7 @@
   - [x] View Unread Notifications Count
   - [x] Mark Notification as Read
   - [ ] Mark All Notifications as Read
-  - [ ] Delete Notification
+  - [x] Delete Notification
 
 - Support:
   - [ ] View Support Messages

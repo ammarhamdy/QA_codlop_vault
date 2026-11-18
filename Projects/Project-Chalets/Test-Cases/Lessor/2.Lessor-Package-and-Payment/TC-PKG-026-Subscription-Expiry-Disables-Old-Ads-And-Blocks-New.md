@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Package-and-Payment-Method/Package-and-Payment-Method.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data

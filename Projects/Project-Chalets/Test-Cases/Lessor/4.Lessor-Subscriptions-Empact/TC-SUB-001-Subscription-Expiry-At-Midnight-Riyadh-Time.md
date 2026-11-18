@@ -7,6 +7,7 @@ type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Package-and-Payment-Method/Subscription-Expires-and-Ads-Are-Hidden.md
 tags:
   - test-case
+run_result: Pass
 ---
 
 # Test Data
