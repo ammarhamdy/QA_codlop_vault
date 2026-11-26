@@ -3,6 +3,7 @@ tc_id: TC-BKG-CAN-058
 title: Customer Reports Refund Not Received After Host Claims Payment
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-020
 title: No Cancellation for Already Cancelled Booking
 priority: High
 status:
+  - completed
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -17,7 +19,7 @@ tags:
 
 # Preconditions
 
--Customer already cancelled the booking.
+- Customer already cancelled the booking.
 
 # Steps
 

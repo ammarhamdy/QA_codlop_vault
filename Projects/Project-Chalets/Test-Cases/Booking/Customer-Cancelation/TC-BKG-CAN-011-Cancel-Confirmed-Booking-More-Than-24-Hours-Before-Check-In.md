@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-011
 title: Cancel Confirmed Booking More Than 24 Hours Before Check-In
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -19,7 +21,7 @@ tags:
 
 # Preconditions
 
--Customer owns a confirmed booking with no open dispute.
+- Customer owns a confirmed booking with no open dispute.
 
 # Steps
 

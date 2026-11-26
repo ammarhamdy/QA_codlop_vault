@@ -37,7 +37,7 @@ views:
     columns:
       - property: tc_id
     columnSize:
-      note.title: 642
+      note.title: 769
       file.name: 169
       note.status: 114
       note.run_result: 100

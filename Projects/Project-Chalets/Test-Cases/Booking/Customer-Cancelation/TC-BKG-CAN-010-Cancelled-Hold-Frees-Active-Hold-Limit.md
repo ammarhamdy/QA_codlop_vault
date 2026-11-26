@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-010
 title: Cancelled Hold Frees Active Hold Limit
 priority: Medium
 status:
+  - completed
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -17,7 +19,7 @@ tags:
 
 # Preconditions
 
--Customer currently has two active temporary holds.
+- Customer currently has two active temporary holds.
 
 # Steps
 

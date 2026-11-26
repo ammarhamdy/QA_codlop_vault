@@ -3,6 +3,7 @@ tc_id: TC-BKG-069
 title: Verify Display of Full Refund Obligation and Business Day Deadline Calculation Excluding Weekends
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Lessor-Cancellation-Cycle.md
 tags:

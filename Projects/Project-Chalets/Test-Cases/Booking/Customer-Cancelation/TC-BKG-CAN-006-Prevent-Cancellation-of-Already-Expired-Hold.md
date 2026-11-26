@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-006
 title: Prevent Cancellation of Already Expired Hold
 priority: High
 status:
+  - completed
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: fail
 ---
 
 # Test Data

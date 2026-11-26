@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-015
 title: Near-Term Confirmed Booking Cancelled Within Two Hours of Creation
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -19,7 +21,7 @@ tags:
 
 # Preconditions
 
--Booking was created less than 24h before check-in; default near-term window is 2h.
+- Booking was created less than 24h before check-in; default near-term window is 2h.
 
 # Steps
 

@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-014
 title: Hide Cancellation Action After Cutoff Without Refresh
 priority: Medium
 status:
+  - completed
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -18,7 +20,7 @@ tags:
 
 # Preconditions
 
--Customer opens confirmed booking details while cancellation is still available.
+- Customer opens confirmed booking details while cancellation is still available.
 
 # Steps
 

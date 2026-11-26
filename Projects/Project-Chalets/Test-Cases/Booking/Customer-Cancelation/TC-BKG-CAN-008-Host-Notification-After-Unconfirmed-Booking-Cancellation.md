@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-008
 title: Host Notification After Unconfirmed Booking Cancellation
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -19,7 +21,7 @@ tags:
 
 # Preconditions
 
--Customer owns a held or awaiting-confirmation booking; host can view notifications.
+- Customer owns a held or awaiting-confirmation booking; host can view notifications.
 
 # Steps
 

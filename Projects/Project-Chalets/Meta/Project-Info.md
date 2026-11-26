@@ -7,7 +7,7 @@ project: Tanfiz
 
 ## Global Assets & Dashboards
 - **Website URL:**
-- **Dashboard URL:**
+- **Dashboard URL:** https://tanfeez.codlop.sa/dashboard
 - **App Store (iOS):** 
 - **Play Store (Android):** 
 - **Figma:** [link](https://www.figma.com/design/gL5pakbljUHfGWXkMprDUq/%D8%AA%D8%B7%D8%A8%D9%8A%D9%82-%EF%BA%97%EF%BB%A8%EF%BB%94%EF%BB%B4%EF%BA%AC?node-id=1-3&t=4RrNsxVdOFvCaXD6-1)

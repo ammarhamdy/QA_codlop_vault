@@ -3,6 +3,7 @@ tc_id: TC-BKG-CAN-050
 title: Cancel API Rejects Expired Window
 priority: High
 status:
+  - closed
 type: API
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

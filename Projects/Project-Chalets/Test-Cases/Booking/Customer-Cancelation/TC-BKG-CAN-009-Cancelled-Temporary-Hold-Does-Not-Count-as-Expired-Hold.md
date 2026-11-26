@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-009
 title: Cancelled Temporary Hold Does Not Count as Expired Hold
 priority: High
 status:
+  - completed
 type: Regression
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: fail
 ---
 
 # Test Data
@@ -17,7 +19,7 @@ tags:
 
 # Preconditions
 
--Customer is eligible to create a temporary hold before reaching the expiry ban threshold.
+- Customer is eligible to create a temporary hold before reaching the expiry ban threshold.
 
 # Steps
 

@@ -3,6 +3,7 @@ tc_id: TC-BKG-CAN-012
 title: Cancel Confirmed Booking Exactly at 24-Hour Boundary
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
@@ -18,7 +19,7 @@ tags:
 
 # Preconditions
 
--Default confirmed-cancellation cutoff is 24h and server time can be controlled.
+- Default confirmed-cancellation cutoff is 24h and server time can be controlled.
 
 # Steps
 

@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-019
 title: No Cancellation for Completed Booking
 priority: Medium
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
@@ -17,7 +19,7 @@ tags:
 
 # Preconditions
 
--Customer owns a booking whose check-out has passed.
+- Customer owns a booking whose check-out has passed.
 
 # Steps
 

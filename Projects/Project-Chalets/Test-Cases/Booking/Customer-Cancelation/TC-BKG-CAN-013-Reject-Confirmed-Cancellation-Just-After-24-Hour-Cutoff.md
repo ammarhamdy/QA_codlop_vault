@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-013
 title: Reject Confirmed Cancellation Just After 24-Hour Cutoff
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data

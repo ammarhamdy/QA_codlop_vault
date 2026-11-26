@@ -3,6 +3,7 @@ tc_id: TC-BKG-CAN-059
 title: Type C Dispute Host Refund Reminder and Late Escalation
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:

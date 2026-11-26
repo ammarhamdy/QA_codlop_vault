@@ -3,6 +3,7 @@ tc_id: TC-BKG-CAN-057
 title: Type C Dispute Uses Fixed Refund Policy
 priority: High
 status:
+  - closed
 type: Functional
 linked_requirement: PRD §11, §13
 tags:

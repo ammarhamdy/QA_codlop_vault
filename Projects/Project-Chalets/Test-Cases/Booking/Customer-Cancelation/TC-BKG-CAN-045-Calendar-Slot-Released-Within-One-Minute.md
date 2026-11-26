@@ -3,11 +3,13 @@ tc_id: TC-BKG-CAN-045
 title: Calendar Slot Released Within One Minute
 priority: High
 status:
+  - completed
 type: Functional
 linked_requirement: Projects/Project-Chalets/Requirements/Atomic/User-Flows/Booking/Customer-Cancellation
 tags:
   - test-case
   - customer-booking-cancellation
+run_result: pass
 ---
 
 # Test Data
